@@ -12,7 +12,7 @@ Snapshot: 2026-10-30
 
 To be written from `thcosmo-inflation`, `thcosmo-primordial-correlators`,
 `thcosmo-fundamental-theory`, `thcosmo-baryogenesis-phase-transitions`,
-`thcosmo-cosmological-gravitational-waves` and `thcosmo-relics`.
+`thcosmo-cosmological-gravitational-waves` and `thcosmo-pbh-defects`.
 
 ## Dark sector
 <!-- key: dark-sector -->
@@ -31,5 +31,5 @@ To be written from `thcosmo-lss-perturbation-theory`,
 ## Foundations
 <!-- key: foundations -->
 
-To be written from `thcosmo-gr-background`, `thcosmo-thermal-history`,
+To be written from `thcosmo-thermal-history`,
 `thcosmo-cosmological-perturbations` and `thcosmo-cmb-physics`.

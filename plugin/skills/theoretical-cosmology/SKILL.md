@@ -25,29 +25,34 @@ map; its content supersedes this hub.
 
 | Topic | Skill | Status |
 |---|---|---|
-| General relativity for cosmology, FLRW backgrounds, Friedmann equations, distances and horizons, anisotropic and curved backgrounds, cosmic topology | `thcosmo-gr-background` | planned |
-| Equilibrium thermodynamics, Boltzmann equation in an expanding universe, freeze-out, BBN theory, recombination physics and codes, dark ages | `thcosmo-thermal-history` | planned |
-| Relativistic linear and second-order perturbations, gauges and gauge-invariant variables, ζ and R, separate universe and δN, Einstein–Boltzmann hierarchy, adiabatic and isocurvature initial conditions | `thcosmo-cosmological-perturbations` | planned |
-| Acoustic physics, Thomson scattering, polarisation, damping, reionisation imprint, ISW, SZ and lensing theory, spectral distortions | `thcosmo-cmb-physics` | planned |
-| Inflationary dynamics and model landscape, slow roll, attractors, multi-field, reheating, initial conditions, eternal and stochastic inflation | `thcosmo-inflation` | planned |
-| Quantum fluctuations, in-in formalism, EFT of inflation, non-Gaussianity shapes, consistency relations, cosmological collider, bootstrap, features, loop corrections | `thcosmo-primordial-correlators` | planned |
-| String cosmology, moduli, de Sitter constructions, swampland conjectures, trans-Planckian questions, quantum cosmology, holography, alternatives to inflation (bounces, ekpyrosis, emergent) | `thcosmo-fundamental-theory` | planned |
-| Baryogenesis and leptogenesis, electroweak and QCD transitions, first-order phase transitions and bubble dynamics | `thcosmo-baryogenesis-phase-transitions` | planned |
-| Primordial tensors, stochastic backgrounds from inflation, phase transitions, defects and scalar-induced sources, gravitational-wave propagation in cosmology | `thcosmo-cosmological-gravitational-waves` | planned |
-| Primordial black-hole formation and abundance, cosmic strings and other defects, primordial magnetogenesis | `thcosmo-relics` | planned |
+| SPT, LPT, EFTofLSS, IR resummation, bias expansion, redshift-space theory, consistency relations, primordial non-Gaussianity in LSS, velocity statistics and the momentum power spectrum, intrinsic alignments and shape bias, large-deviation and one-point statistics | `thcosmo-lss-perturbation-theory` | planned (pilot) |
+| Inflationary dynamics and model landscape, slow roll, attractors, multi-field, reheating, initial conditions, eternal and stochastic inflation | `thcosmo-inflation` | planned (first milestone) |
+| Quantum fluctuations, in-in formalism, EFT of inflation, non-Gaussianity shapes, consistency relations, cosmological collider, bootstrap, features, loop corrections, decoherence, QFT in de Sitter and infrared effects | `thcosmo-primordial-correlators` | planned (first milestone) |
+| Scalar–tensor (Horndeski, beyond Horndeski, DHOST), f(R), vector–tensor, massive gravity, teleparallel and other theories, screening, consistency (ghosts, instabilities, positivity), EFT of dark energy, parameterised frameworks, speed of tensors | `thcosmo-modified-gravity` | planned (first milestone) |
+| Cosmological-constant problem, quintessence, k-essence, phantom crossing, interacting dark energy, early dark energy, dark-energy model building after DESI | `thcosmo-dark-energy` | planned |
 | Dark-matter production (freeze-out, freeze-in, misalignment, gravitational), candidates (WIMP, axion and ultralight, sterile neutrino, self-interacting, dark sectors), linear and non-linear signatures | `thcosmo-dark-matter-models` | planned |
 | Neutrino decoupling and N_eff in the Standard Model, massive-neutrino perturbations, dark radiation, interacting neutrinos | `thcosmo-neutrinos-light-relics` | planned |
-| Cosmological-constant problem, quintessence, k-essence, phantom crossing, interacting dark energy, dark-energy model building after DESI | `thcosmo-dark-energy` | planned |
-| Scalar–tensor (Horndeski, beyond Horndeski, DHOST), f(R), vector–tensor, massive gravity, teleparallel and other theories, screening, consistency (ghosts, instabilities, positivity), EFT of dark energy, parameterised frameworks | `thcosmo-modified-gravity` | planned |
-| SPT, LPT, EFTofLSS, IR resummation, bias expansion, redshift-space theory, consistency relations, primordial non-Gaussianity in LSS | `thcosmo-lss-perturbation-theory` | planned |
-| Spherical and ellipsoidal collapse, excursion sets, mass-function theory, halo model, Vlasov–Poisson and N-body theory, wave dark-matter dynamics | `thcosmo-nonlinear-structure` | planned |
-| Relativistic effects in observables, light propagation and lensing formalism, backreaction and averaging, inhomogeneous exact solutions, numerical relativity and relativistic N-body | `thcosmo-relativistic-cosmology` | planned |
+| Primordial tensors, stochastic backgrounds from inflation, phase transitions, defects and scalar-induced sources, gravitational-wave propagation in cosmology | `thcosmo-cosmological-gravitational-waves` | planned |
+| Baryogenesis and leptogenesis, electroweak and QCD transitions, first-order phase transitions and bubble dynamics, primordial magnetogenesis | `thcosmo-baryogenesis-phase-transitions` | planned |
+| Primordial black-hole formation and abundance, cosmic strings and other topological defects | `thcosmo-pbh-defects` | planned |
+| FLRW backgrounds, Friedmann equations, distances and horizons, curvature; relativistic linear and second-order perturbations, gauges and gauge-invariant variables, ζ and R, separate universe and δN, Einstein–Boltzmann hierarchy, adiabatic and isocurvature initial conditions | `thcosmo-cosmological-perturbations` | planned |
+| Equilibrium thermodynamics, Boltzmann equation in an expanding universe, freeze-out, BBN theory, recombination physics and codes, dark ages | `thcosmo-thermal-history` | planned |
+| Acoustic physics, Thomson scattering, polarisation, damping, reionisation imprint, ISW, SZ and CMB-lensing theory, spectral distortions | `thcosmo-cmb-physics` | planned |
+| Spherical and ellipsoidal collapse, excursion sets, mass-function theory, halo model, Vlasov–Poisson and N-body theory, wave dark-matter dynamics, baryonic effects on the matter power spectrum | `thcosmo-nonlinear-structure` | planned |
+| Relativistic effects in observables, light propagation and the lensing formalism, backreaction and averaging, inhomogeneous exact solutions, numerical relativity and relativistic N-body | `thcosmo-relativistic-cosmology` | planned |
+| String cosmology, moduli, de Sitter constructions, swampland conjectures, trans-Planckian questions, quantum cosmology, holography, alternatives to inflation (bounces, ekpyrosis, emergent) | `thcosmo-fundamental-theory` | planned |
 | IGM thermal state, Lyα forest theory, 21 cm brightness temperature, reionisation modelling | `thcosmo-cosmic-dawn-igm` | planned |
-| Theory codes: Boltzmann solvers and their modified-gravity and dark-sector forks, perturbation-theory codes, inflation solvers, phase-transition and BBN codes, relativistic and modified-gravity N-body; algorithms, accuracy settings, maintenance | `thcosmo-theory-codes` | planned |
-| Theory responses to tensions and anomalies (H0, S8, DESI dark energy, neutrino mass, lensing amplitude): which models survive which data, by whom, and on what grounds | `thcosmo-tensions-model-building` | planned |
+| Theory codes: Boltzmann solvers and their forks, perturbation-theory codes, inflation solvers, phase-transition and BBN codes, relativistic and modified-gravity N-body (built only if the evaluation asks for it) | `thcosmo-theory-codes` | conditional |
+| Theory responses to tensions and anomalies (H0, S8, DESI dark energy, neutrino mass, lensing amplitude): which models survive which data, by whom, and on what grounds | `thcosmo-tensions-model-building` | planned (last) |
 
 Topics shared by several skills have one home; the others point to it. The
-boundaries are fixed in `docs/scopes-domains.md` of the package repository.
+boundaries, and five rules for topics that fit two skills, are in
+`docs/scopes-domains.md` of the package repository: a non-linear extension
+lives with the non-linear method; a mechanism lives with its physics and
+its signature with the observable; an interaction between two dark
+components lives with the component whose equation of state changes; a
+code question lives in `thcosmo-theory-codes` if it exists; a measured
+value lives in the observational suite.
 Observational results (measured values, survey facts, data systematics)
 belong to the observational suite, cosmoskill (`cosmo-*` skills), when it is
 installed; a theory skill quotes an observational bound only where a model's
@@ -60,8 +65,13 @@ repository.
 ## Hub files
 <!-- key: hub-files -->
 
-- `references/conventions.md`: the conventions to pin down in a theory
-  text (signature, units, normalisations, slow-roll and bias definitions).
+- `references/conventions.md`: the conventions atlas: what to pin down in a
+  theory text and, once built, who uses which choice and the sourced
+  relations between choices.
+- `references/methods-index.md`: where each method (in-in, EFT power
+  counting, Boltzmann hierarchy, lattice, numerical relativity) is treated.
+- `references/stale-claims.md`: statements still in circulation that a
+  paper has corrected, and known errata in sources.
 - `references/review-rubric.md`: how to review theory prose.
 - `references/review-checklists.md`: checklists per family of domains.
 - `references/suite-conventions.md`: file contract, provenance rules,
@@ -148,7 +158,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; conventions 1k; review-checklists 1k; review-rubric 1k; suite-conventions 2k.
+Sizes, in thousands of tokens: L1 5k; conventions 1k; methods-index 1k; review-checklists 1k; review-rubric 1k; stale-claims 1k; suite-conventions 3k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

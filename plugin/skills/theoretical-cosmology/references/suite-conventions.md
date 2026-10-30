@@ -4,7 +4,7 @@ Scope: the rules every `thcosmo-<domain>` skill follows, how to check one, and
 how to refresh one. The design documents are in the `docs/` directory of the
 package repository.
 
-Snapshot: 2026-10-30
+Snapshot: 2026-10-30 (rules of plan v2)
 
 ## File contract
 <!-- key: file-contract -->
@@ -14,17 +14,36 @@ thcosmo-<domain>/
 ├── SKILL.md                         triggers, file map, core facts, checklists
 ├── references/
 │   ├── formalism.md                 definitions, governing equations, conventions, each with the paper and equation that fix it
-│   ├── models.md                    model landscape: action or defining equations, parameters, predictions, consistency, status
-│   ├── results.md                   dated key results: theorems, no-go results, computed predictions, bounds on models
+│   ├── models.md                    one model card per model: defining equations, parameters, predictions, consistency, status, status date
+│   ├── results.md                   dated key results: theorems, no-go results, Standard-Model computed values, bounds on models
 │   ├── approximations.md            approximations and their range of validity, theoretical errors, numerical issues, traps
 │   ├── open-questions.md            debates with both sides, what next data or calculations will decide
-│   ├── sources.tsv                  key, id, first_author, year, title, role
+│   ├── sources.tsv                  key, id, version, first_author, year, title, role
 │   └── subtopics.tsv                key, title, from, files, status
-└── deep/                            six dossiers: derivations and method choices
+└── deep/                            zero to six dossiers, where a gap audit shows L2 cannot answer
 ```
 
 These five reference files are standard. A skill may add topical files; its
-file map lists them. Load `SKILL.md` first: it says which reference answers
+file map lists them. A prediction of one model goes in `models.md`; a result
+that holds independently of the model (a theorem, a no-go result, a
+Standard-Model computed value) goes in `results.md`.
+
+### Model cards
+<!-- key: model-cards -->
+
+Each model in `models.md` is a card with these fields, in this order:
+
+```markdown
+### <Model name>
+- **Defining equations:** $...$ [src: Eq. n] (arXiv:...)
+- **Parameters:** ...
+- **Predictions:** ... [src: ...]
+- **Consistency:** <claim> (arXiv:..., place); reply: <claim> (arXiv:..., place) or "none found"
+- **Observational status:** <verdict>, <dataset>, <confidence level> (arXiv:..., place)
+- **Status date:** YYYY-MM-DD
+```
+
+A status date older than six months is listed by `tools/refresh_status.py`. Load `SKILL.md` first: it says which reference answers
 which question. Load one reference at a time.
 
 ## Citations and provenance
@@ -47,17 +66,40 @@ which question. Load one reference at a time.
   carries `<!-- num: not a value -->`.
 
 - **Equations are transcribed, not derived.** An equation is written as the
-  cited paper writes it, in that paper's conventions, which are named next
-  to it when they differ from the skill's stated conventions. Converting an
-  equation to other conventions, or completing a derivation, is not done in
-  the files; it is done in an answer, labelled as derived.
+  cited paper writes it, in that paper's conventions, named next to it when
+  they differ from the skill's. Transcription is exact up to the
+  meaning-preserving normalisations listed in `tools/latex_norm.py`
+  (spacing commands such as `\hskip`, `\displaystyle`, brace style,
+  `{\bf x}` for `\mathbf{x}`). An equation that carries its own
+  `[src: Eq. n]` is sourced as a whole, coefficients included.
+- **Example**: the second-order density kernel in an Einstein–de Sitter
+  universe, $F_{2}({\bf q}_{1},{\bf q}_{2})=\frac{5}{7}+\frac{1}{2}\frac{{\bf q}_{1}\cdot{\bf q}_{2}}{q_{1}q_{2}}(\frac{q_{1}}{q_{2}}+\frac{q_{2}}{q_{1}})+\frac{2}{7}\frac{({\bf q}_{1}\cdot{\bf q}_{2})^{2}}{q_{1}^{2}q_{2}^{2}}$
+  (Bernardeau et al. 2002, arXiv:astro-ph/0112551) [src: Eq. 45].
+- **Unnumbered equations**: `[src: Sect. 3.2, unnumbered display after
+  Eq. 12]`; a person re-reads every one at the gate.
+- **Versions**: `sources.tsv` records the arXiv version read (`v2`); places
+  refer to that version. `verify_sources.py` warns when arXiv holds a newer
+  one.
+- **Papers without an HTML rendering**: a maintainer may read the PDF; the
+  place is written `[src: Eq. 12 (PDF v2)]`, and the case is logged.
+- **Textbooks**: content found only in a textbook needs a readable source
+  that cites it, flagged `[sec: <place>]`; otherwise it goes under "Not
+  verified".
+- **Errata**: when a later version or an erratum corrects a source, cite
+  the corrected version and record the slip in the hub's
+  `references/stale-claims.md`.
+- **Conversions between conventions**: only relations a paper states,
+  flagged `[src]` and collected in the hub's conventions atlas; no
+  conversion by an agent in the files.
+- **Tables**: no `|` inside `$…$` in a table row; write `\lvert…\rvert`
+  and `\vert`.
 - A number or an equation without its paper and place, one computed by an
   agent, or a claim with no citation, is a defect in the file: fix the file,
   do not quote it. `tools/check_numbers.py` lists numbers without source.
 - A model's status ("viable", "excluded", "disfavoured") names the dataset,
-  the confidence level and the paper; a theoretical objection (ghost,
-  instability, swampland, fine-tuning) names the paper that makes it, and the
-  reply where one exists.
+  the confidence level and the paper, and carries a status date; a
+  theoretical objection (ghost, instability, swampland, fine-tuning) names
+  the paper that makes it, and the reply where one exists.
 - Forecasts are labelled as forecasts and never share a table with
   measurements without a column that says which is which.
 - Each `results.md` and `models.md` starts with a snapshot date.
@@ -71,6 +113,9 @@ directory (the skills are in `plugin/skills/`):
 ```bash
 python3 plugin/skills/theoretical-cosmology/scripts/verify_sources.py plugin/skills/thcosmo-<domain>
 python3 plugin/skills/theoretical-cosmology/scripts/verify_sources.py --offline plugin/skills/*/
+python3 tools/check_numbers.py --skill thcosmo-<domain> --list
+python3 tools/check_equations.py --skill thcosmo-<domain> --list
+python3 tools/check_transcription.py --skill thcosmo-<domain>
 ```
 
 The checker asks arXiv for every cited paper (existence, title, first
@@ -78,13 +123,15 @@ author) and reports citations without a bibliography row and rows without a
 citation. `--offline` runs the local checks only. Exit status 0 means clean.
 Papers found once are cached under the user's cache directory.
 
-It does not check that an equation or a number is the one the paper gives.
-That is done by reading the paper, when it is needed:
+`check_transcription.py` compares each transcribed equation with the
+equation of that number in the source. Whether a number is the one the
+paper gives, and whether an equation means what the file says, is checked
+by reading the paper:
 
 ```bash
-python3 plugin/skills/theoretical-cosmology/scripts/fetch_paper.py 0907.5424 --abstract
-python3 plugin/skills/theoretical-cosmology/scripts/fetch_paper.py 0907.5424 --outline
-python3 plugin/skills/theoretical-cosmology/scripts/fetch_paper.py 0907.5424 --grep "slow-roll" --context 1
+python3 plugin/skills/theoretical-cosmology/scripts/fetch_paper.py astro-ph/0112551 --abstract
+python3 plugin/skills/theoretical-cosmology/scripts/fetch_paper.py astro-ph/0112551 --outline
+python3 plugin/skills/theoretical-cosmology/scripts/fetch_paper.py astro-ph/0112551 --grep "(45)" --context 1
 ```
 
 ## Refreshing a domain
@@ -106,8 +153,8 @@ dossiers under `deep/`, each of which carries its own snapshot date.
 4. **Edit the files.**
    - `results.md`: add the row; move the result it replaces to the history
      section, marked as superseded, instead of deleting it.
-   - `models.md`: a model whose status changed, a new model that the
-     literature takes up.
+   - `models.md`: a model whose status changed (new status date), a new
+     model that the literature takes up.
    - `open-questions.md`: a debate that moved, a claim that became stale.
    - `SKILL.md`: the "What an expert holds in mind" bullets when a headline
      moved, and "Errors that recur" when a common statement became wrong.

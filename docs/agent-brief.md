@@ -41,7 +41,16 @@ identifiers out of fifty-one pointed to other papers.
    other skills, do not create files elsewhere.
 8. Files are written in plain technical English, complete sentences.
    Equations in LaTeX between single dollars, `$...$`, one equation per
-   statement, with its flag in the same statement.
+   statement, with its flag in the same statement. In a table row, never
+   `|` inside `$...$`: write `\lvert...\rvert` or `\vert`.
+9. **Special cases** (details in `suite-conventions.md#citations-and-provenance`):
+   an unnumbered equation is placed `[src: Sect. 3.2, unnumbered display
+   after Eq. 12]`; a paper with no HTML rendering is listed under "Not
+   verified" (a maintainer may read its PDF later); content found only in a
+   textbook needs a readable source citing it, flagged `[sec: …]`; a source
+   corrected by a later version or an erratum is cited in its corrected
+   version, and the slip is written under "Errors that recur"; a relation
+   between two conventions is given only if a paper states it.
 
 ## 1b. Work order — write as you go
 
@@ -104,7 +113,8 @@ source or goes under "Not verified".
    disputed. Find the foundation papers through the reference lists of the
    reviews; read the abstract of each before citing it.
 3. **The place read is always given.** An equation carries its equation
-   number (`[src: Eq. 2.14]`); a result its section, table or figure; a
+   number as the paper prints it (for example the F₂ kernel of
+   arXiv:astro-ph/0112551 is `[src: Eq. 45]`); a result its section, table or figure; a
    claim of the abstract `[src: abstract]`. A plain `[src]` is not used.
 
 `references/subtopics.tsv`, tab-separated, one header line:
@@ -131,8 +141,8 @@ references/sources.tsv
 references/subtopics.tsv
 ```
 
-The six dossiers of `deep/` are built by separate runs
-(`docs/agent-brief-dossier.md`).
+Dossiers in `deep/` (zero to six, chosen by a gap audit after the gate)
+are built by separate runs (`docs/agent-brief-dossier.md`).
 
 ### Citation and provenance format (machine-checked)
 
@@ -152,11 +162,14 @@ The six dossiers of `deep/` are built by separate runs
 Tab-separated, one header line, one row per cited work:
 
 ```
-key	id	first_author	year	title	role
-Baumann2009	0907.5424	Baumann	2009	TASI Lectures on Inflation	lectures
+key	id	version	first_author	year	title	role
+Bernardeau2001	astro-ph/0112551	v1	Bernardeau	2001	Large-Scale Structure of the Universe and Cosmological Perturbation Theory	review
 ```
 
 `id` is a bare arXiv identifier (no prefix, no version) or `doi:<doi>`.
+`version` is the arXiv version you read (`v1`, `v2`, …; `-` for a `doi:`
+row); every place you give refers to that version. `fetch_paper.py` reads
+the latest version: check which one with `--abstract`.
 `first_author` is the surname as arXiv lists it. `title` is the exact arXiv
 title. `role` is one of `foundation`, `review`, `textbook`, `lectures`,
 `method`, `model`, `results`, `constraint`, `data`, `systematics`,
@@ -175,14 +188,14 @@ Each 150–400 lines. Start each with a one-line scope and
    the domain, each with the paper and equation that fix it, grouped by
    subtopic; where the community uses several conventions, a table of who
    uses which.
-2. **`models.md`** — the model landscape. Per model or class: the action or
-   defining equations, with source; the free parameters; the predictions
-   that matter for observations, with source; the theoretical consistency
-   status (ghosts, gradient or tachyonic instabilities, strong coupling,
-   positivity or swampland bounds), each with the paper that makes the
-   claim and the reply where one exists; the observational status, with
-   dataset, confidence level, paper and date.
-3. **`results.md`** — the key results in tables: theorems and no-go
+2. **`models.md`** — the model landscape, one **model card** per model or
+   class, with the fields of `suite-conventions.md#model-cards` in order:
+   defining equations, parameters, predictions, consistency (claim, paper,
+   reply), observational status (verdict, dataset, confidence level,
+   paper), status date. Models are chosen by literature weight; a long zoo
+   is left to the review that lists it.
+3. **`results.md`** — results that hold independently of one model (a
+   prediction of one model goes in its card): theorems and no-go
    results, computed predictions (for example a Standard-Model value of a
    relic quantity with its quoted precision), bounds on model parameters,
    with the model assumed, citation and flag; then the history of the key

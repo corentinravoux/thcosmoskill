@@ -12,7 +12,8 @@ paper again rather than trusting the skill.
 
 **Status: base release 0.1.0.** The hub skill, its scripts, the layer
 machinery, the tools and the tests are in place. The domain skills are
-planned, not yet built: see [`docs/plans/2026-10-30-plan-v2.md`](docs/plans/2026-10-30-plan-v2.md).
+planned, not yet built: see [`docs/plans/2026-10-30-plan-v2.md`](docs/plans/2026-10-30-plan-v2.md)
+(decisions: [`docs/plans/2026-10-30-decisions.md`](docs/plans/2026-10-30-decisions.md)).
 Until a domain exists, the hub says that the suite holds no material on it.
 
 The package is the theory companion of
@@ -103,34 +104,37 @@ Each answer ends with a line such as
 
 ## Planned domains
 
+In build order (plan v2): the pilot, the three domains of milestone 0.2,
+then the rest.
+
 | Skill | Covers |
 |---|---|
-| `theoretical-cosmology` | hub: routes to the others; conventions; review rubric (built) |
-| `thcosmo-gr-background` | GR for cosmology, FLRW, distances, horizons, anisotropic backgrounds |
-| `thcosmo-thermal-history` | thermodynamics, freeze-out, BBN theory, recombination |
-| `thcosmo-cosmological-perturbations` | relativistic perturbations, gauges, ζ, δN, Einstein–Boltzmann hierarchy |
-| `thcosmo-cmb-physics` | acoustic physics, polarisation, secondary anisotropies, spectral distortions |
-| `thcosmo-inflation` | inflationary dynamics and models, reheating, stochastic and eternal inflation |
-| `thcosmo-primordial-correlators` | in-in, EFT of inflation, non-Gaussianity, collider, bootstrap |
-| `thcosmo-fundamental-theory` | string cosmology, de Sitter, swampland, quantum cosmology, alternatives to inflation |
-| `thcosmo-baryogenesis-phase-transitions` | baryogenesis, leptogenesis, phase transitions |
-| `thcosmo-cosmological-gravitational-waves` | primordial tensors, stochastic backgrounds, GW propagation |
-| `thcosmo-relics` | primordial black holes, defects, magnetogenesis |
+| `theoretical-cosmology` | hub: routes to the others; conventions atlas; methods index; stale-claims register (built, skeletons) |
+| `thcosmo-lss-perturbation-theory` | SPT, LPT, EFTofLSS, bias, redshift space, velocity statistics, intrinsic alignments, large deviations (pilot) |
+| `thcosmo-inflation` | inflationary dynamics and models, reheating, stochastic and eternal inflation (0.2) |
+| `thcosmo-primordial-correlators` | in-in, EFT of inflation, non-Gaussianity, collider, bootstrap, decoherence, QFT in de Sitter (0.2) |
+| `thcosmo-modified-gravity` | Horndeski and beyond, f(R), massive gravity, screening, EFT of dark energy (0.2) |
+| `thcosmo-dark-energy` | Λ problem, quintessence, phantom crossing, interacting and early dark energy |
 | `thcosmo-dark-matter-models` | production mechanisms, candidates, signatures |
 | `thcosmo-neutrinos-light-relics` | N_eff, massive neutrinos, dark radiation |
-| `thcosmo-dark-energy` | Λ problem, quintessence, phantom crossing, interacting dark energy |
-| `thcosmo-modified-gravity` | Horndeski and beyond, f(R), massive gravity, screening, EFT of dark energy |
-| `thcosmo-lss-perturbation-theory` | SPT, LPT, EFTofLSS, bias, redshift space |
-| `thcosmo-nonlinear-structure` | collapse, mass function, halo model, Vlasov–Poisson |
+| `thcosmo-cosmological-gravitational-waves` | primordial tensors, stochastic backgrounds, propagation |
+| `thcosmo-baryogenesis-phase-transitions` | baryogenesis, leptogenesis, phase transitions, magnetogenesis |
+| `thcosmo-pbh-defects` | primordial black holes, cosmic strings and other defects |
+| `thcosmo-cosmological-perturbations` | FLRW background, relativistic perturbations, gauges, ζ, δN, Einstein–Boltzmann hierarchy |
+| `thcosmo-thermal-history` | thermodynamics, freeze-out, BBN theory, recombination |
+| `thcosmo-cmb-physics` | acoustic physics, polarisation, secondary anisotropies, spectral distortions |
+| `thcosmo-nonlinear-structure` | collapse, mass function, halo model, Vlasov–Poisson, baryonic effects |
 | `thcosmo-relativistic-cosmology` | relativistic observables, lensing formalism, backreaction, numerical relativity |
+| `thcosmo-fundamental-theory` | string cosmology, de Sitter, swampland, quantum cosmology, alternatives to inflation |
 | `thcosmo-cosmic-dawn-igm` | IGM, Lyα forest theory, 21 cm, reionisation modelling |
-| `thcosmo-theory-codes` | Boltzmann codes and forks, PT codes, inflation and phase-transition solvers |
-| `thcosmo-tensions-model-building` | theory responses to H0, S8, DESI dark energy and other anomalies |
+| `thcosmo-theory-codes` | Boltzmann codes and forks, PT codes, solvers (built only if the evaluation asks for it) |
+| `thcosmo-tensions-model-building` | theory responses to H0, S8, DESI dark energy and other anomalies (last) |
 
 Each domain skill will have the same shape: a `SKILL.md`, five reference
-files (`formalism`, `models`, `results`, `approximations`,
-`open-questions`), a bibliography `sources.tsv`, a subtopic list
-`subtopics.tsv`, and six dossiers in `deep/`.
+files (`formalism`, `models` with one card per model, `results`,
+`approximations`, `open-questions`), a bibliography `sources.tsv` with the
+arXiv version read, a subtopic list `subtopics.tsv`, and up to six dossiers
+in `deep/`.
 
 ## Your own layer (Claude Code)
 

@@ -1,7 +1,8 @@
 # thcosmoskill — design
 
-Date: 2026-10-30. Status: written for the owner's review; the base it
-describes is built (version 0.1.0), the domains are not. Plan:
+Date: 2026-10-30. Status: base built (version 0.1.0); amended the same day
+by the owner's decisions after an independent review
+(`docs/plans/2026-10-30-decisions.md`), which section 6 summarises. Plan:
 `docs/plans/2026-10-30-plan-v2.md`.
 
 ## 1. Aim
@@ -134,4 +135,30 @@ formalism and model questions here. Boundaries are in
 
 ## 5. Open decisions for the owner
 
-Listed with a recommendation in the plan, section "Decisions".
+None open: see section 6.
+
+## 6. Amendments of 2026-10-30 (decisions D1–D34)
+
+- **Architecture (D1)**: topical domains plus three hub artefacts, the
+  conventions atlas, the methods index and the stale-claims register;
+  models in `models.md` as fixed-schema cards with a status date.
+- **Domains (D2–D8)**: 19; `gr-background` folded into
+  `cosmological-perturbations`; `relics` renamed `pbh-defects`, with
+  magnetogenesis moved to `baryogenesis-phase-transitions`; `theory-codes`
+  conditional; new homes for early dark energy, intrinsic alignments,
+  large deviations, velocity statistics, baryonic effects, decoherence and
+  QFT in de Sitter; five two-home rules.
+- **Overlap with cosmoskill (D9, D29)**: formalism has its home here;
+  cosmoskill's `cosmo-theory-foundations` keeps survey conventions and
+  points here; router lines in both hubs during the pilot.
+- **Provenance (D10–D18)**: an equation with its own equation number is
+  sourced as a whole; verbatim up to a list of meaning-preserving
+  normalisations; place format for unnumbered equations; arXiv version
+  recorded; PDF reading by maintainers; textbooks through readable
+  sources; errata in a register; conversions only as stated by a paper; no
+  symbolic checks before 1.0. A transcription checker compares every
+  equation with its source.
+- **Gates and evaluation (D19–D28)**: a G2 draw of 59 tool-passed items
+  with zero errors (error rate below 5 % at 95 %); dossiers zero to six
+  from a gap audit; a blind test of 30 owner questions at milestone 0.2,
+  graded by the owner alone, decides whether to continue.
