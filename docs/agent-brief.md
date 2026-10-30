@@ -271,11 +271,16 @@ the end of `SKILL.md`, which you do not write yourself.
 python3 tools/assign_keys.py
 python3 tools/sync_blocks.py
 python3 plugin/skills/theoretical-cosmology/scripts/verify_sources.py plugin/skills/thcosmo-<domain>
-python3 tools/check_numbers.py --skill thcosmo-<domain> --list
+python3 tools/check_numbers.py --skill thcosmo-<domain> --list        # nothing
+python3 tools/check_equations.py --skill thcosmo-<domain> --list      # nothing
+python3 tools/check_transcription.py --skill thcosmo-<domain>         # no mismatch
+python3 tools/check_shape.py --skill thcosmo-<domain>                 # 0 problems
 python3 -m unittest discover -s tests
 ```
 
-A title or author mismatch from the checker means you wrote a row from
+A transcription `mismatch` means the equation in the file is not the one
+the paper prints at that number: re-read it and copy it as printed, or
+correct the number. A title or author mismatch from the checker means you wrote a row from
 memory: fetch the abstract and correct the row, or drop the citation.
 
 Then re-read `formalism.md` and `results.md` once as a referee: for each

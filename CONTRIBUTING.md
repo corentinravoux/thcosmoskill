@@ -64,10 +64,18 @@ python3 tools/sync_blocks.py
 python3 plugin/skills/theoretical-cosmology/scripts/verify_sources.py plugin/skills/<skill>
 python3 tools/check_keys.py --against <last release tag>
 python3 tools/check_numbers.py --skill <skill> --list
+python3 tools/check_equations.py --skill <skill> --list
+python3 tools/check_transcription.py --skill <skill>
+python3 tools/check_places.py --skill <skill>
+python3 tools/check_shape.py --skill <skill>
 python3 -m unittest discover -s tests
 ```
 
-`check_numbers.py --list` must print nothing.
+`check_numbers.py --list` and `check_equations.py --list` must print
+nothing; `check_transcription.py` must report no mismatch. The gate run by
+the maintainers adds a re-read of a sample in the papers
+(`tools/sample_statements.py`) and a generality check
+(`tools/word_share.py`).
 
 ## Licence
 
