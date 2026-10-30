@@ -31,9 +31,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import check_numbers  # noqa: E402
+import check_shape  # noqa: E402
 from layout import SKILLS  # noqa: E402
 
 ROOT = check_numbers.ROOT
+STATUS_DAYS = 182
 SNAPSHOT = re.compile(r"\bSnapshot:\s*\**\s*(20\d\d-[01]\d-[0-3]\d)", re.I)
 
 
@@ -72,6 +74,12 @@ def status(skill: Path, today: date, due: int | None) -> tuple[str, list[str]]:
         snap = "no snapshot dates"
     read = f", oldest read {min(record['read'] for record in docs)}" if docs else ""
     line = f"{skill.name:40} {snap}; {len(docs):3} [doc]{read}"
+    models = skill / "references" / "models.md"
+    cards = check_shape.status_dates(models.read_text(encoding="utf-8")) if models.is_file() else []
+    # Plan v2, decision D23: a model's status is flagged once older than six months.
+    stale_cards = [(title, when) for title, when in cards if (today - when).days > STATUS_DAYS]
+    if cards:
+        line += f"; {len(stale_cards)} of {len(cards)} model statuses older than six months"
     if due is not None:
         line += f"; {len(stale_soon)} stale within {due} days"
     details = []
@@ -81,6 +89,8 @@ def status(skill: Path, today: date, due: int | None) -> tuple[str, list[str]]:
                 details.append(f"  snapshot {when} ({(today - when).days} days): {path.relative_to(ROOT) if path.is_relative_to(ROOT) else path}")
         for record in stale_soon:
             details.append(f"  [doc] read {record['read']}: {record['file']}:{record['line']}")
+    for title, when in stale_cards:
+        details.append(f"  model status {when} ({(today - when).days} days): {title}")
     return line, details
 
 

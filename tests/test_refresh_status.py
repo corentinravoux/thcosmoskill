@@ -51,5 +51,22 @@ class RefreshStatusTest(unittest.TestCase):
         self.assertIn("theoretical-cosmology", result.stdout)
 
 
+
+class ModelStatusTest(unittest.TestCase):
+    """Plan v2, T9 (decision D23): model statuses older than six months are listed."""
+
+    def test_old_status_is_listed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            skill = Path(tmp) / "thcosmo-example"
+            (skill / "references").mkdir(parents=True)
+            (skill / "references" / "models.md").write_text(
+                "# M\n\nSnapshot: 2026-10-30\n\n### Old model\n\n- **Status date:** 2026-01-10\n\n"
+                "### New model\n\n- **Status date:** 2026-10-01\n", encoding="utf-8")
+            line, details = refresh_status.status(skill, date(2026, 10, 30), 90)
+        self.assertIn("1 of 2 model statuses older than six months", line)
+        self.assertTrue(any("Old model" in d for d in details))
+        self.assertFalse(any("New model" in d for d in details))
+
+
 if __name__ == "__main__":
     unittest.main()
