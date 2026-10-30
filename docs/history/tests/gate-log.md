@@ -2,7 +2,7 @@
 
 One entry per gated run: date, run, gate (G1 tools, G2 sample re-read, G3
 dossiers), what was checked, result, fixes. Plan:
-`docs/plans/2026-10-30-plan.md`, "How one domain is built".
+`docs/plans/2026-10-30-plan-v2.md`, "How one domain is built".
 
 ## 2026-10-30 — base 0.1.0
 

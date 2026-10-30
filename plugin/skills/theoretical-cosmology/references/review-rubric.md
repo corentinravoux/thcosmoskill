@@ -2,8 +2,8 @@
 
 Scope: what to look for when reviewing a theory chapter, paper or proposal
 section, and how to report it. Skeleton of the base release; the recurrent
-slips, each with the paper that corrects it, are added in phase H of
-`docs/plans/2026-10-30-plan.md` from the domain skills.
+slips, each with the paper that corrects it, are added in stage 6 of
+`docs/plans/2026-10-30-plan-v2.md` from the domain skills.
 
 Snapshot: 2026-10-30
 

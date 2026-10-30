@@ -3,7 +3,7 @@
 Scope: the conventions a theoretical-cosmology text must state, and the
 places where the literature is split. Skeleton of the base release: the
 table of which reference work adopts which convention, each with its
-source, is written in phase H of `docs/plans/2026-10-30-plan.md`. Until
+source, is written at step P4 of `docs/plans/2026-10-30-plan-v2.md`. Until
 then this file lists what to check, not who uses what.
 
 Snapshot: 2026-10-30

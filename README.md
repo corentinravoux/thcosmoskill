@@ -12,7 +12,7 @@ paper again rather than trusting the skill.
 
 **Status: base release 0.1.0.** The hub skill, its scripts, the layer
 machinery, the tools and the tests are in place. The domain skills are
-planned, not yet built: see [`docs/plans/2026-10-30-plan.md`](docs/plans/2026-10-30-plan.md).
+planned, not yet built: see [`docs/plans/2026-10-30-plan-v2.md`](docs/plans/2026-10-30-plan-v2.md).
 Until a domain exists, the hub says that the suite holds no material on it.
 
 The package is the theory companion of

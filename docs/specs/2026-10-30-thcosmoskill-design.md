@@ -2,7 +2,7 @@
 
 Date: 2026-10-30. Status: written for the owner's review; the base it
 describes is built (version 0.1.0), the domains are not. Plan:
-`docs/plans/2026-10-30-plan.md`.
+`docs/plans/2026-10-30-plan-v2.md`.
 
 ## 1. Aim
 

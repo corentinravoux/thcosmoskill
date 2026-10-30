@@ -10,7 +10,7 @@ description: Use when reviewing, deriving, planning or fact-checking theoretical
 
 Version 0.1.0 <!-- num: not a value -->: the base only. The hub, its scripts and the layer machinery
 are in place; **no domain skill is built yet**. The domains below are
-planned, in the order of `docs/plans/2026-10-30-plan.md` of the package
+planned, in the order of `docs/plans/2026-10-30-plan-v2.md` of the package
 repository. Until a domain exists, say that the suite holds no material on
 it, answer from general knowledge only if the asker accepts that, label such
 an answer as unsourced, and never present it as coming from the suite.

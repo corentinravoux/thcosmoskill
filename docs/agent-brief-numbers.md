@@ -2,7 +2,7 @@
 
 > Adapted from the cosmoskill brief of the same name: file names follow the
 > theory contract; the theory-specific revision is step T5 of
-> `docs/plans/2026-10-30-plan.md`. Until then, where this brief and
+> `docs/plans/2026-10-30-plan-v2.md`. Until then, where this brief and
 > `docs/agent-brief.md` differ, `docs/agent-brief.md` wins.
 
 Steps 1 and 3 of `docs/plans/2026-10-23-plan.md` and steps 4–6 of
