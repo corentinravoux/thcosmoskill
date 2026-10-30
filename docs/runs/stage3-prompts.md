@@ -1,6 +1,8 @@
 # Stage 3 — prompts for the research runs
 
-Ready to send, in this order. Plan: `docs/plans/2026-10-30-plan-v2.md`,
+Ready to send, in this order. Every run finds papers with the arXiv MCP
+server (loaded with ToolSearch) and reads equations with `fetch_paper.py`
+(docs/agent-brief.md, section 2). Plan: `docs/plans/2026-10-30-plan-v2.md`,
 stage 3. Fill `<date>` with the date of the run. At most two agents at a
 time; the coordinator gates each run (recipe steps 2 and 3) before the next
 depends on it.

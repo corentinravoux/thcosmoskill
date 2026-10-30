@@ -39,7 +39,9 @@ python3 $S/fetch_paper.py <arXiv id> --section "<part of a title>"
 python3 $S/fetch_paper.py <arXiv id> --grep "(23)" --context 2     # equation 23 and its text
 ```
 
-One section at a time, never a whole paper. A paper without HTML rendering
+Find papers with the arXiv MCP server (load it with ToolSearch, query
+`+arxiv search`); read equations with the script above, which the
+transcription check uses. One section at a time, never a whole paper. A paper without HTML rendering
 goes under "Not verified" (a maintainer may read its PDF later).
 
 ## Shape of a dossier

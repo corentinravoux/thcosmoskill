@@ -77,14 +77,22 @@ your context is then lost.
 
 ## 2. Tools
 
-- **An arXiv tool server**, where one is installed: search by field and
-  date, abstract by identifier, one LaTeX section by title. Search within
-  `astro-ph.CO`, `hep-th`, `hep-ph` and `gr-qc` as the domain requires.
-- **The scripts of this package**:
+- **The arXiv MCP server, for finding papers.** It is usually installed
+  but deferred: load its tools first with ToolSearch (query `+arxiv
+  search`), then use `search_papers` (field prefixes `ti:`, `abs:`, `au:`,
+  categories `astro-ph.CO`, `hep-th`, `hep-ph`, `gr-qc`, `date_from`,
+  `sort_by: date`), `get_abstract`, and `citation_graph` to find what cites
+  or supersedes a result. Ask for `abstract_mode: "none"` on collaboration
+  papers: their author lists are long. If the server is not available, use
+  the script below with `--abstract`.
+- **The script of this package, for reading equations and numbers**:
   `python3 plugin/skills/theoretical-cosmology/scripts/fetch_paper.py <id>` prints
   a paper's abstract (`--abstract`, several identifiers allowed), its
-  outline, one section, or the paragraphs containing a term. `--grep` finds
-  an equation by a symbol as written in the LaTeX source.
+  outline, one section, or the paragraphs containing a term. `--grep "(45)"`
+  prints equation 45 as the rendering's LaTeX. **Read every equation you
+  transcribe with this script**, not with the MCP server: the
+  transcription check (`tools/check_transcription.py`) compares your
+  equation with the same rendering, from the same cache.
 - **Plain web access**: `https://arxiv.org/abs/<id>`, the HTML rendering of
   a paper, and the INSPIRE API, for example
   `https://inspirehep.net/api/literature?q=arxiv:0907.5424&fields=titles,authors.full_name`,
