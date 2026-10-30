@@ -136,9 +136,9 @@ class LayersTest(unittest.TestCase):
             self.assertEqual(first.returncode, 0, first.stderr)
             table = home / "thcosmo-fixture" / "sources.tsv"
             rows = table.read_text(encoding="utf-8").splitlines()
-            self.assertEqual(rows[0].split("\t"), ["key", "id", "first_author", "year", "title", "role"])
+            self.assertEqual(rows[0].split("\t"), ["key", "id", "version", "first_author", "year", "title", "role"])
             self.assertEqual(rows[1].split("\t"),
-                             ["Fixture2099", "9999.00002", "Ada De Fixture", "2099", "A second fixture paper", "method"])
+                             ["Fixture2099", "9999.00002", "-", "Ada De Fixture", "2099", "A second fixture paper", "method"])
             again = source("thcosmo-fixture", "9999.00002", "--role", "method")
             self.assertIn("nothing written", again.stdout)
             self.assertEqual(len(table.read_text(encoding="utf-8").splitlines()), 2)

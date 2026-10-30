@@ -736,8 +736,11 @@ def add_source(skill: str, ident: str, role: str | None, key: str | None, projec
     if not path.is_file():
         path.write_text("\t".join(bibliography.COLUMNS) + "\n", encoding="utf-8")
     title = " ".join(record["title"].split())
+    legacy = path.read_text(encoding="utf-8").split("\n", 1)[0].split("\t") == bibliography.LEGACY_COLUMNS
+    fields = [key, ident, author, year, title, role] if legacy else \
+        [key, ident, record.get("version", "-"), author, year, title, role]
     with path.open("a", encoding="utf-8") as handle:
-        handle.write("\t".join([key, ident, author, year, title, role]) + "\n")
+        handle.write("\t".join(fields) + "\n")
     print(f"{kind} paper {key} | arXiv:{ident} | {author} {year} | {title}\nwritten to {path}")
     return 0
 

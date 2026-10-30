@@ -118,7 +118,10 @@ def append_rows(rows: list[dict], skill: str) -> Path:
     before = path.read_text(encoding="utf-8") if path.is_file() else "\t".join(bibliography.COLUMNS) + "\n"
     if before and not before.endswith("\n"):
         before += "\n"
-    added = "".join("\t".join(row[name] for name in bibliography.COLUMNS) + "\n" for row in rows)
+    # Write in the table's own format: a table from before the version column keeps six columns.
+    header = before.split("\n", 1)[0].split("\t")
+    columns = bibliography.LEGACY_COLUMNS if header == bibliography.LEGACY_COLUMNS else bibliography.COLUMNS
+    added = "".join("\t".join(row[name] for name in columns) + "\n" for row in rows)
     path.write_text(before + added, encoding="utf-8")
     return path
 

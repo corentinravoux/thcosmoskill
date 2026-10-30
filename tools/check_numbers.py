@@ -66,6 +66,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from layout import SKILLS  # noqa: E402
+import latex_norm  # noqa: E402
 BASELINE = Path(__file__).resolve().parent / "numbers-baseline.tsv"
 SKIP_PARTS = {"example-layer"}
 
@@ -181,7 +182,18 @@ def statements(text: str):
 
 
 def numbers_in(statement: str) -> list[str]:
-    text = statement
+    """The numbers of a statement that are values.
+
+    Plan v2, step T1: equations are taken out first and read by
+    `latex_norm.math_numbers`, so that the flag rule `[...]` cannot swallow a
+    `\\left[...\\right]`, and so that a coefficient such as 5/7 counts; in prose a
+    single digit still does not. Code spans are dropped before, so that a `$`
+    quoted in code is not taken for mathematics.
+    """
+    text = re.sub(r"`[^`]*`", " ", statement)
+    found_math = [number for span in latex_norm.spans(text) for number in latex_norm.math_numbers(span)]
+    text = latex_norm.without_math(text)
+    text = latex_norm.SPACING.sub(" ", text)
     for pattern in NOT_NUMBERS:
         text = pattern.sub(" ", text)
     found = []
@@ -190,7 +202,7 @@ def numbers_in(statement: str) -> list[str]:
         if re.fullmatch(r"\d", value):
             continue
         found.append(match.group(0))
-    return found
+    return found + found_math
 
 
 def doc_dates(text: str) -> list[str]:

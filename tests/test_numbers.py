@@ -141,3 +141,22 @@ class NumbersTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TheoryStatementsTest(unittest.TestCase):
+    """Plan v2, T1: the checker reads coefficients inside equations and ignores LaTeX structure."""
+
+    def test_corpus(self):
+        path = ROOT / "tests" / "fixtures" / "theory-statements.tsv"
+        rows = [line.split("\t") for line in path.read_text(encoding="utf-8").splitlines()[1:] if line.strip()]
+        self.assertGreaterEqual(len(rows), 24)
+        for statement, expected, why in rows:
+            with self.subTest(why=why):
+                found = check_numbers.numbers_in(statement)
+                self.assertEqual([n.lstrip("−-–") for n in found], expected.split(",") if expected else [], statement)
+
+    def test_a_sourced_equation_passes_as_a_whole(self):
+        statement = (r"$F_{2}=\frac{5}{7}+\frac{2}{7}\mu^{2}$ (arXiv:astro-ph/0112551) [src: Eq. 45]")
+        self.assertTrue(check_numbers.numbers_in(statement))
+        self.assertEqual(check_numbers.classify(statement, ""), "ok")
+        self.assertEqual(check_numbers.classify(r"$F_{2}=\frac{5}{7}$", ""), "none")

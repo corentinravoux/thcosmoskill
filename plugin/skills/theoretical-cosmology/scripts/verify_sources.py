@@ -6,7 +6,13 @@ For one or more skill directories, verify that
   1. every row of references/sources.tsv with an arXiv ID names a paper that
      exists, with a matching title and first author;
   2. every ``arXiv:<id>`` or ``doi:<doi>`` cited in the skill's Markdown files
-     has a row in sources.tsv, and every row is cited at least once.
+     has a row in sources.tsv, and every row is cited at least once;
+  3. the arXiv version a row records (`version` column, `v2`) is the latest:
+     when arXiv holds a newer one, a warning is printed (not a problem), since
+     the places given may have moved.
+
+The `version` column (plan v2, decision D13) is optional in a table written
+before it existed: such a table is read with the version `-`, unknown.
 
 A skill without a `references/` directory is a workflow skill with no
 bibliography (`thcosmoskill-refine`) and is skipped. Standard library only.
@@ -38,7 +44,9 @@ API = "https://export.arxiv.org/api/query"
 ATOM = {"a": "http://www.w3.org/2005/Atom"}
 BATCH = 40
 PAUSE = 3.1  # arXiv asks for one request every three seconds
-COLUMNS = ["key", "id", "first_author", "year", "title", "role"]
+COLUMNS = ["key", "id", "version", "first_author", "year", "title", "role"]
+LEGACY_COLUMNS = ["key", "id", "first_author", "year", "title", "role"]
+VERSION = re.compile(r"^(?:v\d+|-)$")
 # Theory adds textbook, lectures, model (a paper that defines a model) and constraint (a data paper used
 # for its bound on a model's parameters) to the observational suite's roles.
 ROLES = {
@@ -69,7 +77,8 @@ def read_sources(path: Path) -> tuple[list[dict], list[str]]:
     problems: list[str] = []
     with path.open(newline="", encoding="utf-8") as handle:
         reader = csv.DictReader(handle, delimiter="\t", quoting=csv.QUOTE_NONE)
-        if reader.fieldnames != COLUMNS:
+        legacy = reader.fieldnames == LEGACY_COLUMNS
+        if reader.fieldnames != COLUMNS and not legacy:
             problems.append(
                 f"{path}: header is {reader.fieldnames}, expected {COLUMNS}"
             )
@@ -80,6 +89,8 @@ def read_sources(path: Path) -> tuple[list[dict], list[str]]:
                 problems.append(f"{path}:{number}: wrong number of columns")
                 continue
             row = {name: value.strip() for name, value in row.items()}
+            if legacy:
+                row["version"] = "-"
             row["_line"] = number
             rows.append(row)
     seen_keys: dict[str, int] = {}
@@ -90,6 +101,8 @@ def read_sources(path: Path) -> tuple[list[dict], list[str]]:
             problems.append(f"{where}: empty field")
         if row["role"] not in ROLES:
             problems.append(f"{where}: role '{row['role']}' not in {sorted(ROLES)}")
+        if not VERSION.match(row["version"]):
+            problems.append(f"{where}: version '{row['version']}' is neither v<n> nor -")
         if not re.fullmatch(r"\d{4}", row["year"]):
             problems.append(f"{where}: year '{row['year']}' is not four digits")
         ident = row["id"]
@@ -180,16 +193,26 @@ def query(chunk: list[str]) -> bytes:
     )
 
 
-def fetch(ids: list[str]) -> dict[str, dict]:
-    """Return {id: {'title', 'authors'}} for the papers arXiv knows.
+def fetch(ids: list[str], need_version: bool = False) -> dict[str, dict]:
+    """Return {id: {'title', 'authors', 'version'}} for the papers arXiv knows.
 
     Papers found once are cached on disk: a record on arXiv does not change
     its title or first author in a way that matters here, and the cache keeps
     repeated runs from hitting the rate limit. Missing papers are not cached.
+    With `need_version`, a cached record is asked again when it holds no
+    version or was read more than a day ago, since new versions appear.
     """
     cache = load_cache()
-    found = {ident: cache[ident] for ident in ids if ident in cache}
-    missing = [ident for ident in ids if ident not in cache]
+    today = time.strftime("%Y-%m-%d")
+
+    def fresh(ident: str) -> bool:
+        record = cache.get(ident)
+        if record is None:
+            return False
+        return not need_version or ("version" in record and record.get("read") == today)
+
+    found = {ident: cache[ident] for ident in ids if fresh(ident)}
+    missing = [ident for ident in ids if not fresh(ident)]
     for start in range(0, len(missing), BATCH):
         chunk = missing[start:start + BATCH]
         root = ET.fromstring(query(chunk))
@@ -198,16 +221,19 @@ def fetch(ids: list[str]) -> dict[str, dict]:
             title = entry.findtext("a:title", default="", namespaces=ATOM)
             if "/abs/" not in ident or not title or title.strip() == "Error":
                 continue
-            bare = re.sub(r"v\d+$", "", ident.split("/abs/")[1]).lower()
+            versioned = ident.split("/abs/")[1]
+            bare = re.sub(r"v\d+$", "", versioned).lower()
+            version = re.search(r"(v\d+)$", versioned)
             authors = [a.findtext("a:name", default="", namespaces=ATOM) for a in entry.findall("a:author", ATOM)]
-            found[bare] = cache[bare] = {"title": " ".join(title.split()), "authors": authors}
+            found[bare] = cache[bare] = {"title": " ".join(title.split()), "authors": authors,
+                                         "version": version.group(1) if version else "-", "read": today}
         save_cache(cache)
         if start + BATCH < len(missing):
             time.sleep(PAUSE)
     return found
 
 
-def check_skill(skill: Path, offline: bool) -> list[str]:
+def check_skill(skill: Path, offline: bool, warnings: list[str] | None = None) -> list[str]:
     sources = skill / "references" / "sources.tsv"
     if not sources.is_file():
         return [f"{sources}: missing"]
@@ -232,13 +258,25 @@ def check_skill(skill: Path, offline: bool) -> list[str]:
 
     if offline or not row_arxiv:
         return problems
-    return problems + compare_with_arxiv(row_arxiv, sources)
+    return problems + compare_with_arxiv(row_arxiv, sources, warnings)
 
 
-def compare_with_arxiv(row_arxiv: dict[str, dict], sources: Path) -> list[str]:
-    """Compare rows, given as {arXiv id: row}, with what arXiv lists."""
+def newer(recorded: str, latest: str) -> bool:
+    """True when arXiv's latest version is after the one recorded."""
+    if not (recorded.startswith("v") and latest.startswith("v")):
+        return False
+    return int(latest[1:]) > int(recorded[1:])
+
+
+def compare_with_arxiv(row_arxiv: dict[str, dict], sources: Path, warnings: list[str] | None = None) -> list[str]:
+    """Compare rows, given as {arXiv id: row}, with what arXiv lists.
+
+    Warnings (a newer version on arXiv, a version not recorded) go to
+    `warnings` when a list is given; they are not problems.
+    """
     problems: list[str] = []
-    found = fetch(sorted(row_arxiv))
+    want_versions = warnings is not None and any(row.get("version", "-") != "-" for row in row_arxiv.values())
+    found = fetch(sorted(row_arxiv), need_version=want_versions)
     for ident, row in sorted(row_arxiv.items()):
         where = f"{sources}:{row['_line']}"
         record = found.get(ident)
@@ -258,6 +296,13 @@ def compare_with_arxiv(row_arxiv: dict[str, dict], sources: Path) -> list[str]:
                 f"{where}: arXiv:{ident} first author '{row['first_author']}' "
                 f"but arXiv lists '{record['authors'][0] if record['authors'] else '?'}'"
             )
+        if warnings is not None:
+            recorded, latest = row.get("version", "-"), record.get("version", "-")
+            if recorded == "-":
+                warnings.append(f"{where}: arXiv:{ident} ({row['key']}) records no version")
+            elif newer(recorded, latest):
+                warnings.append(f"{where}: arXiv:{ident} ({row['key']}) read in {recorded}, arXiv now has {latest}: "
+                                f"check that the places given still hold")
     return problems
 
 
@@ -272,11 +317,14 @@ def main() -> int:
         if (skill / "SKILL.md").is_file() and not (skill / "references").is_dir():
             print(f"{skill.name}: workflow skill, no bibliography; skipped")
             continue
-        problems = check_skill(skill.resolve(), args.offline)
+        warnings: list[str] = []
+        problems = check_skill(skill.resolve(), args.offline, warnings)
         rows = skill / "references" / "sources.tsv"
         count = sum(1 for _ in rows.open(encoding="utf-8")) - 1 if rows.is_file() else 0
         for problem in problems:
             print(problem)
+        for warning in warnings:
+            print(f"warning: {warning}")
         mode = "offline" if args.offline else "arXiv-checked"
         print(f"{skill.name}: {count} sources, {len(problems)} problem(s) [{mode}]")
         total += len(problems)
