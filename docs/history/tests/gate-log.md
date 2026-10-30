@@ -55,6 +55,5 @@ Tools added, each with tests; suite at the end of the stage: all tests pass.
   with a message of the claude-mem hook of the owner's setup: the
   environment's hooks appear in headless answers, in both baseline and
   skills-on runs alike.
-- E1 template written to
-  `~/Software/claude_config/reports/research/2026-10-30_thcosmoskill-q0/questions.md`
-  (private, outside the package).
+- E1 template written, then removed the same day when the owner withdrew
+  the evaluation stage from the plan (D24–D28).

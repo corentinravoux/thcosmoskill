@@ -1,8 +1,7 @@
-# Stage 4 — prompts for the research runs
+# Stage 3 — prompts for the research runs
 
-Ready to send, in this order, once stage 3 (the owner's questions and the
-skills-off baseline) is done. Plan: `docs/plans/2026-10-30-plan-v2.md`,
-stage 4. Fill `<date>` with the date of the run. At most two agents at a
+Ready to send, in this order. Plan: `docs/plans/2026-10-30-plan-v2.md`,
+stage 3. Fill `<date>` with the date of the run. At most two agents at a
 time; the coordinator gates each run (recipe steps 2 and 3) before the next
 depends on it.
 

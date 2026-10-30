@@ -1,7 +1,9 @@
 # Decisions needed before the final plan
 
-**Answered by the owner on 2026-10-30: every ★ option; D26 = owner only
-(results stated as single-grader evidence).** The plan built from these
+**Answered by the owner on 2026-10-30: every ★ option; D26 = owner only.
+Amended the same day: D24–D28 withdrawn (no evaluation set, baseline or
+blind test; usefulness is judged later from user feedback and
+benchmarks); D5 and D22 follow user feedback instead of the blind test.** The plan built from these
 answers is `2026-10-30-plan-v2.md`. Each decision lists its options, the
 recommendation (★) and the reason. A later change is recorded here with
 its date.

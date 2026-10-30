@@ -3,7 +3,7 @@
 Scope: where each calculational method of theoretical cosmology is treated
 in the suite. A method used in several domains has one home section; the
 others point to it. First version written at the first milestone from the built
-domains (plan v2, stage 5); until then this file names the planned home of
+domains (plan v2, stage 4); until then this file names the planned home of
 each method only.
 
 Snapshot: 2026-10-30
