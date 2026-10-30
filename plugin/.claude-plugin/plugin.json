@@ -1,0 +1,11 @@
+{
+  "name": "thcosmoskill",
+  "version": "0.1.0",
+  "description": "Theoretical-cosmology reference skills: a hub (theoretical-cosmology) and literature-grounded domain skills (thcosmo-*), each equation and number traced to the paper and the place it was read. Base release: the domain skills are planned, not yet built.",
+  "author": {
+    "name": "Corentin Ravoux"
+  },
+  "repository": "https://github.com/corentinravoux/thcosmoskill",
+  "license": "MIT",
+  "keywords": ["cosmology", "theoretical-physics", "early-universe", "literature", "skills"]
+}

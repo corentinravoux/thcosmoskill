@@ -1,0 +1,54 @@
+# Scopes of the thcosmo-* domains
+
+Draft of 2026-10-30, to be confirmed by the owner (plan, decision D2) and
+revised after the pilot. This file fixes the scope of each domain and its
+boundary with the others, so that an equation or a result has one home.
+Where a boundary says "stays in", the other skill gives the essentials in
+two or three sentences and names the home.
+
+## Boundary with the observational suite (cosmoskill)
+
+The theory suite holds **formalism, models, theoretical results,
+approximations and debates**. The observational suite holds **measured
+values, survey facts, data systematics and pipelines**. A theory skill
+quotes an observational bound only where a model's status depends on it, in
+`models.md` (status column) or `results.md` (bounds on model parameters),
+with dataset, confidence level and paper, and names the cosmoskill skill
+that holds the measurement. Six cosmoskill skills overlap in topic:
+
+| cosmoskill skill | Stays there | Comes here |
+|---|---|---|
+| `cosmo-theory-foundations` | conventions adopted by each survey analysis; accuracy of fitting formulae against data use | the derivations and the conventions themselves (`thcosmo-gr-background`, `thcosmo-cosmological-perturbations`, `thcosmo-lss-perturbation-theory`) |
+| `cosmo-inflation-primordial` | measured n_s, r, f_NL, curvature, birefringence | inflation models and their predictions, correlator theory |
+| `cosmo-dark-energy-modified-gravity` | w0wa evidence, μ–Σ and E_G measurements | the theories, their consistency and their status |
+| `cosmo-neutrinos-dark-matter` | Σmν and N_eff bounds, dark-matter limits from data | the Standard-Model N_eff calculation, production mechanisms, perturbation theory with massive neutrinos |
+| `cosmo-early-universe-exotica` | PTA and LVK background measurements, limits on PBHs, defects, spectral distortions | formation and sourcing theory |
+| `cosmo-bbn` | measured abundances, nuclear rate measurements | the BBN network and its theory |
+
+## Domains
+
+| Skill | Holds | Stays elsewhere |
+|---|---|---|
+| `thcosmo-gr-background` | GR as used in cosmology: FLRW metric and its derivation from symmetry, Friedmann and Raychaudhuri equations, fluids and equations of state, distance measures and horizons as derived quantities, curvature, anisotropic (Bianchi) and inhomogeneous-background generalities, cosmic topology. | Inhomogeneous exact solutions and backreaction: `thcosmo-relativistic-cosmology`. The Λ problem: `thcosmo-dark-energy`. |
+| `thcosmo-thermal-history` | Equilibrium thermodynamics in an expanding universe, entropy and effective degrees of freedom, the Boltzmann equation and freeze-out, BBN network theory and its inputs, recombination physics (hydrogen and helium, two-photon and Lyα escape) and recombination codes, the dark ages. | Neutrino decoupling and N_eff: `thcosmo-neutrinos-light-relics`. Dark-matter freeze-out as a production mechanism: `thcosmo-dark-matter-models`. Spectral distortions: `thcosmo-cmb-physics`. |
+| `thcosmo-cosmological-perturbations` | Scalar–vector–tensor decomposition, gauge transformations and gauge-invariant variables, conserved curvature perturbations, separate-universe and δN, Einstein–Boltzmann hierarchy, adiabatic and isocurvature initial conditions, second-order perturbations and their gauge issues, line-of-sight integration as an algorithm. | CMB-specific physics: `thcosmo-cmb-physics`. Late-time non-linear perturbation theory: `thcosmo-lss-perturbation-theory`. Codes as software: `thcosmo-theory-codes`. |
+| `thcosmo-cmb-physics` | Acoustic oscillations, Thomson scattering, tight coupling and diffusion damping, polarisation and E/B, reionisation imprint, ISW, SZ effects and CMB lensing as theory, spectral distortions and thermalisation. | Measured spectra and likelihoods: cosmoskill `cosmo-cmb`. Primordial non-Gaussianity estimators: `thcosmo-primordial-correlators` for the theory, cosmoskill for the measurement. |
+| `thcosmo-inflation` | Inflationary dynamics, slow roll and its parameter definitions, attractors, the model landscape (single-field, multi-field, plateau, hilltop, natural, Higgs and others by literature weight), reheating and preheating, initial-conditions problem, stochastic and eternal inflation, predictions for n_s and r. | Correlators beyond the power spectrum: `thcosmo-primordial-correlators`. String embeddings: `thcosmo-fundamental-theory`. Tensor backgrounds beyond r: `thcosmo-cosmological-gravitational-waves`. |
+| `thcosmo-primordial-correlators` | Quantisation of fluctuations, in-in formalism, EFT of inflation, non-Gaussianity shapes and templates, consistency relations and soft limits, cosmological collider, cosmological bootstrap, features, loop corrections and their debates. | Late-time consistency relations: `thcosmo-lss-perturbation-theory`. Scale-dependent bias from f_NL: `thcosmo-lss-perturbation-theory`. |
+| `thcosmo-fundamental-theory` | String cosmology, moduli stabilisation, de Sitter constructions and their critiques, swampland conjectures and trans-Planckian censorship, quantum cosmology (Wheeler–DeWitt, loop quantum cosmology), holographic approaches, alternatives to inflation (bouncing, ekpyrotic, string-gas, emergent). | Inflation models without a UV embedding: `thcosmo-inflation`. Dark energy as a swampland consequence: home here, with a pointer from `thcosmo-dark-energy`. |
+| `thcosmo-baryogenesis-phase-transitions` | Sakharov conditions, electroweak baryogenesis, leptogenesis, Affleck–Dine and other mechanisms, electroweak and QCD transitions, first-order transitions: nucleation, bubble walls, dynamics. | The gravitational-wave spectrum from transitions: `thcosmo-cosmological-gravitational-waves`. PBHs from transitions: `thcosmo-relics`. |
+| `thcosmo-cosmological-gravitational-waves` | Primordial tensor modes, stochastic backgrounds from inflation, phase transitions, defects and scalar-induced sources, their spectral templates, gravitational-wave propagation on cosmological backgrounds and in modified gravity. | Measured backgrounds: cosmoskill `cosmo-early-universe-exotica`. Standard sirens as a distance probe: cosmoskill `cosmo-multimessenger`. The speed of tensors as a constraint on theories: `thcosmo-modified-gravity`. |
+| `thcosmo-relics` | Primordial black-hole formation (thresholds, statistics, clustering) and abundance theory, evaporation; cosmic strings and other defects, network evolution; primordial magnetogenesis and evolution. | Their gravitational-wave signals: `thcosmo-cosmological-gravitational-waves`. PBHs as dark matter, status: `thcosmo-dark-matter-models`. |
+| `thcosmo-dark-matter-models` | Production mechanisms (thermal freeze-out, freeze-in, misalignment, non-thermal, gravitational), candidates (WIMPs, axions and ultralight fields, sterile neutrinos, self-interacting and dissipative dark matter, dark sectors), their linear signatures (transfer functions, cut-offs, acoustic oscillations) and non-linear signatures. | Laboratory and indirect searches: out of scope. Wave dark-matter dynamics as structure formation: `thcosmo-nonlinear-structure`. |
+| `thcosmo-neutrinos-light-relics` | Neutrino decoupling and the Standard-Model N_eff calculation, massive-neutrino perturbations and free streaming, phase shift, dark radiation and light relics, interacting and decaying neutrinos. | Measured Σmν and N_eff: cosmoskill `cosmo-neutrinos-dark-matter`. |
+| `thcosmo-dark-energy` | The cosmological-constant problem and vacuum energy, quintessence (thawing, freezing, tracking), k-essence, phantom fields and the crossing of w = −1, interacting dark energy, holographic and other phenomenological classes by literature weight, model building after the DESI results. | Theories that modify gravity: `thcosmo-modified-gravity`. The EFT of dark energy as a framework: `thcosmo-modified-gravity`. Measured w0wa: cosmoskill. |
+| `thcosmo-modified-gravity` | Scalar–tensor theories (Horndeski, beyond Horndeski, DHOST), f(R), vector–tensor, massive gravity and bigravity, teleparallel and non-metricity theories, non-local gravity, screening mechanisms, consistency conditions (ghosts, instabilities, strong coupling, positivity), the EFT of dark energy and parameterised frameworks (α_i, μ–Σ, PPF), the speed of tensors and its consequences. | N-body codes for modified gravity: `thcosmo-theory-codes`. Measured μ–Σ: cosmoskill. |
+| `thcosmo-lss-perturbation-theory` | Standard and Lagrangian perturbation theory, renormalised and resummed schemes, EFTofLSS and its counterterms, IR resummation, bias expansion and bases, redshift-space distortions from Kaiser to EFT, consistency relations of LSS, primordial non-Gaussianity in LSS, perturbative forward models for field-level inference. | Halo model and collapse: `thcosmo-nonlinear-structure`. Relativistic corrections: `thcosmo-relativistic-cosmology`. Fits to data: cosmoskill `cosmo-galaxy-clustering`. |
+| `thcosmo-nonlinear-structure` | Spherical and ellipsoidal collapse, excursion sets and mass-function theory, halo bias and profiles as theory, the halo model, Vlasov–Poisson and the theory of N-body discreteness and convergence, wave dark-matter dynamics (Schrödinger–Poisson). | Simulation suites and emulators: cosmoskill `cosmo-simulations-mocks`. HOD fits to data: cosmoskill `cosmo-galaxy-halo-connection`. |
+| `thcosmo-relativistic-cosmology` | Relativistic effects in observables (number counts, lensing beyond Born, light-cone effects), light propagation and the lensing formalism, backreaction and averaging, inhomogeneous exact solutions (LTB, Szekeres), numerical relativity in cosmology, relativistic N-body. | CMB lensing: `thcosmo-cmb-physics`. Measured relativistic effects: cosmoskill. |
+| `thcosmo-cosmic-dawn-igm` | IGM thermal and ionisation state, Lyα forest theory (fluctuating Gunn–Peterson and beyond), 21 cm brightness temperature and spin temperature, reionisation modelling (excursion-set and semi-numerical). | Measurements: cosmoskill `cosmo-lyman-alpha`, `cosmo-reionization-21cm`. |
+| `thcosmo-theory-codes` | Boltzmann codes and their modified-gravity and dark-sector forks, perturbation-theory codes, inflation and correlator solvers, phase-transition and BBN codes, relativistic and modified-gravity N-body codes; algorithms, accuracy settings, code agreement, maintenance status. | Observational analysis codes: cosmoskill `cosmo-software-ecosystem`. |
+| `thcosmo-tensions-model-building` | Synthesis, updated last: for each tension or anomaly, the classes of theory responses, which data each survives, the theoretical cost of each (fine-tuning, consistency, UV embedding), and the status of the debate. | Each model's own formalism and status: its domain. The size of each tension: cosmoskill `cosmo-tensions-anomalies`. |
+
+Out of scope: laboratory and indirect dark-matter searches, collider
+physics, and quantum gravity without a cosmological application.

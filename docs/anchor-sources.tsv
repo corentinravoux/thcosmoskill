@@ -1,0 +1,67 @@
+key	id	first_author	year	title	role	domains
+Green2022	2209.06854	Green	2022	Snowmass Theory Frontier: Astrophysics and Cosmology	review	all
+Craig2022	2211.05772	Craig	2022	Snowmass Theory Frontier Report	review	all
+Flauger2022	2203.07629	Flauger	2022	Snowmass White Paper: Cosmology at the Theory Frontier	review	inflation; primordial-correlators; fundamental-theory
+Baumgart2022	2210.03199	Baumgart	2022	Snowmass Theory Frontier: Effective Field Theory	review	primordial-correlators; lss-perturbation-theory; modified-gravity
+Abdalla2022	2203.06142	Abdalla	2022	Cosmology Intertwined: A Review of the Particle Physics, Astrophysics, and Cosmology Associated with the Cosmological Tensions and Anomalies	review	tensions-model-building
+DiValentino2025	2504.01669	Di Valentino	2025	The CosmoVerse White Paper: Addressing observational tensions in cosmology with systematics and fundamental physics	review	tensions-model-building
+Malik2008	0809.4944	Malik	2008	Cosmological perturbations	review	cosmological-perturbations
+Lesgourgues2011	1104.2932	Lesgourgues	2011	The Cosmic Linear Anisotropy Solving System (CLASS) I: Overview	code	cosmological-perturbations; theory-codes
+Hu2001	astro-ph/0110414	Hu	2001	Cosmic Microwave Background Anisotropies	review	cmb-physics
+Lewis2006	astro-ph/0601594	Lewis	2006	Weak Gravitational Lensing of the CMB	review	cmb-physics; relativistic-cosmology
+Chluba2011	1109.6552	Chluba	2011	The evolution of CMB spectral distortions in the early Universe	method	cmb-physics
+Cyburt2015	1505.01076	Cyburt	2015	Big Bang Nucleosynthesis: 2015	review	thermal-history
+AliHaimoud2010	1011.3758	Ali-Haïmoud	2010	HyRec: A fast and highly accurate primordial hydrogen and helium recombination code	code	thermal-history; theory-codes
+Baumann2009	0907.5424	Baumann	2009	TASI Lectures on Inflation	lectures	inflation; primordial-correlators
+Martin2013	1303.3787	Martin	2013	Encyclopaedia Inflationaris	review	inflation
+Achucarro2022	2203.08128	Achúcarro	2022	Inflation: Theory and Observations	review	inflation; primordial-correlators
+Amin2014	1410.3808	Amin	2014	Nonperturbative Dynamics Of Reheating After Inflation: A Review	review	inflation
+Vennin2015	1506.04732	Vennin	2015	Correlation Functions in Stochastic Inflation	method	inflation
+Cheung2007	0709.0293	Cheung	2007	The Effective Field Theory of Inflation	foundation	primordial-correlators
+Chen2010	1002.1416	Chen	2010	Primordial Non-Gaussianities from Inflation Models	review	primordial-correlators
+Baumann2022	2203.08121	Baumann	2022	Snowmass White Paper: The Cosmological Bootstrap	review	primordial-correlators
+Baumann2014	1404.2601	Baumann	2014	Inflation and String Theory	review	fundamental-theory
+Obied2018	1806.08362	Obied	2018	De Sitter Space and the Swampland	foundation	fundamental-theory; dark-energy
+vanBeest2021	2102.01111	van Beest	2021	Lectures on the Swampland Program in String Compactifications	lectures	fundamental-theory
+Brandenberger2016	1603.05834	Brandenberger	2016	Bouncing Cosmologies: Progress and Problems	review	fundamental-theory
+Andriot2026	2603.25797	Andriot	2026	Dark energy from string theory: an introductory review	review	fundamental-theory; dark-energy
+Dine2003	hep-ph/0303065	Dine	2003	The origin of the matter-antimatter asymmetry	review	baryogenesis-phase-transitions
+Davidson2008	0802.2962	Davidson	2008	Leptogenesis	review	baryogenesis-phase-transitions
+Caprini2019	1910.13125	Caprini	2019	Detecting gravitational waves from cosmological phase transitions with LISA: an update	review	baryogenesis-phase-transitions; cosmological-gravitational-waves
+Caprini2018	1801.04268	Caprini	2018	Cosmological Backgrounds of Gravitational Waves	review	cosmological-gravitational-waves
+Domenech2021	2109.01398	Domènech	2021	Scalar induced gravitational waves review	review	cosmological-gravitational-waves; relics
+Ezquiaga2018	1807.09241	Ezquiaga	2018	Dark Energy in light of Multi-Messenger Gravitational-Wave astronomy	review	modified-gravity; cosmological-gravitational-waves
+Carr2020	2002.12778	Carr	2020	Constraints on Primordial Black Holes	review	relics
+Durrer2013	1303.7121	Durrer	2013	Cosmological Magnetic Fields: Their Generation, Evolution and Observation	review	relics
+Marsh2015	1510.07633	Marsh	2015	Axion Cosmology	review	dark-matter-models
+Hall2009	0911.1120	Hall	2009	Freeze-In Production of FIMP Dark Matter	foundation	dark-matter-models
+Bernal2017	1706.07442	Bernal	2017	The Dawn of FIMP Dark Matter: A Review of Models and Constraints	review	dark-matter-models
+Tulin2017	1705.02358	Tulin	2017	Dark Matter Self-interactions and Small Scale Structure	review	dark-matter-models
+Lesgourgues2006	astro-ph/0603494	Lesgourgues	2006	Massive neutrinos and cosmology	review	neutrinos-light-relics
+Bennett2020	2012.02726	Bennett	2020	Towards a precision calculation of $N_{\rm eff}$ in the Standard Model II: Neutrino decoupling in the presence of flavour oscillations and finite-temperature QED	results	neutrinos-light-relics; thermal-history
+Baumann2015	1508.06342	Baumann	2015	Phases of New Physics in the CMB	method	neutrinos-light-relics
+Copeland2006	hep-th/0603057	Copeland	2006	Dynamics of dark energy	review	dark-energy
+Martin2012	1205.3365	Martin	2012	Everything You Always Wanted To Know About The Cosmological Constant Problem (But Were Afraid To Ask)	review	dark-energy
+Wang2016	1603.08299	Wang	2016	Dark Matter and Dark Energy Interactions: Theoretical Challenges, Cosmological Implications and Observational Signatures	review	dark-energy
+Li2026	2606.21826	Li	2026	Dark Energy in the DESI Era: A Brief Review of Evidence, Beyond-$Λ$CDM Interpretations, and Tensions	review	dark-energy; tensions-model-building
+Capozziello2025	2512.10585	Capozziello	2025	Is Dark Energy Dynamical in the DESI Era? A Critical Review	review	dark-energy; tensions-model-building
+Ren2026	2606.01360	Ren	2026	A short review on Quintom dark energy theory	review	dark-energy
+Clifton2011	1106.2476	Clifton	2011	Modified Gravity and Cosmology	review	modified-gravity
+Joyce2014	1407.0059	Joyce	2014	Beyond the Cosmological Standard Model	review	modified-gravity
+Kobayashi2019	1901.07183	Kobayashi	2019	Horndeski theory and beyond: a review	review	modified-gravity
+deRham2014	1401.4173	de Rham	2014	Massive Gravity	review	modified-gravity
+Gubitosi2012	1210.0201	Gubitosi	2012	The Effective Field Theory of Dark Energy	foundation	modified-gravity; dark-energy
+Gleyzes2014	1411.3712	Gleyzes	2014	A unifying description of dark energy	review	modified-gravity
+Euclid2025MG	2512.09748	Euclid Collaboration	2025	Euclid preparation. Review of forecast constraints on dark energy and modified gravity	forecast	modified-gravity; dark-energy
+Bernardeau2001	astro-ph/0112551	Bernardeau	2001	Large-Scale Structure of the Universe and Cosmological Perturbation Theory	review	lss-perturbation-theory
+Ivanov2022	2212.08488	Ivanov	2022	Effective Field Theory for Large Scale Structure	review	lss-perturbation-theory
+Desjacques2016	1611.09787	Desjacques	2016	Large-Scale Galaxy Bias	review	lss-perturbation-theory; nonlinear-structure
+Cooray2002	astro-ph/0206508	Cooray	2002	Halo Models of Large Scale Structure	review	nonlinear-structure
+Bonvin2011	1105.5280	Bonvin	2011	What galaxy surveys really measure	foundation	relativistic-cosmology
+Challinor2011	1105.5292	Challinor	2011	The linear power spectrum of observed source number counts	foundation	relativistic-cosmology
+Buchert2011	1112.5335	Buchert	2011	Backreaction in late-time cosmology	review	relativistic-cosmology
+Buchert2015	1505.07800	Buchert	2015	Is there proof that backreaction of inhomogeneities is irrelevant in cosmology?	critique	relativistic-cosmology
+Adamek2016	1604.06065	Adamek	2016	gevolution: a cosmological N-body code based on General Relativity	code	relativistic-cosmology; theory-codes
+Furlanetto2006	astro-ph/0608032	Furlanetto	2006	Cosmology at Low Frequencies: The 21 cm Transition and the High-Redshift Universe	review	cosmic-dawn-igm
+Zumalacarregui2016	1605.06102	Zumalacarregui	2016	hi_class: Horndeski in the Cosmic Linear Anisotropy Solving System	code	theory-codes; modified-gravity
+Hu2013	1312.5742	Hu	2013	Effective Field Theory of Cosmic Acceleration: an implementation in CAMB	code	theory-codes; modified-gravity
