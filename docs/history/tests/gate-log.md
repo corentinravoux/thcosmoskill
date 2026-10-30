@@ -51,7 +51,7 @@ Tools added, each with tests; suite at the end of the stage: all tests pass.
   (`thcosmoskill:theoretical-cosmology`), which routed to the planned domain
   and said it is not built; 0 of 3 used the expected domain skill, as
   expected with no domain built. Cost per question 267k–390k tokens, mostly
-  cache reads (0.38–0.45 USD as reported by the session). One answer began
+  cache reads (the session reports 0.38–0.45 USD, an estimate at API list prices; the runs used the owner's subscription login, `apiKeySource: none`, so nothing is billed in dollars: the runs count against the plan's usage limits). One answer began
   with a message of the claude-mem hook of the owner's setup: the
   environment's hooks appear in headless answers, in both baseline and
   skills-on runs alike.
