@@ -1,0 +1,50 @@
+key	id	version	first_author	year	title	role
+Bernardeau2001	astro-ph/0112551	v1	Bernardeau	2001	Large-Scale Structure of the Universe and Cosmological Perturbation Theory	review
+Ivanov2022	2212.08488	v1	Ivanov	2022	Effective Field Theory for Large Scale Structure	review
+Cabass2022	2203.08232	v1	Cabass	2022	Snowmass White Paper: Effective Field Theories in Cosmology	review
+Anastasiou2025	2509.05187	v2	Anastasiou	2025	Efficient evaluation of the dark-matter two-loop power spectrum in the EFT of LSS	method
+Philcox2026	2610.13867	v2	Philcox	2026	The Redshift-Space Galaxy Power Spectrum at Two-Loop Order	results
+Baldauf2015	1504.04366	v2	Baldauf	2015	Equivalence Principle and the Baryon Acoustic Peak	foundation
+Senatore2014	1404.5954	v2	Senatore	2014	The IR-resummed Effective Field Theory of Large Scale Structures	foundation
+Blas2016	1605.02149	v2	Blas	2016	Time-Sliced Perturbation Theory II: Baryon Acoustic Oscillations and Infrared Resummation	method
+Chen2020b	2012.04636	v2	Chen	2020	Redshift-Space Distortions in Lagrangian Perturbation Theory	model
+Carlson2013	1209.0780	v2	Carlson	2012	Convolution Lagrangian perturbation theory for biased tracers	model
+Sugiyama2025	2508.17331	v2	Sugiyama	2025	Unified Lagrangian Framework for Galaxy Clustering: Consistent Modeling of Bias, Redshift-Space Distortions, and Reconstruction	model
+Desjacques2016	1611.09787	v5	Desjacques	2016	Large-Scale Galaxy Bias	review
+Assassi2014	1402.5916	v1	Assassi	2014	Renormalized Halo Bias	foundation
+McDonald2009	0902.0991	v1	McDonald	2009	Clustering of dark matter tracers: generalizing bias for the coming era of precision LSS	foundation
+Mirbabayi2014	1412.5169	v1	Mirbabayi	2014	Biased Tracers and Time Evolution	foundation
+Lazeyras2017	1712.07531	v3	Lazeyras	2017	Beyond LIMD bias: a measurement of the complete set of third-order halo bias parameters	results
+Taruya2010	1006.0699	v1	Taruya	2010	Baryon Acoustic Oscillations in 2D: Modeling Redshift-space Power Spectrum from Perturbation Theory	model
+Senatore2014b	1409.1225	v1	Senatore	2014	Redshift Space Distortions in the Effective Field Theory of Large Scale Structures	foundation
+Donath2020	2005.04805	v2	Donath	2020	Biased Tracers in Redshift Space in the EFTofLSS with exact time dependence	critique
+Kehagias2013	1302.0130	v2	Kehagias	2013	Symmetries and Consistency Relations in the Large Scale Structure of the Universe	foundation
+Peloso2013	1302.0223	v1	Peloso	2013	Galilean invariance and the consistency relation for the nonlinear squeezed bispectrum of large scale structure	foundation
+Creminelli2013	1309.3557	v2	Creminelli	2013	Single-Field Consistency Relations of Large Scale Structure	foundation
+Creminelli2013b	1312.6074	v2	Creminelli	2013	Single-Field Consistency Relations of Large Scale Structure. Part III: Test of the Equivalence Principle	method
+Dam2025	2510.13803	v2	Dam	2025	Density reconstruction from biased tracers: Testing the equivalence principle through consistency relations	forecast
+Dalal2008	0710.4560	v3	Dalal	2007	The imprints of primordial non-gaussianities on large-scale structure: scale dependent bias and abundance of virialized objects	foundation
+Barreira2020	2009.06622	v1	Barreira	2020	On the impact of galaxy bias uncertainties on primordial non-Gaussianity constraints	critique
+Nascimento2026	2607.18229	v1	Nascimento	2026	Breaking the $f_{\text{NL}}$--$b_φ$ degeneracy with the time evolution of tracer number counts	method
+Chudaykin2025	2512.04266	v1	Chudaykin	2025	Reanalyzing DESI DR1: 3. Constraints on Inflation from Galaxy Power Spectra & Bispectra	constraint
+Chen2025	2508.00066	v2	Chen	2025	Effective Theories of Redshift-Space Galaxy Peculiar Velocities	method
+Raikman2026	2609.15750	v1	Raikman	2026	Toward Precision Kinetic Sunyaev-Zel'dovich Cosmology---1. The Matter - Momentum Bispectrum at One-Loop Order	results
+Bakx2023	2303.15565	v1	Bakx	2023	Effective Field Theory of Intrinsic Alignments at One Loop Order: a Comparison to Dark Matter Simulations	method
+Bakx2025	2507.06818	v3	Bakx	2025	The Bispectrum of Intrinsic Alignments: II. Precision Comparison Against Dark Matter Simulations	results
+Catelan2000	astro-ph/0005470	v2	Catelan	2000	Intrinsic and Extrinsic Galaxy Alignment	foundation
+Kokron2026	2610.36027	v1	Kokron	2026	Field-level modeling of halo and galaxy alignments	method
+Bernardeau2015	1511.08641	v1	Bernardeau	2015	A Large Deviation Principle at play in Large-Scale Structure cosmology	method
+Uhlemann2016	1512.05793	v2	Uhlemann	2015	Back in the saddle: Large-deviation statistics of the cosmic log-density field	method
+VosGines2026	2607.06526	v1	Vos-Gines	2026	One with HI: Modelling HI Intensity Mapping one-point statistics including systematics	method
+Biselli2026	2605.13298	v1	Biselli	2026	Probing nonlinear structure formation beyond $Λ$CDM with the LSS bootstrap: a joint power spectrum and bispectrum analysis	results
+deBelsunce2026	2606.26234	v1	de Belsunce	2026	Lyman-Alpha Forest and its Cross-Correlation with High-Redshift Galaxies in Effective Field Theory at the Field Level	method
+ChenE2026	2603.22415	v2	Chen	2026	Primordial Non-Gaussianity and the Field-Level Cramer-Rao Bound	forecast
+Maus2024	2404.07272	v4	Maus	2024	A comparison of effective field theory models of redshift space galaxy power spectra for DESI 2024 and future surveys	critique
+Chudaykin2025a	2507.13433	v2	Chudaykin	2025	Reanalyzing DESI DR1: 1. $Λ$CDM Constraints from the Power Spectrum and Bispectrum	constraint
+Bonici2026	2607.02498	v2	Bonici	2026	Alleviating prior dependencies for DESI DR1 clustering fits through reparameterization	critique
+Tsedrik2025	2509.09562	v1	Tsedrik	2025	The simple way to measure evolving dark energy without prior-volume effects	method
+Wolney2026	2603.12431	v1	Wolney	2026	Standard Perturbation Theory for Interacting Dark Sector cosmologies I: Breakdown of Einstein de Sitter kernels	critique
+Ivanov2026	2606.30713	v2	Ivanov	2026	Galaxy Power Spectrum at Two-Loop Order: Implications for Weak Lensing Surveys and New Physics	results
+Tucci2026	2610.08908	v1	Tucci	2026	Full-Shape Analysis of the Redshift-Space Galaxy Trispectrum in the EFTofLSS	forecast
+Fidler2026	2605.05114	v2	Fidler	2026	Effective Field Theory of Large Scale Structure and Newtonian Motion Gauges	method
+Verdiani2025	2507.08792	v3	Verdiani	2025	The Effective Field Theory of Large Scale Structure for Mixed Dark Matter Scenarios	model

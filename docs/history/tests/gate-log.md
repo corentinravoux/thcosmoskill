@@ -144,3 +144,31 @@ contain the numbered display, and appendix labels (`Eq. A.1`) are read by
 all checkers. After the fixes: 118 equations, 85 exact, 7 contained,
 0 mismatch, 0 wrong-section, 26 unreadable. **A fresh draw (new seed) is
 due** before the atlas passes G2; it is run with the pilot's G2.
+
+## 2026-10-31 — stage 3, P1 pilot `thcosmo-lss-perturbation-theory` (G1 passed; G2 running)
+
+Run: about 85 of 90 research calls; SKILL.md 134 lines, formalism 156,
+models 125 (11 model cards), approximations 114, open questions 72,
+results 54; 49 sources, 12 subtopics (two thin: velocity statistics and
+momentum power spectrum; perturbative forward models). Four reference
+files are under the brief's 150 lines: dense paragraphs, to be judged at
+the owner's review (P2).
+
+- G1: `verify_sources` online 0 problems; `check_numbers` 0 without paper
+  and place (12 marked); `check_equations` empty; `check_transcription`
+  125 equations, 119 exact, 0 mismatch, 0 wrong-section, 6 unreadable;
+  `check_places` 41 statements, 30 found at place, 2 elsewhere, 9
+  unreadable; `check_shape` 0 problems; tests pass.
+- Generality: Bernardeau 14.5 %, Ivanov 13.9 %, Cabass 9.9 % of
+  citations; owner's papers 0 %.
+- Two printed slips reported by the run, confirmed by the coordinator at
+  source and recorded in `stale-claims.md`: arXiv:2212.08488 Eq. 32
+  (P₁₃ written with δ⁽²⁾ next to an F₃ integral) and Eq. 39 (UV limit
+  labelled q ≪ k).
+- Not read (from the run): arXiv:1611.09787 (no HTML rendering), Kaiser
+  1987, RPT and RegPT papers.
+- G2 sheet: `docs/history/tests/g2/thcosmo-lss-perturbation-theory-2026-10-31.md`
+  (90 items, seed 1031). Owner review sheet (P2):
+  `docs/history/tests/p2/thcosmo-lss-perturbation-theory-review.md`.
+- Atlas fresh draw: `docs/history/tests/g2/theoretical-cosmology-atlas-2026-10-31-redraw.md`
+  (seed 77), part 3 to be re-read.
