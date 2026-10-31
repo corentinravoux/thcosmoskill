@@ -46,8 +46,8 @@ FLAG = re.compile(r"\[(?:src|sec):\s*([^\]]+)\]")
 ARXIV = re.compile(r"arXiv:\s?(\d{4}\.\d{4,5}|[a-z][a-z\-]+(?:\.[A-Z]{2})?/\d{7})", re.I)
 SECTION = re.compile(r"\b(?:Sects?\.?|Sections?)\s*([A-Z]?\d+(?:\.\d+)*)|\b(?:App\.?|Appendix)\s*([A-Z](?:\.\d+)*)", re.I)
 CAPTIONED = re.compile(r"\b(Tables?|Tab\.|Figs?\.?|Figures?)\s*(\d+(?:\.\d+)*)", re.I)
-EQUATION = re.compile(r"(?<!after )\bEqs?\.?\s*\(?(\d+(?:\.\d+)*)\)?", re.I)
-AFTER_EQUATION = re.compile(r"after\s+Eq\.?\s*\(?(\d+(?:\.\d+)*)\)?", re.I)
+EQUATION = re.compile(r"(?<!after )\bEqs?\.?\s*\(?([A-Z]?\.?\d+(?:\.\d+)*)\)?")
+AFTER_EQUATION = re.compile(r"after\s+Eq\.?\s*\(?([A-Z]?\.?\d+(?:\.\d+)*)\)?", re.I)
 FOOTNOTE = re.compile(r"\bfootnote\s*(\d+)", re.I)
 WINDOW = 60
 

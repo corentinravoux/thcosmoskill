@@ -82,6 +82,13 @@ class TranscriptionTest(unittest.TestCase):
         records = check_transcription.check(self.skill([statement]), offline=True)
         self.assertEqual([(r["id"], r["class"]) for r in records], [("astro-ph/0112551", "exact")])
 
+    def test_section_must_contain_the_equation(self):
+        right = STATEMENTS["exact"].replace("[src: Eq. 45]", "[src: Sect. 2, Eq. 45]")
+        wrong = STATEMENTS["exact"].replace("[src: Eq. 45]", "[src: Sect. 5, Eq. 45]")
+        self.assertEqual([r["class"] for r in check_transcription.check(self.skill([right]), offline=True)], ["exact"])
+        self.assertEqual([r["class"] for r in check_transcription.check(self.skill([wrong]), offline=True)],
+                         ["wrong-section"])
+
     def test_normalise(self):
         self.assertEqual(latex_norm.normalise(r"{\bf q}_{1}\hskip 18.49988pt\,"), latex_norm.normalise(r"\mathbf{q}_1"))
         self.assertEqual(latex_norm.normalise(r"\displaystyle\dfrac{a}{b}."), latex_norm.normalise(r"\frac{a}{b}"))

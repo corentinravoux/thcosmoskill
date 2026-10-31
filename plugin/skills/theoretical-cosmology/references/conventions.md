@@ -40,14 +40,14 @@ conventions is listed only where a paper states it. Code conventions are
 | Reference work | Units | Planck mass written | Place read |
 |---|---|---|---|
 | Baumann, arXiv:0907.5424 | $c=\hbar\equiv 1$ | reduced, $M_{\rm pl}=(8\pi G)^{-1/2}$, often set to one | [src: Sect. "Notation", unnumbered display] |
-| Malik & Wands, arXiv:0809.4944 | $c=\hbar=1$ | reduced Planck mass written in lower case, $m_{\rm{Pl}}^{2}=(8\pi G)^{-1}$; upper-case $M_{\rm Pl}$ is the full Planck mass in the list of symbols | [src: App. A.1; Sect. 11, unnumbered display (inline)] |
+| Malik & Wands, arXiv:0809.4944 | $c=\hbar=1$ | reduced Planck mass written in lower case, $m_{\rm{Pl}}^{2}=(8\pi G)^{-1}$; upper-case $M_{\rm Pl}$ is the full Planck mass in the list of symbols | [src: List of Symbols; Sect. 11, unnumbered display (inline)] |
 | Copeland, Sami & Tsujikawa, arXiv:hep-th/0603057 | $c=\hbar=1$ | full Planck mass in lower case, $m_{\rm pl}=G^{-1/2}=1.22\times 10^{19}\,{\rm GeV}$; reduced in upper case, $M_{\rm pl}=(8\pi G)^{-1/2}=2.44\times 10^{18}\,{\rm GeV}$; $\kappa^{2}=8\pi G=8\pi m_{\rm pl}^{-2}=M_{\rm pl}^{-2}$ | [src: Sect. I, unnumbered display (inline)] |
 | Kinney, arXiv:0902.1529 | natural units | full Planck mass: $S_{\rm tot}=\int{d^{4}x\sqrt{-g}\left[\frac{m_{\rm Pl}^{2}}{16\pi}R+{\mathcal{L}}_{\phi}\right]}$ | [src: Eq. 86] |
 | Chen, arXiv:1002.1416 | — | reduced, $M_{\rm P}=(8\pi G)^{-1/2}$, set to one | [src: Sect. 4, unnumbered display (inline)] |
 | Martin et al., Encyclopaedia Inflationaris, arXiv:1303.3787 | — | reduced (Friedmann equation with $3M_{\rm Pl}^{2}$): $H^{2}=\frac{1}{3M_{\scriptscriptstyle{\mathrm{Pl}}}^{2}}\left[\frac{\dot{\phi}^{2}}{2}+V(\phi)\right]$ | [src: Sect. 3.1, Eq. 4] |
 | CLASS input file | — | scalar-field initial values "in units of the reduced planck mass m_Pl" | [doc: https://raw.githubusercontent.com/lesgourg/class_public/master/explanatory.ini, 2026-10-31] |
 
-- The same symbol means opposite things in two anchors: lower-case $m_{\rm Pl}$ is the reduced mass in Malik & Wands (arXiv:0809.4944, App. A.1 list of symbols) and the full mass in Copeland et al. (arXiv:hep-th/0603057, Sect. I) and Kinney (arXiv:0902.1529, Eq. 86). `[der]` A text must define its symbol.
+- The same symbol means opposite things in two anchors: lower-case $m_{\rm Pl}$ is the reduced mass in Malik & Wands (arXiv:0809.4944, List of Symbols) and the full mass in Copeland et al. (arXiv:hep-th/0603057, Sect. I) and Kinney (arXiv:0902.1529, Eq. 86). `[der]` A text must define its symbol.
 - Kinney's Friedmann equation with the full Planck mass is $H^{2}=\left(\frac{\dot{a}}{a}\right)^{2}=\frac{8\pi}{3m_{\rm Pl}^{2}}\left[\frac{1}{2}\dot{\phi}^{2}+V\left(\phi\right)\right]$ (arXiv:0902.1529) [src: Eq. 96].
 
 ### Time variable and the direction of e-folds
@@ -70,7 +70,7 @@ conventions is listed only where a paper states it. Code conventions are
 
 | Reference work | Curvature constant in the metric | Place read |
 |---|---|---|
-| Baumann, arXiv:0907.5424 | $k$ in ${\rm d}s^{2}=-{\rm d}t^{2}+a^{2}(t)\left(\frac{{\rm d}r^{2}}{1-kr^{2}}+r^{2}({\rm d}\theta^{2}+\sin^{2}\theta{\rm d}\phi^{2})\right)$ | [src: Sect. 1, Eq. 1] |
+| Baumann, arXiv:0907.5424 | $k$ in ${\rm d}s^{2}=-{\rm d}t^{2}+a^{2}(t)\left(\frac{{\rm d}r^{2}}{1-kr^{2}}+r^{2}({\rm d}\theta^{2}+\sin^{2}\theta{\rm d}\phi^{2})\right)$ | [src: Sect. 3.1, Eq. 1] |
 | Clifton et al., arXiv:1106.2476 | Gaussian curvature $\kappa$ in $ds_{(3)}^{2}=q_{ij}dx^{i}dx^{j}=\frac{dr^{2}}{1-\kappa r^{2}}+r^{2}d\theta^{2}+r^{2}\sin^{2}\theta d\phi^{2}$ | [src: Sect. 1, Eq. 8] |
 | CLASS input file | input parameter `Omega_k`, default 0 | [doc: https://raw.githubusercontent.com/lesgourg/class_public/master/explanatory.ini, 2026-10-31] |
 
@@ -85,7 +85,7 @@ conventions is listed only where a paper states it. Code conventions are
 | Reference work | Potential in $g_{00}$ | Potential in $g_{ij}$ | Line element as printed | Place read |
 |---|---|---|---|---|
 | Ma & Bertschinger, arXiv:astro-ph/9506072 | $\psi$ | $\phi$ | $ds^{2}=a^{2}(\tau)\left\{-(1+2\psi)d\tau^{2}+(1-2\phi)dx^{i}dx_{i}\right\}$ (conformal Newtonian gauge); the synchronous gauge with $h_{ij}$ is Eq. 1 | [src: Sect. 2, Eq. 5] |
-| Baumann, arXiv:0907.5424 | $\Phi$ | $\Psi$ | ${\rm d}s^{2}=-(1+2\Phi){\rm d}t^{2}+2a(t)B_{i}{\rm d}x^{i}{\rm d}t+a^{2}(t)[(1-2\Psi)\delta_{ij}+2E_{ij}]{\rm d}x^{i}{\rm d}x^{j}$ (cosmic time, any gauge) | [src: App. A.1.1, display labelled A.1; the unnumbered display of Sect. 9.2.1 prints $E_{ij}$ there without the factor of two] |
+| Baumann, arXiv:0907.5424 | $\Phi$ | $\Psi$ | ${\rm d}s^{2}=-(1+2\Phi){\rm d}t^{2}+2a(t)B_{i}{\rm d}x^{i}{\rm d}t+a^{2}(t)[(1-2\Psi)\delta_{ij}+2E_{ij}]{\rm d}x^{i}{\rm d}x^{j}$ (cosmic time, any gauge) | [src: App. A.1.1, Eq. A.1; the multi-row display of Sect. 9.2.1 prints $E_{ij}$ there without the factor of two] |
 | Clifton et al., arXiv:1106.2476 | $\Psi$ | $\Phi$ | $ds^{2}=a^{2}(\tau)\left[-(1+2\Psi)d\tau^{2}+(1-2\Phi)q_{ij}dx^{i}dx^{j}\right]$ (conformal Newtonian gauge, the review's default) | [src: Sect. 1, Eq. 7] |
 | Malik & Wands, arXiv:0809.4944 | $\phi$ | $\psi$ (with $B$, $E$) | $\delta g_{00}=-2a^{2}{\phi}$ and $C_{ij}=-\psi\;\delta_{ij}+E_{,ij}+F_{(i,j)}+\frac{1}{2}h_{ij}$, where $\delta g_{ij}$ is $2a^{2}C_{ij}$ | [src: Sect. 2.2.2, Eqs. 2.8, 2.12] |
 | CLASS input file | — | — | `gauge = synchronous` by default; `newtonian` selects the Newtonian/longitudinal gauge | [doc: https://raw.githubusercontent.com/lesgourg/class_public/master/explanatory.ini, 2026-10-31] |
@@ -124,7 +124,7 @@ Relations stated by the papers:
 | Baumann, arXiv:0907.5424 | ${\cal R}_{\bf k}=\int{\rm d}^{3}{\bf x}\,{\cal R}({\bf x})e^{-i{\bf k}\cdot{\bf x}}$ | $(2\pi)^{3}$ in front of the Dirac delta | $\Delta_{\cal R}^{2}(k)\equiv\frac{k^{3}}{2\pi^{2}}P_{\cal R}(k)$ | [src: Sect. "Notation", unnumbered display] |
 | Ivanov 2022, EFT of LSS review, arXiv:2212.08488 | $\delta({\bf k})=\int d^{3}x~\delta({\bf x})e^{-i{\bf k}\cdot{\bf x}}$, with $\int_{\bf k}\equiv\int\frac{d^{3}k}{(2\pi)^{3}}$ in the inverse | — | — | [src: footnote 1, unnumbered display (inline)] |
 | Bernardeau et al. 2002, PT review, arXiv:astro-ph/0112551 | $\tilde{A}({\bf k},\tau)=\int{{\rm d}^{3}{\bf x}\over{(2\pi)^{3}}}\exp(-i{\bf k}\cdot{\bf x})\ A({\bf x},\tau)$: the $(2\pi)^{3}$ sits in the forward transform | no $(2\pi)^{3}$ in front of the Dirac delta (Sect. 3.2.2) | see the list below | [src: Sect. 2.4.1, Eq. 36] |
-| CAMB 2.0.5 Python wrapper | k in ${\rm Mpc}^{-1}$ for the primordial spectrum; matter power by default in $({\rm Mpc}/h)^{3}$ as a function of $k/h$ (`hubble_units=True`, `k_hunit=True`) | | | [doc: https://raw.githubusercontent.com/cmbant/CAMB/master/camb/results.py, 2026-10-31] |
+| CAMB 2.0.5 Python wrapper | k in ${\rm Mpc}^{-1}$ for the primordial spectrum; matter power by default in $({\rm Mpc}/h)^{3}$ as a function of $k/h$ (`hubble_units=True`, `k_hunit=True`) | | | [doc: https://raw.githubusercontent.com/cmbant/CAMB/master/camb/initialpower.py for k in Mpc⁻¹, https://raw.githubusercontent.com/cmbant/CAMB/master/camb/results.py for the matter-power defaults, 2026-10-31] |
 
 - Bernardeau et al. (arXiv:astro-ph/0112551) define the dimensionless power as $\Delta=4\pi k^{3}P(k)$ [src: Sect. 1, notation table, unnumbered display].
 - Martin et al. (arXiv:1303.3787) define the dimensionless spectrum of the mode functions as $\mathcal{P}_{\zeta}(k)\equiv\frac{k^{3}}{2\pi^{2}}\left|\zeta_{\boldsymbol{k}}\right|^{2}$ [src: Sect. 3.1, Eq. 17].
@@ -178,7 +178,7 @@ Relations between Hubble and potential parameters stated by the papers:
 
 | Reference work | Variable expanded | Definition as printed | Place read |
 |---|---|---|---|
-| Komatsu 2010, CMB non-Gaussianity review, arXiv:1003.6097 | Bardeen's curvature perturbation Φ of the matter era, with $\zeta=\frac{5}{3}\Phi$ | $\Phi=\Phi_{L}+f_{\rm NL}^{\rm local}\Phi^{2}_{L}$ | [src: Sect. 3.3, unnumbered display (inline) after Eq. 25] |
+| Komatsu 2010, CMB non-Gaussianity review, arXiv:1003.6097 | Bardeen's curvature perturbation Φ of the matter era, with $\zeta=\frac{5}{3}\Phi$ [src: Sect. 3.3, inline, text after Eq. 23] | $\Phi=\Phi_{L}+f_{\rm NL}^{\rm local}\Phi^{2}_{L}$ [src: Sect. 3.3, inline, text after Eq. 25] | Sect. 3.3 |
 | Planck 2018 IX, arXiv:1905.05697 | Φ, three fifths of ζ on superhorizon scales (Sect. 2.1) | local bispectrum of Φ in Eq. 3; equilateral and orthogonal templates in Eqs. 1–2 | [src: Sects. 2.1–2.2, Eqs. 1–3] |
 | Baumann, arXiv:0907.5424 | ℛ | ${\cal R}({\bf x})={\cal R}_{g}({\bf x})+\frac{3}{5}f_{\rm NL}^{\cal R}\star{\cal R}_{g}^{2}({\bf x})$ | [src: Sect. 17.1.3, Eq. 273] |
 | Malik & Wands, arXiv:0809.4944 | ζ in their sign convention (Eq. 7.61) | $\zeta=\zeta_{1}+\frac{3}{5}f_{NL}\zeta_{1}^{2}+\frac{9}{25}g_{NL}\zeta_{1}^{3}+\ldots$ | [src: Sect. 11, Eq. 11.13] |
@@ -303,7 +303,7 @@ Background equation of state:
 | Planck 2018 X, arXiv:1807.06211 | primordial wavenumbers in Mpc⁻¹, pivot $k_{*}=0.05$ Mpc⁻¹ | [src: Table 1 caption; Sect. 2.1] |
 | Maus et al., arXiv:2404.07272 | PyBird's default derivative-suppression scale $k_{\rm M}$, set to 0.7 h Mpc⁻¹ | [src: Sect. 3.3] |
 | Sánchez 2020, arXiv:2002.07829 | argues against $h^{-1}$ Mpc units: the reference radius of $\sigma_{8}$, 8 $h^{-1}$ Mpc, depends on h; proposes $\sigma_{12}$, defined at 12 Mpc | [src: abstract; Sect. IV] |
-| CAMB 2.0.5 Python wrapper | matter power in $({\rm Mpc}/h)^{3}$ against $k/h$ and $\sigma_{R}$ with R in $h^{-1}$ Mpc by default (`hubble_units=True`) | [doc: https://raw.githubusercontent.com/cmbant/CAMB/master/camb/results.py, 2026-10-31] |
+| CAMB 2.0.5 Python wrapper | matter power in $({\rm Mpc}/h)^{3}$ against $k/h$ and $\sigma_{R}$ with R in $h^{-1}$ Mpc by default (`hubble_units=True`) | [doc: https://raw.githubusercontent.com/cmbant/CAMB/master/camb/initialpower.py for k in Mpc⁻¹, https://raw.githubusercontent.com/cmbant/CAMB/master/camb/results.py for the matter-power defaults, 2026-10-31] |
 | CLASS input file | maximum wavenumber passed either as `P_k_max_h/Mpc` (h/Mpc) or `P_k_max_1/Mpc` (1/Mpc); pivot in Mpc⁻¹ | [doc: https://raw.githubusercontent.com/lesgourg/class_public/master/explanatory.ini, 2026-10-31] |
 
 - Sánchez (arXiv:2002.07829) writes the inferred $\sigma_{8}$ as an average over the posterior of h, $\sigma_{8}=\int\sigma\left(R=\left(8/h\right)\,{\rm Mpc}\,|\,h\right)\mathcal{P}(h)\,{\rm d}h$ [src: Sect. IV, Eq. 6].

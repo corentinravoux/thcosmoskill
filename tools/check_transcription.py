@@ -12,6 +12,8 @@ and the transcribed `$...$` are both normalised by `latex_norm.normalise`
     contained    one is part of the other (one side, one line of a display,
                  or the transcription adds nothing beyond the source's text)
     mismatch     neither: a transcription error, or the wrong equation number
+    wrong-section  the equation matches, but the flag names a section or
+                 appendix that does not contain it
     unreadable   no HTML rendering, no equation of that number, an equation
                  printed without LaTeX, a PDF place, an unnumbered display
 
@@ -24,7 +26,7 @@ inline place, `[src: Sect. 3, inline, text after Eq. 12]` or `[src: text
 after Eq. 12]`, is searched among the inline equations that follow display
 12, up to the next numbered display (B10, B13).
 
-`mismatch` must be zero at gate G1; `contained` and `unreadable` are re-read
+`mismatch` and `wrong-section` must be zero at gate G1; `contained` and `unreadable` are re-read
 by a person at gate G2 (plan v2, section 3).
 
     python3 tools/check_transcription.py --skill thcosmo-lss-perturbation-theory
@@ -54,9 +56,9 @@ sys.path.insert(0, str(ROOT / SKILLS / "theoretical-cosmology" / "scripts"))
 import fetch_paper  # noqa: E402
 
 REPORTS = ROOT / "docs" / "history" / "tests" / "transcription"
-LABEL = r"\(?([A-Z]?\d+(?:\.\d+)*[a-z]?)\)?"
+LABEL = r"\(?([A-Z]?\.?\d+(?:\.\d+)*[a-z]?)\)?"
 EQ_REF = re.compile(rf"\bEq(?:s|uations?)?\.?\s*{LABEL}(?:\s*(?:[–\-]|to|and|,)\s*{LABEL})?")
-ROW_NUMBER = re.compile(r"\|\s*\(([A-Z]?\d+(?:\.\d+)*[a-z]?)\)\s*$")
+ROW_NUMBER = re.compile(r"\|\s*\(([A-Z]?\.?\d+(?:\.\d+)*[a-z]?)\)\s*$")
 ARXIV = re.compile(r"arXiv:\s?(\d{4}\.\d{4,5}|[a-z][a-z\-]+(?:\.[A-Z]{2})?/\d{7})", re.I)
 MIN_CONTAINED = 6
 
@@ -94,6 +96,9 @@ class Rendering(HTMLParser):
         self.tag = ""
         self.in_tag = False
         self.last = ""
+        self.heading: list[str] | None = None
+        self.section = ""
+        self.sections: dict[str, str] = {}
 
     def handle_starttag(self, tag, attrs):
         attributes = dict(attrs)
@@ -112,13 +117,20 @@ class Rendering(HTMLParser):
                 self.inline.setdefault(self.last, []).append(source)
         elif tag == "span" and self.table and "ltx_tag_equation" in classes:
             self.in_tag = True
+        elif tag in ("h2", "h3", "h4", "h5", "h6"):
+            self.heading = []
 
     def handle_data(self, data):
         if self.in_tag:
             self.tag += data
+        elif self.heading is not None:
+            self.heading.append(data)
 
     def handle_endtag(self, tag):
-        if tag == "span" and self.in_tag:
+        if tag in ("h2", "h3", "h4", "h5", "h6") and self.heading is not None:
+            self.section = " ".join("".join(self.heading).split())
+            self.heading = None
+        elif tag == "span" and self.in_tag:
             self.in_tag = False
         elif tag == "tr" and self.table:
             self.rows.append(("".join(self.row), self.tag.strip().strip("()")))
@@ -130,6 +142,7 @@ class Rendering(HTMLParser):
                     pending.append(latex)
                     if label:
                         self.displays[label] = "".join(pending).strip()
+                        self.sections[label] = self.section
                         self.inline.setdefault(label, [])
                         self.last = label
                         pending = []
@@ -176,6 +189,17 @@ def compare(transcribed: str, sources: list[str]) -> tuple[str, str]:
 
 
 FLAG = re.compile(r"\[(?:src|sec):[^\]]*\]")
+SECTION = re.compile(r"\b(?:Sects?\.?|Sections?|App\.?|Appendix)\s*([A-Z](?:\.\d+)*|\d+(?:\.\d+)*)(?![\w.]*\d)")
+
+
+def section_agrees(flag: str, heading: str) -> bool:
+    """True when the section or appendix a flag names contains the display (heading number prefix)."""
+    named = SECTION.search(flag)
+    number = re.match(r"([A-Z](?:\.\d+)*|\d+(?:\.\d+)*)\b", heading or "")
+    if not named or not number:
+        return True
+    want, have = named.group(1).split("."), number.group(1).split(".")
+    return have[:len(want)] == want
 AFTER = re.compile(rf"(?:text\s+)?after\s+Eq\.?\s*{LABEL}", re.I)
 
 
@@ -227,6 +251,10 @@ def check(skill: Path, offline: bool) -> list[dict]:
                         record["class"], record["source"] = compare(span, pool) if pool else ("unreadable", "")
                     else:
                         record["class"], record["source"] = compare(span, [rendering.displays.get(l, "") for l in wanted])
+                        heading = rendering.sections.get(wanted[0], "")
+                        if record["class"] != "unreadable" and not section_agrees(flag, heading):
+                            # The equation number is right but the section named is not (G2 of the atlas).
+                            record["class"], record["source"] = "wrong-section", f"display is in: {heading}"
                         groups.setdefault((ident, record["eq"]), []).append(record)
                 records.append(record)
             # Rows of one display copied as consecutive spans: compare them joined.
@@ -249,7 +277,8 @@ def main() -> int:
     parser.add_argument("--write", action="store_true", help=f"save the report under {REPORTS.relative_to(ROOT)}")
     args = parser.parse_args()
     records = check(ROOT / SKILLS / args.skill, args.offline)
-    counts = {name: sum(r["class"] == name for r in records) for name in ("exact", "contained", "mismatch", "unreadable")}
+    counts = {name: sum(r["class"] == name for r in records)
+              for name in ("exact", "contained", "mismatch", "wrong-section", "unreadable")}
     for record in records:
         if record["class"] != "exact":
             print(f"{record['class']:10} {record['file']}:{record['line']} arXiv:{record['id']} Eq. {record['eq']}\n"
@@ -263,7 +292,7 @@ def main() -> int:
         out.write_text("\t".join(columns) + "\n" + "".join(
             "\t".join(str(r[c]).replace("\t", " ") for c in columns) + "\n" for r in records), encoding="utf-8")
         print(f"wrote {out.relative_to(ROOT)}")
-    return 1 if counts["mismatch"] else 0
+    return 1 if counts["mismatch"] or counts["wrong-section"] else 0
 
 
 if __name__ == "__main__":

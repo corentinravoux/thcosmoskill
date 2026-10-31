@@ -98,3 +98,49 @@ Run: three subtopics of `thcosmo-primordial-correlators` staged in
   0 mismatch (the 6 are inline equations placed by section only, left to
   the G2 re-read). The staged text is kept as the start of the
   correlators build (stage 4).
+
+## 2026-10-31 — stage 3, P4 conventions atlas (G1 passed; G2 running)
+
+Run: 89 of 90 research calls; `conventions.md` 323 lines, 15 conventions,
+27 sources (`verify_sources` online: 0 problems).
+
+- G1: `check_numbers` and `check_equations` empty; `check_transcription`
+  118 equations, 82 exact, 7 contained, 0 mismatch, 29 unreadable;
+  `check_places` 4 statements, 3 found at place, 1 found elsewhere; tests
+  pass. Reports in `docs/history/tests/transcription/` and `places/`.
+- Generality: Baumann 2009 (arXiv:0907.5424) holds 16.4 % of citations,
+  above the 15 % flag. Kept: the TASI lectures are the convention
+  reference for several entries of the early-universe and perturbation
+  tables, and every such entry also cites at least one other work; the
+  owner's papers: 0 %.
+- Two printed slips reported by the run were confirmed by the coordinator
+  at source and recorded in `stale-claims.md`: arXiv:2212.08488 Eq. 28 (F₂
+  and G₂ dipole terms without the factor one half of arXiv:astro-ph/0112551
+  Eq. 45); arXiv:0907.5424 Sect. 9.2.3 ("equal") against Eq. 141 (−ζ).
+- Not verified (from the run): sign and definition of Ω_K; the bias review
+  arXiv:1611.09787 (no HTML rendering); Galileon bias operators; f_NL sign
+  conversion between ζ conventions; n_s and r beyond leading order;
+  isocurvature normalisation; α_i definitions and α_B conversion.
+- G2 sheet: `docs/history/tests/g2/theoretical-cosmology-atlas-2026-10-31.md`
+  (100 items, seed 31), re-read by a second session.
+
+## 2026-10-31 — stage 3, P4 atlas, G2 re-read (second session)
+
+Sheet: `docs/history/tests/g2/theoretical-cosmology-atlas-2026-10-31.md`,
+100 items. Part 1: 1 ok. Part 2: 39 ok, 1 wrong (a CAMB `[doc]` fact
+cited from `results.py` where the unit is stated in `initialpower.py`).
+Part 3 (draw of 59): every equation and equation number exact; one place
+label wrong (Baumann Eq. 1 placed in Sect. 1, it is in Sect. 3.1), so under
+the strict rule the draw has **1 error** and does not pass. Further
+place-label slips outside the draw: Sect. 9.2.1 display is numbered (119);
+Malik & Wands' Planck-mass entry is in the List of Symbols, not App. A.1;
+Komatsu's ζ = 5Φ/3 is before Eq. 24.
+
+Coordinator: all six corrected after re-reading each at source; per-
+equation flags where one row held equations from two places. Pattern
+(free-text section labels) fixed mechanically: `check_transcription`
+now classes `wrong-section` when the section or appendix named does not
+contain the numbered display, and appendix labels (`Eq. A.1`) are read by
+all checkers. After the fixes: 118 equations, 85 exact, 7 contained,
+0 mismatch, 0 wrong-section, 26 unreadable. **A fresh draw (new seed) is
+due** before the atlas passes G2; it is run with the pilot's G2.

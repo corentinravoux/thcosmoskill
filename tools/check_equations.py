@@ -50,7 +50,7 @@ import latex_norm  # noqa: E402
 
 BASELINE = Path(__file__).resolve().parent / "equations-baseline.tsv"
 NOTATION = "<!-- eq: notation -->"
-EQ_PLACE = re.compile(r"\bEqs?\.?\s*\(?\d|\bEquations?\s*\(?\d|unnumbered display|\binline\b", re.I)
+EQ_PLACE = re.compile(r"\bEqs?\.?\s*\(?[A-Z]?\.?\d|\bEquations?\s*\(?[A-Z]?\.?\d|unnumbered display|\binline\b", re.I)
 INEQUALITY = re.compile(r"<|>|\\leq?(?![A-Za-z])|\\geq?(?![A-Za-z])|\\ll(?![A-Za-z])|\\gg(?![A-Za-z])")
 BARE_NUMBER = re.compile(r"^[−\-]?\s*\d+(?:\.\d+)?\s*(?:[A-Za-z/\s]*)$")
 PASSING = {"ok", "doc", "notation"}
