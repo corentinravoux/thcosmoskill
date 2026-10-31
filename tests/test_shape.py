@@ -18,6 +18,7 @@ class ShapeTest(unittest.TestCase):
         skill = Path(tmp) / "thcosmo-shape"
         shutil.copytree(FIXTURE, skill)
         (skill / "SKILL.fixture.md").rename(skill / "SKILL.md")
+        (skill / "deep").mkdir(exist_ok=True)  # git keeps no empty folder
         return skill
 
     def test_every_built_domain_has_the_shape(self):
