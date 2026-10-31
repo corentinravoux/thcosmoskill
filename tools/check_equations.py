@@ -15,8 +15,9 @@ row, a list item or a paragraph, as in `check_numbers.py`; a display block
 belongs to the paragraph it sits in. Each statement holding at least one
 equation is classed
 
-    ok          an identifier, and an equation place (`Eq. n`, `Eqs. n–m`)
-                or the words "unnumbered display"
+    ok          an identifier, and an equation place (`Eq. n`, `Eqs. n–m`),
+                the words "unnumbered display", or an inline place
+                (`[src: Sect. 3, inline, text after Eq. 12]`)
     doc         a valid `[doc: …]` flag: a code fact, such as a default setting
     notation    carries `<!-- eq: notation -->` (counted, passes)
     no-eq       an identifier and a place, but not an equation place
@@ -49,7 +50,7 @@ import latex_norm  # noqa: E402
 
 BASELINE = Path(__file__).resolve().parent / "equations-baseline.tsv"
 NOTATION = "<!-- eq: notation -->"
-EQ_PLACE = re.compile(r"\bEqs?\.?\s*\(?\d|\bEquations?\s*\(?\d|unnumbered display", re.I)
+EQ_PLACE = re.compile(r"\bEqs?\.?\s*\(?\d|\bEquations?\s*\(?\d|unnumbered display|\binline\b", re.I)
 INEQUALITY = re.compile(r"<|>|\\leq?(?![A-Za-z])|\\geq?(?![A-Za-z])|\\ll(?![A-Za-z])|\\gg(?![A-Za-z])")
 BARE_NUMBER = re.compile(r"^[−\-]?\s*\d+(?:\.\d+)?\s*(?:[A-Za-z/\s]*)$")
 PASSING = {"ok", "doc", "notation"}

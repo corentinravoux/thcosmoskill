@@ -75,19 +75,50 @@ which question. Load one reference at a time.
 - **Example**: the second-order density kernel in an Einstein–de Sitter
   universe, $F_{2}({\bf q}_{1},{\bf q}_{2})=\frac{5}{7}+\frac{1}{2}\frac{{\bf q}_{1}\cdot{\bf q}_{2}}{q_{1}q_{2}}(\frac{q_{1}}{q_{2}}+\frac{q_{2}}{q_{1}})+\frac{2}{7}\frac{({\bf q}_{1}\cdot{\bf q}_{2})^{2}}{q_{1}^{2}q_{2}^{2}}$
   (Bernardeau et al. 2002, arXiv:astro-ph/0112551) [src: Eq. 45].
-- **Unnumbered equations**: `[src: Sect. 3.2, unnumbered display after
-  Eq. 12]`; a person re-reads every one at the gate.
+- **Places other than a numbered display** (hep-th probe, 2026-10-31):
+  - an unnumbered display: `[src: Sect. 3.2, unnumbered display after
+    Eq. 12]`;
+  - an equation in the text: `[src: Sect. 3.2, inline, text after Eq. 12]`
+    (the checker searches the inline mathematics after that display);
+  - a paper without sections (a letter): `[src: text after Eq. 3]`,
+    `[src: footnote 2]`;
+  - a table or a footnote inside a table: `[src: Table 1.3]`,
+    `[src: Table 1.3, footnote 6]`.
+  A person re-reads at the gate every equation the checker cannot match.
+- **A display of several rows or cells** is copied whole, rows and cells
+  joined in reading order, in one `$…$`, or as consecutive `$…$` spans in
+  one statement; never one row's left side with another row's right side.
+- **A parameter set to a value** (`$s=0$`, `$d=1$`) is notation, not an
+  equation; **a measured value with its error** (`$x=0.9\pm0.1$`) is a
+  number, sourced like any number.
+- **One statement, several papers**: each equation is attributed to the
+  paper cited nearest after it; put each paper's citation and flag right
+  after the equations taken from it (in a model card, one sub-item per
+  paper if needed).
 - **Versions**: `sources.tsv` records the arXiv version read (`v2`); places
   refer to that version. `verify_sources.py` warns when arXiv holds a newer
   one.
-- **Papers without an HTML rendering**: a maintainer may read the PDF; the
-  place is written `[src: Eq. 12 (PDF v2)]`, and the case is logged.
-- **Textbooks**: content found only in a textbook needs a readable source
-  that cites it, flagged `[sec: <place>]`; otherwise it goes under "Not
-  verified".
-- **Errata**: when a later version or an erratum corrects a source, cite
-  the corrected version and record the slip in the hub's
-  `references/stale-claims.md`.
+- **Papers without an HTML rendering, or with a rendering that carries no
+  equation numbers** (`fetch_paper.py` says "none tagged", as for many
+  plain-TeX papers of 1995–2005): copy the equation from a readable source
+  that reproduces it with a number, flagged `[sec: <place>]`, and log the
+  primary paper; a maintainer may read the PDF and write
+  `[src: Eq. 12 (PDF v2)]`.
+- **Textbooks and papers older than arXiv**: content found only there
+  needs a readable source that cites it, flagged `[sec: <place>]`;
+  otherwise it goes under "Not verified". A `doi:` row is written only when
+  a tool returned the DOI (for example the INSPIRE reference list).
+- **Errata and slips**: when a later version or an erratum corrects a
+  source, cite the corrected version and record the slip in the hub's
+  `references/stale-claims.md`. An apparent slip with no published
+  correction (a missing square, a mismatched index) is copied as printed,
+  described in words in the same statement ("as printed; the text below
+  Eq. 4.1 sets …"), never corrected in an equation, and recorded in
+  `stale-claims.md` with "none published".
+- **Versions**: `fetch_paper.py --abstract` prints the latest arXiv
+  version; the header of `--grep`, `--section` and `--outline` prints the
+  version the rendering was built from. Record the version read.
+- **`[der]`** covers its own sentence only.
 - **Conversions between conventions**: only relations a paper states,
   flagged `[src]` and collected in the hub's conventions atlas; no
   conversion by an agent in the files.

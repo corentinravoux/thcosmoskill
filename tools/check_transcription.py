@@ -13,7 +13,16 @@ and the transcribed `$...$` are both normalised by `latex_norm.normalise`
                  or the transcription adds nothing beyond the source's text)
     mismatch     neither: a transcription error, or the wrong equation number
     unreadable   no HTML rendering, no equation of that number, an equation
-                 printed without LaTeX, a PDF place, or several papers cited
+                 printed without LaTeX, a PDF place, an unnumbered display
+
+Each equation is attributed to the paper cited nearest after it in the
+statement (else the nearest before), and to the flag that follows it, so a
+statement may cite several papers (P0 probe, B14). A display of several rows
+or cells is compared with its rows and cells joined in reading order, and the
+consecutive math spans of a statement are also compared joined (B6, B15). An
+inline place, `[src: Sect. 3, inline, text after Eq. 12]` or `[src: text
+after Eq. 12]`, is searched among the inline equations that follow display
+12, up to the next numbered display (B10, B13).
 
 `mismatch` must be zero at gate G1; `contained` and `unreadable` are re-read
 by a person at gate G2 (plan v2, section 3).
@@ -31,6 +40,7 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -65,24 +75,72 @@ def labels(statement: str) -> list[str]:
     return list(dict.fromkeys(found))
 
 
-def paper_equations(blocks) -> dict[str, str]:
-    """{label: LaTeX} of the numbered equations of a parsed rendering; rows of one display are joined."""
-    equations, pending = {}, []
-    for kind, _, text in blocks:
-        if kind != "text" or not text.startswith("|"):
-            pending = []
-            continue
-        number = ROW_NUMBER.search(text)
-        body = ROW_NUMBER.sub("", text) if number else text
-        cells = [cell.strip() for cell in body.strip().strip("|").split(" | ") if cell.strip()]
-        pending.append(" ".join(cells))
-        if number:
-            equations[number.group(1)] = " ".join(part for part in pending if part).strip()
-            pending = []
-    return equations
+class Rendering(HTMLParser):
+    """Numbered displays of a LaTeXML rendering, and the inline equations that follow each.
+
+    `displays[label]` is the LaTeX of a numbered display, its rows and cells
+    joined in reading order (unnumbered rows before a numbered one belong to
+    it); `inline[label]` lists the inline equations after display `label` up to
+    the next numbered display; `tagged` counts numbered displays.
+    """
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.displays: dict[str, str] = {}
+        self.inline: dict[str, list[str]] = {"": []}
+        self.table = 0
+        self.rows: list[tuple[str, str]] = []
+        self.row: list[str] = []
+        self.tag = ""
+        self.in_tag = False
+        self.last = ""
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        classes = attributes.get("class") or ""
+        if tag == "table" and ("ltx_eqn_table" in classes or "ltx_equation" in classes):
+            self.table += 1
+            if self.table == 1:
+                self.rows = []
+        elif tag == "tr" and self.table:
+            self.row, self.tag = [], ""
+        elif tag == "math":
+            source = attributes.get("alttext") or ""
+            if self.table:
+                self.row.append(source)
+            elif source:
+                self.inline.setdefault(self.last, []).append(source)
+        elif tag == "span" and self.table and "ltx_tag_equation" in classes:
+            self.in_tag = True
+
+    def handle_data(self, data):
+        if self.in_tag:
+            self.tag += data
+
+    def handle_endtag(self, tag):
+        if tag == "span" and self.in_tag:
+            self.in_tag = False
+        elif tag == "tr" and self.table:
+            self.rows.append(("".join(self.row), self.tag.strip().strip("()")))
+        elif tag == "table" and self.table:
+            self.table -= 1
+            if self.table == 0:
+                pending = []
+                for latex, label in self.rows:
+                    pending.append(latex)
+                    if label:
+                        self.displays[label] = "".join(pending).strip()
+                        self.inline.setdefault(label, [])
+                        self.last = label
+                        pending = []
+
+    @property
+    def tagged(self) -> int:
+        return len(self.displays)
 
 
-def load(ident: str, offline: bool, cache: dict) -> dict[str, str] | None:
+def load(ident: str, offline: bool, cache: dict):
+    """The parsed rendering of a paper, or None when it cannot be read."""
     if ident in cache:
         return cache[ident]
     stored = fetch_paper.CACHE / (ident.replace("/", "_") + ".html")
@@ -94,8 +152,10 @@ def load(ident: str, offline: bool, cache: dict) -> dict[str, str] | None:
     except SystemExit:
         cache[ident] = None
         return None
-    cache[ident] = paper_equations(fetch_paper.parse(document))
-    return cache[ident]
+    rendering = Rendering()
+    rendering.feed(document)
+    cache[ident] = rendering
+    return rendering
 
 
 def compare(transcribed: str, sources: list[str]) -> tuple[str, str]:
@@ -115,30 +175,70 @@ def compare(transcribed: str, sources: list[str]) -> tuple[str, str]:
     return "mismatch", best
 
 
+FLAG = re.compile(r"\[(?:src|sec):[^\]]*\]")
+AFTER = re.compile(rf"(?:text\s+)?after\s+Eq\.?\s*{LABEL}", re.I)
+
+
+def attribute(text: str, start: int, end: int) -> tuple[str, str]:
+    """The paper and the flag of a math span at text[start:end]: nearest after, else nearest before."""
+    ids = [(m.start(), m.group(1)) for m in ARXIV.finditer(text)]
+    flags = [(m.start(), m.group(0)) for m in FLAG.finditer(text)]
+    after_ids = [i for pos, i in ids if pos >= end]
+    before_ids = [i for pos, i in ids if pos < start]
+    after_flags = [f for pos, f in flags if pos >= end]
+    before_flags = [f for pos, f in flags if pos < start]
+    ident = after_ids[0] if after_ids else (before_ids[-1] if before_ids else "")
+    flag = after_flags[0] if after_flags else (before_flags[-1] if before_flags else "")
+    return ident, flag
+
+
 def check(skill: Path, offline: bool) -> list[dict]:
     papers: dict = {}
     records = []
     for path in check_numbers.skill_files(skill):
         for line, _, statement, caption in check_numbers.statements(path.read_text(encoding="utf-8")):
-            spans = check_equations.equations(statement)
-            if not spans or check_equations.NOTATION in statement:
+            if check_equations.NOTATION in statement:
                 continue
-            context = re.sub(r"`[^`]*`", " ", statement + " " + caption)
-            idents = list(dict.fromkeys(match.group(1) for match in ARXIV.finditer(context)))
-            wanted = labels(latex_norm.without_math(context))
+            text = re.sub(r"`[^`]*`", lambda m: " " * len(m.group(0)), statement)
+            spans = [(m.start(), m.end(), next(g for g in m.groups() if g is not None))
+                     for m in latex_norm.MATH.finditer(text)]
+            spans = [s for s in spans if s[2] in check_equations.equations(statement)]
+            if not spans:
+                continue
             where = str(path.relative_to(ROOT) if path.is_relative_to(ROOT) else path)
-            for span in spans:
-                record = {"file": where, "line": line, "id": ",".join(idents), "eq": ",".join(wanted),
-                          "transcribed": span, "source": ""}
-                if len(idents) != 1 or not wanted or "PDF" in context or "unnumbered display" in context:
+            caption_ids = [m.group(1) for m in ARXIV.finditer(caption)]
+            groups: dict[tuple[str, str], list[dict]] = {}
+            for start, end, span in spans:
+                ident, flag = attribute(text, start, end)
+                ident = ident or (caption_ids[0] if len(caption_ids) == 1 else "")
+                flag = flag or caption
+                record = {"file": where, "line": line, "id": ident, "eq": "", "transcribed": span, "source": ""}
+                after = AFTER.search(flag)
+                wanted = labels(latex_norm.without_math(flag))
+                record["eq"] = after.group(1) if after else ",".join(wanted)
+                if not ident or "PDF" in flag or "unnumbered display" in flag or not (after or wanted):
                     record["class"] = "unreadable"
                 else:
-                    equations = load(idents[0], offline, papers)
-                    if equations is None:
+                    rendering = load(ident, offline, papers)
+                    if rendering is None:
                         record["class"] = "unreadable"
+                    elif after or re.search(r"\binline\b", flag):
+                        pool = rendering.inline.get(after.group(1) if after else "", [])
+                        record["class"], record["source"] = compare(span, pool) if pool else ("unreadable", "")
                     else:
-                        record["class"], record["source"] = compare(span, [equations.get(label, "") for label in wanted])
+                        record["class"], record["source"] = compare(span, [rendering.displays.get(l, "") for l in wanted])
+                        groups.setdefault((ident, record["eq"]), []).append(record)
                 records.append(record)
+            # Rows of one display copied as consecutive spans: compare them joined.
+            for (ident, eq), members in groups.items():
+                if len(members) > 1 and any(m["class"] != "exact" for m in members):
+                    joined = "".join(m["transcribed"] for m in members)
+                    rendering = papers.get(ident)
+                    sources = [rendering.displays.get(l, "") for l in eq.split(",")] if rendering else []
+                    verdict, source = compare(joined, sources)
+                    if verdict in ("exact", "contained"):
+                        for m in members:
+                            m["class"], m["source"] = verdict, source
     return records
 
 

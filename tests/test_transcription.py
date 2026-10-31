@@ -25,7 +25,7 @@ STATEMENTS = {
                 r"(\frac{q_{1}}{q_{2}}+\frac{q_{2}}{q_{1}})+\frac{2}{7}\frac{({\bf q}_{1}\cdot{\bf q}_{2})^{2}}{q_{1}^{2}q_{2}^{2}}$ "
                 + B + " [src: Eq. 45]",
     # an equation the rendering prints without LaTeX: unreadable
-    "unreadable": r"$a = b$ " + B + " [src: Eq. 85]",
+    "unreadable": r"$a = b + c$ " + B + " [src: Eq. 85]",
 }
 
 
@@ -61,16 +61,26 @@ class TranscriptionTest(unittest.TestCase):
         self.assertEqual([r["class"] for r in check_transcription.check(self.skill([statement]), offline=True)], ["exact"])
 
     def test_paper_not_cached_offline_is_unreadable(self):
-        statement = r"$x = y$ (arXiv:1234.56789) [src: Eq. 2]"
+        statement = r"$x = y + z$ (arXiv:1234.56789) [src: Eq. 2]"
         self.assertEqual([r["class"] for r in check_transcription.check(self.skill([statement]), offline=True)],
                          ["unreadable"])
 
     def test_unnumbered_and_pdf_places_go_to_a_person(self):
         for place in ("[src: Sect. 3.2, unnumbered display after Eq. 45]", "[src: Eq. 45 (PDF v2)]"):
             with self.subTest(place=place):
-                statement = r"$x = y$ " + B + " " + place
+                statement = r"$x = y + z$ " + B + " " + place
                 self.assertEqual([r["class"] for r in check_transcription.check(self.skill([statement]), offline=True)],
                                  ["unreadable"])
+
+    def test_rows_and_wrappers(self):
+        self.assertEqual(latex_norm.normalise(r"\framebox{$\displaystyle a=b$}\,."), latex_norm.normalise("a=b"))
+        self.assertEqual(latex_norm.normalise(r"\boxed{\begin{aligned} a&=b\\ &+c\end{aligned}}~."),
+                         latex_norm.normalise("a=b+c"))
+
+    def test_attribution_to_the_nearest_paper(self):
+        statement = (STATEMENTS["exact"] + "; it is reproduced in later reviews (arXiv:0907.5424, Sect. 2).")
+        records = check_transcription.check(self.skill([statement]), offline=True)
+        self.assertEqual([(r["id"], r["class"]) for r in records], [("astro-ph/0112551", "exact")])
 
     def test_normalise(self):
         self.assertEqual(latex_norm.normalise(r"{\bf q}_{1}\hskip 18.49988pt\,"), latex_norm.normalise(r"\mathbf{q}_1"))

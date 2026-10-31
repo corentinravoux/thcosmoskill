@@ -263,7 +263,7 @@ def check_skill(skill: Path, offline: bool, warnings: list[str] | None = None) -
 
 def newer(recorded: str, latest: str) -> bool:
     """True when arXiv's latest version is after the one recorded."""
-    if not (recorded.startswith("v") and latest.startswith("v")):
+    if not (re.fullmatch(r"v\d+", recorded) and re.fullmatch(r"v\d+", latest)):
         return False
     return int(latest[1:]) > int(recorded[1:])
 

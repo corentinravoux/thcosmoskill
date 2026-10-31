@@ -10,10 +10,12 @@ abstract comes from the arXiv API and exists for every paper.
     fetch_paper.py 2503.14739 2607.27410 --abstract     several at once
     fetch_paper.py 2503.14739 --outline
     fetch_paper.py 2503.14739 --section "Results"
+    fetch_paper.py 2503.14739 --section "Sect. 4"       the paper's own Section 4
     fetch_paper.py 2503.14739 --grep "8.632" --context 2
     fetch_paper.py 2503.14739 --grep "D_H" --grep "r_d" --max 5
 
-`--section` takes a number from the outline or part of a title. `--grep`
+`--section` takes a number from the outline, the paper's own section number
+written `Sect. 4` or `4.`, or part of a title. `--grep`
 takes plain text, not a pattern; several are combined with "and" on the same
 paragraph. Mathematics is printed from the rendering's LaTeX annotations,
 so a number written in a formula is found as it appears in the source.
@@ -65,9 +67,12 @@ class Paper(HTMLParser):
         self.math = 0
         self.heading = 0
         self.annotation = False
+        self.note_mark = 0
+        self.note_tag = False
 
     def flush(self, kind="text", level=0):
         text = " ".join("".join(self.buffer).split())
+        text = re.sub(r"\[fn ([^\]]*)\](?:\s*\[fn \1\])+", r"[fn \1]", text)
         self.buffer = []
         if text:
             self.blocks.append((kind, level, text))
@@ -90,8 +95,23 @@ class Paper(HTMLParser):
             self.flush()
         elif tag in ("td", "th"):
             self.buffer.append(" | ")
+        elif tag == "span" and "ltx_tag_note" in (attributes.get("class") or ""):
+            self.skip += 1
+            self.note_tag = True
+        elif tag in ("sup", "span") and "ltx_note_mark" in (attributes.get("class") or ""):
+            # Footnote marks print as [fn n], once (P0 probe, B11).
+            self.note_mark += 1
+            self.buffer.append(" [fn ")
 
     def handle_endtag(self, tag):
+        if tag == "span" and self.note_tag:
+            self.note_tag = False
+            self.skip = max(0, self.skip - 1)
+            return
+        if tag in ("sup", "span") and self.note_mark:
+            self.note_mark -= 1
+            self.buffer.append("] ")
+            return
         if tag in SKIP:
             self.skip = max(0, self.skip - 1)
         elif tag == "math":
@@ -191,12 +211,14 @@ def abstracts(idents: list[str]) -> int:
         title = entry.findtext("a:title", default="", namespaces=ATOM)
         if "/abs/" not in link or title.strip() == "Error":
             continue
-        ident = re.sub(r"v\d+$", "", link.split("/abs/")[1])
+        versioned = link.split("/abs/")[1]
+        ident = re.sub(r"v\d+$", "", versioned)
+        version = re.search(r"(v\d+)$", versioned)
         seen.add(ident.lower())
         author = entry.find("a:author", ATOM)
         first = author.findtext("a:name", default="?", namespaces=ATOM).strip() if author is not None else "?"
         text = " ".join(entry.findtext("a:summary", default="", namespaces=ATOM).split())
-        print(f"### {ident} | {first} | {' '.join(title.split())}\n{text}\n")
+        print(f"### {ident} | {first} | {' '.join(title.split())} | {version.group(1) if version else 'v?'}\n{text}\n")
     missing = [ident for ident in idents if re.sub(r"v\d+$", "", ident).lower() not in seen]
     for ident in missing:
         print(f"### {ident} | NOT FOUND on arXiv\n")
@@ -211,7 +233,13 @@ def outline(blocks) -> list[tuple[int, int, str]]:
 def section(blocks, wanted: str) -> list[tuple[str, int, str]]:
     heads = outline(blocks)
     chosen = None
-    if wanted.isdigit() and 1 <= int(wanted) <= len(heads):
+    own = re.fullmatch(r"(?:Sect(?:ion)?\.?\s*)(\S+?)\.?|(\d+(?:\.\d+)*)\.", wanted.strip())
+    if own:
+        # "Sect. 4", "Section 4.2" or "4.": the paper's own number (P0 probe, B3); a bare "4" is the outline entry.
+        number = own.group(1) or own.group(2)
+        matches = [n for n, (_, _, title) in enumerate(heads) if re.match(rf"{re.escape(number)}(?:\.?\s)", title + " ")]
+        chosen = matches[0] if matches else None
+    elif wanted.isdigit() and 1 <= int(wanted) <= len(heads):
         chosen = int(wanted) - 1
     else:
         folded = wanted.lower()
@@ -259,7 +287,12 @@ def main() -> int:
         return 2
     blocks = parse(document)
     title = next((text for kind, level, text in blocks if kind == "heading" and level == 1), "")
-    print(f"### {args.paper} | {title} | read from {origin}")
+    base = re.sub(r"v\d+$", "", args.paper)
+    version = re.search(rf"{re.escape(base)}(v\d+)", document)
+    numbered = len(re.findall(r"ltx_tag_equation", document))
+    displays = len(re.findall(r"ltx_eqn_table|class=\"ltx_equation\b", document))
+    print(f"### {args.paper} | {title} | read from {origin} | rendering of {version.group(1) if version else 'version unknown'}"
+          f" | {numbered} numbered displays" + (" (none tagged: cite equation numbers from the PDF)" if displays and not numbered else ""))
 
     out: list[str] = []
     if args.outline or not (args.section or args.grep):

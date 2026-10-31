@@ -45,8 +45,10 @@ REPORTS = ROOT / "docs" / "history" / "tests" / "places"
 FLAG = re.compile(r"\[(?:src|sec):\s*([^\]]+)\]")
 ARXIV = re.compile(r"arXiv:\s?(\d{4}\.\d{4,5}|[a-z][a-z\-]+(?:\.[A-Z]{2})?/\d{7})", re.I)
 SECTION = re.compile(r"\b(?:Sects?\.?|Sections?)\s*([A-Z]?\d+(?:\.\d+)*)|\b(?:App\.?|Appendix)\s*([A-Z](?:\.\d+)*)", re.I)
-CAPTIONED = re.compile(r"\b(Tables?|Tab\.|Figs?\.?|Figures?)\s*(\d+)", re.I)
-EQUATION = re.compile(r"\bEqs?\.?\s*\(?(\d+(?:\.\d+)*)\)?", re.I)
+CAPTIONED = re.compile(r"\b(Tables?|Tab\.|Figs?\.?|Figures?)\s*(\d+(?:\.\d+)*)", re.I)
+EQUATION = re.compile(r"(?<!after )\bEqs?\.?\s*\(?(\d+(?:\.\d+)*)\)?", re.I)
+AFTER_EQUATION = re.compile(r"after\s+Eq\.?\s*\(?(\d+(?:\.\d+)*)\)?", re.I)
+FOOTNOTE = re.compile(r"\bfootnote\s*(\d+)", re.I)
 WINDOW = 60
 
 
@@ -62,6 +64,11 @@ def places(statement: str) -> list[tuple[str, str]]:
             found.append(("table" if match.group(1).lower().startswith("tab") else "figure", match.group(2)))
         for match in EQUATION.finditer(flag):
             found.append(("equation", match.group(1)))
+        # Papers without sections (letters): the text after an equation, a footnote (P0 probe, B7).
+        for match in AFTER_EQUATION.finditer(flag):
+            found.append(("after-equation", match.group(1)))
+        for match in FOOTNOTE.finditer(flag):
+            found.append(("footnote", match.group(1)))
     return found
 
 
@@ -78,7 +85,7 @@ def texts_at(place: tuple[str, str], blocks, abstract: str | None) -> list[str]:
                 if any(section == w or section.startswith(w + ".") for w in wanted)]
     if kind in ("table", "figure"):
         word = "Table" if kind == "table" else "(?:Figure|Fig\\.)"
-        caption = re.compile(rf"^(?:{word})\s*{label}\b", re.I)
+        caption = re.compile(rf"^(?:{word})\s*{re.escape(label)}\b", re.I)
         out = []
         for index, (_, text) in enumerate(blocks):
             if caption.match(text):
@@ -91,6 +98,20 @@ def texts_at(place: tuple[str, str], blocks, abstract: str | None) -> list[str]:
             if text.startswith("|") and row.search(text):
                 out += [t for _, t in blocks[max(0, index - 3):index + 4]]
         return out
+    if kind == "after-equation":
+        row = re.compile(rf"\|\s*\({re.escape(label)}\)\s*$")
+        numbered = re.compile(r"\|\s*\([A-Z]?\d+(?:\.\d+)*[a-z]?\)\s*$")
+        for index, (_, text) in enumerate(blocks):
+            if text.startswith("|") and row.search(text):
+                out = []
+                for _, following in blocks[index + 1:]:
+                    if following.startswith("|") and numbered.search(following):
+                        break
+                    out.append(following)
+                return out
+        return []
+    if kind == "footnote":
+        return [text for _, text in blocks]
     return []
 
 

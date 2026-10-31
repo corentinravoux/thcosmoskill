@@ -1,1 +1,28 @@
 key	id	version	first_author	year	title	role
+Baumann2009	0907.5424	v2	Baumann	2009	TASI Lectures on Inflation	lectures
+Malik2008	0809.4944	v2	Malik	2008	Cosmological perturbations	review
+Clifton2011	1106.2476	v3	Clifton	2011	Modified Gravity and Cosmology	review
+Copeland2006	hep-th/0603057	v3	Copeland	2006	Dynamics of dark energy	review
+Chen2010	1002.1416	v3	Chen	2010	Primordial Non-Gaussianities from Inflation Models	review
+Kinney2009	0902.1529	v2	Kinney	2009	TASI Lectures on Inflation	lectures
+Martin2013	1303.3787	v5	Martin	2013	Encyclopaedia Inflationaris	review
+Ma1995	astro-ph/9506072	v1	Ma	1995	Cosmological Perturbation Theory in the Synchronous and Conformal Newtonian Gauges	foundation
+Riotto2002	hep-ph/0210162	v2	Riotto	2002	Inflation and the Theory of Cosmological Perturbations	lectures
+Planck2018IX	1905.05697	v1	Planck Collaboration	2019	Planck 2018 results. IX. Constraints on primordial non-Gaussianity	constraint
+Komatsu2010	1003.6097	v2	Komatsu	2010	Hunting for Primordial Non-Gaussianity in the Cosmic Microwave Background	review
+Ivanov2022	2212.08488	v1	Ivanov	2022	Effective Field Theory for Large Scale Structure	review
+Bernardeau2001	astro-ph/0112551	v1	Bernardeau	2001	Large-Scale Structure of the Universe and Cosmological Perturbation Theory	review
+Planck2018X	1807.06211	v2	Planck Collaboration	2018	Planck 2018 results. X. Constraints on inflation	constraint
+BICEPKeck2021	2110.00483	v1	BICEP/Keck Collaboration	2021	BICEP / Keck XIII: Improved Constraints on Primordial Gravitational Waves using Planck, WMAP, and BICEP/Keck Observations through the 2018 Observing Season	constraint
+Maus2024	2404.07272	v4	Maus	2024	A comparison of effective field theory models of redshift space galaxy power spectra for DESI 2024 and future surveys	method
+Chudaykin2025	2507.13433	v2	Chudaykin	2025	Reanalyzing DESI DR1: 1. $Λ$CDM Constraints from the Power Spectrum and Bispectrum	results
+Gubitosi2012	1210.0201	v2	Gubitosi	2012	The Effective Field Theory of Dark Energy	foundation
+Planck2015XIV	1502.01590	v2	Planck Collaboration	2015	Planck 2015 results. XIV. Dark energy and modified gravity	constraint
+Bellini2014	1404.3713	v3	Bellini	2014	Maximal freedom at minimum cost: linear large-scale structure in general modifications of gravity	foundation
+Zumalacarregui2016	1605.06102	v2	Zumalacarregui	2016	hi_class: Horndeski in the Cosmic Linear Anisotropy Solving System	code
+Kobayashi2019	1901.07183	v2	Kobayashi	2019	Horndeski theory and beyond: a review	review
+Linder2002	astro-ph/0208512	v1	Linder	2002	Exploring the Expansion History of the Universe	foundation
+Sanchez2020	2002.07829	v2	Sanchez	2020	Arguments against using $h^{-1}{\rm Mpc}$ units in observational cosmology	critique
+Wolney2026	2603.12431	v1	Wolney	2026	Standard Perturbation Theory for Interacting Dark Sector cosmologies I: Breakdown of Einstein de Sitter kernels	results
+Verhoeve2026	2607.26945	v1	Verhoeve	2026	An efficient one-loop EFTofLSS framework for Vainshtein-screened Horndeski gravity	method
+Desjacques2016	1611.09787	v5	Desjacques	2016	Large-Scale Galaxy Bias	review

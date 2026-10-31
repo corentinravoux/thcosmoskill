@@ -257,6 +257,14 @@ def skill_files(skill: Path):
         yield path
 
 
+def derived(statement: str) -> bool:
+    """A `[der]` flag on a sentence that holds a number (P0 probe, B18): the flag covers its own sentence only."""
+    if "[der" not in statement:
+        return False
+    sentences = re.split(r"(?<=[.;])\s+(?=[A-Z(*$])", statement)
+    return any("[der" in sentence and numbers_in(sentence) for sentence in sentences)
+
+
 def scan(skill: Path) -> list[dict]:
     found = []
     for path in skill_files(skill):
@@ -267,7 +275,7 @@ def scan(skill: Path) -> list[dict]:
             found.append({"file": str(path.relative_to(ROOT) if path.is_relative_to(ROOT) else path), "line": line, "last": last,
                           "status": classify(statement, caption),
                           "read": min(doc_dates(statement) or doc_dates(caption) or [""]),
-                          "derived": "[der" in statement, "numbers": values, "text": statement})
+                          "derived": derived(statement), "numbers": values, "text": statement})
     return found
 
 

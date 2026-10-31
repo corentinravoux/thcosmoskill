@@ -1,0 +1,5 @@
+file	line	id	place	numbers	class	text
+plugin/skills/theoretical-cosmology/references/conventions.md	29	1002.1416	section 4	11 11	found-elsewhere	| Chen 2010, non-Gaussianity review, arXiv:1002.1416 | (−1,1,1,1) | not stated | [src: Sect. 4] |
+plugin/skills/theoretical-cosmology/references/conventions.md	204	2110.00483	abstract	0.05	found-at-place	| BICEP/Keck XIII 2021, arXiv:2110.00483 | quotes its tensor bound as $r_{0.05}$, the ratio at 0.05 Mpc⁻¹ | [src: abstract] |
+plugin/skills/theoretical-cosmology/references/conventions.md	304	2404.07272	section 3.3	0.7	found-at-place	| Maus et al., arXiv:2404.07272 | PyBird's default derivative-suppression scale $k_{\rm M}$, set to 0.7 h Mpc⁻¹ | [src: Sect. 3.3] |
+plugin/skills/theoretical-cosmology/references/conventions.md	305	2002.07829	abstract	12	found-at-place	| Sánchez 2020, arXiv:2002.07829 | argues against $h^{-1}$ Mpc units: the reference radius of $\sigma_{8}$, 8 $h^{-1}$ Mpc, depends on h; proposes $\sigma_{12}$, defined at 12 Mpc | [src: abstract; Sect. IV] |

@@ -43,14 +43,19 @@ identifiers out of fifty-one pointed to other papers.
    Equations in LaTeX between single dollars, `$...$`, one equation per
    statement, with its flag in the same statement. In a table row, never
    `|` inside `$...$`: write `\lvert...\rvert` or `\vert`.
-9. **Special cases** (details in `suite-conventions.md#citations-and-provenance`):
-   an unnumbered equation is placed `[src: Sect. 3.2, unnumbered display
-   after Eq. 12]`; a paper with no HTML rendering is listed under "Not
-   verified" (a maintainer may read its PDF later); content found only in a
-   textbook needs a readable source citing it, flagged `[sec: …]`; a source
-   corrected by a later version or an erratum is cited in its corrected
-   version, and the slip is written under "Errors that recur"; a relation
-   between two conventions is given only if a paper states it.
+9. **Special cases** — read `suite-conventions.md#citations-and-provenance`
+   before writing: places for unnumbered displays, inline equations,
+   letters without sections and table footnotes; multi-row displays copied
+   whole; parameters set to a value are notation; one citation and flag
+   right after the equations of each paper; renderings without equation
+   numbers ("none tagged" in the `fetch_paper.py` header) go through a
+   readable secondary source; textbooks and pre-arXiv papers through a
+   readable source citing them; slips copied as printed and described in
+   words; a relation between two conventions only if a paper states it.
+10. **The references of a paper**: when the arXiv server's citation graph
+    returns none, read them from the INSPIRE API
+    (`https://inspirehep.net/api/literature?q=arxiv:<id>&fields=references`)
+    or with `fetch_paper.py <id> --section References`.
 
 ## 1b. Work order — write as you go
 
@@ -88,8 +93,10 @@ your context is then lost.
 - **The script of this package, for reading equations and numbers**:
   `python3 plugin/skills/theoretical-cosmology/scripts/fetch_paper.py <id>` prints
   a paper's abstract (`--abstract`, several identifiers allowed), its
-  outline, one section, or the paragraphs containing a term. `--grep "(45)"`
-  prints equation 45 as the rendering's LaTeX. **Read every equation you
+  outline, one section (`--section "Sect. 4"` for the paper's own Section
+  4; a bare number is the outline entry), or the paragraphs containing a
+  term. `--grep "(45)"` prints equation 45 as the rendering's LaTeX;
+  `--context n` adds n blocks on each side, a display counting as one. **Read every equation you
   transcribe with this script**, not with the MCP server: the
   transcription check (`tools/check_transcription.py`) compares your
   equation with the same rendering, from the same cache.
