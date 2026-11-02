@@ -187,3 +187,15 @@ cosmoskill's (analysis practice).
 
 G2 re-reads of the pilot and of the atlas's fresh draw were cut by the
 usage limit on 2026-10-31 and resumed on 2026-11-02.
+
+## 2026-11-02 — stage 3, P4 atlas, G2 fresh draw: **passed**
+
+Sheet: `docs/history/tests/g2/theoretical-cosmology-atlas-2026-10-31-redraw.md`
+(seed 77). Part 3: 59 of 59 ok, 0 wrong: the atlas passes G2 (error rate of
+tool-passed items below 5 % at 95 %). The corrected lines 73, 88 and 181
+fell in the draw and are ok. Parts 1–2, corrected rows re-read: 2 ok, 1
+wrong (line 43: the units statement of Malik & Wands is in App. A.1,
+"Notation"; the label named only the List of Symbols and Sect. 11).
+Coordinator re-read App. A.1 and corrected the label. Pattern unchanged:
+equations exact; a row drawing on several places can miss one in its
+label.

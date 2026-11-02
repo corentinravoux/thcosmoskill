@@ -40,7 +40,7 @@ conventions is listed only where a paper states it. Code conventions are
 | Reference work | Units | Planck mass written | Place read |
 |---|---|---|---|
 | Baumann, arXiv:0907.5424 | $c=\hbar\equiv 1$ | reduced, $M_{\rm pl}=(8\pi G)^{-1/2}$, often set to one | [src: Sect. "Notation", unnumbered display] |
-| Malik & Wands, arXiv:0809.4944 | $c=\hbar=1$ | reduced Planck mass written in lower case, $m_{\rm{Pl}}^{2}=(8\pi G)^{-1}$; upper-case $M_{\rm Pl}$ is the full Planck mass in the list of symbols | [src: List of Symbols; Sect. 11, unnumbered display (inline)] |
+| Malik & Wands, arXiv:0809.4944 | $c=\hbar=1$ | reduced Planck mass written in lower case, $m_{\rm{Pl}}^{2}=(8\pi G)^{-1}$; upper-case $M_{\rm Pl}$ is the full Planck mass in the list of symbols | [src: App. A.1 (units); List of Symbols; Sect. 11, inline] |
 | Copeland, Sami & Tsujikawa, arXiv:hep-th/0603057 | $c=\hbar=1$ | full Planck mass in lower case, $m_{\rm pl}=G^{-1/2}=1.22\times 10^{19}\,{\rm GeV}$; reduced in upper case, $M_{\rm pl}=(8\pi G)^{-1/2}=2.44\times 10^{18}\,{\rm GeV}$; $\kappa^{2}=8\pi G=8\pi m_{\rm pl}^{-2}=M_{\rm pl}^{-2}$ | [src: Sect. I, unnumbered display (inline)] |
 | Kinney, arXiv:0902.1529 | natural units | full Planck mass: $S_{\rm tot}=\int{d^{4}x\sqrt{-g}\left[\frac{m_{\rm Pl}^{2}}{16\pi}R+{\mathcal{L}}_{\phi}\right]}$ | [src: Eq. 86] |
 | Chen, arXiv:1002.1416 | — | reduced, $M_{\rm P}=(8\pi G)^{-1/2}$, set to one | [src: Sect. 4, unnumbered display (inline)] |
