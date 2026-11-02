@@ -8,6 +8,11 @@ answers is `2026-10-30-plan-v2.md`. Each decision lists its options, the
 recommendation (★) and the reason. A later change is recorded here with
 its date.
 
+**Amended by the owner on 2026-11-02:** P2 (owner review of the pilot)
+skipped; the pilot is accepted on its gates (G1, G2, G3). D31 changed to
+"two agents, as fast as limits allow": stage 4 runs on without a weekly
+window.
+
 ## A. Scope and architecture
 
 | # | Decision | Options | Why the recommendation |
