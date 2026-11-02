@@ -324,3 +324,22 @@ results 120; 79 sources; 10 subtopics (the seed list).
 - G2 sheet: `docs/history/tests/g2/thcosmo-primordial-correlators-2026-11-02.md`
   (102 items: 23 + 20 + 59, seed 1104).
 - Both runs: 14 `eq: notation` escapes in total.
+
+## 2026-11-02 — stage 4, `thcosmo-primordial-correlators` G2: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-primordial-correlators-2026-11-02.md`
+(102 items, seed 1104). Part 1: 23 ok. Part 2: 20 ok. Part 3: 59 ok, 0
+wrong: the skill passes G2. No equation, number or place wrong.
+
+Coordinator, after re-reading each reviewer note at source:
+- `formalism.md:74`: the tie between $\dot{\pi}(\partial_{i}\pi)^{2}$ and
+  the sound speed is stated after Eq. 41 of arXiv:0709.0293, the free
+  $M_{3}$ coefficient after Eq. 44; the line now names both places.
+- Wording brought back to the paper: `SKILL.md:34` ("bulk particle
+  production in a weakly coupled background", arXiv:2203.08128, not "weak
+  mixing"); `approximations.md:77` ($m^{2}=\Delta(d-\Delta)$ holds for
+  $s=0$ only); `formalism.md:169` (the paper's hedge "is expected to
+  describe" for ${\cal V}_{1,0}$); `models.md:74` ("by up to").
+- Pattern: hedges and qualifiers of the source dropped in paraphrase,
+  already covered by brief rule 2.
+- Hub router: built; README row updated.
