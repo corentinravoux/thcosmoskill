@@ -4,9 +4,10 @@ Scope: statements still in circulation that a later paper has corrected,
 and known errors in sources (corrected in a later version or an erratum).
 Each entry names the statement, where it circulates, the paper that
 corrects it with the place, and the date it was recorded. Entries are taken
-from the domains' "Errors that recur" and open questions; the first version
-is written at the first milestone (plan v2, stage 4); entries found
-earlier are added as they are confirmed at source.
+from the domains' "Stale claims and misconceptions" and "Errors that
+recur", copied with their sources; first version at the first milestone
+(plan v2, stage 4), from the built domains. Errata are added as they are
+confirmed at source.
 
 Snapshot: 2026-11-02
 
@@ -15,6 +16,26 @@ Snapshot: 2026-11-02
 
 | Statement | Corrected by | Domain | Recorded |
 |---|---|---|---|
+| "SPT loops converge to the non-linear spectrum" | loop integrals are UV sensitive; the UV part of $P_{13}$ renormalises the sound speed: Ivanov, arXiv:2212.08488 [src: Eqs. 72–73] | `thcosmo-lss-perturbation-theory` | 2026-11-02 |
+| "Eulerian and Lagrangian EFTs give different predictions" | they agree within overlapping domains to the order computed: Cabass et al., arXiv:2203.08232 [src: Sect. 3.5] | `thcosmo-lss-perturbation-theory` | 2026-11-02 |
+| "Local bias in density is enough at one loop" | renormalisation requires the tidal operator at second order and the velocity potential at third: Assassi et al., arXiv:1402.5916 [src: abstract] | `thcosmo-lss-perturbation-theory` | 2026-11-02 |
+| "Redshift-space biased tracers are known only to one loop in the power spectrum and tree level in the bispectrum" (Snowmass 2022 table) | two-loop redshift-space galaxy power spectrum computed in 2026: Philcox, arXiv:2610.13867 [src: abstract] | `thcosmo-lss-perturbation-theory` | 2026-11-02 |
+| "Phenomenological FoG models are adequate for BAO and RSD" | they bias distances by 1–2% and the growth rate by about 5% (forecast): Taruya et al., arXiv:1006.0699 [src: abstract] | `thcosmo-lss-perturbation-theory` | 2026-11-02 |
+| "NLA/TATT describe halo alignments in the quasi-linear regime" | valid only to 0.05 h/Mpc, against 0.30 h/Mpc for the one-loop EFT of IA, at $z=0$: Bakx et al., arXiv:2303.15565 [src: abstract] | `thcosmo-lss-perturbation-theory` | 2026-11-02 |
+| "b_φ = 2δ_c(b_1 − 1) holds for any tracer" | broken by PNG assembly bias for realistic galaxies: de S. Nascimento & Dalal, arXiv:2607.18229 [src: abstract] | `thcosmo-lss-perturbation-theory` | 2026-11-02 |
+| "$m^{2}\phi^{2}$ fits the data with r ≈ 0.1" (a prospect in arXiv:0907.5424, Eq. 243) | strongly disfavoured, ln B = −11.5 relative to $R^{2}$: arXiv:1807.06211 [src: Table 5]; convex monomials strongly excluded by BK18: arXiv:2503.14454 [src: Sect. IV.4] | `thcosmo-inflation` | 2026-11-02 |
+| "Natural inflation is viable" | strongly disfavoured, ln B = −6.6: arXiv:1807.06211 [src: Sect. 4.2] | `thcosmo-inflation` | 2026-11-02 |
+| "Starobinsky and Higgs inflation are the best-fitting benchmarks" | true for Planck 2018 alone (arXiv:1807.06211) [src: Sect. 4.2], not for CMB-SPA with DESI DR2 in ΛCDM (arXiv:2512.05108) [src: abstract]; restored in part outside ΛCDM (arXiv:2607.28445) [src: abstract] | `thcosmo-inflation` | 2026-11-02 |
+| "n_s = 1 − 2/N and r = 12α/N² hold for all α-attractors" | only at small α; for large α the predictions move to those of chaotic inflation: arXiv:1311.0472 [src: abstract] | `thcosmo-inflation` | 2026-11-02 |
+| "The horizon-crossing formula holds whenever the spectrum is scale invariant" | false in ultra-slow roll: arXiv:gr-qc/0503017 [src: abstract] | `thcosmo-inflation` | 2026-11-02 |
+| "The tails of the curvature distribution follow from $f_{\rm NL}$-type expansions" | the tails are exponential and those expansions describe only the neighbourhood of the maximum: arXiv:1912.05399 [src: abstract] | `thcosmo-inflation` | 2026-11-02 |
+| "Single-field inflation gives an observable squeezed bispectrum of order $1-n_{s}$" | the primordial squeezed signal of single-field slow roll vanishes in the CMB bispectrum and in scale-dependent halo bias up to projection effects: Pajer et al. 2013, arXiv:1305.0824 [src: abstract] | `thcosmo-primordial-correlators` | 2026-11-02 |
+| "Loops run as $\log(k/\mu)$ and spoil predictivity" | the running is $\log(H/\mu)$: Senatore & Zaldarriaga 2009, arXiv:0912.2734 [src: abstract]; super-horizon $\zeta$ is time independent at one loop: arXiv:1203.6651 [src: abstract] | `thcosmo-primordial-correlators` | 2026-11-02 |
+| "One-loop corrections exclude PBH formation in single-field inflation" | the paper's version read speaks of constraining the small-scale spectrum (arXiv:2211.03395) [src: abstract], and the replies find no observable large-scale effect (arXiv:2408.08296, arXiv:2605.04815) [src: abstracts] | `thcosmo-primordial-correlators` | 2026-11-02 |
+| "Collider signals are always suppressed by $\mathrm{e}^{-\pi\mu}$" | strong mixing halves the suppression (arXiv:2608.23243) [src: abstract]; mass oscillations can enhance the signal exponentially relative to it (arXiv:2511.00152) [src: abstract] | `thcosmo-primordial-correlators` | 2026-11-02 |
+| "Scalar decoherence is slow-roll suppressed" | not when scalar and tensor environments act together: arXiv:2607.22914 [src: abstract] | `thcosmo-primordial-correlators` | 2026-11-02 |
+| "The sound-speed bound is $c_{s}>0.028$" (arXiv:0709.0293, Eq. 47, WMAP era) | Planck 2018 gives $c_{\mathrm{s}}^{\rm DBI}\geq\ 0.086$ at 95% from T+E: arXiv:1905.05697 [src: Eq. 59] | `thcosmo-primordial-correlators` | 2026-11-02 |
+| "An equilateral-triangle normalisation transfers constraints between models" | it can be very misleading because the two shape classes are nearly orthogonal: arXiv:astro-ph/0405356 [src: abstract] | `thcosmo-primordial-correlators` | 2026-11-02 |
 
 ## Errata in sources
 <!-- key: errata-in-sources -->
