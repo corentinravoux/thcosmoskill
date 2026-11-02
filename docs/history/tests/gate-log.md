@@ -172,3 +172,18 @@ the owner's review (P2).
   `docs/history/tests/p2/thcosmo-lss-perturbation-theory-review.md`.
 - Atlas fresh draw: `docs/history/tests/g2/theoretical-cosmology-atlas-2026-10-31-redraw.md`
   (seed 77), part 3 to be re-read.
+
+## 2026-10-31 — stage 3, P6 overlap with cosmoskill
+
+`docs/overlap-cosmoskill.md`: the pilot shares with cosmoskill's
+`cosmo-theory-foundations` its sections 8 (redshift space), 9 (PT and EFT
+ingredients), 10 (bias expansions) and the EFT dossier; the home of the
+formalism is thcosmoskill (D9). cosmoskill 1.0.4 (commit on its `main`,
+tag left to the owner): one routing paragraph in its hub, one pointer
+sentence in each shared section and the dossier; existing text kept so it
+still answers alone; `releases/1.0.4.tsv` lists the 5 changed sections;
+its tests pass. `cosmo-galaxy-clustering`'s full-shape dossier stays
+cosmoskill's (analysis practice).
+
+G2 re-reads of the pilot and of the atlas's fresh draw were cut by the
+usage limit on 2026-10-31 and resumed on 2026-11-02.
