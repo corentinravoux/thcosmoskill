@@ -23,7 +23,9 @@ identifiers out of fifty-one pointed to other papers.
 2. **Numbers are quoted in the form the paper prints them.** A ratio of
    1.003 stays a ratio: writing it as "0.3 %" is a number of your own
    making (pilot G2, 2026-11-02). The same for a difference, a percentage,
-   a unit change or a rounding.
+   a unit change or a rounding. A qualitative claim about size ("of order
+   one", "small", "dominant") is quoted from the place named, not
+   paraphrased (pilot G3, 2026-11-02).
 3. **Equations are transcribed, not derived.** Write an equation as the
    cited paper writes it, in its conventions, and name those conventions
    when they differ from the ones stated at the top of `formalism.md`. Do

@@ -249,3 +249,28 @@ later).
 - `sample_statements.py --only /deep/`: the G3 sheet covers the new files;
   `docs/history/tests/g2/thcosmo-lss-perturbation-theory-dossiers-2026-11-02.md`
   (part 2: 89 items, part 3: 59 items, seed 1102).
+
+## 2026-11-02 — stage 3, P7 pilot dossiers, G3: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-lss-perturbation-theory-dossiers-2026-11-02.md`,
+two reviewers. Part 3 (draw of 59, seed 1102): 59 ok, 0 wrong: G3 passes.
+Part 2 (89 items the tools could not pass): 87 ok, 2 wrong reported.
+
+Coordinator, after re-reading each at source:
+- `ir-resummation.md:28`: "of order one in ΛCDM" is not in arXiv:1404.5954;
+  replaced by the paper's own wording, "in our Universe controls the
+  largest non-linearity in the range of scales of interest for the BAO"
+  [src: Sect. 1]. Brief rule 2 now asks that qualitative claims of size be
+  quoted.
+- `ir-resummation.md:91`: reported wrong place (Sect. 7.1 for k_osc =
+  h/(110 Mpc)); rejected: Sect. 7.1 prints the value in exactly this form
+  (it is also defined in Sect. 1).
+- Next to drawn items, reported by the part-3 reviewer:
+  `one-loop-eft-power-spectrum.md:37` label corrected to "text after
+  Eq. 31" (the statement is in the paper, after Eq. 31, not Eq. 30);
+  `ir-resummation.md:49` label corrected to Sect. 3.2, where arXiv:1605.02149
+  says both that observables do not depend on k_S when computed exactly
+  and that residual dependence estimates the theoretical uncertainty.
+- After the fixes: 356 equations, 299 exact, 0 mismatch, 0 wrong-section;
+  tests pass. The hub router marks the pilot as built with six dossiers,
+  under the owner's review.
