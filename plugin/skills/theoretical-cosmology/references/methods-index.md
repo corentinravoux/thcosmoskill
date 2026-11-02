@@ -23,7 +23,10 @@ Snapshot: 2026-11-02
 | Slow-roll and Hubble-flow expansions; beyond slow roll (ultra-slow, constant roll) | `thcosmo-inflation/formalism#slow-roll-and-the-flow-parameters`, `#beyond-slow-roll-ultra-slow-roll-and-constant` |
 | Multi-field background and perturbation dynamics (turns, isocurvature) | `thcosmo-inflation/formalism#multi-field-dynamics` |
 | Reheating: e-folds after horizon exit and the reheating parameter | `thcosmo-inflation/formalism#reheating-and-the-number-of-e-folds` |
-| Effective field theory of dark energy | `thcosmo-modified-gravity` (planned, first milestone) |
+| Effective field theory of dark energy, the α basis, μ–Σ and PPF | `thcosmo-modified-gravity/formalism#the-eft-of-dark-energy-and-parameterised` |
+| Scalar–tensor Lagrangians and degeneracy conditions (Horndeski, GLPV, DHOST) | `thcosmo-modified-gravity/formalism#horndeski-beyond-horndeski-and-dhost` |
+| Screening mechanisms (chameleon, symmetron, k-mouflage, Vainshtein) | `thcosmo-modified-gravity/formalism#screening-mechanisms` |
+| Tensor propagation in modified gravity (speed, friction, graviton decay) | `thcosmo-modified-gravity/formalism#the-tensor-sector` |
 
 ## Perturbation theory of structure
 <!-- key: perturbation-theory-of-structure -->
@@ -50,5 +53,5 @@ Snapshot: 2026-11-02
 | Lattice simulations of reheating, phase transitions and defects | preheating: `thcosmo-inflation/formalism#reheating-and-the-number-of-e-folds`; transitions: `thcosmo-baryogenesis-phase-transitions` (planned); defect networks: `thcosmo-pbh-defects` (planned) |
 | N-body theory, discreteness and convergence; Schrödinger–Poisson | `thcosmo-nonlinear-structure` (planned) |
 | Numerical relativity and relativistic N-body | `thcosmo-relativistic-cosmology` (planned) |
-| Screened modified gravity in simulations | `thcosmo-modified-gravity` (planned, first milestone) |
+| Screened modified gravity in simulations | `thcosmo-modified-gravity/approximations#screening-in-simulations` |
 | Boltzmann codes, perturbation-theory codes, solvers | `thcosmo-theory-codes` if built, otherwise the domain of the physics (planned) |
