@@ -274,3 +274,53 @@ Coordinator, after re-reading each at source:
 - After the fixes: 356 equations, 299 exact, 0 mismatch, 0 wrong-section;
   tests pass. The hub router marks the pilot as built with six dossiers,
   under the owner's review.
+
+## 2026-11-02 — stage 4, build `thcosmo-inflation` (G1 passed; G2 running)
+
+Run: 76 of 90 research calls; SKILL.md 127 lines, formalism 150, models
+133 (12 model cards), approximations 88, open questions 58, results 79;
+48 sources; 9 subtopics (slow roll and flow parameters, single-field
+models, attractors, ultra-slow and constant roll, multi-field, reheating and
+preheating, initial conditions, stochastic and eternal inflation, n_s and r
+after ACT DR6).
+
+- G1: `verify_sources` online 0 problems; `check_numbers` and
+  `check_equations` empty; `check_transcription` 142 equations, 125 exact,
+  14 contained, 0 mismatch, 0 wrong-section, 3 unreadable (inline in
+  arXiv:1807.06211 and arXiv:2203.07629); `check_places` 41 statements, 20
+  found at place, 0 elsewhere, 0 not found, 21 unreadable; `check_shape` 0
+  problems; tests pass.
+- Generality: Martin 17.6 % (flag), Planck Collaboration 14.5 %, Baumann
+  9.2 %; owner's papers 0 %. Martin's share is one source,
+  Encyclopaedia Inflationaris (arXiv:1303.3787), the catalogue of
+  single-field models with their slow-roll predictions that the model cards
+  quote one by one; kept, justified.
+- Printed slip reported by the run, confirmed by the coordinator at source
+  and recorded in `stale-claims.md`: arXiv:1807.06211 Sect. 4.2, quartic
+  hilltop limit printed with $\mu_{2}$.
+- G2 sheet: `docs/history/tests/g2/thcosmo-inflation-2026-11-02.md`
+  (107 items: 19 + 29 + 59, seed 1103).
+
+## 2026-11-02 — stage 4, build `thcosmo-primordial-correlators` (G1 passed; G2 running)
+
+Run: 59 of 90 research calls, started from the P0 probe text (kept, an
+f_NL escape and one Maldacena place fixed); SKILL.md 131 lines, formalism
+189, models 84 (7 model cards), approximations 108, open questions 70,
+results 120; 79 sources; 10 subtopics (the seed list).
+
+- G1: `verify_sources` online 0 problems; `check_numbers` and
+  `check_equations` empty; `check_transcription` 110 equations, 93 exact,
+  10 contained, 0 mismatch, 0 wrong-section, 7 unreadable (Penedones inline
+  and table equations); `check_places` 9 statements, 4 found at place, 5
+  unreadable; `check_shape` 0 problems; tests pass (155).
+- Generality: Chen 14.1 %, Cheung 7.7 %, Achúcarro 5.9 %; none above
+  15 %; owner's papers 0 %.
+- Printed slips reported by the run, confirmed by the coordinator at
+  source and recorded in `stale-claims.md`: arXiv:1002.1416 Eqs. 2.1 and 4.1
+  ($M_{\rm P}$ not squared; the run named Eq. 4.1 only); arXiv:2203.08128
+  Sect. 4.1 (sharp feature described with the slow-roll inequality).
+- Not read (from the run): Maldacena 2002 at source (rendering without
+  equation numbers); Starobinsky–Yokoyama (abstract only).
+- G2 sheet: `docs/history/tests/g2/thcosmo-primordial-correlators-2026-11-02.md`
+  (102 items: 23 + 20 + 59, seed 1104).
+- Both runs: 14 `eq: notation` escapes in total.

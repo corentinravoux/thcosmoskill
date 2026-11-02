@@ -1,0 +1,80 @@
+key	id	version	first_author	year	title	role
+Chen2010	1002.1416	v3	Chen	2010	Primordial Non-Gaussianities from Inflation Models	review
+Maldacena2003	astro-ph/0210603	v5	Maldacena	2002	Non-Gaussian features of primordial fluctuations in single field inflationary models	foundation
+CreminelliZaldarriaga2004	astro-ph/0407059	v2	Creminelli	2004	Single field consistency relation for the 3-point function	foundation
+Pajer2013	1305.0824	v2	Pajer	2013	The Observed Squeezed Limit of Cosmological Three-Point Functions	critique
+Ullah2026	2604.09765	v1	Ullah	2026	Multi-soft theorems for cosmological correlators: Background wave method for scalars & gravitons	results
+Planck2018IX	1905.05697	v1	Planck Collaboration	2019	Planck 2018 results. IX. Constraints on primordial non-Gaussianity	constraint
+Penedones2023	2301.04146	v2	Penedones	2023	Hilbert space of Quantum Field Theory in de Sitter spacetime	results
+Hogervorst2021	2107.13871	v2	Hogervorst	2021	Towards the non-perturbative cosmological bootstrap	foundation
+Sun2021	2111.04591	v2	Sun	2021	A note on the representations of $\text{SO}(1,d+1)$	lectures
+Belrhali2026	2601.15228	v2	Belrhali	2026	De Sitter Momentum Space	results
+Cheung2007	0709.0293	v2	Cheung	2007	The Effective Field Theory of Inflation	foundation
+AguiSalcedo2026	2603.13473	v1	Agüí Salcedo	2026	Primordial non-Gaussianity constraints on dissipative inflation	constraint
+BabichCreminelliZaldarriaga2004	astro-ph/0405356	v1	Babich	2004	The shape of non-Gaussianities	foundation
+Creminelli2006	astro-ph/0509029	v1	Creminelli	2005	Limits on non-Gaussianities from WMAP data	method
+Senatore2010	0905.3746	v3	Senatore	2009	Non-Gaussianities in Single Field Inflation and their Optimal Limits from the WMAP 5-year Data	foundation
+YangPhilcox2026	2607.15337	v1	Yang	2026	Searching for Folded Primordial Non-Gaussianity with Galaxy Surveys	forecast
+Suman2025a	2511.17500	v1	Suman	2025	How Significant are Cosmological Collider Signals in the Planck Data?	constraint
+Suman2025b	2512.22085	v1	Suman	2025	Searching for Cosmological Collider in the Planck CMB Data II: collider templates and Modal analysis	constraint
+CreminelliNorenaSimonovic2012	1203.4595	v2	Creminelli	2012	Conformal consistency relations for single-field inflation	foundation
+Hinterbichler2013	1304.5527	v3	Hinterbichler	2013	An Infinite Set of Ward Identities for Adiabatic Modes in Cosmology	foundation
+Namjoo2012	1210.3692	v2	Namjoo	2012	Violation of non-Gaussianity consistency relation in a single field inflationary model	critique
+KatsevichSun2026	2610.28516	v1	Katsevich	2026	Cosmological correlators from the Euclidean sphere	method
+Belrhali2026b	2607.05327	v1	Belrhali	2026	Cosmological Correlators in KLF and the Double-Exchange	method
+Basumatary2026	2603.26090	v2	Basumatary	2026	Cosmological Correlators Using Tensor Networks	method
+Chowdhury2026	2602.03841	v1	Chowdhury	2026	Cosmological Correlator Discontinuities from Scattering Amplitudes	method
+Achucarro2022	2203.08128	v2	Achúcarro	2022	Inflation: Theory and Observations	review
+ArkaniHamedMaldacena2015	1503.08043	v1	Arkani-Hamed	2015	Cosmological Collider Physics	foundation
+ChenWang2009	0911.3380	v4	Chen	2009	Quasi-Single Field Inflation and Non-Gaussianities	foundation
+Lee2016	1607.03735	v1	Lee	2016	Non-Gaussianity as a Particle Detector	model
+Belrhali2026c	2608.23243	v1	Belrhali	2026	Analytical Cosmological Collider at Strong Mixing in Laplace Space	results
+Werth2026	2609.37570	v1	Werth	2026	Carving out the Multifield Cosmological Collider Landscape	results
+Philcox2026	2607.18369	v1	Philcox	2026	Dissecting the Scalar Cosmological Collider with the Cosmic Microwave Background	constraint
+Albayrak2026	2609.19252	v1	Albayrak	2026	Cosmological Correlators from Scattering Amplitudes: A Review	review
+Baumann2022	2203.08121	v1	Baumann	2022	Snowmass White Paper: The Cosmological Bootstrap	review
+ArkaniHamed2018	1811.00024	v3	Arkani-Hamed	2018	The Cosmological Bootstrap: Inflationary Correlators from Symmetries and Singularities	foundation
+Goodhew2020	2009.02898	v4	Goodhew	2020	The Cosmological Optical Theorem	foundation
+Pajer2020	2010.12818	v1	Pajer	2020	Building a Boostless Bootstrap for the Bispectrum	foundation
+PimentelWang2022	2205.00013	v3	Pimentel	2022	Boostless Cosmological Collider Bootstrap	model
+deRham2025	2506.19198	v2	de Rham	2025	Bispectrum Islands	results
+ChenEastherLim2006	astro-ph/0611645	v3	Chen	2006	Large Non-Gaussianities in Single Field Inflation	foundation
+ChenEastherLim2008	0801.3295	v2	Chen	2008	Generation and Characterization of Large Non-Gaussianities in Single Field Inflation	foundation
+FlaugerPajer2010	1002.0833	v1	Flauger	2010	Resonant Non-Gaussianity	foundation
+Flauger2009	0907.2916	v1	Flauger	2009	Oscillations in the CMB from Axion Monodromy Inflation	model
+Gwyn2012	1211.0070	v2	Gwyn	2012	Resonant non-Gaussianity with equilateral properties	critique
+Jazayeri2025	2511.00152	v2	Jazayeri	2025	Every Wrinkle Carries A Memory: An Integro-differential Bootstrap for Features in Cosmological Correlators	results
+ChenEbadiKumar2022	2205.01107	v2	Chen	2022	Classical Cosmological Collider Physics and Primordial Features	model
+Braglia2026	2603.12216	v2	Braglia	2026	Scale-Dependent Loop Corrections to the Inflationary Power Spectrum	results
+Raffaelli2026	2605.30236	v2	Raffaelli	2026	Signals from the early Universe: a comprehensive search for primordial features in Planck CMB datasets	constraint
+ChenSF2026	2610.10530	v1	Chen	2026	Constraints on Primordial Oscillatory Features from the Power Spectrum and Bispectrum of Redshift-Space Galaxy Clustering in DESI DR1	constraint
+Weinberg2005	hep-th/0506236	v1	Weinberg	2005	Quantum Contributions to Cosmological Correlations	foundation
+Weinberg2006	hep-th/0605244	v2	Weinberg	2006	Quantum Contributions to Cosmological Correlations II: Can These Corrections Become Large?	results
+SenatoreZaldarriaga2009	0912.2734	v1	Senatore	2009	On Loops in Inflation	results
+SenatoreZaldarriaga2012	1203.6354	v2	Senatore	2012	On Loops in Inflation II: IR Effects in Single Clock Inflation	results
+Pimentel2012	1203.6651	v2	Pimentel	2012	On Loops in Inflation III: Time Independence of zeta in Single Clock Inflation	results
+KristianoYokoyama2022	2211.03395	v3	Kristiano	2022	Constraining Primordial Black Hole Formation from Single-Field Inflation	results
+KristianoYokoyama2025	2504.18514	v1	Kristiano	2025	Inflationary background renormalization	results
+Fumagalli2023	2305.19263	v3	Fumagalli	2023	Absence of one-loop effects on large scales from small scales in non-slow-roll dynamics	critique
+Fumagalli2024	2408.08296	v2	Fumagalli	2024	Absence of one-loop effects on large scales from small scales in non-slow-roll dynamics II: Quartic interactions and consistency relations	critique
+Iacconi2026	2605.04815	v1	Iacconi	2026	Primordial black holes from inflation: on the decoupling between large and small scales	review
+FangGuo2026	2605.13325	v1	Fang	2026	Fixing the Renormalization of Inflationary Loops via Ward Identities	results
+Fang2025	2509.00420	v1	Fang	2025	One-loop corrections to infrared GWs is forbidden by symmetries	results
+PolarskiStarobinsky1995	gr-qc/9504030	v2	Polarski	1995	Semiclassicality and Decoherence of Cosmological Perturbations	foundation
+Nelson2016	1601.03734	v1	Nelson	2016	Quantum Decoherence During Inflation from Gravitational Nonlinearities	foundation
+MartinVennin2018	1801.09949	v3	Martin	2018	Observational constraints on quantum decoherence during inflation	method
+Micheli2025	2512.17622	v1	Micheli	2025	Quantum state of interacting primordial inhomogeneities: de-squeezing and decoherence	results
+Burgess2026	2607.22914	v1	Burgess	2026	Tensor Catalyzed Decoherence of Primordial Scalar Fluctuations	results
+HaqueUnderwood2026	2606.07663	v2	Haque	2026	A Landscape of Cosmological Decoherence	results
+Maldacena2015	1508.01082	v2	Maldacena	2015	A model with cosmological Bell inequalities	model
+Sanz2026	2601.13053	v1	Sanz	2026	Was the Early Universe Quantum? Falsifying Classical Stochastic Inflation	method
+StarobinskyYokoyama1994	astro-ph/9407016	v1	Starobinsky	1994	Equilibrium State of a Massless Self-Interacting Scalar Field in the De Sitter Background	foundation
+CohenGreen2020	2007.03693	v1	Cohen	2020	Soft de Sitter Effective Theory	foundation
+Cohen2021	2106.09728	v2	Cohen	2021	Stochastic Inflation at NNLO	results
+GorbenkoSenatore2019	1911.00022	v1	Gorbenko	2019	$λφ^4$ in dS	results
+Beneke2026a	2603.09438	v2	Beneke	2026	Renormalisation and matching of massless scalar correlation functions in Soft de Sitter Effective Theory	results
+Beneke2026b	2604.14283	v1	Beneke	2026	Quantum correction to the diffusion term in stochastic inflation from composite-operator matching in Soft de Sitter Effective Theory	results
+Flauger2022	2203.07629	v1	Flauger	2022	Snowmass White Paper: Cosmology at the Theory Frontier	review
+HolmanTolley2008	0710.1302	v2	Holman	2007	Enhanced Non-Gaussianity from Excited Initial States	model
+SuyamaYamaguchi2008	0709.2545	v2	Suyama	2007	Non-Gaussianity in the modulated reheating scenario	foundation
+Meerburg2016	1610.06559	v2	Meerburg	2016	Prospects for Cosmological Collider Physics	forecast

@@ -8,7 +8,7 @@ from the domains' "Errors that recur" and open questions; the first version
 is written at the first milestone (plan v2, stage 4); entries found
 earlier are added as they are confirmed at source.
 
-Snapshot: 2026-10-31
+Snapshot: 2026-11-02
 
 ## Corrected statements
 <!-- key: corrected-statements -->
@@ -32,4 +32,7 @@ Snapshot: 2026-10-31
 | Simonović et al. 2018, arXiv:1708.08130 (v1), Eq. 2.26 | the UV limit of $P_{22}$ is printed with $P_{\rm lin}(q)$, not squared, where arXiv:2212.08488 Eq. 39 prints $P^{2}_{11}(q)$ [src: Eq. 2.26] | none published; the spectrum enters squared | 2026-11-02 |
 | Simonović et al. 2018, arXiv:1708.08130 (v1), Eq. 2.28 | the UV limit of $P_{13}$ is printed with $P_{\rm lin}(q)$ outside the integral, where arXiv:2212.08488 Eq. 39 prints $P_{11}(k)$ [src: Eq. 2.28] | none published; read $P_{\rm lin}(k)$ | 2026-11-02 |
 | Blas et al. 2016, arXiv:1605.02149 (v2), Eq. 7.3 | the wiggly spectrum is printed $P_{w}(z)$ where the argument is the wavenumber [src: Eq. 7.3] | none published; read $P_{w}(k)$ | 2026-11-02 |
+| Planck Collaboration 2018 X, arXiv:1807.06211 (v2), Sect. 4.2 | the 95 % CL lower limit stated "in the quartic case" of hilltop inflation is printed with the subscript of the quadratic scale, $\log_{10}(\mu_{2}/M_{\mathrm{Pl}})>1.0$ [src: Sect. 4.2] | none published; read the scale as $\mu_{4}$ of the quartic potential of Table 5, and quote the limit with this caveat | 2026-11-02 |
+| Chen 2010, arXiv:1002.1416 (v3), Eqs. 2.1 and 4.1 | the Einstein–Hilbert term is printed with $M_{\rm P}/2$, without the square of the Planck mass [src: Eqs. 2.1, 4.1] | none published; the paper sets the Planck mass to one afterwards, so later equations are unaffected | 2026-11-02 |
+| Achúcarro et al. 2022, arXiv:2203.08128 (v2), Sect. 4.1 | a sharp feature is described as a momentary departure from the attractor, but the condition printed beside it is the slow-roll one, $\lvert\dot{B}/BH\rvert\ll 1$ [src: Sect. 4.1] | none published; a sharp feature is a momentary violation of this condition | 2026-11-02 |
 | Baumann 2009, arXiv:0907.5424 (v2), Sect. 9.2.3 | the text calls ζ and ℛ "equal" on superhorizon scales, while Eq. 141 relates −ζ, not ζ, to ℛ: the two differ by a sign in this paper's conventions [src: Eq. 141] | none published; use Eq. 141, not the sentence | 2026-10-31 |
