@@ -26,7 +26,7 @@ map; its content supersedes this hub.
 | Topic | Skill | Status |
 |---|---|---|
 | SPT, LPT, EFTofLSS, IR resummation, bias expansion, redshift-space theory, consistency relations, primordial non-Gaussianity in LSS, velocity statistics and the momentum power spectrum, intrinsic alignments and shape bias, large-deviation and one-point statistics | `thcosmo-lss-perturbation-theory` | built (pilot, with six dossiers) |
-| Inflationary dynamics and model landscape, slow roll, attractors, multi-field, reheating, initial conditions, eternal and stochastic inflation | `thcosmo-inflation` | planned (first milestone) |
+| Inflationary dynamics and model landscape, slow roll, attractors, multi-field, reheating, initial conditions, eternal and stochastic inflation | `thcosmo-inflation` | built (first milestone) |
 | Quantum fluctuations, in-in formalism, EFT of inflation, non-Gaussianity shapes, consistency relations, cosmological collider, bootstrap, features, loop corrections, decoherence, QFT in de Sitter and infrared effects | `thcosmo-primordial-correlators` | built (first milestone) |
 | Scalar–tensor (Horndeski, beyond Horndeski, DHOST), f(R), vector–tensor, massive gravity, teleparallel and other theories, screening, consistency (ghosts, instabilities, positivity), EFT of dark energy, parameterised frameworks, speed of tensors | `thcosmo-modified-gravity` | planned (first milestone) |
 | Cosmological-constant problem, quintessence, k-essence, phantom crossing, interacting dark energy, early dark energy, dark-energy model building after DESI | `thcosmo-dark-energy` | planned |

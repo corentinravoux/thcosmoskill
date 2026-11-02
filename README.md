@@ -111,7 +111,7 @@ then the rest.
 |---|---|
 | `theoretical-cosmology` | hub: routes to the others; conventions atlas; methods index; stale-claims register (built, skeletons) |
 | `thcosmo-lss-perturbation-theory` | SPT, LPT, EFTofLSS, bias, redshift space, velocity statistics, intrinsic alignments, large deviations (pilot: built, six dossiers) |
-| `thcosmo-inflation` | inflationary dynamics and models, reheating, stochastic and eternal inflation (0.2) |
+| `thcosmo-inflation` | inflationary dynamics and models, reheating, stochastic and eternal inflation (0.2: built) |
 | `thcosmo-primordial-correlators` | in-in, EFT of inflation, non-Gaussianity, collider, bootstrap, decoherence, QFT in de Sitter (0.2: built) |
 | `thcosmo-modified-gravity` | Horndeski and beyond, f(R), massive gravity, screening, EFT of dark energy (0.2) |
 | `thcosmo-dark-energy` | Λ problem, quintessence, phantom crossing, interacting and early dark energy |

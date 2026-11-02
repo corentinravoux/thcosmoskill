@@ -343,3 +343,21 @@ Coordinator, after re-reading each reviewer note at source:
 - Pattern: hedges and qualifiers of the source dropped in paraphrase,
   already covered by brief rule 2.
 - Hub router: built; README row updated.
+
+## 2026-11-02 — stage 4, `thcosmo-inflation` G2: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-inflation-2026-11-02.md` (107 items,
+seed 1103). Part 1: 19 ok. Part 2: 27 ok, 1 wrong, 1 unclear. Part 3: 59
+ok, 0 wrong: the skill passes G2.
+
+Coordinator, after re-reading each at source:
+- Wrong, `models.md:7`: "the Encyclopaedia covers more than seventy
+  potentials" had no source and is not printed; replaced by the abstract of
+  arXiv:1303.3787 (v5): ASPIC "presently supports 118 different models".
+  Pattern: an untagged summary sentence in a file preamble; the brief's
+  rule 1 already forbids it.
+- Unclear, `formalism.md:58`: $V=M^{4}v$ is written in Sect. 3.1, text
+  before Eq. 33, not in Eq. 35; the label now names both places.
+- After the fixes: 143 equations, 125 exact, 15 contained, 0 mismatch;
+  `check_numbers` and `check_equations` empty.
+- Hub router: built; README row updated.

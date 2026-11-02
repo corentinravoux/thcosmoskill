@@ -4,7 +4,7 @@ Scope: the inflationary model landscape, one card per model or class, chosen by 
 
 Snapshot: 2026-11-02
 
-The models are chosen by their weight in the Encyclopaedia Inflationaris (Martin, Ringeval & Vennin, arXiv:1303.3787), the Bayesian comparison of Planck 2018 X (arXiv:1807.06211, Table 5) and the 2025–2026 literature on the ACT DR6 spectral index. The Encyclopaedia covers more than seventy potentials; this file is not a zoo. Bayes factors $\ln B$ of Planck 2018 X are relative to the $R^{2}$ model, with "strongly disfavoured" meaning $\ln B<-5$ and an error of 0.3 on $\ln B$ (arXiv:1807.06211) [src: Table 5 caption]; they assume Planck 2018 with BK15, $w_{\rm int}$ fixed and the pivot $k=0.002$ Mpc⁻¹ [src: Sect. 4.2].
+The models are chosen by their weight in the Encyclopaedia Inflationaris (Martin, Ringeval & Vennin, arXiv:1303.3787), the Bayesian comparison of Planck 2018 X (arXiv:1807.06211, Table 5) and the 2025–2026 literature on the ACT DR6 spectral index. Its library ASPIC "presently supports 118 different models" (arXiv:1303.3787, v5) [src: abstract]; this file is not a zoo. Bayes factors $\ln B$ of Planck 2018 X are relative to the $R^{2}$ model, with "strongly disfavoured" meaning $\ln B<-5$ and an error of 0.3 on $\ln B$ (arXiv:1807.06211) [src: Table 5 caption]; they assume Planck 2018 with BK15, $w_{\rm int}$ fixed and the pivot $k=0.002$ Mpc⁻¹ [src: Sect. 4.2].
 
 ## Single-field models
 <!-- key: single-field-models -->
