@@ -199,3 +199,25 @@ wrong (line 43: the units statement of Malik & Wands is in App. A.1,
 Coordinator re-read App. A.1 and corrected the label. Pattern unchanged:
 equations exact; a row drawing on several places can miss one in its
 label.
+
+## 2026-11-02 — stage 3, P1 pilot, G2: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-lss-perturbation-theory-2026-10-31.md`
+(90 items, seed 1031). Part 1: 18 ok. Part 2: 12 ok, 1 wrong. Part 3: 59
+ok, 0 wrong: the pilot passes G2. No wrong section, appendix or equation
+label anywhere.
+
+- Wrong item: `open-questions.md:29` turned the printed ratios of
+  arXiv:2005.04805 (about 1.003 for the monopole, 1.007 for the quadrupole,
+  abstract) into percentages, a number of the agent's own making.
+  Coordinator re-read the abstract and restated the ratios; a typo on line
+  49 fixed. Pattern: the brief now states that numbers are quoted in the
+  form the paper prints them (rule 2).
+- Checker fix found on the way: an `inline` place with a section but no
+  "text after Eq. n" was compared with the wrong pool of inline equations
+  (two false mismatches in the atlas); it now goes to the person's re-read.
+  Label fragments quoted in `stale-claims.md` marked `eq: notation`.
+- After the fixes: atlas 118 equations, 85 exact, 0 mismatch; pilot 125
+  equations, 119 exact, 0 mismatch; tests pass.
+- The hub router marks the pilot as built (under the owner's review, no
+  dossiers yet). Next: P2 owner review; P7 gap audit and dossiers.

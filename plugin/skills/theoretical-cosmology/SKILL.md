@@ -9,9 +9,9 @@ description: Use when reviewing, deriving, planning or fact-checking theoretical
 <!-- key: state-of-the-suite -->
 
 Version 0.1.0 <!-- num: not a value -->: the base only. The hub, its scripts and the layer machinery
-are in place; **no domain skill is built yet**. The domains below are
-planned, in the order of `docs/plans/2026-10-30-plan-v2.md` of the package
-repository. Until a domain exists, say that the suite holds no material on
+are in place; one domain skill is built, `thcosmo-lss-perturbation-theory`
+(the pilot); the others are planned, in the order of `docs/plans/2026-10-30-plan-v2.md` of the package
+repository. Until a domain is built, say that the suite holds no material on
 it, answer from general knowledge only if the asker accepts that, label such
 an answer as unsourced, and never present it as coming from the suite.
 
@@ -25,7 +25,7 @@ map; its content supersedes this hub.
 
 | Topic | Skill | Status |
 |---|---|---|
-| SPT, LPT, EFTofLSS, IR resummation, bias expansion, redshift-space theory, consistency relations, primordial non-Gaussianity in LSS, velocity statistics and the momentum power spectrum, intrinsic alignments and shape bias, large-deviation and one-point statistics | `thcosmo-lss-perturbation-theory` | planned (pilot) |
+| SPT, LPT, EFTofLSS, IR resummation, bias expansion, redshift-space theory, consistency relations, primordial non-Gaussianity in LSS, velocity statistics and the momentum power spectrum, intrinsic alignments and shape bias, large-deviation and one-point statistics | `thcosmo-lss-perturbation-theory` | built (pilot, under the owner's review; no dossiers yet) |
 | Inflationary dynamics and model landscape, slow roll, attractors, multi-field, reheating, initial conditions, eternal and stochastic inflation | `thcosmo-inflation` | planned (first milestone) |
 | Quantum fluctuations, in-in formalism, EFT of inflation, non-Gaussianity shapes, consistency relations, cosmological collider, bootstrap, features, loop corrections, decoherence, QFT in de Sitter and infrared effects | `thcosmo-primordial-correlators` | planned (first milestone) |
 | Scalar–tensor (Horndeski, beyond Horndeski, DHOST), f(R), vector–tensor, massive gravity, teleparallel and other theories, screening, consistency (ghosts, instabilities, positivity), EFT of dark energy, parameterised frameworks, speed of tensors | `thcosmo-modified-gravity` | planned (first milestone) |

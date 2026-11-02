@@ -110,7 +110,7 @@ then the rest.
 | Skill | Covers |
 |---|---|
 | `theoretical-cosmology` | hub: routes to the others; conventions atlas; methods index; stale-claims register (built, skeletons) |
-| `thcosmo-lss-perturbation-theory` | SPT, LPT, EFTofLSS, bias, redshift space, velocity statistics, intrinsic alignments, large deviations (pilot) |
+| `thcosmo-lss-perturbation-theory` | SPT, LPT, EFTofLSS, bias, redshift space, velocity statistics, intrinsic alignments, large deviations (pilot: built, under review) |
 | `thcosmo-inflation` | inflationary dynamics and models, reheating, stochastic and eternal inflation (0.2) |
 | `thcosmo-primordial-correlators` | in-in, EFT of inflation, non-Gaussianity, collider, bootstrap, decoherence, QFT in de Sitter (0.2) |
 | `thcosmo-modified-gravity` | Horndeski and beyond, f(R), massive gravity, screening, EFT of dark energy (0.2) |

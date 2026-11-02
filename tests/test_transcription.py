@@ -66,7 +66,8 @@ class TranscriptionTest(unittest.TestCase):
                          ["unreadable"])
 
     def test_unnumbered_and_pdf_places_go_to_a_person(self):
-        for place in ("[src: Sect. 3.2, unnumbered display after Eq. 45]", "[src: Eq. 45 (PDF v2)]"):
+        for place in ("[src: Sect. 3.2, unnumbered display after Eq. 45]", "[src: Eq. 45 (PDF v2)]",
+                      "[src: Sect. 2, inline]"):
             with self.subTest(place=place):
                 statement = r"$x = y + z$ " + B + " " + place
                 self.assertEqual([r["class"] for r in check_transcription.check(self.skill([statement]), offline=True)],

@@ -240,15 +240,18 @@ def check(skill: Path, offline: bool) -> list[dict]:
                 after = AFTER.search(flag)
                 wanted = labels(latex_norm.without_math(flag))
                 record["eq"] = after.group(1) if after else ",".join(wanted)
-                if not ident or "PDF" in flag or "unnumbered display" in flag or not (after or wanted):
+                if not ident or "PDF" in flag or "unnumbered display" in flag or not (after or wanted or re.search(r"\binline\b", flag)):
                     record["class"] = "unreadable"
                 else:
                     rendering = load(ident, offline, papers)
                     if rendering is None:
                         record["class"] = "unreadable"
-                    elif after or re.search(r"\binline\b", flag):
-                        pool = rendering.inline.get(after.group(1) if after else "", [])
+                    elif after:
+                        pool = rendering.inline.get(after.group(1), [])
                         record["class"], record["source"] = compare(span, pool) if pool else ("unreadable", "")
+                    elif re.search(r"\binline\b", flag):
+                        # Inline, placed by section only: no anchor to search from; a person re-reads it.
+                        record["class"] = "unreadable"
                     else:
                         record["class"], record["source"] = compare(span, [rendering.displays.get(l, "") for l in wanted])
                         heading = rendering.sections.get(wanted[0], "")
