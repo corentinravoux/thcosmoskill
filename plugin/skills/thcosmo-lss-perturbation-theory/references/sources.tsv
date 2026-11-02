@@ -48,3 +48,37 @@ Ivanov2026	2606.30713	v2	Ivanov	2026	Galaxy Power Spectrum at Two-Loop Order: Im
 Tucci2026	2610.08908	v1	Tucci	2026	Full-Shape Analysis of the Redshift-Space Galaxy Trispectrum in the EFTofLSS	forecast
 Fidler2026	2605.05114	v2	Fidler	2026	Effective Field Theory of Large Scale Structure and Newtonian Motion Gauges	method
 Verdiani2025	2507.08792	v3	Verdiani	2025	The Effective Field Theory of Large Scale Structure for Mixed Dark Matter Scenarios	model
+Carrasco2012	1206.2926	v2	Carrasco	2012	The Effective Field Theory of Cosmological Large Scale Structures	foundation
+Baumann2010	1004.2488	v1	Baumann	2010	Cosmological Non-Linearities as an Effective Fluid	foundation
+Pajer2013	1301.7182	v2	Pajer	2013	On the Renormalization of the Effective Field Theory of Large Scale Structures	method
+Simonovic2017	1708.08130	v1	Simonović	2017	Cosmological Perturbation Theory Using the FFTLog: Formalism and Connection to QFT Loop Integrals	method
+Baldauf2015b	1507.02256	v2	Baldauf	2015	The Effective Field Theory of Large Scale Structure at Two Loops: the apparent scale dependence of the speed of sound	critique
+Foreman2015	1507.05326	v2	Foreman	2015	Precision Comparison of the Power Spectrum in the EFTofLSS with Simulations	results
+Cappellazzi2026	2610.41914	v1	Cappellazzi	2026	Two-loop matter power spectrum from FFTLog and kite integrals	method
+Hebbar2026	2610.19001	v1	Hebbar	2026	Kinetic Theory of the EFTofLSS : A Halo-Based Approach	results
+McDonald2006	astro-ph/0609413	v2	McDonald	2006	Clustering of dark matter tracers: renormalizing the bias parameters	foundation
+Chan2012	1201.3614	v2	Chan	2012	Gravity and Large-Scale Non-local Bias	foundation
+Senatore2015	1406.7843	v2	Senatore	2014	Bias in the Effective Field Theory of Large Scale Structures	foundation
+Eggemeier2019	1812.03208	v2	Eggemeier	2018	Bias Loop Corrections to the Galaxy Bispectrum	method
+IvanovGGI2026	2607.28314	v1	Ivanov	2026	GGI Lectures on Large-Scale Structure Perturbation Theory (Effective Field Theory)	lectures
+Sugiyama2025b	2509.04142	v3	Sugiyama	2025	Renormalization-Free Galaxy Bias in Unified Lagrangian Perturbation Theory	critique
+Slosar2008	0805.3580	v2	Slosar	2008	Constraints on local primordial non-Gaussianity from large scale structure	foundation
+Assassi2015	1510.03723	v2	Assassi	2015	Galaxy Bias and Primordial Non-Gaussianity	method
+Barreira2020b	2006.09368	v2	Barreira	2020	Galaxy bias and primordial non-Gaussianity: insights from galaxy formation simulations with IllustrisTNG	critique
+Biagetti2017	1611.04901	v2	Biagetti	2016	Verifying the consistency relation for the scale-dependent bias from local primordial non-Gaussianity	results
+Lazeyras2023	2209.07251	v2	Lazeyras	2022	Assembly bias in the local PNG halo bias and its implication for $f_{\rm NL}$ constraints	critique
+Fondi2026	2602.12357	v1	Fondi	2026	Assembly bias and local Primordial non-Gaussianity from DESI DR1 Quasars	results
+Addis2025	2511.09466	v3	Addis	2025	Unbiased analysis of primordial non-Gaussianity: the multipoles of the full relativistic power spectrum	systematics
+Lewandowski2018	1810.11855	v1	Lewandowski	2018	An analytic implementation of the IR-resummation for the BAO peak	method
+Ivanov2018	1804.05080	v2	Ivanov	2018	Infrared Resummation for Biased Tracers in Redshift Space	method
+Sugiyama2026	2602.20431	v1	Sugiyama	2026	IR-Safe and IR-Resummed Bispectra Before and After Reconstruction in Unified Lagrangian Perturbation Theory	method
+Dam2026	2609.30251	v1	Dam	2026	Statistics of large-scale structure from the transition probability of Lagrangian trajectories	method
+Scoccimarro2004	astro-ph/0407214	v2	Scoccimarro	2004	Redshift-Space Distortions, Pairwise Velocities and Nonlinearities	foundation
+Seljak2011	1109.1888	v1	Seljak	2011	Distribution function approach to redshift space distortions	foundation
+Vlah2012	1207.0839	v2	Vlah	2012	Distribution function approach to redshift space distortions. Part IV: perturbation theory applied to dark matter	method
+Pueblas2009	0809.4606	v2	Pueblas	2008	Generation of Vorticity and Velocity Dispersion by Orbit Crossing	foundation
+Mercolli2014	1307.3220	v3	Mercolli	2013	On the Velocity in the Effective Field Theory of Large Scale Structures	foundation
+Baldauf2014v	1405.5885	v2	Baldauf	2014	Velocity bias in the distribution of dark matter halos	method
+Howlett2019	1906.02875	v1	Howlett	2019	The Redshift-Space Momentum Power Spectrum I: Optimal Estimation From Peculiar Velocity Surveys	method
+Perko2016	1610.09321	v1	Perko	2016	Biased Tracers in Redshift Space in the EFT of Large-Scale Structure	model
+Chudaykin2020	2004.10607	v2	Chudaykin	2020	Non-linear perturbation theory extension of the Boltzmann code CLASS	code

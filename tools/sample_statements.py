@@ -87,7 +87,7 @@ def conventions_lines(formalism: Path) -> set[int]:
     return found
 
 
-def sheet(skill: Path, seed: int, offline: bool) -> tuple[list[dict], list[dict], list[dict]]:
+def sheet(skill: Path, seed: int, offline: bool, only: str = "") -> tuple[list[dict], list[dict], list[dict]]:
     skill_md = str((skill / "SKILL.md").relative_to(ROOT) if (skill / "SKILL.md").is_relative_to(ROOT) else skill / "SKILL.md")
     formalism = skill / "references" / "formalism.md"
     formalism_name = str(formalism.relative_to(ROOT) if formalism.is_relative_to(ROOT) else formalism)
@@ -125,6 +125,10 @@ def sheet(skill: Path, seed: int, offline: bool) -> tuple[list[dict], list[dict]
     for record in numbers:
         if record["status"] in ("doc",) and (record["file"], record["line"]) not in keys:
             part2.append(item(record, "doc", "doc"))
+    if only:
+        # Gate G3 re-reads the new files only (for example `--only /deep/`); part 1 stays whole.
+        part2 = [e for e in part2 if only in e["file"]]
+        passed = [e for e in passed if only in e["file"]]
     rng = random.Random(seed)
     draw = rng.sample(passed, min(DRAW, len(passed)))
     return part1, part2, draw
@@ -155,13 +159,14 @@ def main() -> int:
     parser.add_argument("--seed", type=int, default=1)
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--bound", nargs=2, type=int, metavar=("ERRORS", "N"))
+    parser.add_argument("--only", default="", help="parts 2 and 3 restricted to files whose path contains this (G3: /deep/)")
     args = parser.parse_args()
     if args.bound:
         print(f"{100 * upper_bound(*args.bound):.2f} %")
         return 0
     if not args.skill:
         parser.error("--skill or --bound is required")
-    parts = sheet(ROOT / SKILLS / args.skill, args.seed, args.offline)
+    parts = sheet(ROOT / SKILLS / args.skill, args.seed, args.offline, args.only)
     sys.stdout.write(render(args.skill, args.seed, parts))
     return 0
 

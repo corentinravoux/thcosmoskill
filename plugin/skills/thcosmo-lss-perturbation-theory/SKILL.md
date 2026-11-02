@@ -20,6 +20,12 @@ an equation or a number enters a manuscript.
 | Computed coefficients ($S_3$, UV coefficients), two-loop results, bias measurements in simulations, code comparisons, history of the state of the art | `references/results.md` |
 | Range of validity ($k_{\rm max}$ table), EdS approximation, IR split, FoG, universality of $b_\phi$, convention traps, printing slips, numerical issues, referee checklist | `references/approximations.md` |
 | Debates (two loops and σ8, prior-volume effects, EdS with neutrinos, $b_\phi$, equivalence-principle tests), unresolved calculations, stale claims | `references/open-questions.md` |
+| How the one-loop matter spectrum follows from the $F_n$ recursion, why $P_{13}$ and $P_{22}$ are UV sensitive, and how the sound-speed and stochastic counterterms remove the cutoff dependence (cutoff, dimensional regularisation, FFTLog) | `deep/one-loop-eft-power-spectrum.md` |
+| Which IR-resummation scheme to use (Lagrangian, equivalence-principle formula, TSPT, LPT with $k_{\rm IR}$, redshift space) and how their damping factors and residuals compare | `deep/ir-resummation.md` |
+| How the one-loop redshift-space spectrum is built in the EFT: $Z_n$ kernels, contact-operator counterterms, fingers-of-god term, stochastic terms, IR resummation, multipoles | `deep/redshift-space-eft.md` |
+| How bias operators are renormalised (δ² counterterms, Galileon non-renormalisation, renormalised bias parameters) and how coefficients convert between Galileon, Lagrangian, convective-trace and McDonald–Roy bases | `deep/bias-renormalisation-and-bases.md` |
+| How the PNG scale-dependent bias is derived (peak shift, peak–background split, separate universe, EFT with ψ) and what fixes or breaks the universality of $b_\phi$ | `deep/png-scale-dependent-bias.md` |
+| How velocity, momentum and pairwise-velocity spectra are computed in PT and EFT (mass weighting, vector modes, vorticity, velocity bias, IR resummation) and where PT fails for them | `deep/velocity-momentum-statistics.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind
@@ -88,10 +94,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline equations and values, the state of the domain, the checks a referee makes, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: the formalism and its conventions, the model landscape, other results and their history, the validity of each approximation, open questions |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 4k; formalism 13k; models 6k; open 3k; results 3k.
+Sizes, in thousands of tokens: L1 5k; approximations 4k; formalism 13k; models 6k; open 3k; results 3k; deep/bias-renormalisation-and-bases 10k; deep/ir-resummation 8k; deep/one-loop-eft-power-spectrum 10k; deep/png-scale-dependent-bias 7k; deep/redshift-space-eft 9k; deep/velocity-momentum-statistics 7k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

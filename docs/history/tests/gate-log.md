@@ -221,3 +221,31 @@ label anywhere.
   equations, 119 exact, 0 mismatch; tests pass.
 - The hub router marks the pilot as built (under the owner's review, no
   dossiers yet). Next: P2 owner review; P7 gap audit and dossiers.
+
+## 2026-11-02 — stage 3, P7 pilot dossiers (G1 passed; G3 re-read running)
+
+Six dossiers from the gap audit, two runs of three (about 55 and 75
+research calls): `one-loop-eft-power-spectrum` (141 lines),
+`ir-resummation` (132), `redshift-space-eft` (135),
+`bias-renormalisation-and-bases` (147), `png-scale-dependent-bias` (108),
+`velocity-momentum-statistics` (114). Subtopic velocity-momentum moved from
+thin to covered; field-level forward models stays thin (deepening run
+later).
+
+- G1 on the whole skill: 83 sources, 0 problems; `check_numbers` and
+  `check_equations` empty; `check_transcription` 356 equations, 299
+  exact, 21 contained, 0 mismatch, 0 wrong-section, 36 unreadable;
+  `check_shape` 0 problems; tests pass. Generality: Ivanov 14.9 %,
+  Bernardeau 9.0 %; owner 0 %.
+- One `[der]` paragraph in `png-scale-dependent-bias` (b_φ left free by
+  renormalisation, reasoned from Assassi et al. 2015, arXiv:1510.03723, Eq. 2.53) is marked as
+  the agent's reasoning, carries no number; kept, flagged for the owner.
+- Eight further printed slips reported by the runs: seven confirmed by the
+  coordinator at source (arXiv:2212.08488 Eqs. 25, 27, 32, 110;
+  arXiv:1708.08130 Eqs. 2.26, 2.28; arXiv:1605.02149 Eq. 7.3) and recorded
+  in `stale-claims.md`; one (Chan et al. arXiv:1201.3614 Eq. 116) recorded
+  as reported by arXiv:1812.03208 and not checked in the source, whose
+  rendering shows no Eq. 116.
+- `sample_statements.py --only /deep/`: the G3 sheet covers the new files;
+  `docs/history/tests/g2/thcosmo-lss-perturbation-theory-dossiers-2026-11-02.md`
+  (part 2: 89 items, part 3: 59 items, seed 1102).
