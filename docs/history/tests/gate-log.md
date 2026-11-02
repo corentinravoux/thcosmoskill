@@ -361,3 +361,30 @@ Coordinator, after re-reading each at source:
 - After the fixes: 143 equations, 125 exact, 15 contained, 0 mismatch;
   `check_numbers` and `check_equations` empty.
 - Hub router: built; README row updated.
+
+## 2026-11-02 — stage 4, build `thcosmo-modified-gravity` (G1 passed; G2 running)
+
+Run: about 70 of 90 research calls; SKILL.md 125 lines, formalism 171,
+models 140 (13 model cards), approximations 60, open questions 64, results
+79; 85 sources; 11 subtopics, so no split (D6); vector–tensor,
+teleparallel and f(Q), non-local gravity marked thin.
+
+- G1: `verify_sources` online 0 problems; `check_numbers` and
+  `check_equations` empty; `check_transcription` 92 equations, 65 exact,
+  12 contained, 0 mismatch, 0 wrong-section, 15 unreadable (inline or
+  unnumbered places, all in part 2 of the G2 sheet); `check_places` 26
+  statements, 11 found at place, 15 unreadable; `check_shape` 0 problems;
+  tests pass (155).
+- Generality: Kobayashi 16.9 % (flag), Euclid Collaboration 13.8 %, de Rham
+  7.7 %; owner's papers 0 %. Kobayashi's share is four papers, 53 of the 70
+  citations to the Horndeski review arXiv:1901.07183, the reference the
+  scalar–tensor sections transcribe their Lagrangians from; the other three
+  are distinct results (G-inflation, Vainshtein breaking, unscreened
+  multipoles); kept, justified. The Euclid share is its theory review,
+  quoted [sec] for bounds whose primary sources were not read (listed
+  under "Not verified").
+- Printed slips reported by the run, confirmed by the coordinator at
+  source and recorded in `stale-claims.md`: arXiv:1404.3713 Eq. 13 (scalar
+  gradient term not squared); arXiv:1407.0059 Fig. 9 caption (Λ for Λ⁻¹).
+- G2 sheet: `docs/history/tests/g2/thcosmo-modified-gravity-2026-11-02.md`
+  (107 items: 12 + 36 + 59, seed 1105).
