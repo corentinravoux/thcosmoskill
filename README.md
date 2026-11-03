@@ -116,7 +116,7 @@ In build order (plan v2): the pilot, the three domains of milestone 0.2
 | `thcosmo-primordial-correlators` | in-in, EFT of inflation, non-Gaussianity, collider, bootstrap, decoherence, QFT in de Sitter (0.2: built) |
 | `thcosmo-modified-gravity` | Horndeski and beyond, f(R), massive gravity, screening, EFT of dark energy (0.2: built) |
 | `thcosmo-dark-energy` | Λ problem, quintessence, phantom crossing, interacting and early dark energy |
-| `thcosmo-dark-matter-models` | production mechanisms, candidates, signatures |
+| `thcosmo-dark-matter-models` | production mechanisms, candidates, signatures (built) |
 | `thcosmo-neutrinos-light-relics` | N_eff, massive neutrinos, dark radiation |
 | `thcosmo-cosmological-gravitational-waves` | primordial tensors, stochastic backgrounds, propagation |
 | `thcosmo-baryogenesis-phase-transitions` | baryogenesis, leptogenesis, phase transitions, magnetogenesis |

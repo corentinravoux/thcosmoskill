@@ -591,3 +591,21 @@ Part 3: 58 ok, 1 wrong.
   No equation changed; `check_numbers`, `check_equations` empty; 128
   equations, 0 mismatch; tests pass. Third draw:
   `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03-redraw2.md` (seed 1111).
+
+## 2026-11-03 — stage 5 W1, `thcosmo-dark-matter-models` G2 fresh draw: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-matter-models-2026-11-03-redraw.md`
+(seed 1109). Part 1: 18 ok, 2 unclear. Part 2 (fixed rows): 2 ok, the
+others skipped. Part 3: 57 ok, 2 unclear, 0 wrong: the skill passes G2.
+Every equation re-read matched; the first-round fixes hold.
+
+Coordinator, unclear items quoted at source:
+- `SKILL.md:34`: 17.46(84) μeV "in this minimal model" (arXiv:2609.20801).
+- `SKILL.md:37`: "conventional production through active-sterile mixing
+  is tightly constrained by X-ray searches and structure-formation
+  observations" (arXiv:2609.04650), not "non-resonant".
+- `models.md:120`: "the first cosmological constraints on interactions
+  between dark matter and protons" (arXiv:1801.08609).
+- `approximations.md:58`: the fit of arXiv:astro-ph/0501562 is used for a
+  "pure ΛWDM" universe (Sect. IV.1).
+- Hub router: built; README row updated.

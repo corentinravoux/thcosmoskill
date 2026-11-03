@@ -55,7 +55,7 @@ Snapshot: 2026-11-03
 ### The warm-dark-matter transfer-function fit
 <!-- key: the-warm-dark-matter-transfer-function-fit -->
 
-- What it assumes: thermal relics, or non-resonant sterile neutrinos with a rescaled thermal distribution; ν = 1.12 fitted for k < 5 h Mpc⁻¹ (arXiv:astro-ph/0501562) [src: Sect. II, text after Eq. 6].
+- What it assumes: thermal relics, or non-resonant sterile neutrinos with a rescaled thermal distribution, and a universe in which all the dark matter is warm ("pure ΛWDM", Sect. IV.1); ν = 1.12 fitted for k < 5 h Mpc⁻¹ (arXiv:astro-ph/0501562) [src: Sect. II, text after Eq. 6].
 - How it fails: non-thermal momentum distributions are "not captured by the common $αβγ$-parametrization" (arXiv:2606.20815) [src: abstract]; Shi–Fuller spectra need a refitted mapping (arXiv:2507.18752) [src: abstract].
 - Cite: Viel et al. (arXiv:astro-ph/0501562); the paper that gives the mapping for the momentum distribution used.
 

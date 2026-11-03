@@ -117,7 +117,7 @@ The cards are chosen by the weight of each class in the TASI lectures of Safdi (
 - **Parameters:** cross-section normalisation and power of the relative velocity, dark-matter mass; for dark radiation, the ETHOS effective parameters.
 - **Predictions:** the effect of dark matter–proton scattering "is most prominent on small scales in the CMB power spectra and in the matter power spectrum" (arXiv:1801.08609) [src: abstract].
 - **Consistency:** none found in the sources read.
-- **Observational status:** first cosmological limits from Planck 2015 temperature, polarisation and lensing "for all dark matter masses above 15 keV", for every operator of the non-relativistic effective theory (arXiv:1801.08609) [src: abstract]. Current limits: cosmoskill `cosmo-neutrinos-dark-matter`.
+- **Observational status:** "the first cosmological constraints on interactions between dark matter and protons" within the non-relativistic effective theory, from Planck 2015 temperature, polarisation and lensing "for all dark matter masses above 15 keV", for every operator of the non-relativistic effective theory (arXiv:1801.08609) [src: abstract]. Current limits: cosmoskill `cosmo-neutrinos-dark-matter`.
 - **Status date:** 2026-11-03
 
 ## Macroscopic dark matter
