@@ -12,7 +12,7 @@ The main source of this skill for the scalar-field formalism is the review of Co
 | Item | Copeland, Sami & Tsujikawa 2006 (arXiv:hep-th/0603057) |
 |---|---|
 | Signature | mostly plus: the Newtonian limit is written with $g_{00}=-1-2\Phi$ [src: Sect. IV.1, text after Eq. 59] |
-| Planck mass | full Planck mass $m_{\rm pl}=1.22\times 10^{19}$ GeV [src: Sect. IV.2, text after Eq. 69]; Friedmann equation with 8πG in Sect. V (Eq. 102) and with κ² in Sects. VI–IX (Eq. 180) |
+| Planck mass | full Planck mass $m_{\rm pl}=1.22\times 10^{19}$ GeV [src: Sect. IV.2, text after Eq. 69]; Friedmann equation with 8πG in Eqs. 102 and 160, and with κ² in Eq. 180 |
 | Kinetic term | $(\nabla\phi)^{2}=g^{\mu\nu}\partial_{\mu}\phi\partial_{\nu}\phi$ in the quintessence action [src: Sect. V.1, text after Eq. 97]; k-essence uses $X$, see below |
 | Time variable | e-folds $N={\rm ln}\,(a)$ in the dynamical-system analysis [src: Sect. VI.1.2, text after Eq. 168] |
 | Equation of state | $w_{\phi}=p/\rho$ of the field; Λ has $w=-1$ <!-- eq: notation --> |

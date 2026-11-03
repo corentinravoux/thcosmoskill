@@ -17,7 +17,7 @@ Snapshot: 2026-11-03
 
 - A canonical scalar field has $-1\leq w_{\phi}\leq 1$ (arXiv:hep-th/0603057) [src: Sect. V.1, text after Eq. 106]; phantom behaviour needs a non-canonical or coupled field, or a modification of gravity.
 - Exponential potential: the field-dominated attractor accelerates for $\lambda^{2}<2$; the scaling attractor exists for $\lambda^{2}>3\gamma$ and does not accelerate (arXiv:hep-th/0603057) [src: Table I; Sect. VI.2.1].
-- "Limits of quintessence": with Ω_de ≈ 0.7, thawing models must satisfy 1 + w ≳ 0.004 and freezing models 1 + w ≳ 0.01, about a 0.2% difference from Λ in distance to z = 1 (Caldwell & Linder, arXiv:astro-ph/0505494) [src: text after Fig. 2]; telling thawing from freezing needs "a measurement resolution of order σ(w') ≈ (1+w)" [src: text after Fig. 1]. Parameters "may be finely tuned to keep 1+w arbitrarily close to zero" within the regions [src: text after Fig. 1].
+- "Limits of quintessence": "if the scalar field is prohibited from attaining values exceeding the Planck scale", that is $E\equiv\lvert V/(dV/d\phi)\rvert<M_{P}$, there is a lower bound on 1 + w; with Ω_de ≈ 0.7, thawing models must satisfy 1 + w ≳ 0.004 and freezing models 1 + w ≳ 0.01, and "this may be the limit of quintessence", about a 0.2% difference from Λ in distance to z = 1 (Caldwell & Linder, arXiv:astro-ph/0505494) [src: abstract; inline, text after Fig. 2]; telling thawing from freezing needs "a measurement resolution of order σ(w') ≈ (1+w)" [src: text after Fig. 1]. Parameters "may be finely tuned to keep 1+w arbitrarily close to zero" within the regions [src: text after Fig. 1].
 
 ## The phantom divide
 <!-- key: the-phantom-divide -->
