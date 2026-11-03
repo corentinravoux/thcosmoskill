@@ -632,3 +632,12 @@ Sheet: `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03-redraw2.md`
   the abstract of arXiv:astro-ph/0505494, not after Fig. 1). Checks empty,
   128 equations, 0 mismatch; tests pass. Fourth draw:
   `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03-redraw3.md` (seed 1112).
+
+## 2026-11-03 — stage 5 W1, `thcosmo-dark-energy` G2 fourth draw: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03-redraw3.md`
+(seed 1112). Part 1: 14 ok. Part 3: 59 ok, 0 wrong: the skill passes G2,
+after three failed draws and a full qualitative re-read. Lead for a later
+refresh (reviewer, not yet checked by the coordinator): the freezing upper
+bound listed under "Not verified" in `formalism.md` may be printed in
+arXiv:astro-ph/0505494, text after Fig. 1. Hub router: built; README row.
