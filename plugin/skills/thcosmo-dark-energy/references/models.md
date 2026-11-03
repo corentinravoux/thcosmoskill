@@ -111,7 +111,7 @@ Status as an H0 solution: `thcosmo-tensions-model-building` (planned). The cards
 ### Axion-like early dark energy
 <!-- key: axion-like-early-dark-energy -->
 - **Defining equations:** $V(\theta)=m^{2}f^{2}[1-\cos(\theta)]^{n},$ (arXiv:2302.09032) [src: Eq. 6].
-- **Parameters:** m, f, n and $\theta_i$, usually traded for $z_c$, $f_{\rm EDE}(z_c)$ and $\theta_i$ (arXiv:2302.09032) [src: Sect. III.1].
+- **Parameters:** m, f, n and $\theta_i$; "it is now conventional to trade" m and f for $z_c$ and $f_{\rm EDE}(z_c)$ (arXiv:2302.09032) [src: Sect. III.1].
 - **Predictions:** a component that does not dilute before $a_c$ and dilutes as $a^{-3(1+w_f)}$ after (arXiv:2302.09032) [src: Eq. 21; Sect. IV.1].
 - **Consistency:** the potential is "a toy potential", "non-generic", needing cancellation of the lower instanton harmonics (arXiv:2302.09032) [src: Sects. III.1, VII.2]; near-Planckian field excursions "may run into problems with the weak-gravity conjecture", and radiative corrections bring $\phi^2$ terms that spoil the dilution unless, for one example, $m_b/m_a\lesssim 10^{-4}$ [src: Sect. VII.2, footnote 26]; a "why then" coincidence problem [src: Sect. VII.1]. Reply: a string-theory embedding has model-building challenges "not particularly different" from those of inflation, dark energy or fuzzy dark matter (as summarised in arXiv:2302.09032) [sec: Sect. III.1].
 - **Observational status:** SPT + ACT + Planck: $f_{\rm EDE}<0.070$ at 95% CL; adding DESI: $f_{\rm EDE}\,=\, 0.055^{+0.024}_{-0.047}$ at 68% CL, a "weak preference", the shift being "a manifestation of the discrepancy currently present between DESI and CMB experiments" in ΛCDM (SPT-3G D1, arXiv:2507.23355) [src: abstract]. Details: `thcosmo-tensions-model-building`.
@@ -143,7 +143,7 @@ Chosen by their weight in the CosmoVerse white paper (arXiv:2504.01669, v3, Sect
 ### Running vacuum models
 <!-- key: running-vacuum-models -->
 - **Defining equations:** $\rho_{\rm vac}(H)=\frac{3}{8\pi G}(c_{0}+\nu H^{2}+\tilde{\nu}\dot{H})+\mathcal{O}(H^{4})\,.$ (CosmoVerse, arXiv:2504.01669) [src: Eq. 4.11].
-- **Parameters:** ν and $\tilde\nu$, "expected to be ≲ O(10⁻⁴–10⁻²)" from the masses and non-minimal couplings of the fields, "ultimately determined from observations"; many analyses assume $\tilde{\nu}=\nu/2$ (arXiv:2504.01669) [src: Sect. 4.2.1.e, inline, text after Eq. 4.11].
+- **Parameters:** ν and $\tilde\nu$, "expected to be ≲ O(10⁻⁴–10⁻²)" from the masses and non-minimal couplings of the fields, "ultimately determined from observations"; the most recent constraints it cites use "the simplified assumption" $\tilde{\nu}=\nu/2$ (arXiv:2504.01669) [src: Sect. 4.2.1.e, inline, text after Eq. 4.11].
 - **Predictions:** a time-varying vacuum energy implies non-conservation of matter or a time-varying G; the $O(H^4)$ terms can drive inflation (arXiv:2504.01669) [src: Sect. 4.2.1.e].
 - **Consistency:** motivated by renormalisation-group arguments in curved spacetime and by adiabatic regularisation in QFT in curved spacetime (arXiv:2504.01669) [src: Sect. 4.2.1.e]; Martin's renormalised flat-space vacuum energy (arXiv:1205.3365, Eq. 515) is the comparison point. Reply: none found in this run.
 - **Observational status:** the white-paper section states that RVMs "accommodate the wealth of cosmological data" and that coupling to dark matter or a running G can loosen the growth and H0 tensions (arXiv:2504.01669) [src: Sect. 4.2.1.e] — a claim of the RVM authors, not checked here.

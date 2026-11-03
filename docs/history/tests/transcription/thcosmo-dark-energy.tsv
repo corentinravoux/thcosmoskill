@@ -9,6 +9,7 @@ plugin/skills/thcosmo-dark-energy/SKILL.md	32	hep-th/0603057	147	exact	c_{s}^{2}
 plugin/skills/thcosmo-dark-energy/SKILL.md	33	2606.01360	4	exact	c_{a}^{2}=\frac{\delta p}{\delta\rho}\Big|_{\rm{adiabatic}}=\frac{\bar{p}^{\prime}}{\bar{\rho}^{\prime}}=w-\frac{w^{\prime}}{3\mathcal{H}(1+w)}.	c_{a}^{2}=\frac{\delta p}{\delta\rho}\Big|_{\rm{adiabatic}}=\frac{\bar{p}^{\prime}}{\bar{\rho}^{\prime}}=w-\frac{w^{\prime}}{3\mathcal{H}(1+w)}.
 plugin/skills/thcosmo-dark-energy/SKILL.md	35	2606.21826	9	exact	w_{\rm de}^{\rm eff}=w-\frac{aQ}{3\mathcal{H}\rho_{\rm de}},	\displaystyle w_{\rm de}^{\rm eff}=w-\frac{aQ}{3\mathcal{H}\rho_{\rm de}},
 plugin/skills/thcosmo-dark-energy/SKILL.md	37	2302.09032	6	exact	V(\theta)=m^{2}f^{2}[1-\cos(\theta)]^{n},	V(\theta)=m^{2}f^{2}[1-\cos(\theta)]^{n},
+plugin/skills/thcosmo-dark-energy/references/approximations.md	19	1603.08299		unreadable	C_{e}^{2}=1	
 plugin/skills/thcosmo-dark-energy/references/approximations.md	27	hep-th/0603057	104	exact	\epsilon=-\dot{H}/H^{2}	\epsilon=-\dot{H}/H^{2}
 plugin/skills/thcosmo-dark-energy/references/approximations.md	33	2606.01360	1	exact	w(a)=w_{0}+w_{a}(1-a)	w(a)=w_{0}+w_{a}(1-a)~,
 plugin/skills/thcosmo-dark-energy/references/approximations.md	40	hep-th/0603057	69	contained	m_{\rm pl}=1.22\times 10^{19}	m_{\rm pl}=1.22\times 10^{19}\,{\rm GeV}

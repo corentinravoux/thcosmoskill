@@ -472,3 +472,36 @@ judged dense, not padded.
   Griest–Seckel, misalignment papers).
 - G2 sheet: `docs/history/tests/g2/thcosmo-dark-matter-models-2026-11-03.md`
   (170 items: 20 + 91 + 59, seed 1107).
+
+## 2026-11-03 — stage 5 W1, `thcosmo-dark-energy` G2: **failed the draw**, fixed, fresh draw running
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03.md` (106
+items, seed 1106). Part 1: 11 ok, 2 wrong, 1 unclear. Part 2: 31 ok, 2
+wrong. Part 3: 57 ok, 1 wrong, 1 unclear: the draw fails (D20).
+
+Coordinator, after re-reading each at source:
+- `SKILL.md:55`, `approximations.md:64` (wrong): "120 orders of magnitude"
+  attributed to arXiv:1205.3365, whose abstract prints 122; 120 is printed
+  by arXiv:2606.20778 (abstract). Both now quoted with their own paper.
+  `check_places` had classed both "found-elsewhere": an elsewhere number is
+  now read by the coordinator at G1, not left to G2.
+- `SKILL.md:37` (wrong): the "toy potential" of arXiv:2302.09032 is now
+  quoted with both routes of Sect. III.1 (instanton corrections with
+  fine-tuning, or an axion–dilaton interaction).
+- `approximations.md:28` (wrong): "typically" restored (arXiv:0712.3450).
+- `models.md:146` (wrong, in the draw): "many analyses assume" ν̃ = ν/2
+  replaced by the paper's words: the most recent constraints it cites use
+  "the simplified assumption" (arXiv:2504.01669, Sect. 4.2.1.e).
+- `SKILL.md:33` (unclear): Vikman's hedges ("generally", dominance,
+  quadratic Lagrangians) now quoted; the unqualified no-go is attributed to
+  arXiv:2606.01360 only.
+- `open-questions.md:52` (unclear): the few×10⁻² mag level is the
+  sensitivity the review names, not its requirement; restated.
+- Same pattern searched in the whole skill (unquoted "usually", "most",
+  "commonly", "many"): three more fixed at source (`approximations.md:19`,
+  arXiv:1603.08299 Sect. 4.2; `approximations.md:33`; `models.md:114`,
+  arXiv:2302.09032 Sect. III.1 "it is now conventional to trade").
+- After the fixes: 126 equations, 97 exact, 0 mismatch; `check_numbers`
+  and `check_equations` empty; `check_places` 0 found-elsewhere.
+- Fresh draw: `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03-redraw.md`
+  (seed 1108); part 1 and part 3 to be re-read.

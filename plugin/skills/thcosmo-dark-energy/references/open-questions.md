@@ -49,7 +49,7 @@ Snapshot: 2026-11-03
 - Sound speed of dark energy: current data already give the first constraint for time-varying w (arXiv:2511.22478) [src: abstract].
 - Euclid: pre-launch **forecast** constraints on time-varying dark energy and specific modified-gravity models are reviewed in arXiv:2512.09748 [src: abstract]; numbers there are forecasts.
 - Thawing versus freezing needs σ(w') ≈ (1+w) (arXiv:astro-ph/0505494) [src: text after Fig. 1].
-- SN Ia calibration at the few×10⁻² mag level is a stated requirement for claims of evolving w (arXiv:2602.05368) [src: abstract].
+- The DESI-era preference for evolving w is "particularly sensitive to redshift-dependent SN calibration/selection residuals at the few×10⁻² mag level", and the review derives "an explicit calibration requirement" for such claims (arXiv:2602.05368) [src: abstract].
 
 ## Stale claims and misconceptions
 <!-- key: stale-claims-and-misconceptions -->

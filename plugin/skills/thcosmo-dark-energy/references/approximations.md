@@ -16,7 +16,7 @@ Snapshot: 2026-11-03
 ## Smooth dark energy and the fluid closure
 <!-- key: smooth-dark-energy-and-the-fluid-closure -->
 
-- What it assumes: dark energy as a fluid with w(a) and a rest-frame sound speed, usually $c_s^2=1$ (the value for a canonical scalar field, where Wang et al. call it "correct for scalar fields", arXiv:1603.08299, Sect. 4.2).
+- What it assumes: dark energy as a fluid with w(a) and a rest-frame sound speed; Wang et al. note that $C_{e}^{2}=1$ "is correct for scalar fields, but it is not obvious for other cases, especially for a fluid with a constant equation of state" (arXiv:1603.08299) [src: Sect. 4.2, inline, paragraph after the perturbation equations].
 - How it fails: through w = −1 the adiabatic sound speed diverges and the perturbation system "becomes ill-defined around the crossing point" (arXiv:2606.01360) [src: text after Eq. 10]; a phantom-crossing $w_0w_a$ fit cannot be run with a single-fluid closure.
 - Regime of validity of the remedy: the PPF closure is exact in the metric evolution well above and below the transition scale to smoothness and "a well controlled approximation for a wide range of smooth dark energy models" (arXiv:0808.3125) [src: abstract].
 - Cite: Fang, Hu & Lewis (arXiv:0808.3125) whenever a crossing w(a) is run through a Boltzmann code.
@@ -25,12 +25,12 @@ Snapshot: 2026-11-03
 <!-- key: slow-roll-applied-to-dark-energy -->
 
 - The inflationary slow-roll conditions "are not completely trustworthy" for dark energy because dark matter is present; $\epsilon=-\dot{H}/H^{2}$ is the measure that includes both (arXiv:hep-th/0603057) [src: Sect. V.1, text after Eq. 104].
-- The thawing slow-roll limit of Scherrer & Sen gives a w(a) accurate to δw ≲ 0.005 for w < −0.9 for the potentials they tested (arXiv:0712.3450) [src: abstract]; the Caldwell–Linder thawing and freezing bounds are valid for (1+w) ≪ 1, with w ≲ −0.8 "a practical limit of applicability" (arXiv:astro-ph/0505494) [src: text after Fig. 1].
+- The thawing slow-roll limit of Scherrer & Sen gives a w(a) "typically accurate to within delta w < 0.005 for w<-0.9" for the potentials they tested (arXiv:0712.3450) [src: abstract]; the Caldwell–Linder thawing and freezing bounds are valid for (1+w) ≪ 1, with w ≲ −0.8 "a practical limit of applicability" (arXiv:astro-ph/0505494) [src: text after Fig. 1].
 
 ## Parameterisations of w(a)
 <!-- key: parameterisations-of-w-a -->
 
-- What they assume: a two-parameter form of w(a), most often $w(a)=w_{0}+w_{a}(1-a)$ (Ren et al., arXiv:2606.01360) [src: Eq. 1]. For thawing quintessence with nearly flat potentials the linear form is a good fit at z ≲ 1 (arXiv:0712.3450) [src: abstract].
+- What they assume: a two-parameter form of w(a), such as $w(a)=w_{0}+w_{a}(1-a)$ (Ren et al., arXiv:2606.01360) [src: Eq. 1]. For thawing quintessence with nearly flat potentials the linear form is a good fit at z ≲ 1 (arXiv:0712.3450) [src: abstract].
 - How they fail: a crossing of w = −1 read from a fit is not a model property; physically self-consistent models (thawing quintessence with curvature) fit the same data without it (arXiv:2504.15190) [src: abstract]. The contour shapes and degeneracy directions change between CPL, JBP, BA, EXP, LOG and SIN, while the preference persists (arXiv:2606.21826) [src: Sect. II.2].
 - Prior dependence: evidence for thawing quintessence depends on whether priors are informed by the data (arXiv:2411.13637, v4) [src: abstract]; mapping a CPL posterior back to a physical model needs a theory-informed prior (arXiv:2511.23463) [src: abstract].
 
@@ -61,7 +61,7 @@ Snapshot: 2026-11-03
 - Dark-energy perturbations: sound speed stated; PPF or equivalent for crossings (arXiv:0808.3125).
 - Model evidence: prior dependence shown (arXiv:2411.13637); dependence on the SN Ia compilation shown (arXiv:2512.10585; arXiv:2606.21826).
 - Early dark energy: priors on $f_{\rm EDE}$, $z_c$ against m, f; radiative stability of the potential (arXiv:2302.09032, Sect. VII.2); status questions sent to `thcosmo-tensions-model-building`.
-- Λ problem: a paper quoting "120 orders of magnitude" says which estimate it uses (arXiv:1205.3365) [src: abstract].
+- Λ problem: a paper quoting "122 orders of magnitude" (arXiv:1205.3365) [src: abstract] or "120 orders of magnitude" (arXiv:2606.20778) [src: abstract] says which estimate it uses.
 
 ## Not verified
 <!-- key: not-verified -->
