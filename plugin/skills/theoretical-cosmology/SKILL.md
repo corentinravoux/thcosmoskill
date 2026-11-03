@@ -31,7 +31,7 @@ map; its content supersedes this hub.
 | Scalar–tensor (Horndeski, beyond Horndeski, DHOST), f(R), vector–tensor, massive gravity, teleparallel and other theories, screening, consistency (ghosts, instabilities, positivity), EFT of dark energy, parameterised frameworks, speed of tensors | `thcosmo-modified-gravity` | built (first milestone) |
 | Cosmological-constant problem, quintessence, k-essence, phantom crossing, interacting dark energy, early dark energy, dark-energy model building after DESI | `thcosmo-dark-energy` | built (W1) |
 | Dark-matter production (freeze-out, freeze-in, misalignment, gravitational), candidates (WIMP, axion and ultralight, sterile neutrino, self-interacting, dark sectors), linear and non-linear signatures | `thcosmo-dark-matter-models` | built (W1) |
-| Neutrino decoupling and N_eff in the Standard Model, massive-neutrino perturbations, dark radiation, interacting neutrinos | `thcosmo-neutrinos-light-relics` | planned |
+| Neutrino decoupling and N_eff in the Standard Model, massive-neutrino perturbations, dark radiation, interacting neutrinos | `thcosmo-neutrinos-light-relics` | built (W1) |
 | Primordial tensors, stochastic backgrounds from inflation, phase transitions, defects and scalar-induced sources, gravitational-wave propagation in cosmology | `thcosmo-cosmological-gravitational-waves` | planned |
 | Baryogenesis and leptogenesis, electroweak and QCD transitions, first-order phase transitions and bubble dynamics, primordial magnetogenesis | `thcosmo-baryogenesis-phase-transitions` | planned |
 | Primordial black-hole formation and abundance, cosmic strings and other topological defects | `thcosmo-pbh-defects` | planned |

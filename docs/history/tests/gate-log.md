@@ -641,3 +641,22 @@ after three failed draws and a full qualitative re-read. Lead for a later
 refresh (reviewer, not yet checked by the coordinator): the freezing upper
 bound listed under "Not verified" in `formalism.md` may be printed in
 arXiv:astro-ph/0505494, text after Fig. 1. Hub router: built; README row.
+
+## 2026-11-03 — stage 5 W1, `thcosmo-neutrinos-light-relics` G2: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-2026-11-03.md`
+(127 items, seed 1110). Part 1: 16 ok, 2 unclear. Part 2: 41 ok, 1 wrong,
+8 unclear. Part 3: 56 ok, 3 unclear, 0 wrong: the skill passes G2.
+
+- One agent re-read the 14 flagged items at source (all reviewer notes
+  confirmed) and fixed them with the papers' quoted words: one place label
+  (`formalism.md:73`, text after Eq. 52 of arXiv:astro-ph/9506072), two
+  more place labels, dropped hedges and conditions, one generalisation
+  ("papers before 2020") removed; two more instances of the pattern fixed.
+- arXiv:2107.09664: its abstract and body assign the vector and
+  Dirac-fermion limits the other way round; both quoted, recorded in
+  `stale-claims.md`.
+- After the fixes: 97 equations, 75 exact, 0 mismatch; checks empty;
+  tests pass. Hub router: built; README row.
+- W1 domains: all three built (dark energy after four draws, dark matter
+  after two, neutrinos after one). Next: the dossiers of the 0.2 domains.

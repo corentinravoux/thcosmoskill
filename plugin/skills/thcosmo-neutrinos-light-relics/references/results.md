@@ -54,7 +54,7 @@ All at fixed $(\omega_{\rm m},\Omega_\Lambda)$, degenerate masses (Lesgourgues &
 ## Light but massive relics: bounds
 <!-- key: light-but-massive-relics-bounds -->
 
-- At the minimal temperature T_X⁽⁰⁾ = 0.91 K: Weyl and higher-spin fermions (for example the gravitino) with $m_X\geq 2.26$ eV are ruled out at 95% C.L.; limits m_X ≤ 11.2, 1.06, 1.56 eV for scalar, vector and Dirac-fermion relics; data Planck 2018, BOSS DR12 full shape, CFHTLenS (arXiv:2107.09664) [src: abstract].
+- At the minimal temperature T_X⁽⁰⁾ = 0.91 K: Weyl and higher-spin fermions (for example the gravitino) with $m_X\geq 2.26$ eV are ruled out at 95% C.L.; limits m_X ≤ 11.2, 1.06, 1.56 eV for scalar, vector and Dirac-fermion relics (arXiv:2107.09664) [src: abstract]. The body gives vectors 1.6 eV and Dirac fermions 1.1 eV [src: Sect. I; Sect. V], and arXiv:2203.07943 gives vectors 1.56 eV and Dirac fermions 1.06 eV [src: Sect. 4.3]: abstract and body disagree on the vector and Dirac assignments. Data Planck 2018, BOSS DR12 full shape, CFHTLenS (arXiv:2107.09664) [src: Sect. III].
 - Planck is insensitive to the shape of the LiMR phase-space distribution for $z_{NR}<10^5$, which makes the limit "model-insensitive and readily reinterpretable" (arXiv:2607.12021) [src: abstract].
 
 ## History of the key results

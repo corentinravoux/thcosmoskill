@@ -31,9 +31,9 @@ an equation or a number enters a manuscript.
 - A light thermal relic adds $\Delta N_{\rm eff}=\frac{4}{7}g_{X,\star}\left(\frac{T_{X}}{T_{\nu}}\right)^{4}=\frac{4}{7}g_{X,\star}\left(\frac{43}{4g_{\star}(T_{F})}\right)^{4/3}\ ,$ (arXiv:2203.07943) [src: Eq. 2]; any species once in equilibrium gives $\Delta N_{\rm eff}\geq 0.027$ unless the thermal history changes [src: Sect. 2.1]; a reheating temperature below $T_F$ evades it (arXiv:1604.08614) [src: Sect. 1].
 - $\Omega_{\nu}=\frac{\rho_{\nu}}{\rho_{\rm c}}=\frac{\sum_{i}m_{i}}{93.14\,h^{2}~{\rm eV}}~,$ (arXiv:astro-ph/0603494) [src: Eq. 12]; minimal sums $\sum m_{\nu}\gtrsim 0.06$ eV (normal) and $\gtrsim 0.10$ eV (inverted) (arXiv:2404.19322) [src: Sect. III].
 - Free streaming leaves modes with $k<k_{\rm nr}$, $k_{\rm nr}\simeq 0.018\,\,\Omega_{\rm m}^{1/2}\left(\frac{m}{1\,\mathrm{eV}}\right)^{1/2}h\,\mathrm{Mpc}^{-1}~.$, untouched (arXiv:astro-ph/0603494) [src: Eq. 97]; above it $\delta_{\rm cdm}\propto a^{p_{+}}\simeq a^{1-\frac{3}{5}f_{\nu}}~,$ [src: Eq. 134].
-- The small-scale suppression rule, printed $\frac{P(k)^{f_{\nu}}}{P(k)^{f_{\nu}=0}}\simeq-8\,f_{\nu}~.$ (arXiv:astro-ph/0603494) [src: Eq. 144], holds for $0<f_{\nu}<0.07$ at fixed $(\omega_{\rm m},\Omega_\Lambda)$ [src: Sect. 4.5.7].
+- The small-scale suppression rule, printed $\frac{P(k)^{f_{\nu}}}{P(k)^{f_{\nu}=0}}\simeq-8\,f_{\nu}~.$ (arXiv:astro-ph/0603494) [src: Eq. 144], is called "a reasonable first-order approximation for $0<f_{\nu}<0.07$" at fixed $(\omega_{\rm m},\Omega_\Lambda)$ [src: Sect. 4.5.7], and is introduced as an approximation to Eq. 143 "for plausible values of $(\omega_{\rm m},N_{\nu},\Omega_{\Lambda})$" [src: Sect. 4.5.6, text before Eq. 144].
 - The current CMB mass bound is "mostly a background measurement"; the free-streaming mass is bounded only at $\sum m_\nu^\mathrm{Pert.} < 0.8\,\mathrm{eV}$ (arXiv:2411.14524) [src: abstract].
-- For adiabatic modes a phase shift needs a mode faster than $c_\gamma$, i.e. free-streaming radiation; otherwise isocurvature (arXiv:1508.06342) [src: Sect. 2.2]. At leading order $\theta\approx 0.191\pi\,\epsilon_{X}+\mathcal{O}(\epsilon_{X}^{2})\,,$ [src: Eq. 2.67].
+- A phase shift needs a "mode traveling faster than $c_{\gamma}$" or "non-adiabatic fluctuations" (arXiv:1508.06342) [src: Sect. 2.2]; for adiabatic fluctuations the first "is realized by free-streaming relativistic particles, such as neutrinos or other forms of dark radiation", and "Alternatively, a phase shift can arise from isocurvature fluctuations" [src: abstract]. At leading order $\theta\approx 0.191\pi\,\epsilon_{X}+\mathcal{O}(\epsilon_{X}^{2})\,,$ [src: Eq. 2.67].
 - The neutrino phase shift is detected "at about 10σ" with Planck and "roughly 14σ" with ACT and SPT (arXiv:2501.13788) [src: abstract].
 - Fluid-like relics give no phase shift and are allowed in larger amounts: $\Delta N_{\rm eff,fld}<0.38$ against $\Delta N_{\rm eff,fs}<0.28$ (Planck 2018 + BAO, 95% C.L., as compiled in arXiv:2203.07943) [src: Table 1].
 - The strongly interacting neutrino mode is disfavoured with odds of 5:100000 by DESI DR1 FS + BAO + CMB-SPA (arXiv:2610.26654) [src: abstract].
@@ -83,7 +83,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 7k; models 4k; open 2k; results 4k.
+Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 7k; models 5k; open 2k; results 4k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
