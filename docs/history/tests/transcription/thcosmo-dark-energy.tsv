@@ -108,6 +108,7 @@ plugin/skills/thcosmo-dark-energy/references/formalism.md	113	hep-th/0603057	147
 plugin/skills/thcosmo-dark-energy/references/models.md	12	hep-th/0603057	191	exact	V(\phi)=V_{0}e^{-\kappa\lambda\phi}\,.	\displaystyle V(\phi)=V_{0}e^{-\kappa\lambda\phi}\,.
 plugin/skills/thcosmo-dark-energy/references/models.md	14	hep-th/0603057	196	exact	w_{\rm eff}=w_{\phi}=-1+\lambda^{2}/3	w_{\rm eff}=w_{\phi}=-1+\lambda^{2}/3
 plugin/skills/thcosmo-dark-energy/references/models.md	21	hep-th/0603057	112	exact	V(\phi)=\frac{M^{4+\alpha}}{\phi^{\alpha}}\,,	V(\phi)=\frac{M^{4+\alpha}}{\phi^{\alpha}}\,,
+plugin/skills/thcosmo-dark-energy/references/models.md	32	astro-ph/0505494		unreadable	E<M_{P}	
 plugin/skills/thcosmo-dark-energy/references/models.md	51	hep-th/0603057	115,116	exact	S=\int{\rm d}^{4}x\sqrt{-g}\,p(\phi,X)\,,	\displaystyle S=\int{\rm d}^{4}x\sqrt{-g}\,p(\phi,X)\,,
 plugin/skills/thcosmo-dark-energy/references/models.md	51	hep-th/0603057	115,116	exact	p(\phi,X)=f(\phi)\hat{p}(X)\,.	\displaystyle p(\phi,X)=f(\phi)\hat{p}(X)\,.
 plugin/skills/thcosmo-dark-energy/references/models.md	53	hep-th/0603057	147	contained	c_{s}^{2}\equiv\frac{p_{,X}}{\rho_{,X}}	\displaystyle c_{s}^{2}\equiv\frac{p_{,X}}{\rho_{,X}}=\frac{\xi_{2}}{\xi_{1}}\,,
@@ -125,3 +126,4 @@ plugin/skills/thcosmo-dark-energy/references/models.md	122	2302.09032	10	exact	V
 plugin/skills/thcosmo-dark-energy/references/models.md	145	2504.01669	4.11	exact	\rho_{\rm vac}(H)=\frac{3}{8\pi G}(c_{0}+\nu H^{2}+\tilde{\nu}\dot{H})+\mathcal{O}(H^{4})\,.	\rho_{\rm vac}(H)=\frac{3}{8\pi G}(c_{0}+\nu H^{2}+\tilde{\nu}\dot{H})+\mathcal{O}(H^{4})\,.
 plugin/skills/thcosmo-dark-energy/references/models.md	146	2504.01669	4.11	exact	\tilde{\nu}=\nu/2	\tilde{\nu}=\nu/2
 plugin/skills/thcosmo-dark-energy/references/results.md	10	hep-th/0603057	67,68,69,70	contained	\rho_{\rm vac}\approx 10^{74}	\displaystyle\rho_{\rm vac}\approx 10^{74}\,{\rm GeV}^{4}\,,
+plugin/skills/thcosmo-dark-energy/references/results.md	20	astro-ph/0505494		unreadable	E\equiv\lvert V/(dV/d\phi)\rvert<M_{P}	

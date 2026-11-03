@@ -12,7 +12,7 @@ Snapshot: 2026-11-03
 - **Defining equations:** $V(\phi)=V_{0}e^{-\kappa\lambda\phi}\,.$ (arXiv:hep-th/0603057) [src: Eq. 191].
 - **Parameters:** the slope λ.
 - **Predictions:** late-time attractor field-dominated with $w_{\rm eff}=w_{\phi}=-1+\lambda^{2}/3$, accelerating for $\lambda^{2}<2$ (arXiv:hep-th/0603057) [src: Sect. VI.2.1, inline, text after Eq. 196]; for λ² > 3γ a scaling attractor that does not accelerate [src: Table I; Sect. VI.2.1]. Two fields with double-exponential potentials emulate one field with a shallower potential, so that fields that "individually cannot drive cosmic acceleration" can collectively do so (Alestas et al., arXiv:2510.21627) [src: abstract].
-- **Consistency:** single-field exponential quintessence is the main string-theory route reviewed by Andriot (arXiv:2603.25797) [src: abstract]; the swampland criterion |∇V| ≥ c·V forbids de Sitter vacua (arXiv:1806.08362) [src: abstract]; reply: none found in this run (see `thcosmo-fundamental-theory`).
+- **Consistency:** single-field exponential quintessence is the main string-theory route reviewed by Andriot (arXiv:2603.25797) [src: abstract]; the proposed swampland criterion |∇V| ≥ c·V "forbids dS vacua" (arXiv:1806.08362) [src: abstract]; reply: none found in this run (see `thcosmo-fundamental-theory`).
 - **Observational status:** two-field model with Planck 2018 shift parameters, DESI DR2 BAO and DES Y5 SN Ia: Δln B ∼ 4 against flat ΛCDM, "moderate evidence against the latter", with both slopes close to 1 (arXiv:2510.21627) [src: abstract].
 - **Status date:** 2026-11-03
 
@@ -20,9 +20,9 @@ Snapshot: 2026-11-03
 <!-- key: inverse-power-law-tracker-quintessence -->
 - **Defining equations:** $V(\phi)=\frac{M^{4+\alpha}}{\phi^{\alpha}}\,,$ the potential of the original quintessence models (arXiv:hep-th/0603057) [src: Eq. 112].
 - **Parameters:** M and α.
-- **Predictions:** tracker solutions insensitive to initial conditions (arXiv:astro-ph/9812313) [src: abstract]; freezing behaviour, w' < 0 as the field slows (arXiv:astro-ph/0505494) [src: Fig. 2 caption].
+- **Predictions:** tracker solutions insensitive to initial conditions (arXiv:astro-ph/9812313) [src: abstract]; freezing behaviour, "initially w>-1 and w'<0", as the field slows (arXiv:astro-ph/0505494) [src: text after Fig. 1; Fig. 2 caption].
 - **Consistency:** trackers depend sensitively on the shape of the potential over the whole field range (arXiv:0712.3450) [src: Sect. V]; reply: none found.
-- **Observational status:** not assessed in a paper read this run; freezing models evolve away from w = −1 at late times, opposite to the thawing behaviour discussed for DESI (see `open-questions.md`).
+- **Observational status:** not assessed in a paper read this run. Freezing fields evolve towards "w→-1, w'→0" as they are critically damped (arXiv:astro-ph/0505494) [src: text after Fig. 1], while thawing fields start at w ≈ −1 and move away from it (see `open-questions.md` for the thawing debate).
 - **Status date:** 2026-11-03
 
 ### Thawing quintessence (monomial, PNGB / axion)
@@ -30,15 +30,15 @@ Snapshot: 2026-11-03
 - **Defining equations:** thawing potentials analysed by Caldwell & Linder: V = M^{4−n}φ^n, exponential, and the PNGB V = M⁴cos²(φ/2f) (arXiv:astro-ph/0505494) [src: text after Fig. 1].
 - **Parameters:** the scale and shape of V; the initial field value; for the PNGB the decay constant f.
 - **Predictions:** w starts at −1 and grows, w' > 0 (arXiv:astro-ph/0505494) [src: text after Fig. 1]; for a field kept below the Planck scale ($E<M_{P}$) and Ω_de ≈ 0.7, thawing models must satisfy 1 + w ≳ 0.004, which "may be the limit of quintessence" (arXiv:astro-ph/0505494) [src: abstract; inline, text after Fig. 2]; for nearly flat potentials a universal w(a) (arXiv:0712.3450) [src: abstract].
-- **Consistency:** for the PNGB, f ≪ M_P needs finely tuned initial conditions (arXiv:astro-ph/0505494) [src: text after Fig. 1]. Shiu, Tonioni & Tran derive an analytic bound on the axion mass and decay constant which, combined with proposed quantum-gravity constraints, pushes the masses "much larger than the Hubble scale, in tension with basic models of axion quintessence" (arXiv:2604.09141) [src: abstract]; reply: none found.
-- **Observational status:** disputed. Payeur et al. find a preference over Λ only "if we use priors which are heavily informed by the data itself", vanishing with physically motivated priors (DESI BAO, Planck 2018, Pantheon+ or DES SN) (arXiv:2411.13637, v4) [src: abstract]. Shlivko finds thawing "consistently preferred" with DESI DR2, Planck+ACT and any major SN compilation, not sensitive to the prior but "contingent on the inclusion of supernovae" (arXiv:2512.20832) [src: abstract]. With non-zero curvature, thawing quintessence fits the data as well as $w_0w_a$ in a flat background (Dinda & Maartens, arXiv:2504.15190) [src: abstract].
+- **Consistency:** Caldwell & Linder leave out the PNGB with f ≪ M_P "since the field rapidly evolves to w→0 unless the initial conditions are finely tuned" (arXiv:astro-ph/0505494) [src: text after Fig. 1]. Shiu, Tonioni & Tran derive an analytic bound on the axion mass and decay constant which, combined with proposed quantum-gravity constraints, pushes the masses "much larger than the Hubble scale, in tension with basic models of axion quintessence" (arXiv:2604.09141) [src: abstract]; reply: none found.
+- **Observational status:** disputed. Payeur et al. find a preference over Λ only "if we use priors which are heavily informed by the data itself", and "if we extend the priors to physically better motivated ranges, the evidence for thawing quintessence disappears" (DESI BAO, Planck 2018, Pantheon+ or DES SN) (arXiv:2411.13637, v4) [src: abstract]. Shlivko finds thawing "consistently preferred" with DESI DR2, Planck+ACT and any major SN compilation, not sensitive to the prior but "contingent on the inclusion of supernovae" (arXiv:2512.20832) [src: abstract]. With non-zero curvature, thawing quintessence fits the data as well as $w_0w_a$ in a flat background (Dinda & Maartens, arXiv:2504.15190) [src: abstract].
 - **Status date:** 2026-11-03
 
 ### Kinetically mixed axion–dilaton quintessence (KMIX)
 <!-- key: kinetically-mixed-axion-dilaton-quintessence -->
 - **Defining equations:** an axion-like field coupled exponentially to a dilaton-like field, string-motivated (Toomey et al., arXiv:2511.23463) [src: abstract]; the Lagrangian was not read this run.
 - **Parameters:** not read.
-- **Predictions:** "can appear phantom" in a CPL analysis without true phantom behaviour (arXiv:2511.23463) [src: abstract].
+- **Predictions:** KMIX "can appear phantom in a standard Chevallier-Polarski-Linder (CPL) based analysis", and "may account for the DESI preference without invoking true phantom behavior" (arXiv:2511.23463) [src: abstract].
 - **Consistency:** none found.
 - **Observational status:** Planck + DESI DR2 BAO: support at 2.5σ against 3.1σ for the CPL fit; with SN above 3σ for Union3 and DES Y5, 2.1σ with Pantheon+, 1.7σ adding DESI full-shape power spectrum and bispectrum (arXiv:2511.23463) [src: abstract].
 - **Status date:** 2026-11-03
@@ -51,7 +51,7 @@ Snapshot: 2026-11-03
 - **Defining equations:** $S=\int{\rm d}^{4}x\sqrt{-g}\,p(\phi,X)\,,$ with $p(\phi,X)=f(\phi)\hat{p}(X)\,.$ (arXiv:hep-th/0603057) [src: Eqs. 115–116].
 - **Parameters:** the functions f and $\hat{p}$.
 - **Predictions:** an attractor tracks radiation and makes k-essence behave as a cosmological constant at the onset of matter domination, overtaking matter "at about the present epoch" (Armendariz-Picon et al., arXiv:astro-ph/0006373) [src: abstract]; sound speed $c_{s}^{2}\equiv\frac{p_{,X}}{\rho_{,X}}$, which may differ from one (arXiv:hep-th/0603057) [src: Eq. 147].
-- **Consistency:** stability needs $\xi_1>0$, $\xi_2\geq 0$ (arXiv:hep-th/0603057) [src: Eq. 145]; for $p=-X+X^2$, quantum stability needs X ≥ 1/2, and the small dark-energy density gives $|X|\gg X^2$, where stability cannot be ensured [src: Sect. V.5, text after Eq. 147]. Reply: none found in this run.
+- **Consistency:** stability needs $\xi_1>0$, $\xi_2\geq 0$ (arXiv:hep-th/0603057) [src: Eq. 145]; for $p=-X+X^2$, at X ≥ 1/2 "the system is completely stable at the quantum level", but the small dark-energy density gives $|X|\gg X^2$, "in which case one can not ensure the stability of quantum fluctuations" [src: Sect. V.5, text after Eq. 147]. Reply: none found in this run.
 - **Observational status:** no dedicated 2025–2026 constraint read in this run.
 - **Status date:** 2026-11-03
 
@@ -69,7 +69,7 @@ Snapshot: 2026-11-03
 - **Defining equations:** Lagrangian $p=-X-V(\phi)$ (arXiv:hep-th/0603057) [src: Sect. V.5, text after Eq. 147]; ε = −1 in Eqs. 179–189 [src: Eq. 179].
 - **Parameters:** the potential V.
 - **Predictions:** w < −1 (arXiv:astro-ph/9908168) [src: abstract]; a Big Rip in finite time for a phantom density that grows without bound (arXiv:astro-ph/0302506) [src: abstract].
-- **Consistency:** quantum-mechanically unstable ghost (arXiv:hep-th/0603057) [src: Sect. V.5]; bounds on the cutoff of a ghost effective theory, Λ < 3 MeV (arXiv:hep-ph/0311312) [src: abstract]; reply: a negative kinetic term "does not necessarily lead to inconsistencies" with suitable higher-order kinetic terms (ghost condensate) (arXiv:hep-th/0603057) [src: Sect. V.5, text after Eq. 147].
+- **Consistency:** quantum-mechanically unstable ghost (arXiv:hep-th/0603057) [src: Sect. V.5]; bounds on the cutoff of a ghost effective theory, "assuming only that ghosts interact at least gravitationally", Λ < 3 MeV (arXiv:hep-ph/0311312) [src: abstract]; reply: a negative kinetic term "does not necessarily lead to inconsistencies" with suitable higher-order kinetic terms (ghost condensate) (arXiv:hep-th/0603057) [src: Sect. V.5, text after Eq. 147].
 - **Observational status:** in GR a phantom equation of state is "unphysical" and the DESI crossing is "an artifact of a parametrization", per Dinda & Maartens (arXiv:2504.15190) [src: abstract]; see `open-questions.md`.
 - **Status date:** 2026-11-03
 
@@ -90,7 +90,7 @@ Snapshot: 2026-11-03
 - **Defining equations:** ${\rho}_{\rm de}^{\prime}+3\mathcal{H}(1+w)\rho_{\rm de}=aQ,$ and ${\rho}_{\rm c}^{\prime}+3\mathcal{H}\rho_{\rm c}=-aQ,$ (arXiv:2606.21826) [src: Eqs. 3–4], with $Q=\beta H_{0}\rho_{\rm c},\qquad Q=\beta H_{0}\rho_{\rm de}.$ [src: Eq. 6] or the H-proportional forms of Eq. 5; the interacting vacuum has w = −1.
 - **Parameters:** the coupling β (sign convention of the paper), w, and the kernel.
 - **Predictions:** an apparent phantom crossing in $w_{\rm de}^{\rm eff}$ (arXiv:2606.21826) [src: Eq. 9; Sect. III.1]. For the constant-w model with Q = βH₀ρ_de, the effective equation of state resembles $w_0w_a$CDM and crosses the phantom divide (Li et al., arXiv:2610.30784) [src: abstract].
-- **Consistency:** large-scale early-time instability for constant w and Q ∝ ρ_c (arXiv:0804.0232) [src: abstract]; reply: stable for Q ∝ ρ_de or $\omega_d<-1$ (arXiv:1603.08299, Sect. 4.2), and the ePPF treatment (arXiv:2606.21826, Sect. III.1). Sign-switching fits that send energy from dark energy to dark matter at low redshift come with "negative dark energy densities in the past, which may be unphysical" (Figueruelo et al., arXiv:2601.03122) [src: abstract].
+- **Consistency:** large-scale early-time instability for constant w and Q ∝ ρ_c (arXiv:0804.0232) [src: abstract; Sect. III, Eq. 38]; reply: for Q ∝ ρ_c "the divergence does not exist when ω_d < −1", and for Q ∝ ρ_de the system is "stable for any constant ω_d < −1" but "could become unstable in the observationally allowed range ω_d > −1 when the interaction parameter is ξ₂ ∼ 1" (arXiv:1603.08299, Sect. 4.2), and the ePPF treatment (arXiv:2606.21826, Sect. III.1). Sign-switching fits that send energy from dark energy to dark matter at low redshift come with "negative dark energy densities in the past, which may be unphysical" (Figueruelo et al., arXiv:2601.03122) [src: abstract].
 - **Observational status:** Q = βH₀ρ_de with SPT + DESI DR2 + DES Y5: β = −0.4170 ± 0.1220, a 3.4σ deviation from zero, weakening to 2.1σ with Pantheon+ (Li et al., arXiv:2510.11363) [src: abstract]. Constant w with the same kernel and CMB + DESI + DES-Dovekie: $\beta=-2.52^{+0.80}_{-0.54}$ and $w=-1.510^{+0.170}_{-0.120}$, 3.2σ and 3.0σ from β = 0 and w = −1 (arXiv:2610.30784) [src: abstract]. Non-parametric β(z) for the interacting vacuum changes sign, ∼2σ from ΛCDM at high redshift, low-redshift results depending on the SN sample, $\ln\mathcal{B} = 5.98 \pm 0.69$ for CMB + DESI DR2 + DES Y5 (Li & Zhang, arXiv:2506.18477) [src: abstract]. Interacting extensions of CPL and JBP keep an early phantom phase but reduce the significance of excluding w = −1 (arXiv:2606.21826) [src: Sect. III.1].
 - **Status date:** 2026-11-03
 
@@ -113,7 +113,7 @@ Status as an H0 solution: `thcosmo-tensions-model-building` (planned). The cards
 - **Defining equations:** $V(\theta)=m^{2}f^{2}[1-\cos(\theta)]^{n},$ (arXiv:2302.09032) [src: Eq. 6].
 - **Parameters:** m, f, n and $\theta_i$; "it is now conventional to trade" m and f for $z_c$ and $f_{\rm EDE}(z_c)$ (arXiv:2302.09032) [src: Sect. III.1].
 - **Predictions:** a component that does not dilute before $a_c$ and dilutes as $a^{-3(1+w_f)}$ after (arXiv:2302.09032) [src: Eq. 21; Sect. IV.1].
-- **Consistency:** the potential is "a toy potential", "non-generic", needing cancellation of the lower instanton harmonics (arXiv:2302.09032) [src: Sects. III.1, VII.2]; near-Planckian field excursions "may run into problems with the weak-gravity conjecture", and radiative corrections bring $\phi^2$ terms that spoil the dilution unless, for one example, $m_b/m_a\lesssim 10^{-4}$ [src: Sect. VII.2, footnote 26]; a "why then" coincidence problem [src: Sect. VII.1]. Reply: a string-theory embedding has model-building challenges "not particularly different" from those of inflation, dark energy or fuzzy dark matter (as summarised in arXiv:2302.09032) [sec: Sect. III.1].
+- **Consistency:** the potential is "a toy potential" that "may be generated by higher-order instanton corrections that require fine-tuning to cancel the leading contributions, or through the interaction of an axion and a dilaton and is therefore non-generic" (arXiv:2302.09032) [src: Sect. III.1]; generating it from an instanton expansion with the leading terms vanished "is generically hard to achieve" [src: Sect. VII.2]; near-Planckian field excursions "may run into problems with the weak-gravity conjecture", and, "for models not protected by approximate shift-symmetries like the axion-like model", radiative corrections bring $\phi^2$ terms that spoil the dilution unless, for one example, $m_b/m_a\lesssim 10^{-4}$ [src: Sect. VII.2, footnote 26]; a "why then" coincidence problem [src: Sect. VII.1]. Reply: a string-theory embedding has model-building challenges "not particularly different" from those of inflation, dark energy or fuzzy dark matter (as summarised in arXiv:2302.09032) [sec: Sect. III.1].
 - **Observational status:** SPT + ACT + Planck: $f_{\rm EDE}<0.070$ at 95% CL; adding DESI: $f_{\rm EDE}\,=\, 0.055^{+0.024}_{-0.047}$ at 68% CL, a "weak preference", the shift being "a manifestation of the discrepancy currently present between DESI and CMB experiments" in ΛCDM (SPT-3G D1, arXiv:2507.23355) [src: abstract]. Details: `thcosmo-tensions-model-building`.
 - **Status date:** 2026-11-03
 
@@ -155,7 +155,7 @@ Chosen by their weight in the CosmoVerse white paper (arXiv:2504.01669, v3, Sect
 - **Parameters:** none beyond ΛCDM.
 - **Predictions:** w increases from $-\frac{2}{3 {\rm{ln}}\, 10} -1$ in the past to −1 in the future (arXiv:1906.08275) [src: abstract].
 - **Consistency:** none found.
-- **Observational status:** with a hard 2σ lower prior on $H_0$ from local measurements, Δχ²_bf ∼ −41.08 against ΛCDM (arXiv:1906.08275) [src: abstract]; the result rests on that prior.
+- **Observational status:** with a hard 2σ lower prior on $H_0$ from local measurements, Δχ²_bf ∼ −41.08 against ΛCDM (arXiv:1906.08275) [src: abstract]; the result is obtained "by setting a hard-cut 2σ lower bound prior for the H_0" [src: abstract].
 - **Status date:** 2026-11-03
 
 ### Sign-switching cosmological constant ($\Lambda_{\rm s}$CDM) and negative dark-energy densities

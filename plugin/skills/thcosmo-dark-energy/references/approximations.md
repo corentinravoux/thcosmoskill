@@ -8,8 +8,8 @@ Snapshot: 2026-11-03
 <!-- key: the-fluid-treatment-of-an-interacting-dark -->
 
 - What it assumes: a dark-energy fluid with constant w and a rest-frame sound speed set by hand; Wang et al. take $C_e^2=1$, correct for scalar fields but "not obvious" for a fluid (arXiv:1603.08299) [src: Sect. 4.2].
-- How it fails: constant w with Q ∝ ρ_c gives a super-Hubble blow-up of the curvature perturbation at early times, independent of the coupling strength (arXiv:0804.0232) [src: abstract]; background fits alone are therefore "not sufficient" (arXiv:2606.21826) [src: Sect. III.1].
-- Remedies: Q ∝ ρ_de with a small enough coupling (arXiv:0901.3272) [src: abstract]; the ePPF framework of IDECAMB (arXiv:2606.21826) [src: Sect. III.1].
+- How it fails: constant w with "a simple interaction with dark matter" (proportional to ρ_c in the model of Sect. III, Eq. 38) gives "an instability in the dark sector perturbations at early times: the curvature perturbation blows up on super-Hubble scales", "regardless of how weak the coupling is" (arXiv:0804.0232) [src: abstract]; background fits alone are therefore "not sufficient" (arXiv:2606.21826) [src: Sect. III.1].
+- Remedies: Q ∝ Hρ_de, "provided the coupling is made small enough for a given equation of state parameter" (arXiv:0901.3272) [src: abstract]; the ePPF framework of IDECAMB (arXiv:2606.21826) [src: Sect. III.1].
 - Cite: Valiviita, Majerotto & Maartens (arXiv:0804.0232) for the instability; the ePPF papers through arXiv:2606.21826.
 - Trap: the sign of Q and of β is convention-dependent (Li et al. arXiv:2606.21826, Eqs. 3–4, against Wang et al. arXiv:1603.08299, Eqs. 12–13).
 
@@ -17,7 +17,7 @@ Snapshot: 2026-11-03
 <!-- key: smooth-dark-energy-and-the-fluid-closure -->
 
 - What it assumes: dark energy as a fluid with w(a) and a rest-frame sound speed; Wang et al. note that $C_{e}^{2}=1$ "is correct for scalar fields, but it is not obvious for other cases, especially for a fluid with a constant equation of state" (arXiv:1603.08299) [src: Sect. 4.2, inline, paragraph after the perturbation equations].
-- How it fails: through w = −1 the adiabatic sound speed diverges and the perturbation system "becomes ill-defined around the crossing point" (arXiv:2606.01360) [src: text after Eq. 10]; a phantom-crossing $w_0w_a$ fit cannot be run with a single-fluid closure.
+- How it fails: through w = −1 the adiabatic sound speed diverges and the perturbation system "becomes ill-defined around the crossing point" (arXiv:2606.01360) [src: text after Eq. 10]; models that cross "require additional degrees of freedom to ensure gravitational stability" (arXiv:0808.3125) [src: abstract].
 - Regime of validity of the remedy: the PPF closure is exact in the metric evolution well above and below the transition scale to smoothness and "a well controlled approximation for a wide range of smooth dark energy models" (arXiv:0808.3125) [src: abstract].
 - Cite: Fang, Hu & Lewis (arXiv:0808.3125) whenever a crossing w(a) is run through a Boltzmann code.
 
@@ -25,14 +25,14 @@ Snapshot: 2026-11-03
 <!-- key: slow-roll-applied-to-dark-energy -->
 
 - The inflationary slow-roll conditions "are not completely trustworthy" for dark energy because dark matter is present; $\epsilon=-\dot{H}/H^{2}$ is the measure that includes both (arXiv:hep-th/0603057) [src: Sect. V.1, text after Eq. 104].
-- The thawing slow-roll limit of Scherrer & Sen gives a w(a) "typically accurate to within delta w < 0.005 for w<-0.9" for the potentials they tested (arXiv:0712.3450) [src: abstract]; the Caldwell–Linder thawing and freezing bounds are valid for (1+w) ≪ 1, with w ≲ −0.8 "a practical limit of applicability" (arXiv:astro-ph/0505494) [src: text after Fig. 1].
+- The thawing slow-roll limit of Scherrer & Sen gives a w(a) that, "for a variety of potentials", is "typically accurate to within delta w < 0.005 for w<-0.9" (arXiv:0712.3450) [src: abstract]; the Caldwell–Linder thawing and freezing bounds are valid for (1+w) ≪ 1, with w ≲ −0.8 "a practical limit of applicability" (arXiv:astro-ph/0505494) [src: text after Fig. 1].
 
 ## Parameterisations of w(a)
 <!-- key: parameterisations-of-w-a -->
 
-- What they assume: a two-parameter form of w(a), such as $w(a)=w_{0}+w_{a}(1-a)$ (Ren et al., arXiv:2606.01360) [src: Eq. 1]. For thawing quintessence with nearly flat potentials the linear form is a good fit at z ≲ 1 (arXiv:0712.3450) [src: abstract].
-- How they fail: a crossing of w = −1 read from a fit is not a model property; physically self-consistent models (thawing quintessence with curvature) fit the same data without it (arXiv:2504.15190) [src: abstract]. The contour shapes and degeneracy directions change between CPL, JBP, BA, EXP, LOG and SIN, while the preference persists (arXiv:2606.21826) [src: Sect. II.2].
-- Prior dependence: evidence for thawing quintessence depends on whether priors are informed by the data (arXiv:2411.13637, v4) [src: abstract]; mapping a CPL posterior back to a physical model needs a theory-informed prior (arXiv:2511.23463) [src: abstract].
+- What they assume: a two-parameter form of w(a), such as $w(a)=w_{0}+w_{a}(1-a)$ (Ren et al., arXiv:2606.01360) [src: Eq. 1]. For thawing quintessence with nearly flat potentials, "for redshift z < 1", w(a) "is well-fit by the Chevallier-Polarski-Linder parametrization" (arXiv:0712.3450) [src: abstract].
+- How they fail: a crossing of w = −1 read from a fit is not a model property; physically self-consistent models (thawing quintessence with curvature) fit the same data without it (arXiv:2504.15190) [src: abstract]. The contour shapes and degeneracy directions change between CPL, JBP, BA, EXP, LOG and SIN, while "the preference for DDE does not disappear when the CPL assumption is relaxed" (arXiv:2606.21826) [src: Sect. II.2].
+- Prior dependence: evidence for thawing quintessence depends on whether priors are informed by the data (arXiv:2411.13637, v4) [src: abstract]; Toomey et al. map CPL chains back to the KMIX parameters through "a theory-informed prior" on $(w_0,w_a)$ learnt from KMIX realisations (arXiv:2511.23463) [src: abstract].
 
 ## Convention traps
 <!-- key: convention-traps -->
@@ -49,7 +49,7 @@ Snapshot: 2026-11-03
 <!-- key: numerical-issues -->
 
 - Fluid closures through w = −1: use PPF (arXiv:0808.3125) [src: abstract]; for interacting fluids the ePPF of IDECAMB (arXiv:2606.21826) [src: Sect. III.1].
-- Early dark energy perturbations: the effective sound speed depends on k and a for oscillating fields (arXiv:2302.09032) [src: Sect. IV.1]; cycle-averaged fluid descriptions are the standard reduction [src: Sect. III.1].
+- Early dark energy perturbations: the effective sound speed depends on k and a for oscillating fields (arXiv:2302.09032) [src: Sect. IV.1]; the general behaviour of axion-like EDE "is well-described by cycle-averaging the evolution of the background and perturbative field dynamics" [src: Sect. III.1].
 
 ## Referee checklist
 <!-- key: referee-checklist -->

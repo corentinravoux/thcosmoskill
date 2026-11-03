@@ -584,3 +584,10 @@ Part 3: 58 ok, 1 wrong.
 - Two failed draws on one pattern: a targeted qualifier audit of the 47
   unquoted strong claims (`thcosmo-dark-energy-qualifier-audit-lines.txt`)
   runs before a third draw.
+- Qualifier audit done (one agent, 40 calls): about 70 statements checked,
+  41 rewritten to the papers' quoted words, one moved to "Not verified"
+  (`results.md:18`); one factual error found (`models.md:25`: freezing
+  fields go to "w→-1, w'→0", arXiv:astro-ph/0505494, not away from −1).
+  No equation changed; `check_numbers`, `check_equations` empty; 128
+  equations, 0 mismatch; tests pass. Third draw:
+  `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03-redraw2.md` (seed 1111).
