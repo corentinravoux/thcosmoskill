@@ -10,9 +10,10 @@ each model, the range of validity of each approximation, and the statements
 still in circulation that are out of date. When it matters, Claude reads the
 paper again rather than trusting the skill.
 
-**Status: base release 0.1.0.** The hub skill, its scripts, the layer
-machinery, the tools and the tests are in place. The domain skills are
-planned, not yet built: see [`docs/plans/2026-10-30-plan-v2.md`](docs/plans/2026-10-30-plan-v2.md)
+**Status: release 0.2.0.** The hub and four domain skills are built:
+LSS perturbation theory (with six dossiers), inflation, primordial
+correlators and modified gravity; 301 sources checked against arXiv. The
+other domains are planned: see [`docs/plans/2026-10-30-plan-v2.md`](docs/plans/2026-10-30-plan-v2.md)
 (decisions: [`docs/plans/2026-10-30-decisions.md`](docs/plans/2026-10-30-decisions.md)).
 Until a domain exists, the hub says that the suite holds no material on it.
 
@@ -102,14 +103,14 @@ Each answer ends with a line such as
   a theoretical problem.
 - **Each file lists what could not be verified**, under "Not verified".
 
-## Planned domains
+## Domains
 
-In build order (plan v2): the pilot, the three domains of milestone 0.2,
-then the rest.
+In build order (plan v2): the pilot, the three domains of milestone 0.2
+(built), then the rest (planned).
 
 | Skill | Covers |
 |---|---|
-| `theoretical-cosmology` | hub: routes to the others; conventions atlas; methods index; stale-claims register (built, skeletons) |
+| `theoretical-cosmology` | hub: routes to the others; conventions atlas; methods index; stale-claims register (built; methods index and stale claims in first versions) |
 | `thcosmo-lss-perturbation-theory` | SPT, LPT, EFTofLSS, bias, redshift space, velocity statistics, intrinsic alignments, large deviations (pilot: built, six dossiers) |
 | `thcosmo-inflation` | inflationary dynamics and models, reheating, stochastic and eternal inflation (0.2: built) |
 | `thcosmo-primordial-correlators` | in-in, EFT of inflation, non-Gaussianity, collider, bootstrap, decoherence, QFT in de Sitter (0.2: built) |

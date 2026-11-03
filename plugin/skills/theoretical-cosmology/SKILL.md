@@ -8,9 +8,9 @@ description: Use when reviewing, deriving, planning or fact-checking theoretical
 ## State of the suite
 <!-- key: state-of-the-suite -->
 
-Version 0.1.0 <!-- num: not a value -->: the base only. The hub, its scripts and the layer machinery
-are in place; one domain skill is built, `thcosmo-lss-perturbation-theory`
-(the pilot); the others are planned, in the order of `docs/plans/2026-10-30-plan-v2.md` of the package
+Version 0.2.0 <!-- num: not a value -->: the hub and four domain skills are built,
+`thcosmo-lss-perturbation-theory` (with six dossiers), `thcosmo-inflation`,
+`thcosmo-primordial-correlators` and `thcosmo-modified-gravity`; the others are planned, in the order of `docs/plans/2026-10-30-plan-v2.md` of the package
 repository. Until a domain is built, say that the suite holds no material on
 it, answer from general knowledge only if the asker accepts that, label such
 an answer as unsourced, and never present it as coming from the suite.

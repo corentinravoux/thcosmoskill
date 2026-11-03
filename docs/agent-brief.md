@@ -25,7 +25,10 @@ identifiers out of fifty-one pointed to other papers.
    making (pilot G2, 2026-11-02). The same for a difference, a percentage,
    a unit change or a rounding. A qualitative claim about size ("of order
    one", "small", "dominant") is quoted from the place named, not
-   paraphrased (pilot G3, 2026-11-02).
+   paraphrased (pilot G3, 2026-11-02). Keep the paper's hedges and
+   qualifiers ("in general", "usually", "up to", "for the range tested",
+   the range of validity): dropping one turns a hedged claim into a firmer
+   one (stage 4 G2, 2026-11-03).
 3. **Equations are transcribed, not derived.** Write an equation as the
    cited paper writes it, in its conventions, and name those conventions
    when they differ from the ones stated at the top of `formalism.md`. Do
