@@ -388,3 +388,34 @@ teleparallel and f(Q), non-local gravity marked thin.
   gradient term not squared); arXiv:1407.0059 Fig. 9 caption (Λ for Λ⁻¹).
 - G2 sheet: `docs/history/tests/g2/thcosmo-modified-gravity-2026-11-02.md`
   (107 items: 12 + 36 + 59, seed 1105).
+
+## 2026-11-03 — stage 4, `thcosmo-modified-gravity` G2: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-modified-gravity-2026-11-02.md`
+(107 items, seed 1105). Part 1: 12 ok. Part 2: 30 ok, 5 wrong, 1 unclear.
+Part 3: 59 ok, 0 wrong: the skill passes G2. Every equation matched as
+printed.
+
+Coordinator, after re-reading each at source (all wrongs are dropped
+hedges or qualifiers):
+- `formalism.md:139`: arXiv:1404.3713 Sect. 3.3 says $c_{\rm s}$ is "not in
+  general equivalent" to $C^{2}$, which "usually depends on scale"; quoted.
+- `approximations.md:29`: arXiv:2604.15434 adds "for the range of tested
+  values"; arXiv:2607.24940 lists the normal and self-accelerating DGP
+  models; both restored.
+- `models.md:32`: arXiv:0705.1158 conditions on the halo "and local
+  environment", "substantially deeper", "during the acceleration epoch";
+  quoted.
+- `models.md:34`: arXiv:2009.08743 bounds hold in the Compton-wavelength
+  range 0.3–8 Mpc; restored.
+- `models.md:81`: arXiv:2609.10760 counts 199 "symmetry-inequivalent"
+  amplitudes; restored.
+- Unclear, `open-questions.md:53`: the link between DGP and the galileon
+  is in arXiv:0811.2197 (abstract), not in arXiv:1707.02263; both now
+  cited at their place.
+- After the fixes: 92 equations, 65 exact, 0 mismatch; `check_numbers` and
+  `check_equations` empty; tests pass.
+- Pattern: qualifiers dropped in paraphrase, the same as in the
+  correlators gate; brief rule 2 covers it. The next build prompts add an
+  explicit line: keep the paper's hedges.
+- Hub: router built; README row; six entries in `stale-claims.md`.

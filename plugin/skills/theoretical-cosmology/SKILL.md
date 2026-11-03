@@ -28,7 +28,7 @@ map; its content supersedes this hub.
 | SPT, LPT, EFTofLSS, IR resummation, bias expansion, redshift-space theory, consistency relations, primordial non-Gaussianity in LSS, velocity statistics and the momentum power spectrum, intrinsic alignments and shape bias, large-deviation and one-point statistics | `thcosmo-lss-perturbation-theory` | built (pilot, with six dossiers) |
 | Inflationary dynamics and model landscape, slow roll, attractors, multi-field, reheating, initial conditions, eternal and stochastic inflation | `thcosmo-inflation` | built (first milestone) |
 | Quantum fluctuations, in-in formalism, EFT of inflation, non-Gaussianity shapes, consistency relations, cosmological collider, bootstrap, features, loop corrections, decoherence, QFT in de Sitter and infrared effects | `thcosmo-primordial-correlators` | built (first milestone) |
-| Scalar–tensor (Horndeski, beyond Horndeski, DHOST), f(R), vector–tensor, massive gravity, teleparallel and other theories, screening, consistency (ghosts, instabilities, positivity), EFT of dark energy, parameterised frameworks, speed of tensors | `thcosmo-modified-gravity` | planned (first milestone) |
+| Scalar–tensor (Horndeski, beyond Horndeski, DHOST), f(R), vector–tensor, massive gravity, teleparallel and other theories, screening, consistency (ghosts, instabilities, positivity), EFT of dark energy, parameterised frameworks, speed of tensors | `thcosmo-modified-gravity` | built (first milestone) |
 | Cosmological-constant problem, quintessence, k-essence, phantom crossing, interacting dark energy, early dark energy, dark-energy model building after DESI | `thcosmo-dark-energy` | planned |
 | Dark-matter production (freeze-out, freeze-in, misalignment, gravitational), candidates (WIMP, axion and ultralight, sterile neutrino, self-interacting, dark sectors), linear and non-linear signatures | `thcosmo-dark-matter-models` | planned |
 | Neutrino decoupling and N_eff in the Standard Model, massive-neutrino perturbations, dark radiation, interacting neutrinos | `thcosmo-neutrinos-light-relics` | planned |
@@ -158,7 +158,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 5k; conventions 12k; methods-index 2k; review-checklists 1k; review-rubric 1k; stale-claims 3k; suite-conventions 4k.
+Sizes, in thousands of tokens: L1 5k; conventions 12k; methods-index 2k; review-checklists 1k; review-rubric 1k; stale-claims 4k; suite-conventions 4k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

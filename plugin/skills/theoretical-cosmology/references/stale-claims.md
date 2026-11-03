@@ -9,13 +9,19 @@ recur", copied with their sources; first version at the first milestone
 (plan v2, stage 4), from the built domains. Errata are added as they are
 confirmed at source.
 
-Snapshot: 2026-11-02
+Snapshot: 2026-11-03
 
 ## Corrected statements
 <!-- key: corrected-statements -->
 
 | Statement | Corrected by | Domain | Recorded |
 |---|---|---|---|
+| "f(R) and chameleons explain cosmic acceleration as a modified-gravity effect" | chameleon-like scalars cannot self-accelerate and act as a form of dark energy: arXiv:1208.4612 [src: abstract] | `thcosmo-modified-gravity` | 2026-11-03 |
+| "The self-accelerating DGP branch is a benchmark of infrared modified gravity" | it carries a ghost: arXiv:hep-th/0604086 [src: abstract]; the cubic Galileon model "exhibits a 7.8σ tension with the data" from ISW cross-correlations: arXiv:1707.02263 [src: abstract] | `thcosmo-modified-gravity` | 2026-11-03 |
+| "Quartic and quintic Horndeski or GLPV are viable dark-energy models" | stale after GW170817 and graviton decay: arXiv:1901.07183 [src: Sect. 4.2], arXiv:1809.03484 [src: abstract]; unless the cutoff argument of arXiv:1806.09417 [src: abstract] is invoked explicitly | `thcosmo-modified-gravity` | 2026-11-03 |
+| "The quasi-static approximation holds inside the Hubble horizon" | it holds, at best, inside the sound horizon of dark energy: arXiv:1503.06831 [src: abstract] | `thcosmo-modified-gravity` | 2026-11-03 |
+| "Vainshtein screening hides the fifth force around any source in DHOST and the EFT of DE" | shown for spherical symmetry; multipoles are unscreened for generic beyond-Horndeski parameters: arXiv:2607.09098 [src: abstract]; screening breaks inside matter: arXiv:1411.4130 [src: abstract] | `thcosmo-modified-gravity` | 2026-11-03 |
+| "A DESI background fit tests a modified-gravity theory" | a background w(z) can be reproduced with w = −1 and a suitable function in the local limit of non-local gravity: arXiv:2609.26517 [src: abstract] | `thcosmo-modified-gravity` | 2026-11-03 |
 | "SPT loops converge to the non-linear spectrum" | loop integrals are UV sensitive; the UV part of $P_{13}$ renormalises the sound speed: Ivanov, arXiv:2212.08488 [src: Eqs. 72–73] | `thcosmo-lss-perturbation-theory` | 2026-11-02 |
 | "Eulerian and Lagrangian EFTs give different predictions" | they agree within overlapping domains to the order computed: Cabass et al., arXiv:2203.08232 [src: Sect. 3.5] | `thcosmo-lss-perturbation-theory` | 2026-11-02 |
 | "Local bias in density is enough at one loop" | renormalisation requires the tidal operator at second order and the velocity potential at third: Assassi et al., arXiv:1402.5916 [src: abstract] | `thcosmo-lss-perturbation-theory` | 2026-11-02 |

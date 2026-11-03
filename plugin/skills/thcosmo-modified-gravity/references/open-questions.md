@@ -50,7 +50,7 @@ Snapshot: 2026-11-02
 <!-- key: stale-claims-and-misconceptions -->
 
 - **"f(R) and chameleons explain cosmic acceleration as a modified-gravity effect."** Stale: chameleon-like scalars cannot self-accelerate and act as a form of dark energy (arXiv:1208.4612) [src: abstract].
-- **"The self-accelerating DGP branch is a benchmark of infrared modified gravity."** Stale: it carries a ghost (arXiv:hep-th/0604086) [src: abstract], and the cubic Galileon, its 4D limit, is in 7.8σ tension with ISW data (arXiv:1707.02263) [src: abstract].
+- **"The self-accelerating DGP branch is a benchmark of infrared modified gravity."** Stale: it carries a ghost (arXiv:hep-th/0604086) [src: abstract], its departures from GR are captured by a 4D effective theory of a scalar with derivative self-interactions, generalised to the galileon (arXiv:0811.2197) [src: abstract]; the cubic Galileon model "exhibits a 7.8σ tension with the data" from ISW cross-correlations, "which effectively rules it out" (arXiv:1707.02263) [src: abstract].
 - **"Quartic and quintic Horndeski or GLPV are viable dark-energy models."** Stale after GW170817 and graviton decay (arXiv:1901.07183, Sect. 4.2; arXiv:1809.03484) [src: Sect. 4.2; abstract], unless the cutoff argument of arXiv:1806.09417 [src: abstract] is invoked explicitly.
 - **"The quasi-static approximation holds inside the Hubble horizon."** It holds, at best, inside the sound horizon of dark energy (arXiv:1503.06831) [src: abstract].
 - **"Vainshtein screening hides the fifth force around any source in DHOST and the EFT of DE."** Shown for spherical symmetry; multipoles are unscreened for generic beyond-Horndeski parameters (arXiv:2607.09098) [src: abstract], and screening breaks inside matter (arXiv:1411.4130) [src: abstract].
