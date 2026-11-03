@@ -444,3 +444,31 @@ model building).
   ($c_{a}^{2}$ inverted).
 - G2 sheet: `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03.md`
   (106 items: 14 + 33 + 59, seed 1106).
+
+## 2026-11-03 — stage 5 W1, build `thcosmo-dark-matter-models` (G1 passed; G2 waiting for a slot)
+
+Run: 76 of 90 research calls; SKILL.md 125 lines, formalism 122, models
+135 (12 model cards), approximations 95, open questions 74, results 80; 66
+sources; 12 subtopics, 10 covered, 2 thin (dark sectors, gravitational
+production). All five reference files are under the brief's 150 lines;
+judged dense, not padded.
+
+- G1: `verify_sources` online 0 problems; `check_numbers` and
+  `check_equations` empty; `check_transcription` 136 equations, 55 exact,
+  28 contained, 0 mismatch, 0 wrong-section, 53 unreadable (abstract values
+  and inline equations: all in part 2 of the G2 sheet, re-read by hand);
+  `check_places` 52 statements, 30 at place, 22 unreadable; `check_shape` 0
+  problems.
+- Generality: Safdi 15.6 % (flag), Bernal 5.7 %, Viel 5.1 %; owner's papers
+  0 %. Safdi's share is one source, the TASI lectures arXiv:2303.02169
+  (53 citations), the formalism reference for axions and freeze-out; kept,
+  justified.
+- Printed slips reported by the run, confirmed by the coordinator at source
+  and recorded in `stale-claims.md`: arXiv:2507.00705 (sign of the
+  $m_{22}$ exponent against arXiv:astro-ph/0003365; sign of the quantum
+  term in $\gamma^{2}$; unit "M⊙ kpc³"); arXiv:1801.08609 Eqs. 16–17
+  (Maxwellian normalised by $\bar{v}^{3/2}$).
+- Not read: the pre-arXiv foundations (Lee–Weinberg, Gondolo–Gelmini,
+  Griest–Seckel, misalignment papers).
+- G2 sheet: `docs/history/tests/g2/thcosmo-dark-matter-models-2026-11-03.md`
+  (170 items: 20 + 91 + 59, seed 1107).
