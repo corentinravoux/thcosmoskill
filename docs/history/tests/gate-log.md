@@ -625,3 +625,10 @@ Sheet: `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03-redraw2.md`
   so every non-equation statement of the skill is now re-read at source by
   one agent before a fourth draw. Brief rule 2 extended to conditions,
   scope and "first" claims.
+- Full re-read done (one agent): about 190 non-equation statements checked;
+  73 rewritten to the papers' quoted words (SKILL.md 4, formalism 19,
+  models 24, results 14, approximations 7, open questions 5); 3 moved to
+  "Not verified"; 5 place labels corrected (three σ(w') statements are in
+  the abstract of arXiv:astro-ph/0505494, not after Fig. 1). Checks empty,
+  128 equations, 0 mismatch; tests pass. Fourth draw:
+  `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03-redraw3.md` (seed 1112).

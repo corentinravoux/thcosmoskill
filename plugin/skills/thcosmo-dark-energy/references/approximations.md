@@ -8,7 +8,7 @@ Snapshot: 2026-11-03
 <!-- key: the-fluid-treatment-of-an-interacting-dark -->
 
 - What it assumes: a dark-energy fluid with constant w and a rest-frame sound speed set by hand; Wang et al. take $C_e^2=1$, correct for scalar fields but "not obvious" for a fluid (arXiv:1603.08299) [src: Sect. 4.2].
-- How it fails: constant w with "a simple interaction with dark matter" (proportional to ρ_c in the model of Sect. III, Eq. 38) gives "an instability in the dark sector perturbations at early times: the curvature perturbation blows up on super-Hubble scales", "regardless of how weak the coupling is" (arXiv:0804.0232) [src: abstract]; background fits alone are therefore "not sufficient" (arXiv:2606.21826) [src: Sect. III.1].
+- How it fails: constant w with "a simple interaction with dark matter" (proportional to ρ_c in the model of Sect. III, Eq. 38) gives "an instability in the dark sector perturbations at early times: the curvature perturbation blows up on super-Hubble scales", "regardless of how weak the coupling is" (arXiv:0804.0232) [src: abstract]; for Li et al. this "shows that background viability alone is not sufficient" (arXiv:2606.21826) [src: Sect. III.1].
 - Remedies: Q ∝ Hρ_de, "provided the coupling is made small enough for a given equation of state parameter" (arXiv:0901.3272) [src: abstract]; the ePPF framework of IDECAMB (arXiv:2606.21826) [src: Sect. III.1].
 - Cite: Valiviita, Majerotto & Maartens (arXiv:0804.0232) for the instability; the ePPF papers through arXiv:2606.21826.
 - Trap: the sign of Q and of β is convention-dependent (Li et al. arXiv:2606.21826, Eqs. 3–4, against Wang et al. arXiv:1603.08299, Eqs. 12–13).
@@ -24,15 +24,15 @@ Snapshot: 2026-11-03
 ## Slow roll applied to dark energy
 <!-- key: slow-roll-applied-to-dark-energy -->
 
-- The inflationary slow-roll conditions "are not completely trustworthy" for dark energy because dark matter is present; $\epsilon=-\dot{H}/H^{2}$ is the measure that includes both (arXiv:hep-th/0603057) [src: Sect. V.1, text after Eq. 104].
+- In the context of dark energy the slow-roll conditions "are not completely trustworthy, since there exists dark matter as well as dark energy", but "they still provide a good measure to check the existence of a solution with an accelerated expansion"; $\epsilon=-\dot{H}/H^{2}$ is "a good measure to check the existence of an accelerated expansion" (arXiv:hep-th/0603057) [src: Sect. V.1, text after Eq. 104].
 - The thawing slow-roll limit of Scherrer & Sen gives a w(a) that, "for a variety of potentials", is "typically accurate to within delta w < 0.005 for w<-0.9" (arXiv:0712.3450) [src: abstract]; the Caldwell–Linder thawing and freezing bounds are valid for (1+w) ≪ 1, with w ≲ −0.8 "a practical limit of applicability" (arXiv:astro-ph/0505494) [src: text after Fig. 1].
 
 ## Parameterisations of w(a)
 <!-- key: parameterisations-of-w-a -->
 
 - What they assume: a two-parameter form of w(a), such as $w(a)=w_{0}+w_{a}(1-a)$ (Ren et al., arXiv:2606.01360) [src: Eq. 1]. For thawing quintessence with nearly flat potentials, "for redshift z < 1", w(a) "is well-fit by the Chevallier-Polarski-Linder parametrization" (arXiv:0712.3450) [src: abstract].
-- How they fail: a crossing of w = −1 read from a fit is not a model property; physically self-consistent models (thawing quintessence with curvature) fit the same data without it (arXiv:2504.15190) [src: abstract]. The contour shapes and degeneracy directions change between CPL, JBP, BA, EXP, LOG and SIN, while "the preference for DDE does not disappear when the CPL assumption is relaxed" (arXiv:2606.21826) [src: Sect. II.2].
-- Prior dependence: evidence for thawing quintessence depends on whether priors are informed by the data (arXiv:2411.13637, v4) [src: abstract]; Toomey et al. map CPL chains back to the KMIX parameters through "a theory-informed prior" on $(w_0,w_a)$ learnt from KMIX realisations (arXiv:2511.23463) [src: abstract].
+- How they fail: thawing quintessence with nonzero curvature "can fit the recent data as well as" $w_0,w_a$ "in a flat background", and "even if we allow w<-1 the data do not enforce phantom crossing", which Dinda & Maartens call "an artifact of a parametrization that is not based on a physical model" (arXiv:2504.15190) [src: abstract]. The contour shapes and degeneracy directions change between CPL, JBP, BA, EXP, LOG and SIN, while "the preference for DDE does not disappear when the CPL assumption is relaxed" (arXiv:2606.21826) [src: Sect. II.2].
+- Prior dependence: Payeur et al. find a preference for thawing quintessence "only if we use priors which are heavily informed by the data itself" (arXiv:2411.13637, v4) [src: abstract]; Toomey et al. map CPL chains back to the KMIX parameters through "a theory-informed prior" on $(w_0,w_a)$ learnt from KMIX realisations (arXiv:2511.23463) [src: abstract].
 
 ## Convention traps
 <!-- key: convention-traps -->
@@ -41,15 +41,15 @@ Snapshot: 2026-11-03
 - Kinetic term X: X ≡ −(1/2)(∇φ)² in Copeland et al. (arXiv:hep-th/0603057) [src: Sect. V.2, text before Eq. 115]; other definitions differ in sign and by a factor of two (hub atlas, "Kinetic term X"). A sound speed $p_{,X}/\rho_{,X}$ is quoted with its X.
 - Sign of the interaction: Q > 0 feeds dark energy in arXiv:2606.21826 (Eqs. 3–4) and dark matter in arXiv:1603.08299 (Eqs. 12–13).
 - Phantom divide versus null-energy-condition boundary: with a negative dark-energy density w = −1 is not the meaningful separator (arXiv:2602.21169) [src: abstract].
-- Quintom-A and Quintom-B name the direction of crossing (arXiv:2606.01360) [src: text before Eq. 1]; the DESI-preferred shape is Quintom-B (arXiv:2606.21826) [src: Sect. II.2].
+- Quintom-A and Quintom-B name the direction of crossing (arXiv:2606.01360) [src: text before Eq. 1]; in the Li et al. review "the preferred parameter regions systematically lie in the quadrant" $w_0>-1$, $w_a<0$, "corresponding to a quintom-B type evolution" (arXiv:2606.21826) [src: Sect. II.2].
 - Printed slips to copy, not correct: the quintessence Lagrangian density with $+V$ (arXiv:hep-th/0603057, Eq. 179); "$10^{121}$ orders of magnitude" (arXiv:hep-th/0603057, Sect. IV.2); the adiabatic sound speed printed as $\rho'/P'$ (arXiv:2302.09032, Eq. 24).
-- Early dark energy parameters: $f_{\rm EDE}$ and $z_c$ are phenomenological stand-ins for m and f; sampling one set or the other changes the effective priors (arXiv:2302.09032) [src: Sect. III.1].
+- Early dark energy parameters: $f_{\rm EDE}$ and $z_c$ are phenomenological stand-ins for m and f; "running MCMCs on the theory parameters can change the effective priors for the phenomenological parameters" (arXiv:2302.09032) [src: Sect. III.1].
 
 ## Numerical issues
 <!-- key: numerical-issues -->
 
 - Fluid closures through w = −1: use PPF (arXiv:0808.3125) [src: abstract]; for interacting fluids the ePPF of IDECAMB (arXiv:2606.21826) [src: Sect. III.1].
-- Early dark energy perturbations: the effective sound speed depends on k and a for oscillating fields (arXiv:2302.09032) [src: Sect. IV.1]; the general behaviour of axion-like EDE "is well-described by cycle-averaging the evolution of the background and perturbative field dynamics" [src: Sect. III.1].
+- Early dark energy perturbations: the approximate effective sound speed changes with a and k and "only applies when" the field "oscillates several times per Hubble time" (arXiv:2302.09032) [src: Sect. IV.1]; the general behaviour of axion-like EDE "is well-described by cycle-averaging the evolution of the background and perturbative field dynamics" [src: Sect. III.1].
 
 ## Referee checklist
 <!-- key: referee-checklist -->

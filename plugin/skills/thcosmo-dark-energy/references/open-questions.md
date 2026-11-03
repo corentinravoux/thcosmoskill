@@ -26,8 +26,8 @@ Snapshot: 2026-11-03
 <!-- key: is-the-desi-preference-for-dynamical-dark -->
 
 - For a genuine late-time signal: the preference "does not disappear when the CPL assumption is relaxed" (arXiv:2606.21826) [src: Sect. II.2]; in a joint EDE + CPL analysis including DESI BAO it is "a robust signature that cannot be absorbed by modifying the physics of the early Universe", per Malekjani & Pourojaghi (arXiv:2608.19432) [src: abstract].
-- Against, or for caution: driven by low-z DES Y5 SNe Ia (arXiv:2512.10585) [src: Sect. V]; sensitive to SN calibration residuals (arXiv:2602.05368) [src: abstract].
-- Phantom phase: "an artifact of a parametrization that is not based on a physical model" per Dinda & Maartens (arXiv:2504.15190) [src: abstract]; KMIX "may account for the DESI preference without invoking true phantom behavior" (arXiv:2511.23463) [src: abstract]; an interaction "may even mimic a time-varying or phantom-crossing EoS" (arXiv:2606.21826) [src: Sect. III.1, text after Eq. 10]. Against: genuine crossings built without ghosts in modified gravity (`thcosmo-modified-gravity`) or with a spatially covariant scalar "avoiding ghost and gradient instabilities in linear perturbations" (arXiv:2508.01378) [src: abstract].
+- Against, or for caution: "the dynamical dark energy driven by the DES-SN5Y sample is in fact driven by the inclusion of low-z SNe Ia in DES-SN5Y" (arXiv:2512.10585) [src: Sect. V]; sensitive to SN calibration residuals (arXiv:2602.05368) [src: abstract].
+- Phantom phase: "an artifact of a parametrization that is not based on a physical model" per Dinda & Maartens (arXiv:2504.15190) [src: abstract]; KMIX "may account for the DESI preference without invoking true phantom behavior" (arXiv:2511.23463) [src: abstract]; an interaction "may even mimic a time-varying or phantom-crossing EoS" (arXiv:2606.21826) [src: Sect. III.1, text after Eq. 10]. Against: genuine crossings built without ghosts in modified gravity (`thcosmo-modified-gravity`) or with a spatially covariant model that realises "arbitrary background evolutions while avoiding ghost and gradient instabilities in linear perturbations" (arXiv:2508.01378) [src: abstract].
 
 ### Is interacting dark energy preferred, and by which kernel?
 <!-- key: is-interacting-dark-energy-preferred-and-by -->
@@ -41,14 +41,14 @@ Snapshot: 2026-11-03
 - A first-principles interaction kernel Q: "in the absence of a fundamental theory the quantity Q cannot be derived from first principles" (arXiv:1603.08299) [src: Sect. 2.1].
 - The vacuum energy beyond free fields and flat space: Martin's estimate is for a free theory (arXiv:1205.3365) [src: abstract]; expanding-universe ambiguities (choice of vacuum, comoving or physical cut-off) remain (arXiv:2606.20778) [src: abstract].
 - A UV completion of the axion-like early-dark-energy potential, which "suffers from fine-tuning issues that makes it challenging to embed in a UV-complete theory" (arXiv:2302.09032) [src: Sect. VII.2].
-- Scalar-field realisations of sign-switching histories: some have none in a one-field action (arXiv:2609.09261) [src: abstract].
+- Scalar-field realisations of sign-switching histories: of the three histories reconstructed, "the exact Ladder" "has no ordinary classical realization in the adopted one-field action" (arXiv:2609.09261) [src: abstract].
 
 ## What next data or calculations will decide
 <!-- key: what-next-data-or-calculations-will-decide -->
 
-- Sound speed of dark energy: current data already give the first constraint for time-varying w (arXiv:2511.22478) [src: abstract].
+- Sound speed of dark energy: for a time-varying w, DESI DR2 + Planck 2018 + Union3 already yield "the first meaningful constraint" on $c_s^2$, while "constant-w models remain unconstrained" (arXiv:2511.22478) [src: abstract].
 - Euclid: pre-launch **forecast** constraints on time-varying dark energy and specific modified-gravity models are reviewed in arXiv:2512.09748 [src: abstract]; numbers there are forecasts.
-- Thawing versus freezing needs σ(w') ≈ (1+w) (arXiv:astro-ph/0505494) [src: text after Fig. 1].
+- Thawing versus freezing: Caldwell & Linder's results indicate "a desired measurement resolution of order σ(w') ≈ (1+w)" (arXiv:astro-ph/0505494) [src: abstract].
 - The DESI-era preference for evolving w is "particularly sensitive to redshift-dependent SN calibration/selection residuals at the few×10⁻² mag level", and the review derives "an explicit calibration requirement" for such claims (arXiv:2602.05368) [src: abstract].
 
 ## Stale claims and misconceptions
