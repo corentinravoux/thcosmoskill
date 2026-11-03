@@ -534,3 +534,30 @@ Coordinator, after re-reading each at source:
   (seed 1109); part 1, part 3 and the fixed part-2 rows to be re-read.
 - Pattern across W1 so far: the errors left after G1 are scope and
   qualifiers, not equations; every equation re-read in W1 matched.
+
+## 2026-11-03 — stage 5 W1, build `thcosmo-neutrinos-light-relics` (G1 passed; G2 waiting)
+
+Run: 62 of 90 research calls; SKILL.md 126 lines, formalism 123, models 79
+(7 model cards), approximations 58, open questions 38, results 84; 49
+sources; 9 subtopics (light sterile neutrinos thin).
+
+- G1: `verify_sources` online 0 problems; `check_numbers` and
+  `check_equations` empty; `check_transcription` 97 equations, 72 exact, 25
+  contained, 0 mismatch, 0 unreadable; `check_places` 56 statements, 27 at
+  place, 2 not found, 27 unreadable; `check_shape` 0 problems. The two
+  "not found" (`models.md:60`, `results.md:57`) read by the coordinator in
+  the abstract of arXiv:2107.09664: printed as quoted (the list
+  "$m_X\leq 11.2, 1.06, 1.56$ eV" defeats the tool).
+- Generality: Lesgourgues 19.1 % (flag), Dvorkin 12.1 %, Bennett 8.6 %;
+  owner's papers 0 %. Lesgourgues's share is two sources, 47 citations to
+  the review "Massive neutrinos and cosmology" (arXiv:astro-ph/0603494),
+  the formalism reference of the domain, and the CLASS neutrino paper; kept,
+  justified.
+- Printed slips reported by the run, confirmed by the coordinator at source
+  and recorded in `stale-claims.md`: arXiv:astro-ph/0603494 Eq. 144
+  (negative ratio) and Eq. 12 against Sect. 4.5.6 (93.14 against 93.2 eV);
+  arXiv:2404.19322 Sect. III ("=≈"; sign of $\lvert\Delta m^{2}_{31}\rvert$).
+- G2 sheet: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-2026-11-03.md`
+  (127 items: 18 + 50 + 59, seed 1110).
+- The two fresh-draw reviews (dark energy, dark matter) were cut by the
+  usage limit; resumed one agent at a time (owner, 2026-11-03).

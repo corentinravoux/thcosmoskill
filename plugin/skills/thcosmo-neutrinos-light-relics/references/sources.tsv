@@ -1,0 +1,50 @@
+key	id	version	first_author	year	title	role
+Lesgourgues2006	astro-ph/0603494	v2	Lesgourgues	2006	Massive neutrinos and cosmology	review
+Bennett2020	2012.02726	v3	Bennett	2020	Towards a precision calculation of $N_{\rm eff}$ in the Standard Model II: Neutrino decoupling in the presence of flavour oscillations and finite-temperature QED	results
+Froustey2020	2008.01074	v2	Froustey	2020	Neutrino decoupling including flavour oscillations and primordial nucleosynthesis	results
+Mangano2005	hep-ph/0506164	v1	Mangano	2005	Relic neutrino decoupling including flavour oscillations	foundation
+Cielo2023	2306.05460	v3	Cielo	2023	Neff in the Standard Model at NLO is 3.043	results
+Drewes2024	2402.18481	v2	Drewes	2024	Towards a precision calculation of $N_{\rm eff}$ in the Standard Model III: Improved estimate of NLO contributions to the collision integral	critique
+Jackson2024	2412.03958	v2	Jackson	2024	$ν\barν$ production, annihilation, and scattering at MeV temperatures and NLO accuracy	results
+Binder2024	2411.14091	v3	Binder	2024	Towards a precision calculation of $N_{\rm eff}$ in the Standard Model IV: Estimating the impact of positronium formation	results
+Dvorkin2022	2203.07943	v1	Dvorkin	2022	The Physics of Light Relics	review
+Baumann2016	1604.08614	v2	Baumann	2016	A New Target for Cosmic Axion Searches	foundation
+Brust2013	1303.5379	v3	Brust	2013	New Light Species and the CMB	foundation
+Figueroa2026	2609.15970	v1	Figueroa	2026	Less isn't more: Cosmological bounds on the neutrino masses are robust to changes in the neutrino abundance	results
+Trendafilova2026	2608.07453	v1	Trendafilova	2026	Sensitivity of Next-Generation CMB Surveys to Neutrinos and Other Light Relics	forecast
+Ganguly2025	2507.23354	v2	Ganguly	2025	Consistent $N_{\rm eff}$ fitting in big bang nucleosynthesis analysis	critique
+Li2025	2510.04684	v1	Li	2025	Neutrinogenic CMB spectral distortions	method
+Ma1995	astro-ph/9506072	v1	Ma	1995	Cosmological Perturbation Theory in the Synchronous and Conformal Newtonian Gauges	foundation
+BertolezMartinez2024	2411.14524	v2	Bertólez-Martínez	2024	Origin of cosmological neutrino mass bounds: background $\textit{versus}$ perturbations	results
+Green2024	2407.07878	v1	Green	2024	The Cosmological Preference for Negative Neutrino Mass	results
+Elbers2024	2407.10965	v2	Elbers	2024	Negative neutrino masses as a mirage of dark energy	method
+Baumann2015	1508.06342	v3	Baumann	2015	Phases of New Physics in the CMB	method
+Bashinsky2004	astro-ph/0310198	v3	Bashinsky	2003	Signatures of Relativistic Neutrinos in CMB Anisotropy and Matter Clustering	foundation
+Follin2015	1503.07863	v2	Follin	2015	A First Detection of the Acoustic Oscillation Phase Shift Expected from the Cosmic Neutrino Background	results
+Montefalcone2025a	2501.13788	v2	Montefalcone	2025	Free-Streaming Neutrinos and Their Phase Shift in Current and Future CMB Power Spectra	results
+Montefalcone2025b	2509.20363	v2	Montefalcone	2025	Directly Probing Neutrino Interactions through CMB Phase Shift Measurements	constraint
+Ghosh2024	2405.08064	v2	Ghosh	2024	Dark Matter-Radiation Scattering Enhances CMB Phase Shift through Dark Matter-loading	results
+Whitford2025	2511.00800	v2	Whitford	2025	Limits of self-interacting neutrinos from the BAO and CMB phase shift	forecast
+Buckley2026	2609.16120	v1	Buckley	2026	Dark Radiation Sticks Together: Dark QCD and the Hubble Tension	model
+Kreisch2019	1902.00534	v2	Kreisch	2019	The Neutrino Puzzle: Anomalies, Interactions, and Cosmological Tensions	model
+CyrRacine2013	1306.1536	v2	Cyr-Racine	2013	Limits on Neutrino-Neutrino Scattering in the Early Universe	foundation
+Das2025	2506.08085	v2	Das	2025	Impostor Among $ν$s: Dark Radiation Masquerading as Self-Interacting Neutrinos	model
+Barenboim2026	2609.13821	v1	Barenboim	2026	Consistent treatment of flavour-specific neutrino self-interactions in cosmology	critique
+Noriega2026	2610.26654	v1	Noriega	2026	Neutrino self-interactions in light of DESI and CMB-SPA	constraint
+Mogensen2026	2606.03395	v1	Mogensen	2026	Self-interacting neutrinos in cosmological perturbation theory -- integrating the collision kernel	method
+Barenboim2020	2011.01502	v2	Barenboim	2020	Invisible neutrino decay in precision cosmology	critique
+Chen2022	2203.09075	v3	Chen	2022	Weaker yet again: mass spectrum-consistent cosmological constraints on the neutrino lifetime	results
+Escudero2019	1907.05425	v2	Escudero	2019	Cosmological Constraints on Invisible Neutrino Decays Revisited	constraint
+Chacko2020	2002.08401	v1	Chacko	2020	Determining the Neutrino Lifetime from Cosmology	forecast
+DePorzio2026	2607.12021	v1	DePorzio	2026	Using SquiRels to Find LiMRs: A Model-Insensitive Approach to Cosmic Microwave Background Studies of Light but Massive Relics	method
+Xu2021	2107.09664	v2	Xu	2021	Cosmological Constraints on Light (but Massive) Relics	constraint
+Gariazzo2019	1905.11290	v3	Gariazzo	2019	Thermalisation of sterile neutrinos in the early Universe in the 3+1 scheme with full mixing matrix	foundation
+Ladeira2026	2606.21518	v2	Ladeira	2026	Are Cosmological Data Excluding Sterile Neutrinos or Only the Fully Thermalized Limit?	critique
+GarciaEscudero2025	2509.25478	v2	García Escudero	2025	Extra Radiation Cosmologies: Implications of the Hubble Tension for eV-scale Neutrinos	constraint
+PerezCastro2026	2602.12477	v2	Pérez-Castro	2026	Towards a complete scheme of cosmological neutrino self-interactions: Collision term for a wide range of mediator masses	method
+Lesgourgues2011	1104.2935	v3	Lesgourgues	2011	The Cosmic Linear Anisotropy Solving System (CLASS) IV: Efficient implementation of non-cold relics	code
+Nasiri2026	2610.40275	v1	Nasiri	2026	Going off the (momentum) grid: A simple implementation of noncold relics in linear Boltzmann solvers	method
+Lee2025	2510.20821	v2	Lee	2025	Efficient analytic approximation for small-scale non-cold relic perturbations	method
+Ge2026	2610.20977	v1	Ge	2026	Disentangling geometry & growth in cosmic neutrino mass constraints: a more physical split and diagnostic	results
+DiValentino2024	2404.19322	v1	Di Valentino	2024	Neutrinos in Cosmology	review
+Escudero2019b	1909.04044	v2	Escudero	2019	A CMB Search for the Neutrino Mass Mechanism and its Relation to the $H_0$ Tension	model
