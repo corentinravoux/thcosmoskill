@@ -609,3 +609,19 @@ Coordinator, unclear items quoted at source:
 - `approximations.md:58`: the fit of arXiv:astro-ph/0501562 is used for a
   "pure ΛWDM" universe (Sect. IV.1).
 - Hub router: built; README row updated.
+
+## 2026-11-03 — stage 5 W1, `thcosmo-dark-energy` G2 third draw: **failed** (2/59); full re-read
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03-redraw2.md`
+(seed 1111). Part 1: 13 ok, 1 wrong. Part 3: 57 ok, 2 wrong.
+
+- `SKILL.md:55` (wrong): Martin's "(for a free theory)" restored, quoted.
+- `formalism.md:90` (wrong, draw): Eq. 16 of arXiv:1603.08299 holds "if, to
+  simplify, we hold $\omega_{d}$ constant" (Sect. 2.1.1); restored.
+- `formalism.md:117` (wrong, draw): "the first meaningful constraint"
+  (arXiv:2511.22478, abstract), not "first constraint".
+- Three draws failed on one cause: paraphrase drift in qualitative text;
+  every equation matched in all three. Sampling finds it one item at a time,
+  so every non-equation statement of the skill is now re-read at source by
+  one agent before a fourth draw. Brief rule 2 extended to conditions,
+  scope and "first" claims.

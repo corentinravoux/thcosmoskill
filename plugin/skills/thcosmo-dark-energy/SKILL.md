@@ -52,7 +52,7 @@ an equation or a number enters a manuscript.
 ## Errors that recur
 <!-- key: errors-that-recur -->
 
-- Quoting "122 orders of magnitude" (arXiv:1205.3365) [src: abstract] or "120 orders of magnitude" (arXiv:2606.20778) [src: abstract] as the Standard-Model prediction for the vacuum energy: Martin finds the properly renormalised zero-point energy "far from being 122 orders of magnitude larger than the critical energy density" [src: abstract], and Kaya & Lahey say the 120 rests on "an estimate that does not account for regularization and renormalization" [src: abstract].
+- Quoting "122 orders of magnitude" (arXiv:1205.3365) [src: abstract] or "120 orders of magnitude" (arXiv:2606.20778) [src: abstract] as the Standard-Model prediction for the vacuum energy: Martin finds "the properly renormalized value of the zero-point energy density today (for a free theory)" "far from being 122 orders of magnitude larger than the critical energy density" [src: abstract], and Kaya & Lahey say the 120 rests on "an estimate that does not account for regularization and renormalization" [src: abstract].
 - Reading a CPL crossing of w = −1 as evidence for a phantom field (arXiv:2504.15190; arXiv:2511.23463) [src: abstracts].
 - Building a crossing from one minimally coupled field, or running a crossing w(a) through a single-fluid Boltzmann closure (arXiv:2606.01360, text after Eq. 10; arXiv:0808.3125, abstract).
 - Comparing interaction couplings across papers with opposite signs of Q (arXiv:2606.21826, Eqs. 3–4; arXiv:1603.08299, Eqs. 12–13).

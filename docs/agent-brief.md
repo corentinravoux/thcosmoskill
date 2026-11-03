@@ -28,7 +28,12 @@ identifiers out of fifty-one pointed to other papers.
    paraphrased (pilot G3, 2026-11-02). Keep the paper's hedges and
    qualifiers ("in general", "usually", "up to", "for the range tested",
    the range of validity): dropping one turns a hedged claim into a firmer
-   one (stage 4 G2, 2026-11-03).
+   one (stage 4 G2, 2026-11-03). The same for conditions and scope: a
+   bound, a verdict, a "first" or a stability result is quoted with the
+   paper's condition ("if we hold ω constant", "for a free theory", "for
+   sub-Planckian fields", "for dark matter–proton interactions") and its
+   own adjective ("the first meaningful constraint"); never "many" or
+   "usually" unless the paper prints it (W1 G2, 2026-11-03).
 3. **Equations are transcribed, not derived.** Write an equation as the
    cited paper writes it, in its conventions, and name those conventions
    when they differ from the ones stated at the top of `formalism.md`. Do
