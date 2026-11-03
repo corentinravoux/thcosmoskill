@@ -561,3 +561,26 @@ sources; 9 subtopics (light sterile neutrinos thin).
   (127 items: 18 + 50 + 59, seed 1110).
 - The two fresh-draw reviews (dark energy, dark matter) were cut by the
   usage limit; resumed one agent at a time (owner, 2026-11-03).
+
+## 2026-11-03 — stage 5 W1, `thcosmo-dark-energy` G2 fresh draw: **failed** (1/59); qualifier audit
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03-redraw.md`
+(seed 1108). Part 1: 11 ok, 2 wrong, 1 unclear. Part 2 (fixed rows): 3 ok.
+Part 3: 58 ok, 1 wrong.
+
+- `results.md:20` (wrong, in the draw) and `models.md:32`: the Caldwell–Linder
+  bounds (arXiv:astro-ph/0505494) lost their condition, a field below the
+  Planck scale ($E<M_{P}$, text after Fig. 2), and their hedge, "this may be
+  the limit of quintessence" (abstract); both restored.
+- `SKILL.md:33`, `SKILL.md:55` (wrong): two of the coordinator's own fixes
+  of the first round paraphrased; now quoted verbatim (Vikman's "a certain
+  class …, in particular"; Martin's "far from being 122 orders of
+  magnitude larger"; Kaya & Lahey's "does not account for regularization
+  and renormalization").
+- `formalism.md:15` (unclear): the Friedmann equation of
+  arXiv:hep-th/0603057 uses 8πG in Eqs. 102 and 160 and κ² in Eq. 180;
+  restated by equation, not by section.
+- Lesson: a coordinator fix is quoted, never paraphrased.
+- Two failed draws on one pattern: a targeted qualifier audit of the 47
+  unquoted strong claims (`thcosmo-dark-energy-qualifier-audit-lines.txt`)
+  runs before a third draw.
