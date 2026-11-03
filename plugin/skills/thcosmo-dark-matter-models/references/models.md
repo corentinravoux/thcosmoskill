@@ -57,7 +57,7 @@ The cards are chosen by the weight of each class in the TASI lectures of Safdi (
 - **Parameters:** mass $m_{x}$ (or $m_{\rm th}$) of a relic that decoupled while relativistic; $T_{x}/T_{\nu}$ fixed by the density.
 - **Predictions:** a step-like suppression of power below the free-streaming scale, which with a cold component present is only partial (arXiv:astro-ph/0501562) [src: Sect. II]. The benchmark is a parametrisation onto which other models are mapped (sterile neutrinos, Eq. 5; Shi–Fuller, arXiv:2507.18752).
 - **Consistency:** the mapping fails for non-thermal momentum distributions (arXiv:2606.20815; arXiv:2507.00705) [src: abstract; Sect. V.2, Fig. 4 caption].
-- **Observational status:** high-redshift Lyman-α forest, lower limit "of $5.7\;\mathrm{keV}$ (at 95\% C.L.)", lowered to 4.1 keV when restricted to $k_{\rm max}<0.1$ km⁻¹ s and earlier thermal-history priors (Iršič et al., arXiv:2309.04533) [src: abstract]; the first WMAP + Lyman-α limit was $m_{\rm wdm}>550$ eV at 2σ (arXiv:astro-ph/0501562) [src: abstract]. Current combined limits: cosmoskill `cosmo-neutrinos-dark-matter` and `cosmo-lyman-alpha`.
+- **Observational status:** high-redshift Lyman-α forest, lower limit "of $5.7\;\mathrm{keV}$ (at 95\% C.L.)", lowered to 4.1 keV when restricted to $k_{\rm max}<0.1$ km⁻¹ s and earlier thermal-history priors (Iršič et al., arXiv:2309.04533) [src: abstract]; an early WMAP + Lyman-α limit was $m_{\rm wdm}>550$ eV at 2σ (Viel et al. 2005, arXiv:astro-ph/0501562) [src: abstract]. Current combined limits: cosmoskill `cosmo-neutrinos-dark-matter` and `cosmo-lyman-alpha`.
 - **Status date:** 2026-11-03
 
 ### Sterile-neutrino dark matter

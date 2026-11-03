@@ -505,3 +505,32 @@ Coordinator, after re-reading each at source:
   and `check_equations` empty; `check_places` 0 found-elsewhere.
 - Fresh draw: `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03-redraw.md`
   (seed 1108); part 1 and part 3 to be re-read.
+
+## 2026-11-03 — stage 5 W1, `thcosmo-dark-matter-models` G2: **failed the draw**, fixed, fresh draw waiting
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-matter-models-2026-11-03.md`
+(170 items, seed 1107). Part 1: 19 ok, 1 unclear. Part 2: 89 ok, 1 wrong,
+1 unclear. Part 3: 58 ok, 1 wrong: the draw fails (D20).
+
+Coordinator, after re-reading each at source:
+- `formalism.md:115` (wrong, in the draw): $|\alpha_{k}|^{2}-|\beta_{k}|^{2}=1$
+  of arXiv:2312.09042 stated for all particles; the paper writes it for the
+  scalar field of its Sect. III (Sect. III.2, text after Eq. 17); the scope
+  is now named and the relation called the bosonic one.
+- `approximations.md:14` (wrong): the Boltzmann-equation claim was labelled
+  "abstract" of arXiv:1204.3622, which does not print it; replaced by the
+  abstract's own words.
+- `formalism.md:10` (unclear): units are now attributed paper by paper
+  (Arbey and Mahmoudi; Marsh "(mostly)", Notes; Safdi and Bernal et al.
+  print none).
+- `models.md:60` (unclear): "the first" WMAP + Lyman-α limit is not printed
+  by arXiv:astro-ph/0501562; now "an early".
+- Same pattern searched in the whole skill (scope or qualifier dropped,
+  unquoted generalisations): one more fixed (`open-questions.md:14`, "in
+  the post-inflationary scenario" restored, arXiv:2007.04990 abstract).
+- After the fixes: 136 equations, 0 mismatch; `check_numbers` and
+  `check_equations` empty.
+- Fresh draw: `docs/history/tests/g2/thcosmo-dark-matter-models-2026-11-03-redraw.md`
+  (seed 1109); part 1, part 3 and the fixed part-2 rows to be re-read.
+- Pattern across W1 so far: the errors left after G1 are scope and
+  qualifiers, not equations; every equation re-read in W1 matched.

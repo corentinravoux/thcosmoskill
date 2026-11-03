@@ -11,7 +11,7 @@ Snapshot: 2026-11-03
 <!-- key: instantaneous-freeze-out-and-the-s-wave -->
 
 - What it assumes: the abundance is frozen at a single $x_{\rm fo}$ and $\sigma v$ is expanded in velocity, $\sigma v\sim v^{2L}$ (arXiv:2303.02169) [src: Sect. 4.1.1, inline].
-- How it fails: Frumkin et al. give an analytic criterion for "when instantaneous freezeout is appropriate and how it can be corrected when freezeout is slow" (arXiv:2207.01635) [src: abstract]. Safdi's own estimate equates $g_{*s}$ at freeze-out and equality, although for a TeV relic they may differ by "around 10 - 30 times" (arXiv:2303.02169) [src: Sect. 4.1, text after Eq. 18]; precise values come from solving the Boltzmann equation with the full $g_{*}$ and $g_{*s}$ (arXiv:1204.3622) [src: abstract].
+- How it fails: Frumkin et al. give an analytic criterion for "when instantaneous freezeout is appropriate and how it can be corrected when freezeout is slow" (arXiv:2207.01635) [src: abstract]. Safdi's own estimate equates $g_{*s}$ at freeze-out and equality, although for a TeV relic they may differ by "around 10 - 30 times" (arXiv:2303.02169) [src: Sect. 4.1, text after Eq. 18]; Steigman et al. revisit the relic calculation and show that the required cross section "can be calculated precisely" and "varies significantly with mass at masses below 10 GeV" (arXiv:1204.3622) [src: abstract].
 - Cite: Steigman, Dasgupta & Beacom (arXiv:1204.3622) for the thermal cross-section; Jungman, Kamionkowski & Griest (arXiv:hep-ph/9506380) for the standard relic-abundance calculation, which the review covers "in detail" [src: abstract].
 
 ### Exceptions to the standard calculation: coannihilation, resonances, Sommerfeld enhancement, bound states
