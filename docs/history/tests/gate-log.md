@@ -419,3 +419,28 @@ hedges or qualifiers):
   correlators gate; brief rule 2 covers it. The next build prompts add an
   explicit line: keep the paper's hedges.
 - Hub: router built; README row; six entries in `stale-claims.md`.
+
+## 2026-11-03 — stage 5 W1, build `thcosmo-dark-energy` (G1 passed; G2 running)
+
+Run: about 78 of 90 research calls; SKILL.md 127 lines, formalism 127,
+models 176 (16 model cards), approximations 69, open questions 66, results
+60; 61 sources; 9 subtopics (Λ problem, quintessence, k-essence and
+Chaplygin, phantom and crossing, interacting dark energy, early dark energy
+as formalism, phenomenological classes, perturbations and PPF, post-DESI
+model building).
+
+- G1: `verify_sources` online 0 problems; `check_numbers` and
+  `check_equations` empty; `check_transcription` 125 equations, 97 exact,
+  26 contained, 0 mismatch, 0 wrong-section, 2 unreadable; `check_places`
+  27 statements, 14 at place, 2 elsewhere, 11 unreadable; `check_shape` 0
+  problems.
+- Generality: Copeland 17.4 % (flag), Li 13.1 %, Ren 6.1 %, Poulin 6.1 %;
+  owner's papers 0 %. Copeland's share is one source, the review "Dynamics
+  of dark energy" (arXiv:hep-th/0603057), 55 citations, from which the
+  scalar-field formalism is transcribed; kept, justified.
+- Printed slips reported by the run, confirmed by the coordinator at source
+  and recorded in `stale-claims.md`: arXiv:hep-th/0603057 Eq. 179 (+V) and
+  Sect. IV.2 ("10^{121} orders of magnitude"); arXiv:2302.09032 Eq. 24
+  ($c_{a}^{2}$ inverted).
+- G2 sheet: `docs/history/tests/g2/thcosmo-dark-energy-2026-11-03.md`
+  (106 items: 14 + 33 + 59, seed 1106).
