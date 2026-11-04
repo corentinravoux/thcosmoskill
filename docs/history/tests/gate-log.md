@@ -732,3 +732,22 @@ reference files, now transcribed), `deep/soft-limits-and-consistency.md`
 - SKILL.md file map and `subtopics.tsv` list the three dossiers.
 - G3 sheet: `docs/history/tests/g2/thcosmo-primordial-correlators-dossiers-2026-11-04.md`
   (seed 1114, `--only /deep/`; 23 + 37 + 59).
+
+## 2026-11-04 — stage 5 W1, `thcosmo-inflation` dossier 4 (G1 passed; G3 waiting)
+
+Run: `deep/stochastic-delta-n-tails.md` (148 lines), audit question 4;
+5 sources added (73). Conditions stated as printed (leading-order slow
+roll, white Gaussian noise, Itô form, uniform-N gauge; absorbing and
+reflective boundaries; bounded domain for discrete poles).
+
+- G1: `verify_sources` 0 problems; checks empty; `check_transcription` 403
+  equations, 0 mismatch, 24 unreadable; no new found-elsewhere.
+- Slips: two confirmed and recorded (arXiv:2510.04707 Eqs. 12, 15 against
+  Eq. 7; arXiv:1707.00537 Eq. 15); one not seen in the rendering (the
+  exponent before Eq. 54 of arXiv:1707.00537), left out.
+- File map and `subtopics.tsv` updated.
+- G3 sheet: `docs/history/tests/g2/thcosmo-inflation-dossier-stochastic-2026-11-04.md`
+  (seed 1115).
+- Push of 2026-11-04 09:38 rejected by GitHub ("Internal Server Error");
+  the default SSH identity order also fails (NERSC keys offered first);
+  pushes use the GitHub key explicitly.

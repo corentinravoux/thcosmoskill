@@ -23,6 +23,7 @@ an equation or a number enters a manuscript.
 | How $n_s$, $r$ and the running follow from the Hubble-flow parameters to second order, and how Hubble-flow and potential parameters convert | `deep/slow-roll-predictions.md` |
 | How $N_*$ follows from the reheating history, and how $w_{\rm reh}$, $T_{\rm reh}$ and the reheating parameter move $n_s$ and $r$ for a given model | `deep/reheating-and-efolds.md` |
 | How multi-field perturbations are computed (adiabatic and entropic split, turns, isocurvature transfer, δN), and when a model reduces to single field | `deep/multi-field-perturbations.md` |
+| How the curvature distribution is computed in stochastic inflation (stochastic δN, first-passage time, moments and characteristic function) and why its tails are exponential, with the conditions | `deep/stochastic-delta-n-tails.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind
@@ -87,7 +88,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 9k; models 6k; open 2k; results 4k; deep/multi-field-perturbations 8k; deep/reheating-and-efolds 9k; deep/slow-roll-predictions 11k.
+Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 9k; models 6k; open 2k; results 4k; deep/multi-field-perturbations 8k; deep/reheating-and-efolds 9k; deep/slow-roll-predictions 11k; deep/stochastic-delta-n-tails 15k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
