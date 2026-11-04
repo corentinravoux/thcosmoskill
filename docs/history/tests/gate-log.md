@@ -873,3 +873,15 @@ paper's assumptions, the cutoff objection and its replies; 6 sources added
 - File map and `subtopics.tsv` updated.
 - G3 sheet: `docs/history/tests/g2/thcosmo-modified-gravity-dossier-tensors-2026-11-04.md`
   (seed 1118).
+
+## 2026-11-04 — stage 5 W1, `thcosmo-modified-gravity` dossier 4, G3: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-modified-gravity-dossier-tensors-2026-11-04.md`
+(seed 1118). Part 2: 11 ok. Part 3: 32 ok (all tool-passed items of the
+dossier), 0 wrong. Audit question 4: answered. Two minor notes fixed at
+source: `:128` the condition of arXiv:1806.09417, "if those were at all
+representative of the types of operators we would expect from the UV
+completion", quoted; `:136` the LISA forecast of arXiv:2203.00566 quoted
+whole ("bounds on departures from General Relativity in unexplored
+low-frequency regimes"). `thcosmo-modified-gravity`: four dossiers; the
+13 dossiers of the three gap audits are written and gated.
