@@ -23,6 +23,7 @@ an equation or a number enters a manuscript.
 | How the α_i follow from the Horndeski $G_i$, the stability conditions, and how the α conventions of Bellini–Sawicki, EFTCAMB and hi_class relate | `deep/eft-dark-energy-alpha-basis.md` |
 | How μ and Σ are derived in the quasi-static limit from the α_i, and where the quasi-static approximation fails | `deep/quasi-static-mu-sigma.md` |
 | How chameleon, symmetron, k-mouflage and Vainshtein screening work, and which theory uses which | `deep/screening-mechanisms.md` |
+| Which scalar–tensor, vector–tensor and bimetric theories survive GW170817 and graviton decay, under which assumptions (EFT cutoff, tuning), and the status of the cutoff objection | `deep/speed-of-tensors-constraints.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind
@@ -85,7 +86,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 10k; models 7k; open 3k; results 3k; deep/eft-dark-energy-alpha-basis 10k; deep/quasi-static-mu-sigma 9k; deep/screening-mechanisms 9k.
+Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 10k; models 7k; open 3k; results 3k; deep/eft-dark-energy-alpha-basis 10k; deep/quasi-static-mu-sigma 9k; deep/screening-mechanisms 9k; deep/speed-of-tensors-constraints 16k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

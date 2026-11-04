@@ -856,3 +856,20 @@ Audit questions 1–3: answered.
   physical pion mass (3.0 and 2.4 in the chiral limit), the chameleon one
   "at the dark-energy scale"; both conditions quoted.
 - After the fixes: 286 equations, 0 mismatch; checks empty.
+
+## 2026-11-04 — stage 5 W1, `thcosmo-modified-gravity` dossier 4 (G1 passed; G3 waiting)
+
+Run: `deep/speed-of-tensors-constraints.md` (215 lines), audit question 4:
+the GW170817 conditions, graviton decay, a survival table with each
+paper's assumptions, the cutoff objection and its replies; 6 sources added
+(108); five of them read at the abstract only.
+
+- G1: checks empty; `check_transcription` 310 equations, 0 mismatch, 28
+  unreadable; `check_places` 0 elsewhere; tests pass. Generality: Bellini
+  11.8 %, Creminelli 10.1 %, Kobayashi 8.4 %.
+- Slip confirmed at source and recorded: arXiv:1710.05877 says the
+  Cherenkov bounds apply to GWs "faster, and not slower, than light",
+  against arXiv:1710.06394 and arXiv:1710.05901.
+- File map and `subtopics.tsv` updated.
+- G3 sheet: `docs/history/tests/g2/thcosmo-modified-gravity-dossier-tensors-2026-11-04.md`
+  (seed 1118).
