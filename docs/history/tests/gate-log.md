@@ -688,3 +688,18 @@ at source (arXiv:1303.3787, text after Eq. 25).
   (seed 1113, `--only /deep/`).
 - The correlators dossier run was cut by the usage limit at its start;
   resumed after this gate, one agent at a time.
+
+## 2026-11-04 — stage 5 W1, `thcosmo-inflation` dossiers batch A, G3: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-inflation-dossiers-2026-11-04.md`
+(seed 1113). Part 2: 67 ok, 1 wrong. Part 3: 59 ok, 0 wrong: G3 passes.
+Audit questions 1–3: answered (reviewer: yes, yes, yes).
+
+- `deep/slow-roll-predictions.md:87` (wrong): the N3LO expressions of
+  arXiv:2205.12608 (Eqs. 138, 161) use the pivot of Eq. 66,
+  $k_{\diamond}\eta_{\diamond}c_{\rm s}(\eta_{\diamond})=-1$, which reduces
+  to Eq. 41 only for a unit sound speed; restated, Eq. 66 copied exactly.
+- Lines 118 and 147: the "no paper gives the transformation" statements
+  now quote the instance that arXiv:1303.3787 prints (text after Eq. 28:
+  "would set f=3 and g=6"), and keep the gap that remains.
+- After the fixes: 313 equations, 0 mismatch; tests pass.
