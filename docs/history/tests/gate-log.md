@@ -751,3 +751,20 @@ reflective boundaries; bounded domain for discrete poles).
 - Push of 2026-11-04 09:38 rejected by GitHub ("Internal Server Error");
   the default SSH identity order also fails (NERSC keys offered first);
   pushes use the GitHub key explicitly.
+
+## 2026-11-04 — stage 5 W1, `thcosmo-primordial-correlators` dossiers batch A, G3: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-primordial-correlators-dossiers-2026-11-04.md`
+(seed 1114). Part 2: 35 ok, 2 wrong. Part 3: 59 ok, 0 wrong: G3 passes.
+Audit questions 1–3: answered (yes, yes, yes; Maldacena through
+arXiv:hep-th/0605045, recorded).
+
+- `deep/eft-of-inflation.md:60, :82` (wrong): the T+E bound
+  $c_{\rm s}\geq 0.021$ is Eq. 63 of arXiv:1905.05697, the T-only one
+  Eq. 62; the two equations are now cited separately.
+- `deep/in-in-bispectrum.md:127` (wrong): $\epsilon_X$ is defined at
+  Eq. 5.6 (Sect. 5.1) of arXiv:hep-th/0605045 and relation 3.5 is in
+  Sect. 3.1, both read by the coordinator; the "Not verified" line now says
+  so and keeps what was not read.
+- `deep/soft-limits-and-consistency.md:75`: quoted "becomes", as printed.
+- After the fixes: 238 equations, 0 mismatch; tests pass.

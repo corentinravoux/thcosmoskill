@@ -72,7 +72,7 @@ Each violation removes one assumption of Step 1.
 ### Step 6 — the size, even before projection
 <!-- key: step-6-the-size-even-before-projection -->
 
-Creminelli & Zaldarriaga: the relation "implies a very low level of non-gaussianity in the particular geometrical limit $k_{1}\ll k_{2,3}$, much below current and forecoming limits"; models with a large 3-point function for generic triangles see it "become very small in the limit $k_{1}\ll k_{2,3}$" (arXiv:astro-ph/0407059) [src: text after Eq. 6]. Its interest is that "it could be easily proved wrong, therefore ruling out in a model independent way the possibility that the inflaton is the only dynamical field" [src: text after Eq. 6]. They note that second-order effects in the observed CMB "will introduce corrections with $f_{\rm NL}\sim 1$" [src: text after Eq. 7].
+Creminelli & Zaldarriaga: the relation "implies a very low level of non-gaussianity in the particular geometrical limit $k_{1}\ll k_{2,3}$, much below current and forecoming limits"; models with a large 3-point function for generic triangles see it "becomes very small in the limit $k_{1}\ll k_{2,3}$" (arXiv:astro-ph/0407059) [src: text after Eq. 6]. Its interest is that "it could be easily proved wrong, therefore ruling out in a model independent way the possibility that the inflaton is the only dynamical field" [src: text after Eq. 6]. They note that second-order effects in the observed CMB "will introduce corrections with $f_{\rm NL}\sim 1$" [src: text after Eq. 7].
 
 ### Step 7 — the transformation to the local observer's frame
 <!-- key: step-7-the-transformation-to-the-local-observer -->

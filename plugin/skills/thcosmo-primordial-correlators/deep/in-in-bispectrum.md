@@ -124,7 +124,7 @@ In Chen 2010's normalisation the same result is Eqs. 4.22–4.23 of arXiv:1002.1
 
 - Maldacena 2002 (arXiv:astro-ph/0210603) at source: its Eq. 4.6, its gauge choices and its slow-roll definitions were not read; the result is reached only through arXiv:hep-th/0605045 [Sect. 5.1] and arXiv:1002.1416. A maintainer may read the PDF.
 - Collins 2011 (arXiv:1101.1308), a detailed introduction to Maldacena's calculation, has no equation numbers in its rendering ("none tagged"); not used.
-- The definitions of $\lambda$, $\Sigma$, $s$, $\epsilon_X$ and relation (3.5) of arXiv:hep-th/0605045 (its Sects. 2–3) were not read; the reduction to $c_s=1$ is quoted, not checked.
+- The definitions of $\lambda$, $\Sigma$ and $s$ in arXiv:hep-th/0605045 were not read at their place; $\epsilon_X$ is defined at its Eq. 5.6 (Sect. 5.1) and relation (3.5) is in its Sect. 3.1; the reduction to $c_s=1$ is quoted, not checked. <!-- eq: notation -->
 - The $\dot\zeta^3$ integral, Eq. 4.37 of arXiv:hep-th/0605045, is not transcribed here; it is absent at $c_s=1$, $\lambda=0$.
 - The next-order corrections (Sect. 4.3 and App. B of arXiv:hep-th/0605045; the body of arXiv:1103.4126) were not read beyond the abstracts and the section heading.
 - Date-sorted searches from 2025-06-01 (in-in or Schwinger–Keldysh with single-field bispectrum; Maldacena bispectrum or cubic action) returned no correction to the tree-level slow-roll bispectrum.

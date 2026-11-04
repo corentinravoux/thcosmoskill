@@ -57,7 +57,7 @@ Planck 2018 IX writes the same two amplitudes as $f_{\rm NL}^{\rm EFT1}=-(85/324
 ### Step 6 — from the two amplitudes to a bound
 <!-- key: step-6-from-the-two-amplitudes-to-a-bound -->
 
-Planck 2018 IX fits Eq. 61 to the joint equilateral and orthogonal estimates with a $\chi^2$ on $(\tilde c_3,c_s)$ and, "Marginalizing over $\tilde{c}_{3}$", finds $c_{\mathrm{s}}\geq\ 0.021\quad\quad\text{(95\thinspace\%, {T}\ only)}\thinspace, c_{\mathrm{s}}\geq\ 0.021\quad\quad\text{(95\thinspace\%, {T+E})}\thinspace.$ (arXiv:1905.05697) [src: Eq. 62], rows joined; on the DBI line the bound is Eq. 59 of the same paper (`results.md`).
+Planck 2018 IX fits Eq. 61 to the joint equilateral and orthogonal estimates with a $\chi^2$ on $(\tilde c_3,c_s)$ and, "Marginalizing over $\tilde{c}_{3}$", finds $c_{\mathrm{s}}\geq\ 0.021\quad\quad\text{(95\thinspace\%, {T}\ only)}\thinspace,$ (arXiv:1905.05697) [src: Eq. 62] and $c_{\mathrm{s}}\geq\ 0.021\quad\quad\text{(95\thinspace\%, {T+E})}\thinspace.$ [src: Eq. 63]; on the DBI line the bound is Eq. 59 of the same paper (`results.md`).
 
 ## Variants and what they cost
 <!-- key: variants-and-what-they-cost -->
@@ -79,7 +79,7 @@ Planck 2018 IX fits Eq. 61 to the joint equilateral and orthogonal estimates wit
 | Equilateral amplitude, second operator | $\frac{10}{243}\left(1-\frac{1}{c_{s}^{2}}\right)\left(\tilde{c}_{3}+\frac{3}{2}c_{s}^{2}\right)$ | same | arXiv:0905.3746 | [src: Eq. 21] |
 | DBI value of $\tilde c_3$ | $\tilde{c}_{3}=3(1-c_{s}^{2})/2$, with $c_{s}\ll 1$ | DBI | arXiv:0905.3746 | [src: Sect. 2, inline, text after Eq. 10] |
 | Projection coefficients | $-0.275$, $-0.0780$, $(2/3)\times 0.780$ (equilateral); $0.0159$, $-0.0167$, $(2/3)\times 0.0167$ (orthogonal) | Fisher projection on the Planck templates | Planck 2018 IX arXiv:1905.05697 | [src: Eq. 61] |
-| $c_s$, EFT marginalised over $\tilde c_3$ | $c_{\mathrm{s}}\geq 0.021$ (95 %, T only and T+E) | two-operator EFT, Eq. 61 | arXiv:1905.05697 | [src: Eq. 62] |
+| $c_s$, EFT marginalised over $\tilde c_3$ | $c_{\mathrm{s}}\geq 0.021$ (95 %, T only and T+E) | two-operator EFT, Eq. 61 | arXiv:1905.05697 | [src: Eqs. 62–63] |
 | $c_s$ from WMAP, historical | $c_{s}>0.028$ at 95 % C.L.; DBI $c_{s}>0.031$ | window $-256<f_{\rm NL}^{\rm equil.}<332$; "barring a cancellation between the two operators" | arXiv:0709.0293 | [src: Eqs. 46–48, Sect. 4.2] |
 | Perturbative sound speed | $c_{s}\gg P_{\zeta}^{1/4}\simeq 0.003$ | $H\ll\Lambda$ with Eq. 50, $c_s\ll 1$ | arXiv:0709.0293 | [src: Eq. 52] |
 | Cutoff for the Planck best fit | $\Lambda_{\rm max}\sim 0.093f_{\pi}=5.4H$, $g_{n}^{2}\sim 1.4$ | "‘‘best fit’’ values" of Planck 2018; "dimensional estimates ... subject to order one corrections" | Grall & Melville arXiv:2005.02366 | [src: Sect. 2.3, text after Eq. 2.42] |
