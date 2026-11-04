@@ -20,6 +20,9 @@ an equation or a number enters a manuscript.
 | Bounds on $n_s$ and $r$ by dataset, reheating constraints, initial conditions in numerical relativity, stochastic tails, history of key results | `references/results.md` |
 | Validity of slow roll and horizon crossing, the $N_*$ window, EFT and frames, separate universe; convention traps (N, η, α, pivot); numerical tools; referee checklist | `references/approximations.md` |
 | Debates (the high $n_s$ of ACT with DESI; the initial-conditions problem), unresolved calculations, next data, stale claims | `references/open-questions.md` |
+| How $n_s$, $r$ and the running follow from the Hubble-flow parameters to second order, and how Hubble-flow and potential parameters convert | `deep/slow-roll-predictions.md` |
+| How $N_*$ follows from the reheating history, and how $w_{\rm reh}$, $T_{\rm reh}$ and the reheating parameter move $n_s$ and $r$ for a given model | `deep/reheating-and-efolds.md` |
+| How multi-field perturbations are computed (adiabatic and entropic split, turns, isocurvature transfer, δN), and when a model reduces to single field | `deep/multi-field-perturbations.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind
@@ -81,10 +84,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline equations and values, the state of the domain, the checks a referee makes, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: the formalism and its conventions, the model landscape, other results and their history, the validity of each approximation, open questions |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 9k; models 6k; open 2k; results 4k.
+Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 9k; models 6k; open 2k; results 4k; deep/multi-field-perturbations 8k; deep/reheating-and-efolds 9k; deep/slow-roll-predictions 11k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

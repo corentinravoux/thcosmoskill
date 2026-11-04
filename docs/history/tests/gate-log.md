@@ -660,3 +660,31 @@ Sheet: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-2026-11-03.md`
   tests pass. Hub router: built; README row.
 - W1 domains: all three built (dark energy after four draws, dark matter
   after two, neutrinos after one). Next: the dossiers of the 0.2 domains.
+
+## 2026-11-04 — stage 5 W1, `thcosmo-inflation` dossiers batch A (G1 passed; G3 waiting)
+
+Run: three dossiers from the gap audit (questions 1–3):
+`deep/slow-roll-predictions.md` (150 lines), `deep/reheating-and-efolds.md`
+(135), `deep/multi-field-perturbations.md` (131); 20 sources added (68).
+The second-order constants of `formalism.md` "Not verified" are resolved
+at source (arXiv:1303.3787, text after Eq. 25).
+
+- G1: `verify_sources` 68 sources, 0 problems; `check_numbers`,
+  `check_equations` empty; `check_transcription` 309 equations, 235 exact,
+  57 contained, 0 mismatch, 17 unreadable; `check_places` 3 found
+  elsewhere, read by the coordinator at source: all printed at the places
+  named (arXiv:astro-ph/0305263 Eq. 11 and Sect. II.1 "around 62";
+  arXiv:2510.18656 Eqs. 29–30; arXiv:astro-ph/0202094 equation numbers in
+  text); `check_shape` 0 problems.
+- Generality: Martin 17.9 % (flag), the Encyclopaedia again; kept, as at
+  the build.
+- Slips reported by the run: three confirmed and recorded in
+  `stale-claims.md` (arXiv:1807.06211 Eq. 4; arXiv:1502.02114 Eq. 45;
+  arXiv:2511.14673 Sect. 2.2.1 against Sect. 1); one not confirmed by the
+  coordinator (arXiv:1004.5525 Eq. 26 against Eq. 19: the rendering of
+  Eq. 26 shows no ρ_nuc), left out.
+- SKILL.md file map and `subtopics.tsv` list the three dossiers.
+- G3 sheet: `docs/history/tests/g2/thcosmo-inflation-dossiers-2026-11-04.md`
+  (seed 1113, `--only /deep/`).
+- The correlators dossier run was cut by the usage limit at its start;
+  resumed after this gate, one agent at a time.
