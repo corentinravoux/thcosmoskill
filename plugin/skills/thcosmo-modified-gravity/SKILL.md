@@ -20,6 +20,9 @@ an equation or a number enters a manuscript.
 | No-go theorems (chameleon, Ostrogradski), positivity, stability conditions, GW170817 consequences, bounds on α and μ–Σ, history of key results | `references/results.md` |
 | Quasi-static approximation and its limits, EFT validity and cutoff, screening in simulations, convention traps, referee checklist | `references/approximations.md` |
 | Phantom crossing in Horndeski, health of f(Q), sub- or superluminal tensors, evidence for non-minimal coupling, Vainshtein beyond spherical symmetry, Euclid forecasts, stale claims | `references/open-questions.md` |
+| How the α_i follow from the Horndeski $G_i$, the stability conditions, and how the α conventions of Bellini–Sawicki, EFTCAMB and hi_class relate | `deep/eft-dark-energy-alpha-basis.md` |
+| How μ and Σ are derived in the quasi-static limit from the α_i, and where the quasi-static approximation fails | `deep/quasi-static-mu-sigma.md` |
+| How chameleon, symmetron, k-mouflage and Vainshtein screening work, and which theory uses which | `deep/screening-mechanisms.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind
@@ -79,10 +82,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline equations and values, the state of the domain, the checks a referee makes, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: the formalism and its conventions, the model landscape, other results and their history, the validity of each approximation, open questions |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 10k; models 7k; open 3k; results 3k.
+Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 10k; models 7k; open 3k; results 3k; deep/eft-dark-energy-alpha-basis 10k; deep/quasi-static-mu-sigma 9k; deep/screening-mechanisms 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

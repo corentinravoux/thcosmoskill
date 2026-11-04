@@ -797,3 +797,27 @@ version); 18 sources added (117).
   arXiv:2607.12010): not physics slips, not recorded in the hub.
 - G3 sheet: `docs/history/tests/g2/thcosmo-primordial-correlators-dossiers-B-2026-11-04.md`
   (seed 1116, all of `deep/`; 48 items in the two new dossiers).
+
+## 2026-11-04 — stage 5 W1, `thcosmo-modified-gravity` dossiers batch A (G1 passed; G3 waiting)
+
+Run: `deep/eft-dark-energy-alpha-basis.md` (147 lines, audit question 1;
+Bellini–Sawicki Eqs. 53–55 transcribed whole, closing the "Not verified"
+item; the α_B convention relations quoted from arXiv:1709.09135 App. A and
+arXiv:1411.3712 footnote 8; hi_class against Bellini–Sawicki marked
+`[der]`), `deep/quasi-static-mu-sigma.md` (120, question 2),
+`deep/screening-mechanisms.md` (147, question 3); 17 sources added (102).
+
+- G1: `verify_sources` 0 problems; checks empty; `check_transcription` 286
+  equations, 210 exact, 50 contained, 0 mismatch, 26 unreadable;
+  `check_places` 0 elsewhere; `check_shape` 0 problems; tests pass after
+  `sync_blocks` (the run could not write the block).
+- Generality: Bellini 14.8 %, Kobayashi 10.2 % (16.9 % at the build),
+  Euclid 8.4 %; no flag.
+- Slips: two confirmed and recorded (arXiv:1504.04623 Eq. 119;
+  arXiv:1606.05339 Eq. 63). Not recorded: two `[der]` readings of the run
+  (arXiv:1407.0059 Eq. 6.44, arXiv:1709.09071 Sect. 3.1.1), a ϵ/ε symbol
+  change (arXiv:1503.06831), and arXiv:1606.05339 Eq. 58, whose rendering
+  shows another row.
+- File map and `subtopics.tsv` updated by the coordinator.
+- G3 sheet: `docs/history/tests/g2/thcosmo-modified-gravity-dossiers-2026-11-04.md`
+  (seed 1117; 12 + 57 + 59).

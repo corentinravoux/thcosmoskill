@@ -84,3 +84,20 @@ Luty2003	hep-th/0303116	v1	Luty	2003	Strong Interactions and Stability in the DG
 Charmousis2006	hep-th/0604086	v2	Charmousis	2006	DGP Specteroscopy	critique
 Clifton2011	1106.2476	v3	Clifton	2011	Modified Gravity and Cosmology	review
 Baumgart2022	2210.03199	v1	Baumgart	2022	Snowmass Theory Frontier: Effective Field Theory	review
+DeFeliceTsujikawa2012	1110.3878	v1	De Felice	2011	Conditions for the cosmological viability of the most general scalar-tensor theories and their applications to extended Galileon dark energy models	foundation
+Bellini2017EB	1709.09135	v2	Bellini	2017	A comparison of Einstein-Boltzmann solvers for testing General Relativity	method
+Hu2014EFTCAMBnotes	1405.3590	v4	Hu	2014	EFTCAMB/EFTCosmoMC: Numerical Notes v3.0	code
+Lombriser2018	1810.05225	v1	Lombriser	2018	Inherently stable effective field theory for dark energy and modified gravity	method
+CataneoBellini2024	2407.11968	v2	Cataneo	2024	mochi_class: Modelling Optimisation to Compute Horndeski In class	code
+CataneoKoyama2025	2512.13691	v2	Cataneo	2025	Non-parametric exploration of minimally coupled gravity with phantom crossing	results
+PogosianSilvestri2016	1606.05339	v4	Pogosian	2016	What can Cosmology tell us about Gravity? Constraining Horndeski with Sigma and Mu	foundation
+Peirone2017	1712.00444	v2	Peirone	2017	Large-scale structure phenomenology of viable Horndeski theories	results
+Gleyzes2015survey	1509.02191	v3	Gleyzes	2015	Effective Theory of Dark Energy at Redshift Survey Scales	method
+Bellini2019hiclass	1909.01828	v3	Bellini	2019	hi_class: Background Evolution, Initial Conditions and Approximation Schemes	code
+Saha2026	2609.30937	v1	Saha	2026	Sub-Horizon and Quasi-Static Approximations in Interacting Dark Sector Models Involving Scalar Field Dark Energy	critique
+Bose2015	1411.6128	v1	Bose	2014	Testing the quasi-static approximation in $f(R)$ gravity simulations	method
+BurrageSakstein2017	1709.09071	v2	Burrage	2017	Tests of Chameleon Gravity	review
+BraxValageas2014	1403.5420	v2	Brax	2014	K-mouflage Cosmology: the Background Evolution	model
+Koyama2016	1504.04623	v2	Koyama	2015	Cosmological Tests of Modified Gravity	review
+Brax2026nucleon	2611.02213	v1	Brax	2026	The nucleon is not a hard sphere: screening fifth forces with Skyrmions	critique
+Thaalba2026	2609.05407	v1	Thaalba	2026	Nonlinear evolution in Galileon EFTs: Regularization and screening	critique
