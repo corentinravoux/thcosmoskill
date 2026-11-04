@@ -821,3 +821,22 @@ arXiv:1411.3712 footnote 8; hi_class against Bellini–Sawicki marked
 - File map and `subtopics.tsv` updated by the coordinator.
 - G3 sheet: `docs/history/tests/g2/thcosmo-modified-gravity-dossiers-2026-11-04.md`
   (seed 1117; 12 + 57 + 59).
+
+## 2026-11-04 — stage 5 W1, `thcosmo-primordial-correlators` dossiers batch B, G3: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-primordial-correlators-dossiers-B-2026-11-04.md`
+(seed 1116). New-dossier rows: part 2, 25 ok; part 3, 23 ok; 0 wrong, 0
+unclear (rows of batch A, already passed, skipped). Audit questions 4–5:
+answered. The draw was over all of `deep/`, so 23 of its 59 items fell in
+the new dossiers; with the 25 part-2 rows, 48 of their tool-passed and
+non-passed items were re-read without error.
+
+Coordinator, minor notes fixed at source:
+- `cosmological-collider.md:133`: arXiv:2010.04727 does not "remove" the
+  Boltzmann factor in general; Eqs. 79–80 carry none for $M_{\rm eff}<\lambda$
+  and it returns above λ (Sect. 4.3); restated.
+- `cosmological-collider.md:146`: the assignment of $n=0,0,2,3$ is printed
+  after Eq. 21 of arXiv:2608.23243; resolved.
+- `loop-corrections.md:72` `[der]`: "over all momenta" replaced by the
+  paper's set-up (UV dropped by iε, IR cut at $k_{\rm min}\gg p$).
+- `thcosmo-primordial-correlators`: five dossiers, gap audit closed.

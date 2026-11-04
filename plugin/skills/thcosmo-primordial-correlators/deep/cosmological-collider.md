@@ -130,7 +130,7 @@ Why $e^{-\pi\mu}$ and not the Boltzmann factor $e^{-2\pi\mu}$: "the probability 
 - Arkani-Hamed & Maldacena 2015, arXiv:1503.08043 — foundation: late-time dimensions, the e^{-πμ} interference argument (Sects. 3, 5.2.2), the inflationary three-point function from the de Sitter four-point function (Sect. 6.1).
 - Assassi, Baumann & Green 2012, arXiv:1204.4207 — derivation: QSFI in-in calculation of the squeezed limit, Eqs. 3.28–3.36.
 - Lee, Baumann & Pimentel 2016, arXiv:1607.03735 — extension: spinning fields in the EFT of inflation, perturbativity criteria (Sect. 3.4.1), amplitude summary (Sect. 4.2).
-- Bodas, Kumar & Sundrum 2020, arXiv:2010.04727 — extension: scalar chemical potential and the removal of the Boltzmann factor (Sects. 3.4.1, 4.3).
+- Bodas, Kumar & Sundrum 2020, arXiv:2010.04727 — extension: scalar chemical potential as "another energy source" (Sect. 3.4.1); Eqs. 79–80 carry no exponential suppression for $M_{\rm eff}<\lambda$, and the suppression returns above λ (Sect. 4.3).
 - An, McAneny, Ridgway & Wise 2017, arXiv:1706.09971 — extension: QSFI at large mixing, numerics against the effective theory.
 - Jazayeri & Renaux-Petel 2022, arXiv:2205.10340 — extension: low-speed collider (abstract read).
 - Belrhali, Poisson & Renaux-Petel 2026, arXiv:2608.23243 — derivation: strong mixing in Laplace space, the halved Boltzmann exponent (Eq. 20).
@@ -143,7 +143,7 @@ Why $e^{-\pi\mu}$ and not the Boltzmann factor $e^{-2\pi\mu}$: "the probability 
 
 - Chen & Wang's own derivation (arXiv:0911.3380) was not read; the QSFI calculation is followed in Assassi et al., who state that their squeezed limit matches it [src: Sect. 3.2.3, text after Eq. 3.36] (arXiv:1204.4207).
 - The definitions of $O_{12}$ (Eq. 4.61) and $I_E$ (Eq. 5.93) of arXiv:1503.08043, the integrals $d(\nu)$, $p(\nu)$ of arXiv:1204.4207, the bound on α (Eq. 73) of arXiv:2010.04727 and the leg kernels (Eqs. 14–18) of arXiv:2608.23243 were not transcribed.
-- The assignment of the exponents $n=0,0,2,3$ of Eq. 21 of arXiv:2608.23243 to individual interactions was not read; the dossier gives them as printed.
+- The exponents $n=0,0,2,3$ of Eq. 21 of arXiv:2608.23243 belong "for $\sigma^{3}$, $\dot{\pi}_{c}\sigma^{2}$, $\dot{\pi}_{c}^{2}\sigma$ and $\dot{\pi}_{c}^{3}$ respectively" (text after Eq. 21); resolved, kept here for the record. <!-- eq: notation -->
 - The bodies of arXiv:2205.10340, arXiv:2607.14529 and arXiv:2609.38167 were not read; their statements are from the abstracts. The squeezed-limit analysis of arXiv:2607.14891 (strong mixing, Mellin–Barnes) was found but not read.
 - Whether the claims of arXiv:2607.12010 (damped amplitude) and arXiv:2608.23243 (larger than believed) use the same normalisation was not settled from the text.
 - Loop-level collider signals (Sect. 7 of arXiv:1503.08043; charged loops with chemical potential) are outside this dossier.
