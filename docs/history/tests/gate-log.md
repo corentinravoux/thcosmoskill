@@ -768,3 +768,14 @@ arXiv:hep-th/0605045, recorded).
   so and keeps what was not read.
 - `deep/soft-limits-and-consistency.md:75`: quoted "becomes", as printed.
 - After the fixes: 238 equations, 0 mismatch; tests pass.
+
+## 2026-11-04 — stage 5 W1, `thcosmo-inflation` dossier 4, G3: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-inflation-dossier-stochastic-2026-11-04.md`
+(seed 1115). Part 2: 34 ok. Part 3: 59 ok, 0 wrong: G3 passes. Audit
+question 4: answered. Minor notes (reading list completeness; two
+definitions printed one equation from their tag) left for the next refresh.
+The reviewer also confirms the third slip of the run (exponent before
+Eq. 54 of arXiv:1707.00537), which the coordinator could not see in the
+rendering; not recorded until seen. `thcosmo-inflation`: four dossiers,
+gap audit closed.
