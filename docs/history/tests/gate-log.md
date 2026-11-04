@@ -703,3 +703,32 @@ Audit questions 1–3: answered (reviewer: yes, yes, yes).
   now quote the instance that arXiv:1303.3787 prints (text after Eq. 28:
   "would set f=3 and g=6"), and keep the gap that remains.
 - After the fixes: 313 equations, 0 mismatch; tests pass.
+
+## 2026-11-04 — stage 5 W1, `thcosmo-primordial-correlators` dossiers batch A (G1 passed; G3 waiting)
+
+Run: three dossiers from the gap audit (questions 1–3):
+`deep/in-in-bispectrum.md` (130 lines; Maldacena 2002 through
+arXiv:hep-th/0605045 Sect. 5.1, [sec]), `deep/eft-of-inflation.md` (122;
+the unitary-gauge action, arXiv:0709.0293 Eq. 10, listed as missing in the
+reference files, now transcribed), `deep/soft-limits-and-consistency.md`
+(140); 20 sources added (99).
+
+- G1: `verify_sources` 0 problems; `check_numbers`, `check_equations`
+  empty; `check_transcription` 237 equations, 185 exact, 42 contained, 0
+  mismatch, 10 unreadable; `check_places` 0 elsewhere, 0 not found;
+  `check_shape` 0 problems.
+- Generality: Chen 19.9 % (flag; 14.1 % at the build), Cheung 10.6 %.
+  The rise is two sources: the review arXiv:1002.1416 (88 citations) and
+  arXiv:hep-th/0605045 (37), the readable route to Maldacena's bispectrum
+  required by the brief (special cases, pre-rendering papers); kept,
+  justified, to be rebalanced in the deepening runs if a second readable
+  route exists.
+- Slips reported by the run: two confirmed and recorded in
+  `stale-claims.md` (arXiv:1905.05697 Eq. 61, equilateral row 0.0780
+  against 0.780; arXiv:2005.02366, $c_{s}\approx-0.031$). Two not kept:
+  the sign of arXiv:0709.0293 Eq. 45 against later papers is a sign
+  convention of $f_{\rm NL}$, not a slip; the "+-" in its Eq. 10 is not in
+  the rendering read by the coordinator.
+- SKILL.md file map and `subtopics.tsv` list the three dossiers.
+- G3 sheet: `docs/history/tests/g2/thcosmo-primordial-correlators-dossiers-2026-11-04.md`
+  (seed 1114, `--only /deep/`; 23 + 37 + 59).

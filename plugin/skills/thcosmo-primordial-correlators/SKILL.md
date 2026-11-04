@@ -20,6 +20,9 @@ an equation or a number enters a manuscript.
 | Consistency-relation theorems, Suyama–Yamaguchi inequality, sound-speed bounds, collider and bootstrap results, loop and decoherence results, de Sitter representations, history of key results | `references/results.md` |
 | Slow-roll order, decoupling limit, perturbativity at small $c_s$, Bunch–Davies, weak mixing, templates, stochastic and Lindblad approximations, convention traps, printing slips, numerical issues, referee checklist | `references/approximations.md` |
 | Debates (one-loop PBH back-reaction, scalar decoherence, collider mixing, feature hints), unresolved calculations, forecasts, stale claims | `references/open-questions.md` |
+| How the single-field scalar bispectrum follows from the cubic action with the in-in formalism, up to the Maldacena result | `deep/in-in-bispectrum.md` |
+| How the Goldstone action is built from the unitary-gauge EFT, when the decoupling limit holds, and how $f_{\rm NL}$ follows from $c_s$ and $M_3$ | `deep/eft-of-inflation.md` |
+| How the squeezed-limit consistency relations are derived, what violates them, and why the single-field squeezed signal is not observable | `deep/soft-limits-and-consistency.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind
@@ -85,10 +88,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline equations and values, the state of the domain, the checks a referee makes, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: the formalism and its conventions, the model landscape, other results and their history, the validity of each approximation, open questions |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 4k; formalism 14k; models 4k; open 3k; results 6k.
+Sizes, in thousands of tokens: L1 4k; approximations 4k; formalism 14k; models 4k; open 3k; results 6k; deep/eft-of-inflation 9k; deep/in-in-bispectrum 9k; deep/soft-limits-and-consistency 10k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
