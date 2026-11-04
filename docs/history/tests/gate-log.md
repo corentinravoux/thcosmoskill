@@ -779,3 +779,21 @@ The reviewer also confirms the third slip of the run (exponent before
 Eq. 54 of arXiv:1707.00537), which the coordinator could not see in the
 rendering; not recorded until seen. `thcosmo-inflation`: four dossiers,
 gap audit closed.
+
+## 2026-11-04 — stage 5 W1, `thcosmo-primordial-correlators` dossiers batch B (G1 passed; G3 waiting)
+
+Run (cut by the usage limit, resumed from `_progress.md`):
+`deep/cosmological-collider.md` (149 lines, audit question 4; quasi-single
+field followed through Assassi–Baumann–Green) and `deep/loop-corrections.md`
+(130, question 5; each side of the PBH loop debate in its own words and
+version); 18 sources added (117).
+
+- G1: `verify_sources` 0 problems; checks empty; `check_transcription` 327
+  equations, 255 exact, 0 mismatch, 18 unreadable; `check_places` 0
+  elsewhere; `check_shape` 0 problems.
+- Generality: Chen 15.7 % (flag, down from 19.9 %), Cheung 8.2 %; the run
+  added two Chen citations only; kept, justified as before.
+- Reported slips are spelling typos and one reused symbol (κ in
+  arXiv:2607.12010): not physics slips, not recorded in the hub.
+- G3 sheet: `docs/history/tests/g2/thcosmo-primordial-correlators-dossiers-B-2026-11-04.md`
+  (seed 1116, all of `deep/`; 48 items in the two new dossiers).

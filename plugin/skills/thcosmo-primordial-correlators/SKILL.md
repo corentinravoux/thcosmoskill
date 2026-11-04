@@ -23,6 +23,8 @@ an equation or a number enters a manuscript.
 | How the single-field scalar bispectrum follows from the cubic action with the in-in formalism, up to the Maldacena result | `deep/in-in-bispectrum.md` |
 | How the Goldstone action is built from the unitary-gauge EFT, when the decoupling limit holds, and how $f_{\rm NL}$ follows from $c_s$ and $M_3$ | `deep/eft-of-inflation.md` |
 | How the squeezed-limit consistency relations are derived, what violates them, and why the single-field squeezed signal is not observable | `deep/soft-limits-and-consistency.md` |
+| How the collider signal of a massive field is computed (quasi-single-field inflation, squeezed-limit oscillation and Boltzmann suppression, chemical potential, strong mixing) and what sets its amplitude | `deep/cosmological-collider.md` |
+| How loop corrections to primordial correlators are computed and renormalised, and what the PBH loop debate turns on, each side in its own words | `deep/loop-corrections.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind
@@ -91,7 +93,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 4k; formalism 14k; models 4k; open 3k; results 6k; deep/eft-of-inflation 9k; deep/in-in-bispectrum 9k; deep/soft-limits-and-consistency 10k.
+Sizes, in thousands of tokens: L1 4k; approximations 4k; formalism 14k; models 4k; open 3k; results 6k; deep/cosmological-collider 12k; deep/eft-of-inflation 9k; deep/in-in-bispectrum 9k; deep/loop-corrections 9k; deep/soft-limits-and-consistency 10k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
