@@ -20,6 +20,10 @@ pattern across the skill, and draw again with a new seed; log every draw.
 
     python3 tools/sample_statements.py --skill thcosmo-lss-perturbation-theory --seed 1 [--offline]
     python3 tools/sample_statements.py --bound 0 59          # upper bound for 0 errors in 59
+    python3 tools/sample_statements.py --skill thcosmo-x --seed 2 --changed-since HEAD   # deepening run
+
+`--changed-since REV` restricts parts 2 and 3 to the lines added or changed
+since that git revision (a deepening run re-reads its new lines only).
 
 Standard library.
 """
@@ -29,6 +33,7 @@ from __future__ import annotations
 import argparse
 import random
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -87,7 +92,28 @@ def conventions_lines(formalism: Path) -> set[int]:
     return found
 
 
-def sheet(skill: Path, seed: int, offline: bool, only: str = "") -> tuple[list[dict], list[dict], list[dict]]:
+def changed_lines(diff: str) -> dict[str, set[int]]:
+    """Lines added or changed, per file, from the text of `git diff -U0`."""
+    lines: dict[str, set[int]] = {}
+    current = None
+    for row in diff.splitlines():
+        if row.startswith("+++ "):
+            current = row[6:] if row.startswith("+++ b/") else None
+        elif row.startswith("@@") and current:
+            start, _, count = re.match(r"@@ -\S+ \+(\d+)(,(\d+))? @@", row).groups()
+            span = 1 if count is None else int(count)
+            lines.setdefault(current, set()).update(range(int(start), int(start) + span))
+    return lines
+
+
+def git_changed_lines(rev: str, skill: Path) -> dict[str, set[int]]:
+    diff = subprocess.run(["git", "diff", "-U0", rev, "--", str(skill)], cwd=ROOT,
+                          capture_output=True, text=True, check=True).stdout
+    return changed_lines(diff)
+
+
+def sheet(skill: Path, seed: int, offline: bool, only: str = "",
+          changed: dict[str, set[int]] | None = None) -> tuple[list[dict], list[dict], list[dict]]:
     skill_md = str((skill / "SKILL.md").relative_to(ROOT) if (skill / "SKILL.md").is_relative_to(ROOT) else skill / "SKILL.md")
     formalism = skill / "references" / "formalism.md"
     formalism_name = str(formalism.relative_to(ROOT) if formalism.is_relative_to(ROOT) else formalism)
@@ -129,6 +155,10 @@ def sheet(skill: Path, seed: int, offline: bool, only: str = "") -> tuple[list[d
         # Gate G3 re-reads the new files only (for example `--only /deep/`); part 1 stays whole.
         part2 = [e for e in part2 if only in e["file"]]
         passed = [e for e in passed if only in e["file"]]
+    if changed is not None:
+        # A deepening run re-reads the lines it added or changed; part 1 stays whole.
+        part2 = [e for e in part2 if e["line"] in changed.get(e["file"], ())]
+        passed = [e for e in passed if e["line"] in changed.get(e["file"], ())]
     rng = random.Random(seed)
     draw = rng.sample(passed, min(DRAW, len(passed)))
     return part1, part2, draw
@@ -160,13 +190,17 @@ def main() -> int:
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--bound", nargs=2, type=int, metavar=("ERRORS", "N"))
     parser.add_argument("--only", default="", help="parts 2 and 3 restricted to files whose path contains this (G3: /deep/)")
+    parser.add_argument("--changed-since", metavar="REV",
+                        help="parts 2 and 3 restricted to lines added or changed since this git revision")
     args = parser.parse_args()
     if args.bound:
         print(f"{100 * upper_bound(*args.bound):.2f} %")
         return 0
     if not args.skill:
         parser.error("--skill or --bound is required")
-    parts = sheet(ROOT / SKILLS / args.skill, args.seed, args.offline, args.only)
+    skill = ROOT / SKILLS / args.skill
+    changed = git_changed_lines(args.changed_since, skill) if args.changed_since else None
+    parts = sheet(skill, args.seed, args.offline, args.only, changed)
     sys.stdout.write(render(args.skill, args.seed, parts))
     return 0
 

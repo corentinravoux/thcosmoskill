@@ -25,6 +25,12 @@ Snapshot: 2026-11-02
 - For: the f(Q) review presents f(Q) as able to address cosmological tensions and to describe early and late cosmology without dark components (arXiv:2309.15958) [src: abstract], and phenomenological fits to DESI DR2 continue (arXiv:2608.24676; arXiv:2610.20002) [src: abstracts].
 - `[der]` No paper read in this run answers the ghost argument of arXiv:2311.04201 directly; a referee asks an f(Q) paper which connection branch it uses and how it treats that result.
 
+### Are the non-local models still viable?
+<!-- key: are-the-non-local-models-still-viable -->
+- Against: Lunar Laser Ranging rules out the RR model "under plausible assumptions such as the absence of strong backreaction from non-linear structures" and rules out the DW model, whose "perfect screening for free" "actually does not work" (arXiv:1812.11181) [src: abstract]; Woodard reports "the negative verdict of structure formation" for the simple DW models (arXiv:1401.0254) [src: abstract].
+- For: the RT model "passes all phenomenological consistency tests" (arXiv:1812.11181) [src: abstract] and predicts large deviations of the GW luminosity distance (arXiv:1907.02047) [src: abstract]; the revised DW-2019 model switches off in bound systems by construction (arXiv:1902.08075) [src: abstract] and "is not ruled out by the $f\sigma_8$ data" (arXiv:1908.11223) [src: abstract]; the original DW model "is not ruled out" by RSD when recast in a localised form (arXiv:1701.00434) [src: abstract].
+- `[der]` The verdicts are model by model: a paper that cites "non-local gravity" as viable or excluded names RR, RT, DW or DW-2019, and the LLR assumption on non-linear backreaction.
+
 ### Must gravitational waves be subluminal or superluminal on cosmological backgrounds?
 <!-- key: must-gravitational-waves-be-subluminal-or -->
 - Melville & Noller use subluminal gravitational waves as an extra theoretical prior with positivity bounds, which leaves 1% of the parameter space of their example class (arXiv:1904.05874) [src: abstract].

@@ -68,6 +68,10 @@ As quoted by the Euclid review (secondary; go to the primary paper first):
 | 2017 | GW170817: $c_g$ equal to c within the bound of Eq. 122 of arXiv:1901.07183 | arXiv:1710.05877; arXiv:1710.05901; arXiv:1710.06394 [src: abstracts] | standing; cutoff caveat (arXiv:1806.09417) |
 | 2017 | Cubic Galileon in 7.8σ tension with ISW | arXiv:1707.02263 [src: abstract] | standing |
 | 2018 | Graviton decay forces $\alpha_{\rm H}=0$ | arXiv:1809.03484 [src: abstract] | standing; Vainshtein beyond spherical symmetry questioned in 2026 (arXiv:2607.09098) |
+| 2011 | Algebraic f(T) not locally Lorentz invariant, extra degrees of freedom | arXiv:1010.1041 [src: abstract] | addressed by the covariant formulation with a spin connection (arXiv:2106.13793, Sect. 5.3.1); strong-coupling questions remain (arXiv:2405.14184) |
+| 2017 | RR non-local model statistically equivalent to ΛCDM on CMB, BAO, SNe, structure formation and local $H_0$ | arXiv:1712.07066 [src: abstract] | superseded: ruled out by Lunar Laser Ranging under the stated assumptions (arXiv:1812.11181) |
+| 2018 | Lunar Laser Ranging rules out the RR and DW models; RT viable | arXiv:1812.11181 [src: abstract] | standing; DW-2019 built to evade it (arXiv:1902.08075) |
+| 2018 | GW170817 with GRB 170817A gives \|c₁₃\| ≤ 10⁻¹⁵ in Einstein–aether | arXiv:1802.04303 [src: abstract] | standing; other couplings still open (arXiv:2404.07782) |
 | 2023 | f(Q) cosmologies strongly coupled or ghostly | arXiv:2311.04201 [src: abstract] | no reply found |
 | 2024–2026 | DESI-era hints of non-minimal coupling and phantom crossing | arXiv:2407.15832; arXiv:2605.12415 [src: abstracts] | debated (arXiv:2607.07777; arXiv:2509.13804) |
 

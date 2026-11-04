@@ -50,6 +50,12 @@ class SamplerTest(unittest.TestCase):
         text = sample_statements.render("thcosmo-x", 3, (part1, part2, draw))
         self.assertIn("## 3. Random draw", text)
 
+    def test_changed_lines(self):
+        diff = ("diff --git a/s/f.md b/s/f.md\n--- a/s/f.md\n+++ b/s/f.md\n"
+                "@@ -3 +3 @@\n-x\n+y\n@@ -10,0 +11,3 @@\n+a\n+b\n+c\n@@ -20,2 +23,0 @@\n-d\n-e\n"
+                "diff --git a/s/g.md b/s/g.md\n--- a/s/g.md\n+++ /dev/null\n@@ -1 +0,0 @@\n-z\n")
+        self.assertEqual(sample_statements.changed_lines(diff), {"s/f.md": {3, 11, 12, 13}})
+
 
 if __name__ == "__main__":
     unittest.main()

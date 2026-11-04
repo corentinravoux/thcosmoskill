@@ -885,3 +885,58 @@ completion", quoted; `:136` the LISA forecast of arXiv:2203.00566 quoted
 whole ("bounds on departures from General Relativity in unexplored
 low-frequency regimes"). `thcosmo-modified-gravity`: four dossiers; the
 13 dossiers of the three gap audits are written and gated.
+
+## 2026-11-04 — stage 5 W1, `thcosmo-modified-gravity` deepening run (G1 passed; G2 running)
+
+Run (`docs/agent-brief-deepen.md`, gap-audit questions 7–9): the three thin
+subtopics now covered. Vector–tensor: generalised Proca action, background
+and tensor sector (arXiv:1603.05806, Eqs. 1–7, 12–14, 33–34), Einstein–aether
+(arXiv:0801.1547, Eqs. 1–2, 9–10) and a new model card. Teleparallel and
+non-metricity: f(T) action, field and Friedmann equations
+(arXiv:2106.13793, Eqs. 5.48–5.54, 6.4–6.7b), f(Q) (arXiv:2309.15958,
+Eqs. 5.40–5.42, 6.4–6.10). Non-local: RR action and general quadratic
+action (arXiv:1712.07066, Eqs. 1.1, 2.51), the Lunar Laser Ranging verdict
+(arXiv:1812.11181), DW-2019; a new open question "Are the non-local models
+still viable?". 18 sources added (126). The run stopped before its final
+checks (session of the second account ended); the coordinator of the main
+account took it over.
+
+- G1 (coordinator): `verify_sources` 0 problems; `check_transcription` 363
+  equations, 273 exact, 56 contained, 0 mismatch, 34 unreadable;
+  `check_places` 0 elsewhere; `check_shape` 0 problems; tests pass.
+- Fixed at G1: three `[der]` flags moved to the end of their own sentence
+  (they were read as covering numbers of the sentence before); three
+  statements whose relations are read in an abstract marked
+  `<!-- eq: notation -->`; a table row with `|` inside `$…$` rewritten in
+  plain text, as row 52 of `results.md`.
+- Slip recorded by the run, to be confirmed at G2: Sect. 6.1 of
+  arXiv:2309.15958 normalises f differently from Eq. 5.40 (no κ on the
+  matter side of Eq. 6.4, 1/κ inside f in Eqs. 6.8–6.9).
+- Generality: Bellini 10.3 %, Creminelli 8.9 %, Kobayashi 7.3 %; no flag.
+- Tool: `sample_statements.py --changed-since REV` restricts parts 2 and 3
+  to the lines a deepening run added or changed.
+- G2 sheet: `docs/history/tests/g2/thcosmo-modified-gravity-deepening-2026-11-04.md`
+  (seed 1119; 12 + 16 + 43, the 43 being every tool-passed new item).
+
+## 2026-11-04 — stage 5 W1, `thcosmo-modified-gravity` deepening run, G2: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-modified-gravity-deepening-2026-11-04.md`
+(seed 1119). Part 1: 12 skip (lines unchanged since G2 of 2026-11-03).
+Part 2: 16 ok. Part 3: 43 ok (every tool-passed new item), 0 wrong. The
+f(Q) normalisation slip is confirmed at source: Eq. 6.4 of arXiv:2309.15958
+has no κ on the matter side, Eq. 5.41 has $\kappa\,\mathcal{T}_{\mu\nu}$,
+Eqs. 6.8–6.9 put 1/κ before f, and Eq. 6.9 in Eq. 6.4 gives Eq. 6.10.
+Minor notes fixed at source:
+- `formalism.md:104`: the `[der]` names Eqs. 6.4–6.10, not Sect. 6.1, since
+  Eq. 6.3 keeps the prefactor of Eq. 5.40.
+- `formalism.md:186`: f(Q) equations transcribed are 6.4 and 6.8–6.10, not
+  6.4–6.10.
+- `models.md:100`: the qualifier of arXiv:2404.07782, that the change of
+  wave speed "vanishes in the limit in which gravitational waves propagate
+  with luminal speed", quoted.
+
+`thcosmo-modified-gravity`: the three thin subtopics covered; gap audit
+closed. Gap audits written for `thcosmo-dark-energy`,
+`thcosmo-dark-matter-models` and `thcosmo-neutrinos-light-relics`
+(`docs/history/tests/gap-audit/`): three dossiers each, deepening runs for
+dark sectors, gravitational production and light sterile neutrinos.

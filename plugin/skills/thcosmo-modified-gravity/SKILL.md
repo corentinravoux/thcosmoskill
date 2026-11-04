@@ -86,7 +86,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 10k; models 7k; open 3k; results 3k; deep/eft-dark-energy-alpha-basis 10k; deep/quasi-static-mu-sigma 9k; deep/screening-mechanisms 9k; deep/speed-of-tensors-constraints 16k.
+Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 15k; models 9k; open 3k; results 4k; deep/eft-dark-energy-alpha-basis 10k; deep/quasi-static-mu-sigma 9k; deep/screening-mechanisms 9k; deep/speed-of-tensors-constraints 16k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
