@@ -840,3 +840,19 @@ Coordinator, minor notes fixed at source:
 - `loop-corrections.md:72` `[der]`: "over all momenta" replaced by the
   paper's set-up (UV dropped by iε, IR cut at $k_{\rm min}\gg p$).
 - `thcosmo-primordial-correlators`: five dossiers, gap audit closed.
+
+## 2026-11-04 — stage 5 W1, `thcosmo-modified-gravity` dossiers batch A, G3: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-modified-gravity-dossiers-2026-11-04.md`
+(seed 1117). Part 2: 55 ok, 2 wrong. Part 3: 59 ok, 0 wrong: G3 passes.
+Audit questions 1–3: answered.
+
+- `deep/eft-dark-energy-alpha-basis.md:90` (wrong): Eq. 55 of
+  arXiv:1405.3590 has four rows; the first,
+  $M_{*}^{2}/m_{0}^{2}=1+\tilde{M}=1+\Omega+\gamma_{3}$, is now in the
+  transcription.
+- `deep/screening-mechanisms.md:96, :123` (wrong): the 1.4 and 1.8 orders
+  of magnitude of arXiv:2611.02213 hold for the profile truncated at the
+  physical pion mass (3.0 and 2.4 in the chiral limit), the chameleon one
+  "at the dark-energy scale"; both conditions quoted.
+- After the fixes: 286 equations, 0 mismatch; checks empty.
