@@ -60,7 +60,11 @@ identifiers out of fifty-one pointed to other papers.
 10. **Special cases** — read `suite-conventions.md#citations-and-provenance`
    before writing: places for unnumbered displays, inline equations,
    letters without sections and table footnotes; multi-row displays copied
-   whole; parameters set to a value are notation; one citation and flag
+   whole; parameters set to a value are notation, but `<!-- eq: notation -->`
+   never goes on a value or a relation read in a paper (a fit, a bound, a
+   ratio): give it its place, with `inline` when it is read in running
+   text, a caption or an abstract; an equation is copied whole or as one
+   contiguous part, never simplified or cut in the middle; one citation and flag
    right after the equations of each paper; renderings without equation
    numbers ("none tagged" in the `fetch_paper.py` header) go through a
    readable secondary source; textbooks and pre-arXiv papers through a
