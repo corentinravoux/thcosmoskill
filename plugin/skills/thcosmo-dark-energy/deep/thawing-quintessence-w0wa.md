@@ -5,7 +5,7 @@ Snapshot: 2026-11-04.
 From: Copeland et al. arXiv:hep-th/0603057, Sects. V.1, VI.2, VII, VIII; CosmoVerse arXiv:2504.01669, Sect. 4.2.1.d; Li arXiv:2606.21826, Sects. II–III — `references/subtopics.tsv`, rows `quintessence` and `post-desi`.
 Audit questions: (1) How is the thawing-quintessence w(a) derived (slow-roll thawing, hilltop, the limiting relation between 1+w, Ω_φ and the initial slope), and how does it map onto w0–wa (calibration relations, the CPL "mirage", phantom-looking fits of non-phantom models)?
 
-Already in the reference files, and not repeated here: the quintessence action, field equation and the Copeland et al. dynamical-system variables (`formalism.md#quintessence`); the abstract-level statements of Scherrer & Sen and Caldwell & Linder (`formalism.md#quintessence`, "Thawing, freezing and tracking"); the thawing model card and its observational status (`models.md#thawing-quintessence-monomial-pngb-axion`); the prior dependence of the thawing preference and the curved-background fit of Dinda & Maartens (`approximations.md#parameterisations-of-w-a`, `open-questions.md#do-the-data-prefer-thawing-quintessence`); the routes to the $w_0>-1$, $w_a<0$ shape (`results.md#after-desi-what-the-data-ask-of-a-theory`).
+Already in the reference files, and not repeated here: the quintessence action, field equation and the Copeland et al. dynamical-system variables (`formalism.md#quintessence`); the abstract-level statements of Scherrer & Sen and Caldwell & Linder (`formalism.md#quintessence`, "Thawing, freezing and tracking"); the thawing model card and its observational status (`models.md#thawing-quintessence-monomial-pngb-axion`); the prior dependence of the thawing preference and the curved-background fit of Dinda & Maartens (`approximations.md#parameterisations-of-w-a`, `open-questions.md#do-the-data-prefer-thawing-quintessence`); the routes to the $w_0>-1$, $w_a<0$ shape (`results.md#after-desi-what-the-data-ask-of-a-theory`). <!-- num: not a value -->
 
 ## Conventions
 <!-- key: conventions -->
@@ -83,19 +83,19 @@ The rendering of arXiv:astro-ph/0505494 carries no equation numbers; the bounds 
 | Hilltop w(a) accuracy | δw ≲ 0.5 % quadratic, ≲ 0.1 % PNGB, ≲ 0.3 % Gaussian | $w_0=-0.9$, $\Omega_{\phi 0}=0.7$, K = 1.01–4 | arXiv:0809.4441 | [src: Sect. III, text after Fig. 4 caption] |
 | Hilltop PNGB range | agreement "remains excellent for" $w_0$ "as large as" −0.7 | PNGB | arXiv:0809.4441 | [src: Sect. III, text after Fig. 4 caption] |
 | Thawing bounds | 3(1+w) > w′ > 1+w; valid for (1+w) ≪ 1, "w ≲ −0.8 is a practical limit" | models studied; $\Omega_{de}\lesssim 0.8$ | arXiv:astro-ph/0505494 | [src: text after Fig. 1] |
-| PNGB fine tuning | $(\phi_{i}/f)_{\rm max}\sim e^{-1/f}$; f = 0.1 needs $\phi_i/f<10^{-3}$; f = 0.05 needs $\phi_i/f<10^{-7}$ | $\Omega_w=0.72$ today | arXiv:0808.0189 | [src: Sect. II.1] |
+| PNGB fine tuning | $(\phi_{i}/f)_{\rm max}\sim e^{-1/f}$; f = 0.1 needs $\phi_i/f<10^{-3}$; f = 0.05 needs $\phi_i/f<10^{-7}$ | $\Omega_w=0.72$ today | arXiv:0808.0189 | [src: Sect. II.1, inline] |
 | Stretch factor | $a_\star=0.8$ thawing, $a_\star=0.85$ freezing | models of their Sect. II | arXiv:0808.0189 | [src: Sect. III] |
 | Calibrated $w_0$–$w_a$ accuracy | observables "typically to an accuracy level of" $10^{-3}$ | distance and H(z) | arXiv:0808.0189 | [src: abstract] |
 | CMB crossover | $a_w$ from 0.707 to 0.733 | fiducial $\Omega_m$ from 0.2 to 0.35, $d_{\rm lss}$ matched | arXiv:0708.0024 | [src: Sect. II, text after Eq. 3] |
 | Mirage family | same $d_{\rm lss}$ "to within 0.2%" for $\vert 1+w_{0}\vert<0.2$ | fixed $\Omega_m$ | arXiv:0708.0024 | [src: Sect. II] |
-| Mirage line | $w_{a}\approx-3.66(1+w_{0})$ | as quoted from Linder's Ref. 11 (the 2007 mirage paper) | arXiv:2410.10981 | [src: Sect. III] |
-| $w_0$–$w_a$ degeneracy | $\Delta w_{a}/\Delta w_{0}=-4.8$; generally ≈ −5, varying "by" ∼10 % | fiducial (−0.827, −0.75); fit to H(z) | arXiv:2405.03933 | [src: Sect. 3; Fig. 1 caption] |
+| Mirage line | $w_{a}\approx-3.66(1+w_{0})$ | as quoted from Linder's Ref. 11 (the 2007 mirage paper) | arXiv:2410.10981 | [src: Sect. III, inline] |
+| $w_0$–$w_a$ degeneracy | $\Delta w_{a}/\Delta w_{0}=-4.8$; generally ≈ −5, varying "by" ∼10 % | fiducial (−0.827, −0.75); fit to H(z) | arXiv:2405.03933 | [src: Sect. 3, inline; Fig. 1 caption, inline] |
 | Best-fit error E | exponential ≲ 0.1 %; plateau ≲ 0.5 %; hilltop ≲ 0.2 % ($k^2M_{pl}^2=1$), ≲ 0.7 % ($k^2M_{pl}^2=100$) | $\Omega_Q(0)=0.7$ <!-- eq: notation --> | arXiv:2405.03933 | [src: Sect. 5] |
-| Fitted $w_0$ against true w today | cases with $w_{Q}(0)>-1/3$ fitted with $w_{0}\leq-0.65$ | hilltop and plateau curves | arXiv:2405.03933 | [src: Sect. 5] |
-| Survey dependence | Pantheon+ (−0.91, −0.40); DESI (−0.93, −0.17); CMB (−0.96, −0.04); all (−0.93, −0.15) | $(V_{0},m^{2})=(0.9725,-40.0)$ | arXiv:2408.17318 | [src: Sect. III] |
+| Fitted $w_0$ against true w today | cases with $w_{Q}(0)>-1/3$ fitted with $w_{0}\leq-0.65$ | hilltop and plateau curves | arXiv:2405.03933 | [src: Sect. 5, inline] |
+| Survey dependence | Pantheon+ (−0.91, −0.40); DESI (−0.93, −0.17); CMB (−0.96, −0.04); all (−0.93, −0.15) | $(V_{0},m^{2})=(0.9725,-40.0)$ | arXiv:2408.17318 | [src: Sect. III, inline] |
 | Algebraic thawing (p = 5) against mirage | $\Delta\chi^{2}>9$, "∼3σ worse"; thawing forms differ by $\Delta\chi^{2}<0.3$ | DESI DR1 + SN + CMB as analysed there | arXiv:2410.10981 | [src: Sect. III] |
 | Axion phantom-mirage mass range | $-33.5\lesssim{\rm lg}(m_{\rm a})\lesssim-32.3$ | SN + BAO + CMB baseline | arXiv:2510.14957 | [src: Fig. 2 caption] |
-| Axion against $w_0$–$w_a$ | $\Delta\chi^2=-8.1$ (lg $m_a$ = −32.9) against −19.4 for $w_{0}=-0.76,w_{a}=-0.815$ | relative to baseline ΛCDM | arXiv:2510.14957 | [src: Table 1] |
+| Axion against $w_0$–$w_a$ | Δχ² = −8.1 (lg $m_a$ = −32.9) against −19.4 for $w_0$ = −0.76, $w_a$ = −0.815 | relative to baseline ΛCDM | arXiv:2510.14957 | [src: Table 1] |
 
 ## What goes wrong
 <!-- key: what-goes-wrong -->

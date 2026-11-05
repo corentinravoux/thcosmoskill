@@ -940,3 +940,64 @@ closed. Gap audits written for `thcosmo-dark-energy`,
 `thcosmo-dark-matter-models` and `thcosmo-neutrinos-light-relics`
 (`docs/history/tests/gap-audit/`): three dossiers each, deepening runs for
 dark sectors, gravitational production and light sterile neutrinos.
+
+## 2026-11-05 — stage 5 W2, build `thcosmo-cosmological-gravitational-waves` (G1 passed; G2 waiting)
+
+Run (second account, started 2026-11-05): stopped on the account's weekly
+usage limit after writing every file but before its final checks, at 58 or
+more of 90 research calls; the owner committed the state as `8730d26`; the
+coordinator of the main account took it over. SKILL.md 127 lines,
+formalism 159, models 103 (8 model cards), results 86, approximations 89,
+open questions 67; 39 sources; 9 subtopics (radiation bound and preheating
+thin).
+
+- G1 (coordinator): `verify_sources` online 0 problems; `check_numbers`
+  and `check_equations` empty; `check_transcription` 219 equations, 197
+  exact, 22 contained, 0 mismatch, 0 unreadable; `check_places` 31
+  statements, 22 at place, 0 elsewhere, 0 not found, 9 unreadable (each
+  cites several papers or an inline place); `check_shape` 0 problems; no
+  `eq: notation` escape; tests pass.
+- Generality: Caprini 47.1 % (flag), Domènech 7.1 %, Figueroa 3.4 %;
+  owner's papers 0 %. The share is the review of Caprini & Figueroa
+  (arXiv:1801.04268) used as the spine of every subtopic, plus the LISA
+  phase-transition papers. Not justified at this level: the deepening run
+  of the two thin subtopics also rebalances, citing the original papers
+  (sound waves, string loops, axion–gauge production, scalar-induced
+  kernels) where readable.
+- Printed slips reported by the run, confirmed by the coordinator at source
+  and recorded in `stale-claims.md`: arXiv:1801.04268 text after Eq. 230
+  (exponent printed as a product) and text before Eq. 380 ($\dot l$ without
+  μ); arXiv:2401.04388 Eq. 116 (limits ∞ to ∞); arXiv:1807.09241 Eq. 61
+  ($(1+\cos\iota)^{2}$). The two linear terms of Eq. 224 of
+  arXiv:1801.04268 are described in `approximations.md` but not recorded:
+  the original fit was not read. A Fig. 9 slip noted in the run's progress
+  file is not used in the skill and not recorded.
+- G2 sheet: `docs/history/tests/g2/thcosmo-cosmological-gravitational-waves-2026-11-05.md`
+  (seed 1120; 19 + 29 + 59).
+
+## 2026-11-05 — stage 5 W1, `thcosmo-dark-energy` dossiers (G1 passed; G3 waiting)
+
+Run (2026-11-04, from the gap audit): `deep/thawing-quintessence-w0wa.md`
+(135 lines, audit question 1), `deep/dark-energy-perturbations-ppf.md`
+(106, question 2), `deep/interacting-de-instabilities.md` (124, question 3).
+The run stopped before its final checks (its progress file still marked
+dossier 3 in progress, though the file was complete); committed by the
+owner in `8730d26`; gated by the coordinator of the main account.
+
+- Fixed at G1: three `[der]` flags moved to the end of their own sentence;
+  twelve relations read in running text, an abstract or a caption given
+  the `inline` place after a re-read at source (all as printed); a table
+  value rewritten in plain text; three pointer statements marked
+  `num: not a value`; four rows of `interacting-de-instabilities.md`
+  (arXiv:0804.0232 Eqs. 43, 75, 76, 86) re-transcribed as printed instead
+  of simplified (`2/(1+w_x)` for `{2\over 1+w_{x}}`), one flag per
+  equation; four sources added (arXiv:0901.1611, 1109.6234, 1404.5220,
+  1904.04149).
+- After the fixes: `verify_sources` 76 sources, 0 problems;
+  `check_transcription` 302 equations, 206 exact, 59 contained, 0
+  mismatch, 37 unreadable; `check_places` 0 elsewhere, 0 not found;
+  `check_shape` 0 problems; tests pass.
+- Generality: Li 10.9 %, Copeland 10.8 %, Valiviita 6.9 %; no flag.
+- G3 sheet: `docs/history/tests/g2/thcosmo-dark-energy-dossiers-2026-11-05.md`
+  (seed 1121, `--only /deep/`; 14 + 74 + 59; part 1 was re-read at G2 of
+  2026-11-03).
