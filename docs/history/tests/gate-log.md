@@ -1108,3 +1108,32 @@ wording. Audit questions 1–3 answered. Fixed at source:
   drops a hedge): no other "linear in" or "define" paraphrase in `deep/`.
 - Fresh draw: `docs/history/tests/g2/thcosmo-dark-energy-dossiers-2026-11-05-redraw.md`
   (seed 1124): part 3 and the fixed rows to be re-read.
+
+## 2026-11-05 — stage 5 W1, `thcosmo-dark-matter-models` dossiers, G3: first draw fails
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-05.md`
+(seed 1122). Part 1: skipped (G2 of 2026-11-03). Part 2: 70 ok, 3 wrong.
+Part 3: 58 ok, 1 wrong: G3 not passed (bound 7.8 %). Audit questions 1–3
+answered. Fixed at source, each read by the coordinator in the paper:
+- `relic-abundance-beyond-freeze-out.md:15` (part 3): the Hubble rate of
+  arXiv:2610.03718 is in footnote 4 of Sect. 3, not the running text.
+- `:13`: the ordering $m_{1}\leq\cdots\leq m_{N-1}\leq m_{N}$ restored as
+  printed in arXiv:hep-ph/9704361.
+- `:76`: the "below 0.2%" of arXiv:2610.03718 Sect. 4.2 compares the
+  numerical and semi-analytical freeze-out temperatures for either c, not
+  c = √2 with c = 1.5; the paper's sentence quoted.
+- `axion-relic-abundance.md:82`: Saikawa et al. call understanding the
+  origin of the discrepancy, not the discrepancy, "a crucial step"; quoted.
+- Side findings: `axion:76` the factor-5 boost is the estimate of Ref. [51]
+  of arXiv:2609.20801, Benabou et al. (arXiv:2412.08699, source added), not
+  Saikawa et al.; `axion:30` and `:132` the rendering of arXiv:1606.07494
+  holds the main text (Fig. 3 caption read), so the DIGA sentence is placed
+  in the main text and the "Not verified" item rewritten; `axion:15` place
+  is Sect. 2, not 2.1; `relic:67` γ(T) is defined in Eq. 6, now "Eqs. 5–6".
+- Not applied: the reviewer read the two `[sec: …]` flags of `relic:25` as
+  typos; they are the rule-6 flag for a pre-arXiv paper (Griest & Seckel)
+  read through a citing paper, and stay.
+- Pattern search: no other claim about a rendering in the skill's `deep/`
+  or `references/`.
+- Fresh draw: `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-05-redraw.md`
+  (seed 1125): part 3 and the fixed rows to be re-read.
