@@ -1001,3 +1001,39 @@ owner in `8730d26`; gated by the coordinator of the main account.
 - G3 sheet: `docs/history/tests/g2/thcosmo-dark-energy-dossiers-2026-11-05.md`
   (seed 1121, `--only /deep/`; 14 + 74 + 59; part 1 was re-read at G2 of
   2026-11-03).
+
+## 2026-11-05 — stage 5 W1, `thcosmo-dark-matter-models` dossiers (G1 passed; G3 waiting)
+
+Runs: `deep/relic-abundance-beyond-freeze-out.md` (134 lines, audit
+question 1) and `deep/axion-relic-abundance.md` (136, question 2) written
+2026-11-04 by a run that stopped before its checks (committed by the owner
+in `8730d26`); `deep/noncold-dm-mass-mappings.md` (149, question 3: seven
+mass maps, the two half-mode conventions $T^2=1/2$ and $T=1/2$) written
+2026-11-05 by a resumed run (29 of 30 calls), which was also allowed to fix
+the G1 failures of the first two. Six sources added (88).
+
+- Fixed at G1 (coordinator): the runs had put 27 `eq: notation` escapes on
+  statements holding values and relations read in a paper (for example
+  $\lambda_{\rm hm}\approx 13.93\lambda^{\rm eff}_{\rm fs}$, $\xi=15(2)$),
+  which hid them from `check_transcription`. All removed but one (the
+  definitions of the two half-mode conventions); the statements that then
+  failed were given their `inline` place after a grep of the paper at the
+  named section, or re-transcribed: seven mismatches exposed and fixed
+  (equations simplified or cut in the middle, now copied whole as printed:
+  arXiv:1112.0330 Eqs. 8–9, arXiv:2003.01100 Eq. 162; a notation symbol and
+  two values outside `$…$`; a quote given its own place, Sect. VII of
+  arXiv:2401.17253).
+- After the fixes: `verify_sources` 88 sources, 0 problems;
+  `check_numbers` and `check_equations` empty; `check_transcription` 294
+  equations, 155 exact, 42 contained, 0 mismatch, 97 unreadable;
+  `check_places` 66 at place, 2 elsewhere (multi-equation rows), 0 not
+  found; `check_shape` 0 problems.
+- Generality: Safdi 10.3 %, Vogel 5.1 %, Murgia 4.3 %; no flag.
+- Printed slip reported by the run, confirmed by the coordinator and
+  recorded in `stale-claims.md`: arXiv:2011.13458 Eq. 2.28 (moments not one
+  at n = 0, against the definition of Eq. 2.14).
+- Lesson for the briefs: `eq: notation` is for definitions only; a value
+  or a relation read in text takes `inline` with its place.
+- G3 sheet: `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-05.md`
+  (seed 1122, `--only /deep/`; 20 + 73 + 59; part 1 was re-read at G2 of
+  2026-11-03).
