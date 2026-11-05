@@ -32,7 +32,7 @@ map; its content supersedes this hub.
 | Cosmological-constant problem, quintessence, k-essence, phantom crossing, interacting dark energy, early dark energy, dark-energy model building after DESI | `thcosmo-dark-energy` | built (W1) |
 | Dark-matter production (freeze-out, freeze-in, misalignment, gravitational), candidates (WIMP, axion and ultralight, sterile neutrino, self-interacting, dark sectors), linear and non-linear signatures | `thcosmo-dark-matter-models` | built (W1) |
 | Neutrino decoupling and N_eff in the Standard Model, massive-neutrino perturbations, dark radiation, interacting neutrinos | `thcosmo-neutrinos-light-relics` | built (W1) |
-| Primordial tensors, stochastic backgrounds from inflation, phase transitions, defects and scalar-induced sources, gravitational-wave propagation in cosmology | `thcosmo-cosmological-gravitational-waves` | planned |
+| Primordial tensors, stochastic backgrounds from inflation, phase transitions, defects and scalar-induced sources, gravitational-wave propagation in cosmology | `thcosmo-cosmological-gravitational-waves` | built (W2) |
 | Baryogenesis and leptogenesis, electroweak and QCD transitions, first-order phase transitions and bubble dynamics, primordial magnetogenesis | `thcosmo-baryogenesis-phase-transitions` | planned |
 | Primordial black-hole formation and abundance, cosmic strings and other topological defects | `thcosmo-pbh-defects` | planned |
 | FLRW backgrounds, Friedmann equations, distances and horizons, curvature; relativistic linear and second-order perturbations, gauges and gauge-invariant variables, ζ and R, separate universe and δN, Einstein–Boltzmann hierarchy, adiabatic and isocurvature initial conditions | `thcosmo-cosmological-perturbations` | planned |
@@ -158,7 +158,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 5k; conventions 12k; methods-index 2k; review-checklists 1k; review-rubric 1k; stale-claims 6k; suite-conventions 4k.
+Sizes, in thousands of tokens: L1 5k; conventions 12k; methods-index 2k; review-checklists 1k; review-rubric 1k; stale-claims 7k; suite-conventions 4k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

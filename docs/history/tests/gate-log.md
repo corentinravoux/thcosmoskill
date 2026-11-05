@@ -1037,3 +1037,53 @@ the G1 failures of the first two. Six sources added (88).
 - G3 sheet: `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-05.md`
   (seed 1122, `--only /deep/`; 20 + 73 + 59; part 1 was re-read at G2 of
   2026-11-03).
+
+## 2026-11-05 — stage 5 W2, `thcosmo-cosmological-gravitational-waves` G2: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-cosmological-gravitational-waves-2026-11-05.md`
+(seed 1120). Part 1: 18 ok, 1 wrong. Part 2: 29 ok. Part 3: 59 ok, 0
+wrong. Fixed at source:
+- `formalism.md:14` (part 1): an added sentence, "The factor 2 in this
+  normalisation propagates into every amplitude below; other papers
+  normalise to 1", not in arXiv:1801.04268 and overstated (the block holds
+  formulas of other papers in their own conventions); replaced by the
+  paper's own text after Eq. 85 (the 2 counts two polarisations; their
+  Ref. [54] "differs by a factor 2").
+- `models.md:14` (reviewer's side finding, not sampled): quotes placed
+  "text after Eq. 204" are in the introduction of Sect. 5; relabelled.
+
+`thcosmo-cosmological-gravitational-waves` set to built (W2) in the hub
+router and the README. Open: the Caprini share (47.1 %), the two thin
+subtopics, and the gap audit and dossiers.
+
+## 2026-11-05 — stage 5 W1, `thcosmo-neutrinos-light-relics` dossiers (G1 passed; G3 waiting)
+
+Run (2026-11-05, gap-audit questions 1–3): `deep/neff-standard-model-calculation.md`
+(139 lines; the kinetic equations and collision integrals of
+arXiv:2012.02726, Eqs. 2–4, 14, 19–21, closing the "Not verified" item;
+3.0440 against 3.043 explained from arXiv:2012.02726 and Drewes et al.),
+`deep/neutrino-mass-below-the-floor.md` (152; CLASS grid, truncation and
+fluid closure as `[doc]` facts read 2026-11-05; five definitions of an
+effective or negative mass; no measured value quoted),
+`deep/interacting-neutrino-perturbations.md` (149; the α_ℓ of
+arXiv:2606.03395 from its body; the (m/E)³ cancellation behind the (m/E)⁵
+decay rate). Nine sources added (58).
+
+- G1 (coordinator): `verify_sources` 0 problems; `check_numbers` and
+  `check_equations` empty, with no `eq: notation` escape in `deep/`;
+  `check_transcription` 227 equations, 169 exact, 42 contained, 0
+  mismatch, 16 unreadable; `check_places` 48 at place, 1 elsewhere
+  (`interacting-neutrino-perturbations.md:110`, to re-read), 0 not found;
+  `check_shape` 0 problems; tests pass.
+- Generality: Bennett 14.8 %, Lesgourgues 13.7 %, Barenboim 7.1 %; no
+  flag (Bennett just under).
+- Slips reported by the run, not recorded in the hub: Table 1 of
+  arXiv:2402.18481 prints −0.006 where Table 5 of arXiv:2012.02726 prints
+  −0.005 (confirmed; the first table is "adapted", so possibly rounding;
+  quoted both in the dossier); the text after Eq. 3 of arXiv:2012.02726
+  calling a prefactor the inverse Hubble rate rests on a `[der]` reading,
+  to be judged at G3; the "light scalar" of the abstract of
+  arXiv:2606.03395 against the massive mediator of its body is wording,
+  described in the dossier.
+- G3 sheet: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-05.md`
+  (seed 1123, `--only /deep/`; part 1 was re-read at G2 of 2026-11-03).
