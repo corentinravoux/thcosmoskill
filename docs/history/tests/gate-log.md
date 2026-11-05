@@ -1087,3 +1087,24 @@ decay rate). Nine sources added (58).
   described in the dossier.
 - G3 sheet: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-05.md`
   (seed 1123, `--only /deep/`; part 1 was re-read at G2 of 2026-11-03).
+
+## 2026-11-05 — stage 5 W1, `thcosmo-dark-energy` dossiers, G3: first draw fails
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-energy-dossiers-2026-11-05.md`
+(seed 1121). Part 1: skipped (G2 of 2026-11-03). Part 2: 72 ok, 2 wrong.
+Part 3: 58 ok, 1 wrong: G3 not passed. No equation wrong; both errors are
+wording. Audit questions 1–3 answered. Fixed at source:
+- `thawing-quintessence-w0wa.md:17`: de Putter & Linder do not define
+  $w_a$; they quote it, "defined by [24]" (Linder 2003).
+- `thawing-quintessence-w0wa.md:30` (part 2 and part 3): "linear in
+  $s^2=\gamma$" said Eq. 22 of arXiv:0712.3450 is linear in γ; replaced by
+  the paper's sentence, it "can be transformed into a linear differential
+  equation with the change of variables $s^{2}=\gamma$" (Sect. III).
+- Side findings: `interacting-de-instabilities.md:43` hedge "It appears
+  that" restored; `:68` the code of arXiv:1109.6234 suppresses
+  perturbations when $\vert 1+w\vert<0.01$ (Sect. IV), App. A calls it
+  imposing; both places now given.
+- Pattern search (a paraphrase that changes a mathematical property or
+  drops a hedge): no other "linear in" or "define" paraphrase in `deep/`.
+- Fresh draw: `docs/history/tests/g2/thcosmo-dark-energy-dossiers-2026-11-05-redraw.md`
+  (seed 1124): part 3 and the fixed rows to be re-read.
