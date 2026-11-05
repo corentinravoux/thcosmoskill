@@ -1137,3 +1137,15 @@ answered. Fixed at source, each read by the coordinator in the paper:
   or `references/`.
 - Fresh draw: `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-05-redraw.md`
   (seed 1125): part 3 and the fixed rows to be re-read.
+
+## 2026-11-05 — stage 5 W1, `thcosmo-dark-energy` dossiers, G3 fresh draw: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-energy-dossiers-2026-11-05-redraw.md`
+(seed 1124). Part 3: 59 ok, 0 wrong. The four fixed lines re-read: ok.
+Reviewer's note, not a fix: App. A of arXiv:1109.6234 says it imposes
+$\vert 1+w\vert<0.01$ where Sect. IV suppresses perturbations in that
+range; both are quoted as printed in `interacting-de-instabilities.md:68`.
+Audit questions 1–3 answered (first draw). The three dossiers added to the
+file map of `SKILL.md` and to the `files` column of `subtopics.tsv`
+(quintessence, perturbations, interacting-de). `thcosmo-dark-energy` gap
+audit closed.

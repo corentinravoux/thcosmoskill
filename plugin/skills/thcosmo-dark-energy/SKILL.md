@@ -20,6 +20,9 @@ an equation or a number enters a manuscript.
 | Size of the Λ problem; generic quintessence results and the limits of quintessence; phantom-divide no-go results; what DESI asks of a theory; history of key results | `references/results.md` |
 | Fluid treatment of interacting sectors; smooth dark energy and PPF; slow roll for dark energy; w(a) parameterisations and priors; convention traps; numerical issues; referee checklist | `references/approximations.md` |
 | Debates (size of the Λ problem; thawing preference; is the DESI preference physical; which interaction kernel), unresolved calculations, next data, stale claims | `references/open-questions.md` |
+| How the thawing-quintessence w(a) is derived (slow-roll thawing, hilltop, Caldwell–Linder bounds) and how it maps onto w0–wa (calibration, the CPL mirage, phantom-looking fits of non-phantom models) | `deep/thawing-quintessence-w0wa.md` |
+| How dark-energy perturbations cross w = −1: the PPF closure, its transition scale and Γ variable, what CAMB and CLASS do, and when fluid and PPF differ | `deep/dark-energy-perturbations-ppf.md` |
+| How the large-scale instability of interacting dark energy is derived (non-adiabatic source, doom factor), which energy-momentum transfers avoid it, and how the ePPF removes it | `deep/interacting-de-instabilities.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind
