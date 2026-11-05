@@ -1,0 +1,40 @@
+key	id	version	first_author	year	title	role
+Caprini2018	1801.04268	v3	Caprini	2018	Cosmological Backgrounds of Gravitational Waves	review
+Weinberg2003	astro-ph/0306304	v2	Weinberg	2003	Damping of Tensor Modes in Cosmology	foundation
+Watanabe2006	astro-ph/0604176	v1	Watanabe	2006	Improved Calculation of the Primordial Gravitational Wave Spectrum in the Standard Model	results
+Boyle2005	astro-ph/0512014	v1	Boyle	2005	Probing the early universe with inflationary gravitational waves	method
+Li2026	2601.08675	v2	Li	2026	One-Loop Tensor Power Spectrum from a Non-Canonical Spectator Field during Inflation	results
+Fanizza2025	2512.04011	v1	Fanizza	2025	Freeze-out and spectral running of primordial gravitational waves in viscous cosmology	results
+Sorbo2011	1101.1525	v3	Sorbo	2011	Parity violation in the Cosmic Microwave Background from a pseudoscalar inflaton	foundation
+Barnaby2011	1011.1500	v2	Barnaby	2010	Large Nongaussianity in Axion Inflation	foundation
+Figueroa2023	2303.17436	v2	Figueroa	2023	The strong backreaction regime in axion inflation	critique
+Figueroa2024	2411.16368	v2	Figueroa	2024	The non-linear dynamics of axion inflation: a detailed lattice study	results
+Barbon2025	2510.17207	v1	Barbon	2025	Axion inflation in the regime of homogeneous backreaction	results
+vonEckardstein2025	2508.00798	v2	von Eckardstein	2025	Gravitational waves from axion inflation in the gradient expansion formalism. Part I. Pure axion inflation	results
+Caprini2019	1910.13125	v2	Caprini	2019	Detecting gravitational waves from cosmological phase transitions with LISA: an update	review
+Caprini2024	2403.03723	v2	Caprini	2024	Gravitational waves from first-order phase transitions in LISA: reconstruction pipeline and physics interpretation	method
+Espinosa2010	1004.4187	v1	Espinosa	2010	Energy Budget of Cosmological First-order Phase Transitions	foundation
+Cutting2019	1906.00480	v2	Cutting	2019	Vorticity, kinetic energy, and suppressed gravitational wave production in strong first order phase transitions	critique
+Croon2020	2009.10080	v2	Croon	2020	Theoretical uncertainties for cosmological first-order phase transitions	critique
+Zou2026	2610.14806	v1	Zou	2026	Gravitational waves from strong first-order phase transitions in an expanding Universe	results
+Matuszak2026	2605.15259	v1	Matuszak	2026	TransitionListener v2.0 -- Robust gravitational wave predictions for cosmological phase transitions	code
+Roshan2024	2401.04388	v3	Roshan	2024	Using gravitational waves to see the first second of the Universe	review
+Hindmarsh2017	1703.06696	v3	Hindmarsh	2017	Scaling from gauge and scalar radiation in Abelian Higgs string networks	critique
+BlancoPillado2013	1309.6637	v1	Blanco-Pillado	2013	The number of cosmic string loops	foundation
+Zhang2026	2610.02590	v2	Zhang	2026	Multi-Band Constraints on Cosmic Strings: Unifying Harmonic and Burst Spectra	results
+Barbini2026	2607.18107	v1	Barbini	2026	Biased Domain Wall Networks and their Gravitational Waves	results
+NANOGrav2023	2306.16219	v1	Afzal	2023	The NANOGrav 15-year Data Set: Search for Signals from New Physics	constraint
+Dankovsky2026	2607.25073	v1	Dankovsky	2026	Fixing IR tail of gravitational waves from domain walls	method
+Domenech2021	2109.01398	v2	Domènech	2021	Scalar induced gravitational waves review	review
+Ananda2007	gr-qc/0612013	v1	Ananda	2006	The cosmological gravitational wave background from primordial density perturbations	foundation
+Baumann2007	hep-th/0703290	v1	Baumann	2007	Gravitational Wave Spectrum Induced by Primordial Scalar Perturbations	foundation
+Kohri2018	1804.08577	v2	Kohri	2018	Semianalytic Calculation of Gravitational Wave Spectrum Nonlinearly Induced from Primordial Curvature Perturbations	method
+Yuan2026	2609.17928	v1	Yuan	2026	Infrared Universality of Scalar Induced Gravitational Waves Beyond Second Order	results
+Zhou2026	2610.08045	v1	Zhou	2026	Third-order scalar induced gravitational waves during a matter-dominated era: secular growth and implications for primordial black hole domination	results
+Barnert2026	2606.28005	v2	Barnert	2026	UV artefacts in ultra-slow-roll models of inflation	critique
+Ezquiaga2018	1807.09241	v2	Ezquiaga	2018	Dark Energy in light of Multi-Messenger Gravitational-Wave astronomy	review
+Belgacem2018	1805.08731	v3	Belgacem	2018	Modified gravitational-wave propagation and standard sirens	model
+Colangeli2026	2608.18310	v2	Colangeli	2026	No parametrisation, No Problem: A Weakly Modelled Framework to Constrain the Luminosity Distance--Redshift Relation Using Gravitational Wave Sirens	forecast
+Co2026	2610.10674	v1	Co	2026	Interpretation of Nanohertz Gravitational Waves via Cosmic Strings in Post-BBN Matter and Kination Domination	model
+BaezaBallesteros2026	2607.24978	v2	Baeza-Ballesteros	2026	CosmoLattice 2.0	code
+Inada2026	2607.18381	v1	Inada	2026	Gravitational waves from self-resonance during reheating with a quantum-corrected inflaton potential	results

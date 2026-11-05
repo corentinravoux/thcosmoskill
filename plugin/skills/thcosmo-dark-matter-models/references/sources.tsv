@@ -65,3 +65,19 @@ Green2026	2602.15974	v2	Green	2026	Stellar microlensing surveys as a probe of Pr
 Koivu2025	2510.00246	v2	Koivu	2025	Effects of Primordial Black Holes on IGM History	results
 Dessert2018	1812.06976	v3	Dessert	2018	The dark matter interpretation of the 3.5-keV line is inconsistent with blank-sky observations	critique
 Boyarsky2020	2004.06601	v2	Boyarsky	2020	Technical comment on the paper of Dessert et al. "The dark matter interpretation of the 3.5 keV line is inconsistent with blank-sky observations"	critique
+Edsjo1997	hep-ph/9704361	v2	Edsjo	1997	Neutralino Relic Density including Coannihilations	foundation
+GriestSeckel1991	doi:10.1103/PhysRevD.43.3191	-	Griest	1991	Three exceptions in the calculation of relic abundances	foundation
+DAgnolo2015	1505.07107	v2	D'Agnolo	2015	Forbidden Dark Matter	model
+DAgnolo2017	1705.08450	v3	D'Agnolo	2017	A Fourth Exception in the Calculation of Relic Abundances	model
+Binder2017	1706.07433	v3	Binder	2017	Early kinetic decoupling of dark matter: when the standard way of calculating the thermal relic density fails	method
+Binder2021	2103.01944	v2	Binder	2021	DRAKE: Dark matter Relic Abundance beyond Kinetic Equilibrium	code
+AlaMattinen2019	1912.02870	v2	Ala-Mattinen	2019	Precision calculations of dark matter relic abundance	method
+Saikawa2020	2005.03544	v2	Saikawa	2020	Precise WIMP Dark Matter Abundance and Standard Model Thermodynamics	systematics
+Bringmann2018	1802.03399	v2	Bringmann	2018	DarkSUSY 6 : An Advanced Tool to Compute Dark Matter Properties Numerically	code
+Belanger2026	2606.06645	v2	Belanger	2026	micrOMEGAs 7: Beyond standard cosmology	code
+DiLuzio2020	2003.01100	v4	Di Luzio	2020	The landscape of QCD axion models	review
+Visinelli2009	0903.4377	v2	Visinelli	2009	Dark Matter Axions Revisited	method
+Borsanyi2016	1606.07494	v2	Borsanyi	2016	Lattice QCD for Cosmology	foundation
+Petretti2026	2606.11312	v2	Petretti	2026	CMB Constraints on Pre-Inflationary Axion Dark Matter Isocurvature	constraint
+Lee2026	2610.36033	v1	Lee	2026	Can inflationary axion fluctuations dominate over misalignment?	results
+Kitajima2026	2608.13650	v1	Kitajima	2026	Axion Isocurvature Perturbations Survive the Scaling Evolution of Axion Domain Walls	results
