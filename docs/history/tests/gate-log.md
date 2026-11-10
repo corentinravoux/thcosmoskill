@@ -1187,3 +1187,36 @@ ten questions; three dossiers (phase-transition spectra, cosmic-string
 spectra, scalar-induced kernels); one deepening run (radiation bound,
 preheating) that also rebalances the Caprini share (47.1 % at G1) toward
 the primary papers.
+
+## 2026-11-10 — stage 5 W1, `thcosmo-neutrinos-light-relics` dossiers, G3: first draw fails
+
+Sheet: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-05.md`
+(seed 1123). Part 1: skipped (G2 of 2026-11-03). Part 2: 51 ok, 0 wrong.
+Part 3: 57 ok, 2 wrong: G3 not passed. Audit questions 1–3: yes, yes, yes.
+Fixed at source, each read by the coordinator in the paper:
+- `neff-standard-model-calculation.md:76` (part 3): hedge dropped;
+  arXiv:2402.18481 Sect. 5 reads "our results strongly suggest that the SM
+  benchmark value … is correct within the quoted uncertainties".
+- `neutrino-mass-below-the-floor.md:117` and `:77` (part 3): condition
+  dropped; the "within 0.1%" of arXiv:2407.10965 is the Fig. 1 caption's one
+  case, ±0.15 eV in linear theory, dark-matter P(k) at z = 0.
+- Side findings applied: `neff:86` restores "may be" (arXiv:2012.02726
+  Sect. 5.3.1); `neff:78–80` the stellar-plasma origin of the NLO rate
+  correction is now Drewes et al.'s reading (arXiv:2402.18481 Sect. 1),
+  set against Cielo et al.'s "up to plasma temperatures T∼20 MeV"
+  (arXiv:2306.05460 Sect. II), and the `[der]` line no longer carries it;
+  the table row `:105` follows; `neff:55` the unsourced clause on the
+  flavour asymmetry of $G^L$ removed; `neff:13` and `:62` placed in
+  footnotes 4 and 5; `interacting:27` $f_i$ copied whole from Eq. 4 of
+  arXiv:2606.03395; `interacting:92` the isotropisation count rewritten
+  as App. C.2 of arXiv:2203.09075 gives it ($M\sim 1/\theta^{2}$ swaps of
+  one coverage time, "$\sim M\times T_{2}$"); `interacting:87` and `:124`
+  regain "in the ultra-relativistic limit".
+- Pattern search (an unhedged conclusion): no other in the skill's `deep/`.
+- G1 after the fixes: check_numbers and check_equations empty;
+  transcription 171 exact, 40 contained, 0 mismatch, 19 unreadable; places
+  48 found-at-place, 1 found-elsewhere, 41 unreadable; check_shape 0
+  problems; 156 tests passed. Word share: Bennett 14.8 %, Lesgourgues
+  13.7 %, under 15 %.
+- Fresh draw: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-10-redraw.md`
+  (seed 1127): part 3 and the fixed lines to be re-read.
