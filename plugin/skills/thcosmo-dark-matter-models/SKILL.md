@@ -20,6 +20,9 @@ an equation or a number enters a manuscript.
 | Phase-space, quantum-pressure and Planck-scale mass bounds; unitarity bound; thermal cross-section benchmarks; bounds on non-cold dark matter; history of key results; not verified | `references/results.md` |
 | Instantaneous freeze-out and its exceptions; standard history; freeze-in and misalignment assumptions; transfer-function fits; convention traps; referee checklist | `references/approximations.md` |
 | Post-inflationary axion mass; the unidentified X-ray line and sterile neutrinos; SIDM core collapse; fuzzy-dark-matter heating bounds; PBH window and fine-tuning; unresolved calculations; stale claims | `references/open-questions.md` |
+| How the thermal relic abundance is computed when the textbook calculation fails (coannihilation, forbidden channels and resonances, coscattering, Sommerfeld enhancement and bound states, early kinetic decoupling), which code implements which treatment, and the precision each reaches | `deep/relic-abundance-beyond-freeze-out.md` |
+| How the QCD-axion abundance is computed from misalignment with a lattice temperature-dependent mass, pre- against post-inflationary cases (isocurvature, strings and domain walls), and why the post-inflationary mass prediction is disputed | `deep/axion-relic-abundance.md` |
+| How a thermal-relic warm-dark-matter mass bound is translated to other non-cold models (sterile neutrinos, freeze-in, decay products), which matching criterion each translation uses, and when one mass cannot carry the bound | `deep/noncold-dm-mass-mappings.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind

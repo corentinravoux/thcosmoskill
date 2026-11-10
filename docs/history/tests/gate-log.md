@@ -1220,3 +1220,26 @@ Fixed at source, each read by the coordinator in the paper:
   13.7 %, under 15 %.
 - Fresh draw: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-10-redraw.md`
   (seed 1127): part 3 and the fixed lines to be re-read.
+
+## 2026-11-10 — stage 5 W1, `thcosmo-dark-matter-models` dossiers, G3 second fresh draw: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-10-redraw2.md`
+(seed 1126). Part 2: the 3 rows on the fixed lines re-read, 3 ok. The three
+fixed lines (`relic:67`, `:76`, `:92`) confirmed in their papers. Part 3:
+59 ok, 0 wrong, 0 unclear. Audit questions 1–3 answered (first draw).
+Side findings, each read by the coordinator in the paper and applied:
+- `relic:60`: the 1/4 and 3/4 weights are printed in Eq. 22 of
+  arXiv:2610.03718, not in the text after it; the branching-ratio gloss
+  removed and the paper's sentence quoted ("treated on the same footing, as
+  orthodarkonium and paradarkonium decay at the same order in the
+  coupling").
+- `relic:76`: "for either choice" replaced by the paper's "We compared the
+  choice c=√2 with c=1.5 and find that …".
+- `axion:25`: the 800 MeV estimate of arXiv:2003.01100 Sect. 3.3 also
+  assumes $g_{*}(T>T_{C})$ = 61.75; added.
+G1 after the edits: check_numbers and check_equations empty; transcription
+154 exact, 43 contained, 0 mismatch; check_shape 0 problems; 156 tests
+passed. Word share: Safdi 10.3 %, under 15 %. The three dossiers added to
+the file map of `SKILL.md` and to the `files` column of `subtopics.tsv`
+(thermal-freeze-out, axion-misalignment, linear-signatures,
+sterile-neutrinos-wdm). `thcosmo-dark-matter-models` gap audit closed.
