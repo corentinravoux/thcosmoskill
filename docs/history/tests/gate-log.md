@@ -1243,3 +1243,34 @@ passed. Word share: Safdi 10.3 %, under 15 %. The three dossiers added to
 the file map of `SKILL.md` and to the `files` column of `subtopics.tsv`
 (thermal-freeze-out, axion-misalignment, linear-signatures,
 sterile-neutrinos-wdm). `thcosmo-dark-matter-models` gap audit closed.
+
+## 2026-11-10 — stage 5 W1, `thcosmo-neutrinos-light-relics` dossiers, G3 fresh draw: fails (coordinator's count)
+
+Sheet: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-10-redraw.md`
+(seed 1127). Part 2: the 11 rows on the fixed lines re-read, 11 ok; every
+fixed line of the first draw confirmed. Part 3: reviewer 59 ok, with row 20
+flagged as a possible dropped hedge. The coordinator read it in the paper
+and counts it **wrong**: `interacting:62` gives the s-channel resonance
+range of arXiv:2602.12477 Sect. 4.2 without "as we preliminarily scanned";
+the paper presents the range as provisional. Part 3: 58 ok, 1 wrong: G3 not
+passed. Fixed at source:
+- `interacting:62`: "as we preliminarily scanned" restored.
+- Side findings applied: `neff:78` the `[der]` line says "at least thirty
+  times smaller (their most optimistic estimate)", for "even our most
+  'optimistic' estimate is a factor of 30 smaller" (arXiv:2402.18481
+  Sect. 5); `interacting:116` the revised lifetime bound of Eq. 61 of
+  arXiv:2011.01502 assumes a massless daughter, "strictly valid only for"
+  $m_{\nu H}$ below $\sqrt{\Delta m_{\rm atm}^{2}}$ (Fig. 9 caption,
+  footnote 8); added to the assumptions column.
+- Not applied: `neff:39` quotes the ≲4×10⁻⁶ estimate from arXiv:2012.02726
+  Sect. 3.1.1, the paper read; naming its own source (arXiv:1911.04504) is
+  left to a refresh.
+- Pattern search (an approximate value quoted without the paper's
+  qualifier on the evidence): the other five "about / approximately /
+  roughly" quotes of `deep/` keep their wording.
+- G1 after the fixes: check_numbers and check_equations empty;
+  transcription 171 exact, 40 contained, 0 mismatch, 18 unreadable; places
+  48 found-at-place, 1 found-elsewhere, 42 unreadable; check_shape 0
+  problems; 156 tests passed.
+- Fresh draw: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-10-redraw2.md`
+  (seed 1128).
