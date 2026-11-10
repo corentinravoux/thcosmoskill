@@ -1274,3 +1274,26 @@ passed. Fixed at source:
   problems; 156 tests passed.
 - Fresh draw: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-10-redraw2.md`
   (seed 1128).
+
+## 2026-11-10 — stage 5 W1, `thcosmo-neutrinos-light-relics` dossiers, G3 second fresh draw: fails
+
+Sheet: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-10-redraw2.md`
+(seed 1128). The three fixed lines confirmed. Part 3: 57 ok, 2 wrong: G3
+not passed. Fixed at source, each read by the coordinator in the paper:
+- `neff:114` (part 3): conditions dropped; arXiv:1911.04504 gives 0.010121
+  as the log-independent ${\cal O}(e^2)$ term "for $T_{d}=1.3453$ MeV"
+  (Eq. 33), against the "oft-quoted" 0.010594 "in the limit
+  $T_{d}/m_{e}\to\infty$" (Sect. 4.1.1).
+- `neff:119` (part 3): one comparison stated as general ("miss the infrared
+  part"); arXiv:2511.04747 Sect. 6 reports, in its Fig. 3 comparison with
+  FortEPiaNO, "differences of up to 0.1% in the infrared domain", "phase-space
+  suppressed in the integrated number and energy densities"; quoted.
+- Side findings applied: `neff:72` restores "should be at most $10^{-5}$ …
+  and is therefore negligible" (arXiv:2306.05460 Sect. III); `neff:78`
+  "first-principles correction" → "diagram-(d) correction".
+- Three draws in a row failed on the same pattern (a hedge, condition or
+  scope dropped while numbers and equations are right). A random draw does
+  not find every instance, so the pattern search is a full sweep: one agent
+  re-reads every attributed claim of the three dossiers at its place
+  (qualifier sweep), with the reviewer's three unchecked side findings
+  (`interacting:77`, `:116`, `mass:13`). A fresh draw follows the sweep.
