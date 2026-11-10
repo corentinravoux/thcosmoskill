@@ -1297,3 +1297,46 @@ not passed. Fixed at source, each read by the coordinator in the paper:
   re-reads every attributed claim of the three dossiers at its place
   (qualifier sweep), with the reviewer's three unchecked side findings
   (`interacting:77`, `:116`, `mass:13`). A fresh draw follows the sweep.
+
+## 2026-11-10 — stage 5 W1, `thcosmo-neutrinos-light-relics` dossiers: qualifier sweep
+
+One agent re-read every attributed claim of the three dossiers at its place
+(interacting 112, neff 114, mass 92 statements, 12 `[der]` lines; about 45
+research calls) and changed 33 statements: restored hedges, conditions and
+scopes, footnote places, attributions of one paper's critique of another.
+One real error beyond wording: `mass:129` placed Eq. 2.7 of arXiv:2405.00836
+at general z; it is "the suppression of the matter power spectrum at z=1".
+The three unchecked side findings of seed 1128 confirmed and fixed
+(`interacting:77` the monopole response is estimated through χ(a), Eq. 52,
+since the modified CLASS "does not include first-order collision terms";
+`interacting:116` "τ₀ ≳"; `mass:13` "in the case of a thermal relic").
+Coordinator spot-checks in the papers: `mass:129`, `neff:115`,
+`interacting:77`: ok. G1 after the sweep: check_numbers and check_equations
+empty; transcription 172 exact, 40 contained, 0 mismatch; check_shape 0
+problems. Fresh draw: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-10-redraw3.md`
+(seed 1129): part 3 and the 16 part-2 rows on changed lines to be re-read.
+
+## 2026-11-10 — stage 5 W2, `thcosmo-cosmological-gravitational-waves` dossiers, G1: passed
+
+Three dossiers from the gap audit: `deep/phase-transition-spectra.md`
+(140 lines), `deep/cosmic-string-spectra.md` (141), `deep/scalar-induced-kernels.md`
+(133); 41 sources added. G1: verify_sources 81 sources, 0 problems (one
+warning: arXiv:2610.14806 read in v1, v2 now out; its places are re-read at
+G2); check_numbers and check_equations empty; transcription 346 equations,
+285 exact, 38 contained, 0 mismatch, 23 unreadable; places 58 statements,
+38 found-at-place, 1 found-elsewhere, 19 unreadable; check_shape 0
+problems; 4 `eq: notation` escapes; 156 tests passed.
+Generality: Caprini 28.8 % of the skill's citations (was 47.1 %),
+Hindmarsh 6.2 %, Domènech 5.5 %; the deepening run continues the
+rebalance. Within single dossiers the groups that carry the subtopic stay
+above 15 % (Hindmarsh, sound-shell model and lattice fits, 21 %; Auclair,
+LISA string study, 25 %; Blanco-Pillado, loop simulations, 16 %; Kohri,
+second-order kernels, 19 %): each is the foundation of its method, set
+against the rival treatments in the same dossier; justified.
+Printed slips recorded in the hub's `stale-claims.md` (errata table):
+arXiv:1909.10040 Eqs. 16, 20, 57–62; arXiv:2003.07360 Fig. 1 caption;
+arXiv:1909.00819 Sect. 3.1 and Eq. 35; arXiv:1709.02693 Sect. I;
+arXiv:1704.05871 erratum (factor 3). Not recorded: arXiv:1804.08577 Eq. 16,
+flagged by the agent "to check", not a confirmed slip.
+G3 sheet: `docs/history/tests/g2/thcosmo-cosmological-gravitational-waves-dossiers-2026-11-10.md`
+(seed 1130); part 1 skipped (G2 of 2026-11-05).

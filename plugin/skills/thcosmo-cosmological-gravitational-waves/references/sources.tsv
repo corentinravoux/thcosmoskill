@@ -38,3 +38,45 @@ Colangeli2026	2608.18310	v2	Colangeli	2026	No parametrisation, No Problem: A Wea
 Co2026	2610.10674	v1	Co	2026	Interpretation of Nanohertz Gravitational Waves via Cosmic Strings in Post-BBN Matter and Kination Domination	model
 BaezaBallesteros2026	2607.24978	v2	Baeza-Ballesteros	2026	CosmoLattice 2.0	code
 Inada2026	2607.18381	v1	Inada	2026	Gravitational waves from self-resonance during reheating with a quantum-corrected inflaton potential	results
+Hindmarsh2016	1608.04735	v1	Hindmarsh	2016	Sound shell model for acoustic gravitational wave production at a first-order phase transition in the early Universe	foundation
+Hindmarsh2019	1909.10040	v1	Hindmarsh	2019	Gravitational waves from first order cosmological phase transitions in the Sound Shell Model	method
+Hindmarsh2017b	1704.05871	v3	Hindmarsh	2017	Shape of the acoustic gravitational wave power spectrum from a first order phase transition	results
+Hindmarsh2015	1504.03291	v2	Hindmarsh	2015	Numerical simulations of acoustically generated gravitational waves at a first order phase transition	results
+Guo2020	2007.08537	v3	Guo	2020	Phase Transitions in an Expanding Universe: Stochastic Gravitational Waves in Standard and Non-Standard Histories	method
+Ellis2020	2003.07360	v4	Ellis	2020	Gravitational waves from first-order cosmological phase transitions: lifetime of the sound wave source	results
+RoperPol2023	2308.12943	v3	Roper Pol	2023	Characterization of the gravitational wave spectrum from sound waves within the sound shell model	critique
+Jinno2022	2209.04369	v2	Jinno	2022	Higgsless simulations of cosmological phase transitions and gravitational waves	results
+Auclair2022	2205.02588	v2	Auclair	2022	Generation of gravitational waves from freely decaying turbulence	method
+RoperPol2019	1903.08585	v5	Roper Pol	2019	Numerical Simulations of Gravitational Waves from Early-Universe Turbulence	results
+Stomberg2025	2508.04263	v1	Stomberg	2025	Gravitational wave spectra for cosmological phase transitions with non-linear decay of the fluid motion	results
+Caprini2026	2604.02240	v2	Caprini	2026	Fluid perturbations from expanding bubbles in first-order phase transitions	critique
+Barni2025	2510.21439	v3	Barni	2025	Gravitational waves from the sound shell model: direct and inverse phase transitions in the early Universe	results
+Martins2000	hep-ph/0003298	v1	Martins	2000	Extending the Velocity-dependent One-scale String Evolution Model	foundation
+Auclair2019	1909.00819	v1	Auclair	2019	Probing the gravitational wave background from cosmic strings with LISA	review
+Lorenz2010	1006.0931	v2	Lorenz	2010	Cosmic string loop distribution on all length scales and at any redshift	model
+Ringeval2005	astro-ph/0511646	v2	Ringeval	2005	Cosmological evolution of cosmic string loops	results
+Damour2001	gr-qc/0104026	v1	Damour	2001	Gravitational wave bursts from cusps and kinks on cosmic strings	foundation
+BlancoPillado2019	1912.10017	v1	Blanco-Pillado	2019	Direct determination of cosmic string loop density from simulations	critique
+BlancoPillado2017	1709.02693	v2	Blanco-Pillado	2017	Stochastic gravitational wave background from smoothed cosmic string loops	results
+Hindmarsh2021	2103.16248	v1	Hindmarsh	2021	Loop decay in Abelian-Higgs string networks	critique
+Matsunami2019	1903.05102	v2	Matsunami	2019	Decay of Cosmic String Loops Due to Particle Radiation	results
+Gerblich2026	2608.31163	v1	Gerblich	2026	Evolution of Cosmic String Loops under Gravitational Backreaction	results
+Auclair2026	2610.39983	v1	Auclair	2026	Diamonds in the sky: the shape of gravitational waves from cosmic string cusps	results
+Litos2026	2609.22430	v1	Litos	2026	Gravitational Waves from Long Strings and Loops	results
+Dimitriou2025	2508.05395	v2	Dimitriou	2025	Cosmic string gravitational wave backgrounds at LISA: I. Signal survey, template reconstruction, and model comparison	forecast
+Antoniadis2023	2306.16227	v2	Antoniadis	2023	The second data release from the European Pulsar Timing Array: IV. Implications for massive black holes, dark matter and the early Universe	constraint
+Ellis2023	2308.08546	v2	Ellis	2023	What is the source of the PTA GW signal?	results
+Domenech2019	1912.05583	v3	Domènech	2019	Induced gravitational waves in a general cosmological background	method
+Cai2019a	1810.11000	v3	Cai	2019	Gravitational Waves Induced by non-Gaussian Scalar Perturbations	results
+Unal2019	1811.09151	v3	Unal	2019	Imprints of Primordial Non-Gaussianity on Gravitational Wave Spectrum	results
+Adshead2021	2105.01659	v3	Adshead	2021	Non-Gaussianity and the induced gravitational wave background	critique
+Cai2019b	1909.13728	v2	Cai	2019	Universal infrared scaling of gravitational wave background spectra	foundation
+Hwang2017	1704.03500	v1	Hwang	2017	Gauge dependence of gravitational waves generated from scalar perturbations	critique
+Tomikawa2020	1910.01880	v2	Tomikawa	2020	On the gauge dependence of gravitational waves generated at second order from scalar perturbations	critique
+DeLuca2020	1911.09689	v3	De Luca	2020	On the Gauge Invariance of Cosmological Gravitational Waves	method
+Inomata2020	1912.00785	v3	Inomata	2020	Gauge Independence of Induced Gravitational Waves	method
+Domenech2021b	2012.14016	v2	Domènech	2021	Approximate gauge independence of the induced gravitational wave spectrum	method
+Zhao2026	2603.05191	v2	Zhao	2026	Reassessing the SIGW Interpretation of PTA Signal: The Role of Third-Order Gravitational Waves and Implications for the PBH Overproduction	results
+Caravano2026	2604.03628	v2	Caravano	2026	Lattice simulations of scalar-induced gravitational waves from inflation	critique
+MarriottBest2026	2608.24883	v1	Marriott-Best	2026	Impact of Scale-dependent Primordial Non-Gaussianity on Scalar-induced Gravitational Waves	results
+Piccoli2026	2605.27231	v1	Piccoli	2026	A Fast Method to Compute Scalar Induced Gravitational Waves on a Lattice with Primordial Non-Gaussianities	code
