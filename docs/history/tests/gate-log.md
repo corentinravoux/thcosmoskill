@@ -1149,3 +1149,41 @@ Audit questions 1–3 answered (first draw). The three dossiers added to the
 file map of `SKILL.md` and to the `files` column of `subtopics.tsv`
 (quintessence, perturbations, interacting-de). `thcosmo-dark-energy` gap
 audit closed.
+
+## 2026-11-10 — stage 5 W1, `thcosmo-dark-matter-models` dossiers, G3 fresh draw: fails
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-05-redraw.md`
+(seed 1125). Part 2: the 10 rows on the fixed lines re-read, 10 ok. The
+nine fixed lines of the first draw confirmed in their papers. Part 3: 58 ok,
+1 wrong: G3 not passed. Fixed at source, each read by the coordinator in
+the paper:
+- `relic-abundance-beyond-freeze-out.md:92` (part 3): the Numbers row
+  dropped the hedge "can"; arXiv:2103.01944 Sect. 4.1 reads "even for widths
+  as large as that of the SM Z-boson the refined prediction of the DM
+  abundance can deviate at a level well exceeding the typically quoted
+  observational uncertainty of ∼1 %". Row rewritten with the quote.
+- Side findings applied: `:76` the 0.2 % sentence of arXiv:2610.03718
+  Sect. 4.2 regains "over the range of $\alpha$ considered in this work";
+  `:67` γ(T) is the "momentum exchange rate" of Eqs. 5–6, in Sect. II of
+  arXiv:1706.07433, not Sect. II.2.
+- Not applied: the reviewer's remark that the unnumbered ⟨σv⟩ display of
+  arXiv:1706.07433 is probably Eqs. 13–14 in print (a broken label in the
+  rendering); the place stays as read. The place "paragraph after Fig. 3
+  caption" of `axion:30` stays: it is the place in the rendering read.
+- Pattern search (a quoted value in a Numbers table that drops a modal or a
+  range): the other five quoted values of the skill's `deep/` tables keep
+  their hedges; `:91` re-read in Sect. 4.2, ok.
+- G1 after the fixes: check_numbers and check_equations empty; transcription
+  154 exact, 42 contained, 0 mismatch, 98 unreadable; places 66
+  found-at-place, 2 found-elsewhere, 35 unreadable; check_shape 0 problems;
+  156 tests passed.
+- Fresh draw: `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-10-redraw2.md`
+  (seed 1126): part 3 and the three fixed lines to be re-read.
+
+## 2026-11-10 — stage 5 W2, `thcosmo-cosmological-gravitational-waves` gap audit
+
+`docs/history/tests/gap-audit/thcosmo-cosmological-gravitational-waves.md`:
+ten questions; three dossiers (phase-transition spectra, cosmic-string
+spectra, scalar-induced kernels); one deepening run (radiation bound,
+preheating) that also rebalances the Caprini share (47.1 % at G1) toward
+the primary papers.
