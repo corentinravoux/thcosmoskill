@@ -1340,3 +1340,32 @@ arXiv:1704.05871 erratum (factor 3). Not recorded: arXiv:1804.08577 Eq. 16,
 flagged by the agent "to check", not a confirmed slip.
 G3 sheet: `docs/history/tests/g2/thcosmo-cosmological-gravitational-waves-dossiers-2026-11-10.md`
 (seed 1130); part 1 skipped (G2 of 2026-11-05).
+
+## 2026-11-10 — stage 5 W1, `thcosmo-neutrinos-light-relics` dossiers, G3 draw after the sweep: fails
+
+Sheet: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-10-redraw3.md`
+(seed 1129). Part 2: the 16 rows on changed lines re-read, 15 ok, 1 wrong.
+Part 3: 58 ok, 1 wrong: G3 not passed. Fixed at source, each read by the
+coordinator in the paper:
+- `neff:115` (part 3): "dropping the neutrino–neutrino collisions" was
+  broader than the approximation; arXiv:2012.02726 Sect. 5.3.1 sets only
+  the diagonal entries to zero, which "generally underestimates"
+  $N_{\rm eff}^{\rm SM}$ "by about" $4\times 10^{-4}$. The coordinator's
+  spot-check of this line after the sweep had checked only the swept clause
+  and passed it; that check was incomplete.
+- `interacting:64` (part 2): the ξ values of arXiv:2602.12477 hold in "the
+  region where resonances do not appear" for $T_\nu\gtrsim 0.5$ eV, and the
+  Majorana value omits the indistinguishability factor 1/2 (footnote 14);
+  added.
+- Side findings applied: `interacting:82` doubled quote; `interacting:87`
+  "for a fixed decay opening angle" (arXiv:2203.09075 Sect. 4.1); `mass:129`
+  "on scales smaller than the neutrino free-streaming length"
+  (arXiv:2508.20999 Sect. 2.1); `mass:130` "the two figures" → "the figures".
+- G1 after the fixes: check_numbers and check_equations empty;
+  transcription 172 exact, 40 contained, 0 mismatch; check_shape 0
+  problems; 156 tests passed.
+- No fresh draw yet. Four draws in a row failed with one or two errors each
+  (2, 1, 2, 1+1). Redrawing until one draw has zero errors would no longer
+  bound the error rate below 5 %: each failed draw is evidence of a residual
+  rate near 2–3 % on the strict reading of hedges. How to close the gate is
+  put to the owner.
