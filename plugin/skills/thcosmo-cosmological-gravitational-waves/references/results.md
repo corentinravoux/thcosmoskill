@@ -35,7 +35,7 @@ From Caprini & Figueroa 2018 (arXiv:1801.04268), Sect. 4.1. A background well in
 - "If the coupling between the bubble walls and plasma particles is large enough, the latent heat is transferred also to the bulk motion of the fluid" (Caprini et al. 2024, arXiv:2403.03723) [src: Sect. 2.2.1].
 - The sound-wave amplitude scales as $K^2 H_*R_*$ for a source lasting a Hubble time and as $K^{3/2}(H_*R_*)^2$ when shocks form within one (Caprini et al. 2019, arXiv:1910.13125) [src: Eqs. 25–26]. <!-- num: not a value -->
 - Kinetic-energy deficit in strong deflagrations: "in the most extreme case by a factor of $10^{3}$" overestimate of the signal by current modelling (Cutting, Hindmarsh & Weir 2019, arXiv:1906.00480) [src: abstract].
-- Expanding-universe simulations of slow strong transitions find normalised GWs "roughly an order of magnitude smaller" than Minkowski simulations, sound-wave spectra with two peaks, and a sound-wave source that "can persist for longer than a Hubble time" for weaker transitions and "decays within a Hubble time" for stronger ones (Zou et al. 2026, arXiv:2610.14806) [src: abstract].
+- Expanding-universe simulations of slow strong transitions find a normalised amplitude "of order $\mathcal{O}(10^{-2})$, in alignment with Minkowski-spacetime results", sound-wave spectra with "two peaks located at the mean bubble separation and the sound-shell width", spectra that "differ markedly" from Minkowski ones, and an effective sound-wave lifetime that "increases for slower PTs, decreasing for faster PT with larger $\beta/H$ and rising with smaller $\alpha$" (Zou et al. 2026, arXiv:2610.14806) [src: abstract].
 - Theory error from the thermal potential: "two to three orders-of-magnitude uncertainty in the peak gravitational wave amplitude" in the daisy-resummed approach (Croon et al. 2020, arXiv:2009.10080) [src: abstract].
 
 ## Defect spectra
@@ -77,7 +77,7 @@ From Caprini & Figueroa 2018 (arXiv:1801.04268), Sect. 4.1. A background well in
 | 2019 | Strong deflagrations overestimated by up to $10^{3}$ | Cutting et al., arXiv:1906.00480 [src: abstract] | current |
 | 2023 | NANOGrav 15-year: cosmological models fit; stable field-theory strings do not | arXiv:2306.16219 [src: abstract] | current; "should not be regarded as evidence for new physics" [src: abstract] |
 | 2024 | "the collided part of the bubble walls has recently been found to be essential for a correct estimation of the SGWB spectrum", against the envelope approximation | Caprini et al., arXiv:2403.03723 [src: Sect. 2.1, text after Eq. 6] | current |
-| 2026 | Expanding-universe PT spectra about ten times below Minkowski ones | Zou et al., arXiv:2610.14806 [src: abstract] | new, not yet confirmed among the sources read |
+| 2026 | Expanding-universe PT amplitudes of the Minkowski order, with spectra of a different shape (version 2; version 1 had reported amplitudes an order of magnitude lower) | Zou et al., arXiv:2610.14806 [src: abstract] | new, not yet confirmed among the sources read |
 
 ## Not verified
 <!-- key: not-verified -->

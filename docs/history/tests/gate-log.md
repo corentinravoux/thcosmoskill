@@ -1369,3 +1369,49 @@ coordinator in the paper:
   bound the error rate below 5 %: each failed draw is evidence of a residual
   rate near 2–3 % on the strict reading of hedges. How to close the gate is
   put to the owner.
+
+## 2026-11-12 — stage 5 W2, `thcosmo-cosmological-gravitational-waves` dossiers, G3: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-cosmological-gravitational-waves-dossiers-2026-11-10.md`
+(seed 1130), read under the strict standard (a dropped hedge, condition or
+scope counts as wrong). Part 1: skipped (G2 of 2026-11-05). Part 2: 48 ok,
+2 wrong, fixed at source and read by the coordinator in the paper. Part 3:
+59 ok, 0 wrong. Audit questions 1–3: yes, yes, yes (Q3: general constant w
+and higher orders cited, not derived). The five printed slips recorded on
+2026-11-10 confirmed; the matter-era $C_0$ of Eq. 35 of arXiv:1909.00819
+carries the same sign swap.
+- `cosmic-string-spectra.md:45` (part 2): the Polchinski–Rocha power law
+  holds "for $x>x_{\rm c}$", with "$x_{\rm c}\ll\mathrm{\Gamma}G\mu$"
+  (arXiv:1909.00819 Sect. 3.3); added.
+- `phase-transition-spectra.md:137` (part 2): Ref. [111] of
+  arXiv:2403.03723 is arXiv:2409.03651, printed in its reference list, and
+  the 0.6 factor is "as found in Ref. [42] (see discussion in Ref. [111])"
+  (Sect. 2.2.1); the "Not verified" item rewritten; arXiv:2409.03651 added
+  to `sources.tsv` (v2, abstract only).
+- arXiv:2610.14806, read in v1, now in v2: the v1 finding (normalised GWs
+  "roughly an order of magnitude smaller" than Minkowski simulations) is
+  gone; v2 reads "of order $\mathcal{O}(10^{-2})$, in alignment with
+  Minkowski-spacetime results", with spectra that "differ markedly". The
+  coordinator read the v2 abstract and rewrote the six places that carried
+  the v1 claims (`approximations.md:38`, `models.md:51`, `results.md:38`
+  and `:80`, `open-questions.md:41` and `:60`, `deep/phase-transition-spectra.md:87`),
+  set the row to v2, and recorded the withdrawal in the hub's
+  `stale-claims.md`.
+- Side findings applied after reading at source: `phase-transition-spectra.md:15`
+  (footnote 3 of arXiv:1909.10040 is about the simulations' velocity);
+  `cosmic-string-spectra.md:59` ("Without backreaction" is not in the
+  abstract of arXiv:2610.39983; its own framing quoted); `scalar-induced-kernels.md:40`
+  (the solution "regular at $x\to 0$").
+- Side findings not yet checked by the coordinator, left for the deepening
+  run: `phase-transition-spectra.md:41` ("are obscured"), `:109` (Sect.
+  VI.1 or V.1 of arXiv:2308.12943), `cosmic-string-spectra.md:57`
+  (attribution of the equal-kinks assumption), `:64` (ellipsis drops "of
+  this radiation"), arXiv:2508.04263 Eq. 4 (a square missing, a possible
+  slip).
+G1 after the fixes: verify_sources 82 sources, 0 problems; check_numbers
+and check_equations empty; transcription 349 equations, 284 exact, 42
+contained, 0 mismatch; check_shape 0 problems; 156 tests passed. Word
+share: Caprini 28.6 % (flag, rebalanced in the deepening run). The three
+dossiers added to the file map of `SKILL.md` and the `files` column of
+`subtopics.tsv`. GW gap-audit dossiers closed; the deepening run (radiation
+bound, preheating, rebalance) is next.

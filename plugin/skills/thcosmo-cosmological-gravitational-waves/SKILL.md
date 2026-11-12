@@ -20,6 +20,9 @@ an equation or a number enters a manuscript.
 | Radiation bound; amplitude of the irreducible background; neutrino damping; PT, defect and SIGW results; propagation; history of key results | `references/results.md` |
 | Averaging and sub-horizon conditions; transfer-function approximations; homogeneous backreaction; PT template validity; Nambu–Goto versus field theory; SIGW gauge and order; normalisation traps; referee checklist | `references/approximations.md` |
 | PTA interpretation, string-loop and backreaction debates, SIGW gauge; forecasts; stale claims | `references/open-questions.md` |
+| How the sound-wave spectrum of a first-order transition is derived (sound-shell model against lattice and Higgsless fits), the source-lifetime suppression and when it fails, turbulence models, and what changed between the 2019 and 2024 LISA templates | `deep/phase-transition-spectra.md` |
+| How a string-network background is assembled from a loop density and a power per loop (VOS and simulation-based densities, cusps, kinks, harmonics), what field-theory simulations change, and how pulsar-timing fits depend on these choices | `deep/cosmic-string-spectra.md` |
+| How the second-order scalar-induced kernel is derived in radiation and matter domination, how other equations of state are reached, the terms from local non-Gaussianity, what the gauge debate settled, and what fixes the infrared tail | `deep/scalar-induced-kernels.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind
@@ -84,7 +87,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 4k; formalism 12k; models 5k; open 2k; results 4k; deep/cosmic-string-spectra 9k; deep/phase-transition-spectra 10k; deep/scalar-induced-kernels 8k.
+Sizes, in thousands of tokens: L1 4k; approximations 5k; formalism 12k; models 5k; open 2k; results 4k; deep/cosmic-string-spectra 9k; deep/phase-transition-spectra 10k; deep/scalar-induced-kernels 8k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

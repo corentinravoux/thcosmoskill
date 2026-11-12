@@ -16,7 +16,7 @@ Caprini2024	2403.03723	v2	Caprini	2024	Gravitational waves from first-order phas
 Espinosa2010	1004.4187	v1	Espinosa	2010	Energy Budget of Cosmological First-order Phase Transitions	foundation
 Cutting2019	1906.00480	v2	Cutting	2019	Vorticity, kinetic energy, and suppressed gravitational wave production in strong first order phase transitions	critique
 Croon2020	2009.10080	v2	Croon	2020	Theoretical uncertainties for cosmological first-order phase transitions	critique
-Zou2026	2610.14806	v1	Zou	2026	Gravitational waves from strong first-order phase transitions in an expanding Universe	results
+Zou2026	2610.14806	v2	Zou	2026	Gravitational waves from strong first-order phase transitions in an expanding Universe	results
 Matuszak2026	2605.15259	v1	Matuszak	2026	TransitionListener v2.0 -- Robust gravitational wave predictions for cosmological phase transitions	code
 Roshan2024	2401.04388	v3	Roshan	2024	Using gravitational waves to see the first second of the Universe	review
 Hindmarsh2017	1703.06696	v3	Hindmarsh	2017	Scaling from gauge and scalar radiation in Abelian Higgs string networks	critique
@@ -80,3 +80,4 @@ Zhao2026	2603.05191	v2	Zhao	2026	Reassessing the SIGW Interpretation of PTA Sign
 Caravano2026	2604.03628	v2	Caravano	2026	Lattice simulations of scalar-induced gravitational waves from inflation	critique
 MarriottBest2026	2608.24883	v1	Marriott-Best	2026	Impact of Scale-dependent Primordial Non-Gaussianity on Scalar-induced Gravitational Waves	results
 Piccoli2026	2605.27231	v1	Piccoli	2026	A Fast Method to Compute Scalar Induced Gravitational Waves on a Lattice with Primordial Non-Gaussianities	code
+Caprini2024b	2409.03651	v2	Caprini	2024	Gravitational waves from first-order phase transitions: from weak to strong	results

@@ -38,7 +38,7 @@ Snapshot: 2026-11-05
 
 ### Strong and supercooled transitions
 <!-- key: strong-and-supercooled-transitions -->
-- Kinetic-energy deficit and suppressed GWs for strong deflagrations (arXiv:1906.00480) [src: abstract]; expanding-universe lattice spectra with steeper ultraviolet tails for deflagrations (arXiv:2610.14806) [src: abstract]; self-consistent percolation and reheating in the supercooled regime (arXiv:2605.15259) [src: abstract]. No single template covers this regime among the sources read. `[der]`
+- Kinetic-energy deficit and suppressed GWs for strong deflagrations (arXiv:1906.00480) [src: abstract]; expanding-universe lattice spectra that "differ markedly" from Minkowski ones (arXiv:2610.14806) [src: abstract]; self-consistent percolation and reheating in the supercooled regime (arXiv:2605.15259) [src: abstract]. No single template covers this regime among the sources read. `[der]`
 
 ## What next data or calculations will decide
 <!-- key: what-next-data-or-calculations-will-decide -->
@@ -57,7 +57,7 @@ Snapshot: 2026-11-05
 - "The kinetic efficiency κ of one bubble gives K": the 2024 template uses $K\simeq 0.6\,\kappa\,\alpha/(1+\alpha)$ for bulk flow (arXiv:2403.03723) [src: Sect. 2.2.1, inline, text after Eq. 11]; for strong deflagrations the deficit is larger (arXiv:1906.00480) [src: abstract].
 - "$N_{\rm eff}=3.046$ in the radiation bound": the review prints 3.046 (arXiv:1801.04268) [src: Sect. 4.1, inline, text after Eq. 127]; the current Standard-Model value is in `thcosmo-neutrinos-light-relics`.
 - "Homogeneous backreaction gives the oscillatory peaks of axion-inflation spectra": lattice studies find the oscillatory features "smoothed out" (arXiv:2303.17436) [src: abstract].
-- "All Minkowski-space PT simulations transfer to an expanding universe": a 2026 expanding-universe study finds amplitudes "roughly an order of magnitude smaller" (arXiv:2610.14806) [src: abstract].
+- "All Minkowski-space PT simulations transfer to an expanding universe": a 2026 expanding-universe study finds the amplitude "in alignment with Minkowski-spacetime results" but spectra that "differ markedly from those scenarios" (arXiv:2610.14806) [src: abstract].
 
 ## Not verified
 <!-- key: not-verified -->
