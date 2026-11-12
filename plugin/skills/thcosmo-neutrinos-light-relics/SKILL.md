@@ -20,6 +20,9 @@ an equation or a number enters a manuscript.
 | Standard-Model $N_{\rm eff}$ and its error budget; minimal thermal $\Delta N_{\rm eff}$; power suppression; phase-shift detections; LiMR bounds; history of key results | `references/results.md` |
 | Instantaneous decoupling; BBN with negative $\Delta N_{\rm eff}$; contact limit and collision kernels; fluid approximations in Boltzmann codes; convention traps; referee checklist | `references/approximations.md` |
 | The debate on NLO QED corrections to $N_{\rm eff}^{\rm SM}$; the neutrino-mass tension seen from theory; forecasts; stale claims | `references/open-questions.md` |
+| How the Standard-Model N_eff is computed: QED equation of state, continuity equation, quantum kinetic equations, finite-temperature QED and weak-rate corrections, and why 3.0440 and 3.043 differ | `deep/neff-standard-model-calculation.md` |
+| How Boltzmann codes sample and close the massive-neutrino hierarchy and switch to a fluid; how effective, negative or split neutrino-mass parameters are defined below the oscillation floor, at fixed what | `deep/neutrino-mass-below-the-floor.md` |
+| How neutrino self-interactions and invisible decays enter the Boltzmann hierarchy (collision term, relaxation coefficients, contact limit and beyond), and why the pre-2020 decay damping rate was wrong | `deep/interacting-neutrino-perturbations.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind

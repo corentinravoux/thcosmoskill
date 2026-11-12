@@ -1458,3 +1458,28 @@ exact, 60 contained, 0 mismatch; check_shape 0 problems. The G3 pass of
 2026-11-05 stands as history; the dossiers are re-gated: draw
 `docs/history/tests/g2/thcosmo-dark-energy-dossiers-2026-11-12-sweep.md`
 (seed 1132), part 3 and the 43 part-2 rows on changed lines to be re-read.
+
+## 2026-11-12 — stage 5 W1, `thcosmo-neutrinos-light-relics` dossiers, G3 draw after the second sweep: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-12-redraw4.md`
+(seed 1131), the first draw after the owner's decision, reported as it
+fell. Part 2: the 20 rows on changed lines re-read, 18 ok, 2 wrong (one
+line). Part 3: 59 ok, 0 wrong, 0 unclear. Audit questions 1–3 answered
+(first draw). Fixed at source, read by the coordinator in the paper:
+- `mass:66` (part 2): the second sweep put "[src: Sect. 2.1, text before
+  Eq. 2.2]" after the 7.5 enhancement, which is printed after Eq. 2.2 of
+  arXiv:2407.07878; "[src: Sect. 2.1, text after Eq. 2.2]" placed after
+  "≈ 7.5".
+- Side finding applied: `interacting:13` N is "a normalisation factor"
+  (arXiv:2606.03395 Sect. 2.3); place added.
+- Not applied: `mass:118` gives the 7.5 at "z ≪ z_ν" as the paper does; the
+  `[der]` line `mass:130` already warns that the figures refer to different
+  redshifts.
+G1: check_numbers and check_equations empty; transcription 232 equations,
+171 exact, 43 contained, 0 mismatch; check_shape 0 problems; 156 tests
+passed. Word share: Bennett 14.7 %, Lesgourgues 13.6 %. The three dossiers
+added to the file map of `SKILL.md` and the `files` column of
+`subtopics.tsv`. `thcosmo-neutrinos-light-relics` gap audit closed; the
+light-sterile deepening run (question 8) stays queued. W1 dossiers closed
+(the `thcosmo-dark-energy` re-gate and the `thcosmo-dark-matter-models`
+sweep are the owner's later strictness pass, not W1 gates).
