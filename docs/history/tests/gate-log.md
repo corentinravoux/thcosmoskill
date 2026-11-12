@@ -1483,3 +1483,28 @@ added to the file map of `SKILL.md` and the `files` column of
 light-sterile deepening run (question 8) stays queued. W1 dossiers closed
 (the `thcosmo-dark-energy` re-gate and the `thcosmo-dark-matter-models`
 sweep are the owner's later strictness pass, not W1 gates).
+
+## 2026-11-12 — `thcosmo-dark-matter-models` dossiers: qualifier sweep
+
+One agent re-read every attributed statement of the three dossiers (about
+310; about 100 research calls) and made 53 edits: hedges and conditions
+restored (e.g. "can be affected", "can deviate … by up to approximately
+15%", "strongly suggests", "assuming a standard cosmology and canonical
+properties for the axion", "in the high-lepton asymmetry regime"), places
+corrected (`axion:72` Sect. I, not VII), four derived sentences tagged
+`[der]`, one unsourced sentence removed (`noncold:13`). Two factual errors:
+- `axion:114`: "neither includes strings" was wrong for arXiv:0903.4377,
+  whose Sect. VI includes in $\Omega_a$ "the contribution from axionic
+  strings decay, Eq. (45)"; read by the coordinator: ok.
+- `axion:73`: the q ≈ 1 statement attributed to Buschmann et al. a
+  logarithmic enhancement; arXiv:2108.05368 ("Dark matter density") finds
+  δ ∝ log(m_r/H) if the spectrum "is exactly scale invariant at large k".
+  The sweep's added inference that $\log_{*}$ "drops out" of their
+  $n_a^{\rm string}$ is not in the paper; removed by the coordinator.
+The agent stashed and restored the working tree once while comparing
+checker baselines (`git stash list` empty afterwards; no file lost). G1:
+check_numbers and check_equations empty; transcription 299 equations, 154
+exact, 43 contained, 0 mismatch; check_shape 0 problems; 156 tests passed.
+The G3 pass of 2026-11-10 stands as history; re-gate draw
+`docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-12-sweep.md`
+(seed 1133): part 3 and the 25 part-2 rows on changed lines to be re-read.
