@@ -83,6 +83,15 @@ class TranscriptionTest(unittest.TestCase):
         records = check_transcription.check(self.skill([statement]), offline=True)
         self.assertEqual([(r["id"], r["class"]) for r in records], [("astro-ph/0112551", "exact")])
 
+    def test_flag_closes_the_citation_of_the_paper_before(self):
+        # `$a$ (arXiv:X) [src] … $b$ [src] … (arXiv:Y) [src]`: `$b$` is read in X when Y does not hold it.
+        span = STATEMENTS["exact"].replace(" " + B + " [src: Eq. 45]", "")
+        statement = (STATEMENTS["unreadable"] + "; the kernel is " + span + " [src: Eq. 45]; "
+                     "compare (arXiv:0907.5424) [src: Eq. 87].")
+        records = check_transcription.check(self.skill([statement]), offline=True)
+        kernel = [r for r in records if r["transcribed"].startswith("F_2")]
+        self.assertEqual([(r["id"], r["class"]) for r in kernel], [("astro-ph/0112551", "exact")])
+
     def test_section_must_contain_the_equation(self):
         right = STATEMENTS["exact"].replace("[src: Eq. 45]", "[src: Sect. 2, Eq. 45]")
         wrong = STATEMENTS["exact"].replace("[src: Eq. 45]", "[src: Sect. 5, Eq. 45]")

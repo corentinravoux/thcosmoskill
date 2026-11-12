@@ -19,7 +19,10 @@ and the transcribed `$...$` are both normalised by `latex_norm.normalise`
 
 Each equation is attributed to the paper cited nearest after it in the
 statement (else the nearest before), and to the flag that follows it, so a
-statement may cite several papers (P0 probe, B14). A display of several rows
+statement may cite several papers (P0 probe, B14). When the flag that follows
+the equation comes before that paper and the equation is not found there, it
+is read in the paper cited before it, the convention `$a$ (arXiv:X) [src:
+Eq. 1] … $b$ [src: Eq. 3]` (G3 re-gate of 2026-11-12). A display of several rows
 or cells is compared with its rows and cells joined in reading order, and the
 consecutive math spans of a statement are also compared joined (B6, B15). An
 inline place, `[src: Sect. 3, inline, text after Eq. 12]` or `[src: text
@@ -203,17 +206,69 @@ def section_agrees(flag: str, heading: str) -> bool:
 AFTER = re.compile(rf"(?:text\s+)?after\s+Eq\.?\s*{LABEL}", re.I)
 
 
-def attribute(text: str, start: int, end: int) -> tuple[str, str]:
-    """The paper and the flag of a math span at text[start:end]: nearest after, else nearest before."""
+def attribute(text: str, start: int, end: int) -> tuple[str, str, str]:
+    """The paper, an alternative paper and the flag of a math span at text[start:end].
+
+    The paper is the one cited nearest after the span, else nearest before.
+    The alternative covers the other convention of the files: a flag that
+    closes the span before any later identifier ends its citation, as in
+    `$a$ (arXiv:X) [src: Eq. 1] … $b$ [src: Eq. 3] … (arXiv:Y)`, where `$b$`
+    belongs to X. The alternative is then the last identifier cited (followed
+    by a flag) before the span, or an identifier written inside that flag;
+    `check` uses it only when the first attribution does not find the
+    equation.
+    """
     ids = [(m.start(), m.group(1)) for m in ARXIV.finditer(text)]
-    flags = [(m.start(), m.group(0)) for m in FLAG.finditer(text)]
-    after_ids = [i for pos, i in ids if pos >= end]
+    flag_spans = [(m.start(), m.end(), m.group(0)) for m in FLAG.finditer(text)]
+    after_ids = [(pos, i) for pos, i in ids if pos >= end]
     before_ids = [i for pos, i in ids if pos < start]
-    after_flags = [f for pos, f in flags if pos >= end]
-    before_flags = [f for pos, f in flags if pos < start]
-    ident = after_ids[0] if after_ids else (before_ids[-1] if before_ids else "")
+    after_flags = [f for fs, _, f in flag_spans if fs >= end]
+    before_flags = [f for fs, _, f in flag_spans if fs < start]
+    ident = after_ids[0][1] if after_ids else (before_ids[-1] if before_ids else "")
+    alt = ""
+    next_flag = next(((fs, fe) for fs, fe, _ in flag_spans if fs >= end), None)
+    if next_flag and after_ids and after_ids[0][0] >= next_flag[0]:
+        inside = [i for pos, i in after_ids if next_flag[0] <= pos < next_flag[1]]
+        cited_before = []
+        for k, (pos, i) in enumerate(ids):
+            if pos >= start:
+                break
+            nxt = ids[k + 1][0] if k + 1 < len(ids) else len(text)
+            if any(pos < fs < min(nxt, start) for fs, _, _ in flag_spans):
+                cited_before.append(i)
+        alt = inside[0] if inside else (cited_before[-1] if cited_before else "")
+    if alt == ident:
+        alt = ""
     flag = after_flags[0] if after_flags else (before_flags[-1] if before_flags else "")
-    return ident, flag
+    return ident, alt, flag
+
+
+def classify(where: str, line: int, span: str, ident: str, flag: str, offline: bool, papers: dict) -> dict:
+    """Class one math span read against paper `ident` at the place `flag` names."""
+    record = {"file": where, "line": line, "id": ident, "eq": "", "transcribed": span, "source": ""}
+    after = AFTER.search(flag)
+    wanted = labels(latex_norm.without_math(flag))
+    record["eq"] = after.group(1) if after else ",".join(wanted)
+    if not ident or "PDF" in flag or "unnumbered display" in flag or not (after or wanted or re.search(r"\binline\b", flag)):
+        record["class"] = "unreadable"
+        return record
+    rendering = load(ident, offline, papers)
+    if rendering is None:
+        record["class"] = "unreadable"
+    elif after:
+        pool = rendering.inline.get(after.group(1), [])
+        record["class"], record["source"] = compare(span, pool) if pool else ("unreadable", "")
+    elif re.search(r"\binline\b", flag):
+        # Inline, placed by section only: no anchor to search from; a person re-reads it.
+        record["class"] = "unreadable"
+    else:
+        record["class"], record["source"] = compare(span, [rendering.displays.get(l, "") for l in wanted])
+        heading = rendering.sections.get(wanted[0], "")
+        if record["class"] != "unreadable" and not section_agrees(flag, heading):
+            # The equation number is right but the section named is not (G2 of the atlas).
+            record["class"], record["source"] = "wrong-section", f"display is in: {heading}"
+        record["group"] = (ident, record["eq"])
+    return record
 
 
 def check(skill: Path, offline: bool) -> list[dict]:
@@ -233,32 +288,16 @@ def check(skill: Path, offline: bool) -> list[dict]:
             caption_ids = [m.group(1) for m in ARXIV.finditer(caption)]
             groups: dict[tuple[str, str], list[dict]] = {}
             for start, end, span in spans:
-                ident, flag = attribute(text, start, end)
+                ident, alt, flag = attribute(text, start, end)
                 ident = ident or (caption_ids[0] if len(caption_ids) == 1 else "")
                 flag = flag or caption
-                record = {"file": where, "line": line, "id": ident, "eq": "", "transcribed": span, "source": ""}
-                after = AFTER.search(flag)
-                wanted = labels(latex_norm.without_math(flag))
-                record["eq"] = after.group(1) if after else ",".join(wanted)
-                if not ident or "PDF" in flag or "unnumbered display" in flag or not (after or wanted or re.search(r"\binline\b", flag)):
-                    record["class"] = "unreadable"
-                else:
-                    rendering = load(ident, offline, papers)
-                    if rendering is None:
-                        record["class"] = "unreadable"
-                    elif after:
-                        pool = rendering.inline.get(after.group(1), [])
-                        record["class"], record["source"] = compare(span, pool) if pool else ("unreadable", "")
-                    elif re.search(r"\binline\b", flag):
-                        # Inline, placed by section only: no anchor to search from; a person re-reads it.
-                        record["class"] = "unreadable"
-                    else:
-                        record["class"], record["source"] = compare(span, [rendering.displays.get(l, "") for l in wanted])
-                        heading = rendering.sections.get(wanted[0], "")
-                        if record["class"] != "unreadable" and not section_agrees(flag, heading):
-                            # The equation number is right but the section named is not (G2 of the atlas).
-                            record["class"], record["source"] = "wrong-section", f"display is in: {heading}"
-                        groups.setdefault((ident, record["eq"]), []).append(record)
+                record = classify(where, line, span, ident, flag, offline, papers)
+                if alt and record["class"] in ("mismatch", "unreadable"):
+                    second = classify(where, line, span, alt, flag, offline, papers)
+                    if second["class"] in ("exact", "contained"):
+                        record = second
+                if "group" in record:
+                    groups.setdefault(record.pop("group"), []).append(record)
                 records.append(record)
             # Rows of one display copied as consecutive spans: compare them joined.
             for (ident, eq), members in groups.items():
