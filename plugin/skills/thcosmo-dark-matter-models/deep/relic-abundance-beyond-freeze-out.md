@@ -107,7 +107,7 @@ Applied to the scalar singlet near the Higgs resonance: "Outside the resonance r
 - **Coannihilation assumed where coscattering holds.** Coscattering is the phase where conversions shut off before annihilations (arXiv:1705.08450) [src: Introduction]; `[der]` Eq. 37 of arXiv:hep-ph/9704361 then fails; check the conversion rate against H at freeze-out.
 - **Bound-state transitions dropped.** The no-transition effective cross-section is not enough "if a precision of better than 15% is required" when excited states and transitions matter (arXiv:2610.03718) [src: Sect. 4.2].
 - **Sommerfeld enhancement and kinetic decoupling together.** Near parametric resonances a second annihilation era follows kinetic decoupling, with self-heating of the dark matter (arXiv:2103.01944) [src: Sect. 4.2; Fig. 6 caption]; an nBE treatment with $T_\chi=T$ misses it `[der]`.
-- **Equation of state and $g_{s,0}$.** The equation of state changes the abundance by "nearly 10%" (arXiv:2005.03544) [src: abstract], and the value of $g_{s,0}$ by the factor 3.931/3.906 ≃ 1.006 between micrOMEGAs v5 and the paper [src: Sect. 4]; state the tables used.
+- **Equation of state and $g_{s,0}$.** The equation of state changes "the 1-1000 GeV dark matter abundance" by "nearly 10%", "compared to the conventional estimate of the EOS" (arXiv:2005.03544) [src: abstract], and the value of $g_{s,0}$ by the factor 3.931/3.906 ≃ 1.006 between micrOMEGAs v5 and the paper [src: Sect. 4]; state the tables used.
 
 ## Reading list
 <!-- key: reading-list -->

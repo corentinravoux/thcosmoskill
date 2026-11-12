@@ -1623,3 +1623,32 @@ check_numbers and check_equations empty; transcription 300 equations, 157
 exact, 43 contained, 0 mismatch; check_shape 0 problems; 157 tests passed.
 Draw: `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-12-sweep2.md`
 (seed 1135), reported as it falls.
+
+## 2026-11-12 — `thcosmo-dark-matter-models` dossiers, G3 draw after the second sweep: fails
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-12-sweep2.md`
+(seed 1135), reported as it fell. Part 2: the 26 rows on changed lines,
+24 ok, 2 wrong. Part 3: 55 ok, 4 wrong (the first re-gate, seed 1133, had
+1). All six read by the coordinator in the paper and fixed at source:
+- `axion:13` (P3): the power law of arXiv:2003.01100 Eq. 150 is assumed
+  "For definiteness" to hold "well above $T_{C}$" (Sect. 3.2).
+- `noncold:103` (P3): 18.5 keV is a "non-resonant sterile neutrino mass"
+  from a "2-σ bound" on thermal WDM (arXiv:1601.07553 Sect. 4.1).
+- `axion:63` (P3): the lower $f_a$ bound "conservatively allowed" the
+  remaining string energy to go into axions (arXiv:2108.05368).
+- `relic:110` (P3): "nearly 10%" is for "the 1-1000 GeV dark matter
+  abundance, compared to the conventional estimate of the EOS"
+  (arXiv:2005.03544 abstract).
+- `noncold:29` (P2): the 14 → 26 % correction is "For spin-1/2 thermal WDM"
+  (arXiv:2210.10753 Sect. IV).
+- `noncold:84` (P2): "well described by (2.27)" is in the text after Eq.
+  2.29; the other case is footnote 7, not 6 (arXiv:2011.13458).
+- Side findings not yet checked by the coordinator: `noncold:76` and `:54`
+  untagged own claims and a place (Sect. II.1, not II.3); `noncold:125`,
+  `:49` "partially"; `noncold:98` θ, η fitted at 2 keV only; `axion:63`
+  the range words are from the abstract.
+G1 after the fixes: check_numbers and check_equations empty; transcription
+300 equations, 157 exact, 43 contained, 0 mismatch; check_shape 0
+problems; 157 tests passed. Two sweeps have not brought the strict-standard
+error rate of these dossiers to the level a 0/59 draw needs (1/59, then
+4/59); closure put to the owner with the DE dossiers.
