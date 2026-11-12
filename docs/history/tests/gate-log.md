@@ -1582,3 +1582,27 @@ cited before it when its flag closes that citation and the later paper does
 not hold it. Effect over all domains: DE and DM 2 unreadable → exact each;
 no other count changed. Test added (`test_flag_closes_the_citation_of_the_paper_before`).
 The owner asked on 2026-11-12 for one agent at a time.
+
+## 2026-11-12 — `thcosmo-dark-energy` dossiers, G3 draw after the second sweep: fails
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-energy-dossiers-2026-11-12-sweep2.md`
+(seed 1134), reported as it fell. Part 2: the 18 rows on changed lines,
+17 ok, 1 wrong. Part 3: 58 ok, 1 wrong (one-sided 95 % bound 7.8 %). Fixed
+at source, read by the coordinator in the paper:
+- `ppf:69` (part 3): the Fig. 2 caption of arXiv:0808.3125 has "a two-field
+  crossing model that approximates" $w_0=-1.15$, $w_a=0.5$, "flat"; both
+  restored.
+- `thawing:47` (part 2): the Caldwell–Linder bounds "are valid for
+  (1+w)≪1, and so w≲−0.8 is a practical limit of applicability"
+  (arXiv:astro-ph/0505494, text after Fig. 1); added.
+- Side findings applied: `interacting:48` the `[der]` "turns Hubble friction
+  into anti-friction" replaced by the paper's "a positive d acts as an
+  antidamping source" (arXiv:0901.1611 Sect. 2.4); `interacting:31` Eqs.
+  47–50 of arXiv:0804.0232 also assume $\pi_{c}=0=\pi_{x}$ and $w_{c}=0$.
+- Not yet checked by the coordinator: `ppf:41` (the paper enforces ζ
+  conservation through the $U_e$–$V_T$ relation, not the Einstein equation
+  itself).
+G1 after the fixes: check_numbers and check_equations empty; transcription
+308 equations, 211 exact, 62 contained, 0 mismatch; check_shape 0
+problems; 157 tests passed. Closure put to the owner (the neutrinos path,
+second sweep then one draw, did not close this domain).

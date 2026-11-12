@@ -66,7 +66,7 @@ The parameters, then: $w_e(\ln a)$ for the background; $f_\zeta(\ln a)$ on large
 | Transition-scale calibration | $c_{\Gamma}=0.4c_{e}$ | matched to scalar-field models | arXiv:0808.3125 | [src: Eq. 16] |
 | Gap between the two limits | the limits $c_{e}k_{H}\ll 1$ and $\gg 1$ "differ by 44% in the fractional change in the gravitational potential during the acceleration epoch" | $w_e=-0.7$, flat, $\Omega_m=0.31$, h = 0.64 | arXiv:0808.3125 | [src: Sect. III, text after Eq. 16; Fig. 1 caption] |
 | PPF accuracy | "accurate to well below the cosmic variance limit as long as the transition scale to relative smoothness is comparable to the horizon" | CMB TT of $w_e=-0.7$ and a two-field crossing model | arXiv:0808.3125 | [src: Sect. IV] |
-| Crossing test model | $w_0=-1.15$, $w_a=0.5$, $\Omega_m=0.26$, h = 0.74 | two-field model | arXiv:0808.3125 | [src: Fig. 2 caption] |
+| Crossing test model | $w_0=-1.15$, $w_a=0.5$, $\Omega_m=0.26$, h = 0.74 | "a two-field crossing model that approximates" these $w_0$, $w_a$; flat | arXiv:0808.3125 | [src: Fig. 2 caption] |
 | CAMB fluid freeze | velocity fixed for abs(1 + w) ≤ 5e-7, switched on up to 1e-6 | `DarkEnergyFluid` | CAMB | [doc: `camb/dark_energy.py`, GitHub master, 2026-11-04] |
 | CLASS PPF default | `use_ppf = yes`, `c_gamma_over_c_fld = 0.4` | `Omega_fld` ≠ 0 | CLASS | [doc: `explanatory.ini`, Sect. 8.a, GitHub master, 2026-11-04] |
 | Deviation from ΛCDM by perturbation treatment | 3.42σ ($w_0w_a$CDM), 3.63σ (PPF, free $c_s^2$), 3.19σ (EFT) | DESI DR2 BAO + Planck 2018 + Union3 | arXiv:2511.22478 | [src: Fig. 2 caption; Sect. V] |
