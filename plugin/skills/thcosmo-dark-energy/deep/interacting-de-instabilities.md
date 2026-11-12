@@ -84,7 +84,7 @@ Li, Zhang & Zhang keep the conservation equations of Eqs. 9–10 but drop the fl
 | Matter-era attractor | $\hat{n}_{+}\sim{3\over 2}n_{+}$ for $w_x\sim-1$ | coupling modifies the background after equality | arXiv:0804.0232 | [src: Eq. 76] |
 | Strong coupling | $\vert{\bf d}\vert>1$ | Gavela et al. definition | arXiv:0901.1611 | [src: Sect. 3.4] |
 | Stable region probed | w > −1, ξ < 0; "large values for both parameters, near −0.5, are easily allowed" | Q = ξℋρ_de, WMAP-5, HST, SN, LSS, H(z) | arXiv:0901.1611 | [src: Sect. 3.5; Sect. 5] |
-| Stable and unstable examples | ξ = −0.8, k = 0.001 h/Mpc: w = −0.9 free of instabilities (left panel), w = −1.1 unstable at early times (right panel) | Q ∝ ρ_de, strong coupling | arXiv:0901.1611 | [src: Fig. 4 caption] |
+| Stable and unstable examples | ξ = −0.8, k = 0.001 h/Mpc: w = −0.9 free of instabilities (left panel), w = −1.1 unstable at early times (right panel) | Q ∝ ρ_de, strong coupling | arXiv:0901.1611 | [src: Fig. 4 caption; Sect. 3.4, text after Eq. 43] |
 | Late-time viability threshold | −Γ/[H₀(1+w)] ≳ 1 ($Q\parallel u_c$), ≳ 2 ($Q\parallel u_x$) "may not be viable" | Q_x = Γρ_x | arXiv:1109.6234 | [src: Eq. 41 and text after] |
 | Transition scale in ePPF | $c_\Gamma=0.4c_s$; "With a careful test, we conclude" the evolution "is insensitive to this value" | $f_\zeta=0$ | arXiv:1404.5220 | [src: text after Eq. 20] |
 | ePPF divergence test | β = −0.001, w = −0.9 and −0.9999, k = 0.1 and 1 Mpc⁻¹ | $Q\propto H\rho_c$ along $u_c$ or $u_{de}$ | arXiv:1904.04149 | [src: Sect. IV.1, inline; Fig. 2 caption, inline] |

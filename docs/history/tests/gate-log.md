@@ -1508,3 +1508,46 @@ exact, 43 contained, 0 mismatch; check_shape 0 problems; 156 tests passed.
 The G3 pass of 2026-11-10 stands as history; re-gate draw
 `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-12-sweep.md`
 (seed 1133): part 3 and the 25 part-2 rows on changed lines to be re-read.
+
+## 2026-11-12 — `thcosmo-dark-energy` dossiers, G3 re-gate after the sweep: fails
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-energy-dossiers-2026-11-12-sweep.md`
+(seed 1132). Part 2: the 43 rows on changed lines re-read, 41 ok, 2 wrong.
+Part 3: 55 ok, 4 wrong (one shared with part 2). The factual fix of
+`interacting:87` confirmed (Sect. 3.4 of arXiv:0901.1611: Fig. 4 right panel
+unstable, left panel free of instabilities), its place incomplete. Fixed at
+source, each read by the coordinator in the paper:
+- `ppf:34`: Jeans stable "so long as $p_{e}^{\prime}/\rho_{e}^{\prime}$
+  remains finite" (arXiv:0808.3125 Sect. II, after Eq. 4).
+- `thawing:92`: the slope "can vary by" ∼10 % (arXiv:2405.03933 Sect. 3).
+- `thawing:70`: the pivot "(assuming such a limit exists in the models
+  being fitted)" (same place).
+- `interacting:87`: place "Sect. 3.4, text after Eq. 43" added.
+- Not yet verified by the coordinator, passed to the second sweep:
+  `thawing:69` (the premise "with w near −1 … Ω_φ given by equation (25)"
+  of Crittenden's scheme in arXiv:0712.3450), and the side findings
+  `ppf:58`, `ppf:82`, `thawing:47`, `interacting:14`.
+- Tool note: sheet rows 56–57 credit two equations to arXiv:2410.10981
+  where the dossier cites arXiv:0708.0024 (a parsing slip of
+  `sample_statements.py`, not a dossier error); to fix in the tool.
+
+## 2026-11-12 — `thcosmo-dark-matter-models` dossiers, G3 re-gate after the sweep: fails
+
+Sheet: `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-12-sweep.md`
+(seed 1133). Part 2: the 25 rows on changed lines re-read, 25 ok. Part 3:
+58 ok, 1 wrong. Both factual fixes (`axion:73`, `:114`) confirmed. Fixed at
+source, read by the coordinator in the paper:
+- `axion:96` (part 3): the 28 μeV row of arXiv:2003.01100 Eq. 170 also
+  assumes $\langle\theta_{i}^{2}\rangle=(2.15)^{2}$ and
+  $g_{*}(T\gtrsim T_{C})$ = 61.75, and "a standard cosmology and canonical
+  properties for the axion" (text after Eq. 170); added.
+- Side findings applied: `axion:60` the unsourced "about fifty e-folds"
+  removed; `axion:62` the hedge of arXiv:2007.04990 Sect. 4 ("cannot
+  exclude a partial destructive interference", "highly unlikely … beyond
+  an ${\cal O}(1)$ factor") added.
+- Passed to the second sweep: `axion:30` ("Within this pre-inflation
+  scenario", the scalings stated after Eq. S36), `noncold:125` (the
+  correction factor is reported from Refs. [36, 74] of arXiv:2011.13458).
+
+Both domains take the neutrinos path decided by the owner: a second full
+sweep, then one draw reported as it falls.
