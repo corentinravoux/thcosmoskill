@@ -1415,3 +1415,46 @@ share: Caprini 28.6 % (flag, rebalanced in the deepening run). The three
 dossiers added to the file map of `SKILL.md` and the `files` column of
 `subtopics.tsv`. GW gap-audit dossiers closed; the deepening run (radiation
 bound, preheating, rebalance) is next.
+
+## 2026-11-12 — owner decision: second sweep for the neutrinos dossiers, sweeps of earlier dossiers
+
+Asked how to close G3 after four failed draws, the owner chose a second full
+sweep, then a fresh draw reported as it falls (no redraw-until-pass), and
+the same qualifier sweep, now, for the `thcosmo-dark-energy` and
+`thcosmo-dark-matter-models` dossiers, which passed G3 under a looser
+reading of hedges.
+
+## 2026-11-12 — `thcosmo-neutrinos-light-relics` dossiers: second qualifier sweep
+
+A fresh agent read every attributed statement whole against its paper
+(about 318 statements and the `[der]` lines; about 92 research calls) and
+changed 37: conditions and scopes restored (e.g. "for $l_{\max}\to\infty$",
+"at late times, z≪z_ν", "with oscillations, having included the neutrino
+chemical potentials"), modals ("typically requires", "is expected to be",
+"apparent preference"), attributions (the massless result to its Ref. 5),
+and two narrowings: `mass:77` the 0.1 % check of arXiv:2407.10965 Fig. 1 is
+for −0.15 eV, not ±0.15 eV (the coordinator's fix of 2026-11-10 had written
+±); `interacting:100` the subtraction of the resonant contribution is
+stated for Fig. 5 only. Coordinator spot-checks, whole statement:
+`mass:77`, `interacting:100` (Fig. 6 caption of arXiv:2602.12477, Dirac-like
+neutrinos): ok. G1: check_numbers and check_equations empty; transcription
+232 equations, 171 exact, 43 contained, 0 mismatch; check_shape 0
+problems; 156 tests passed. Draw: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-dossiers-2026-11-12-redraw4.md`
+(seed 1131); part 3 and the 20 part-2 rows on changed lines to be re-read.
+
+## 2026-11-12 — `thcosmo-dark-energy` dossiers: qualifier sweep
+
+One agent re-read every attributed statement of the three dossiers (about
+255; about 68 research calls) and changed 59 places, all wording within the
+paper's scope except one factual error: `interacting-de-instabilities.md:87`
+called both w = −0.9 and w = −1.1 unstable, where Fig. 4 of
+arXiv:0901.1611 shows w = −0.9 free of the early-time instability. One
+general claim narrowed to its single case: `thawing:104` "differ by
+$\mathcal{O}(100\%)$" is the k²M_pl² = 100 hilltop of Fig. 4 of
+arXiv:2405.03933. One place corrected: `ppf:15` Sect. II.1, not III.1.
+`[doc:]` statements on CAMB and CLASS not re-checked. G1:
+check_numbers and check_equations empty; transcription 305 equations, 208
+exact, 60 contained, 0 mismatch; check_shape 0 problems. The G3 pass of
+2026-11-05 stands as history; the dossiers are re-gated: draw
+`docs/history/tests/g2/thcosmo-dark-energy-dossiers-2026-11-12-sweep.md`
+(seed 1132), part 3 and the 43 part-2 rows on changed lines to be re-read.
