@@ -1606,3 +1606,20 @@ G1 after the fixes: check_numbers and check_equations empty; transcription
 308 equations, 211 exact, 62 contained, 0 mismatch; check_shape 0
 problems; 157 tests passed. Closure put to the owner (the neutrinos path,
 second sweep then one draw, did not close this domain).
+
+## 2026-11-12 — `thcosmo-dark-matter-models` dossiers: second qualifier sweep
+
+A fresh agent read every attributed statement whole (about 510 tagged
+places; about 85 research calls) and made 30 fixes. Two factual errors:
+`noncold:43` the WDM–NCDM correspondence was traced to "Viel et al. (their
+Ref. [69])", but Ref. [69] of arXiv:2011.13458 is Colombi, Dodelson &
+Widrow (read by the coordinator in its reference list: ok); `axion:35` and
+row 93 gave θ_i ≈ 2.15 as Di Luzio et al.'s own, where arXiv:2003.01100
+Sect. 3.3 credits it to its Ref. [47]. The two pre-flagged items settled
+(`axion:30`, `noncold:125`); Assumptions cells completed (`axion:96`, `:99`,
+`:102`, `noncold:112`, `:114`); hedges and premises restored; credits to
+the original fits; scopes narrowed; seven own readings tagged `[der]`. G1:
+check_numbers and check_equations empty; transcription 300 equations, 157
+exact, 43 contained, 0 mismatch; check_shape 0 problems; 157 tests passed.
+Draw: `docs/history/tests/g2/thcosmo-dark-matter-models-dossiers-2026-11-12-sweep2.md`
+(seed 1135), reported as it falls.

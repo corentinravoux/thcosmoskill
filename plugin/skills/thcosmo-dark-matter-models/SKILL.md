@@ -85,7 +85,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 8k; models 7k; open 3k; results 3k; deep/axion-relic-abundance 10k; deep/noncold-dm-mass-mappings 10k; deep/relic-abundance-beyond-freeze-out 10k.
+Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 8k; models 7k; open 3k; results 3k; deep/axion-relic-abundance 10k; deep/noncold-dm-mass-mappings 10k; deep/relic-abundance-beyond-freeze-out 11k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
