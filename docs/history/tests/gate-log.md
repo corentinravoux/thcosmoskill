@@ -1551,3 +1551,34 @@ source, read by the coordinator in the paper:
 
 Both domains take the neutrinos path decided by the owner: a second full
 sweep, then one draw reported as it falls.
+
+## 2026-11-12 — `thcosmo-dark-energy` dossiers: second qualifier sweep
+
+A fresh agent read every attributed statement whole (about 260; `[doc:]`
+quotes checked in CAMB `dark_energy.py`, `DarkEnergyPPF.f90` and CLASS
+`explanatory.ini` on GitHub master: all match) and made 30 fixes, none
+factual: premises restored (`thawing:69` "With w near -1, they took the
+evolution for Ω_φ to be given by equation (25)…", `thawing:42` "in the limit
+where the Hubble parameter … is well-approximated by ΛCDM", `ppf:34`,
+`ppf:41`), scopes (`interacting:57` "no matter how weak the coupling is"
+belongs to the Γρ_c model; the αℋρ_c model is among "The other models
+discussed in Sec. III" that "also suffer from this instability",
+arXiv:0804.0232 Sect. IV), places (`interacting:70`, `:100` Eq. 44;
+`interacting:14` Sect. II, Eq. 6), an unread attribution removed
+(`ppf:16`), six own readings tagged `[der]`, and the code of
+arXiv:2511.22478 named from its App. C (`ppf:58`, `:83`). Coordinator
+spot-check, whole statement: `interacting:57` in arXiv:0804.0232 Sect. IV:
+ok. G1: check_numbers and check_equations empty; transcription 306
+equations, 211 exact, 60 contained, 0 mismatch; check_shape 0 problems;
+157 tests passed. Draw: `docs/history/tests/g2/thcosmo-dark-energy-dossiers-2026-11-12-sweep2.md`
+(seed 1134), reported as it falls.
+
+## 2026-11-12 — tool: `check_transcription.py` attribution
+
+The DE re-gate found two equations credited to the paper cited later in the
+line (arXiv:2410.10981) where the line's convention gives them to the paper
+cited before (arXiv:0708.0024). The tool now reads an equation in the paper
+cited before it when its flag closes that citation and the later paper does
+not hold it. Effect over all domains: DE and DM 2 unreadable → exact each;
+no other count changed. Test added (`test_flag_closes_the_citation_of_the_paper_before`).
+The owner asked on 2026-11-12 for one agent at a time.
