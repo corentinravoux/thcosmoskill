@@ -1874,3 +1874,27 @@ coordinator in the paper:
 G1 after the fixes: check_numbers and check_equations empty; transcription
 280 equations, 152 exact, 51 contained, 0 mismatch; check_shape 0 problems;
 158 tests passed. D36 path: one full qualifier sweep, then a fresh draw.
+
+## 2026-11-13 — `thcosmo-baryogenesis-phase-transitions`: qualifier sweep
+
+One agent read every attributed statement whole (about 235, every field
+and cell; about 68 research calls) and made 44 changes. The pre-listed
+items settled as reported (`models.md:114` both premises of the
+random-walk estimate quoted; `formalism.md:35`, `:122`; the four "paragraph
+after Fig. 5" now "third paragraph after Fig. 5, beginning 'For a
+quantitative description'"). Further errors: a misattribution
+(`approximations.md:32`, `open-questions.md:38`: the review's verdict on
+phenomenological friction models concerns variants and Ref. [511], not Eq.
+5.68); credits to the reviews' own references (Eq. 5.49 from [483, 385];
+Eq. 3.72 from [257]; the 3d beta functions from [150]; "underestimates the
+friction" from [517, 518]); dropped premises (fast transition "where the
+expansion of space can be neglected"; "For the standard model in the
+high-temperature phase"; "Once the field achieves maximal helicity";
+"normal ordering"; the supersymmetry and Q-ball framework); places; scope
+(`open-questions.md:62` "crossover" is not in arXiv:hep-ph/9605288, now
+credited to arXiv:2009.07294 Sect. III.1: read by the coordinator, ok;
+`models.md:24`; `approximations.md:30`; `results.md:65`). G1: verify_sources
+49, 0 problems; check_numbers and check_equations empty; transcription 280
+equations, 152 exact, 50 contained, 0 mismatch; check_shape 0 problems; 158
+tests passed. Fresh draw: `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-2026-11-13-sweep.md`
+(seed 1140), reported as it falls; D36 applies.
