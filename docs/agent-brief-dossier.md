@@ -129,6 +129,8 @@ python3 tools/check_shape.py --skill <skill>
 python3 -m unittest discover -s tests
 ```
 
+Then the qualifier pass of `docs/agent-brief.md`, section 4 (mandatory): every statement you wrote that attributes anything to a paper, re-read whole against the text fetched at its place, on the eight points listed there.
+
 ## Final message
 
 Under 200 words: the dossiers written with line counts; the audit questions

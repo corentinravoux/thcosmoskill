@@ -41,5 +41,7 @@ python3 plugin/skills/theoretical-cosmology/scripts/verify_sources.py plugin/ski
 python3 -m unittest discover -s tests
 ```
 
+Then the qualifier pass of `docs/agent-brief.md`, section 4 (mandatory): every statement you wrote that attributes anything to a paper, re-read whole against the text fetched at its place, on the eight points listed there.
+
 Do not commit. Final message, under 200 words: items fixed by kind, items
 removed, error patterns found across the skill, the checkers' last lines.

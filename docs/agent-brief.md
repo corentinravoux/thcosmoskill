@@ -320,6 +320,37 @@ Then re-read `formalism.md` and `results.md` once as a referee: for each
 equation and each number, can you point to the tool call that returned it?
 Remove any you cannot.
 
+**Qualifier pass (mandatory).** The tools check equations and numbers, not
+words, and every gate of W1 and W2 failed on words (strict standard set by
+the owner, 2026-11-12). Before the final message, re-read each statement
+you wrote that attributes anything to a paper, whole, against the text you
+fetched at the place named, and check, clause by clause:
+
+1. hedges and modals kept: "can", "may", "should be", "appears", "strongly
+   suggest", "we expect", "preliminarily", "roughly", "For definiteness";
+2. conditions, premises and ranges kept: "well above $T_C$", "for spin-1/2",
+   "Assuming adiabatic initial conditions", "in a simple scalar field
+   model", "at first order in", "for the cases tested", "at z = 1";
+3. scope no broader than the paper's: one tested case or one figure is not
+   a general result; an approximation is described as the paper describes
+   it (setting the diagonal entries to zero is not "dropping the
+   collisions");
+4. attribution right: a result the paper quotes from its references ("the
+   well-known … [71–76]", "as found in Ref. [42]") is credited to them, not
+   to the paper; one paper's critique of another is attributed, not stated
+   as fact; priority claims ("first printed by") need a source or `[der]`;
+5. place right: footnote against text, caption against text, which
+   sentence ("the third sentence after Eq. 82", not "the next sentence"),
+   the equation that defines against the one derived from it;
+6. bare `[src: …]` tags still point to the paper you mean after you insert
+   another citation in the same statement;
+7. every cell of a table row, the Assumptions column included, carries the
+   paper's assumptions;
+8. your own reading carries `[der]`.
+
+Fix what fails and say in the final message how many statements the pass
+checked and changed.
+
 ## 5. Final message
 
 Your last message is read by the coordinator. Give, in under 200 words: the
