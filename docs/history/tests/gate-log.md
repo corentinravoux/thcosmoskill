@@ -1652,3 +1652,46 @@ G1 after the fixes: check_numbers and check_equations empty; transcription
 problems; 157 tests passed. Two sweeps have not brought the strict-standard
 error rate of these dossiers to the level a 0/59 draw needs (1/59, then
 4/59); closure put to the owner with the DE dossiers.
+
+## 2026-11-13 — owner decision: `thcosmo-dark-energy` and `thcosmo-dark-matter-models` dossiers closed with the residual logged
+
+Asked how to close the strict-standard re-gates after two sweeps each, the
+owner chose to accept and log the residual. Every error found by the six
+draws and four sweeps is fixed at source. Last draws, strict reading:
+`thcosmo-dark-energy` 1 wrong in 59 (seed 1134; point estimate 1.7 %,
+one-sided 95 % upper bound 7.8 %); `thcosmo-dark-matter-models` 4 wrong in
+59 (seed 1135; 6.8 %, upper bound 14.8 %). These rates are of dropped
+hedges, conditions, premises, scopes and places; no equation and no number
+was found wrong in either draw. Their G3 passes of 2026-11-05 and
+2026-11-10 (looser reading) stand; the strict-standard residual is the
+figure to quote for these dossiers. A refresh pass can return to them.
+
+## 2026-11-13 — stage 5 W2, `thcosmo-cosmological-gravitational-waves` deepening, G1: passed
+
+One run (radiation bound, preheating; rebalance; five side findings of the
+dossier G3). Added: formalism "The background as extra radiation"
+(arXiv:2508.15134, arXiv:2004.11396), BBN and CMB bounds in results
+(arXiv:0708.2279, astro-ph/0603144, 2004.11396, 2507.06930, 2508.15134),
+the preheating no-go theorem, peak estimates and lattice projection
+(arXiv:0707.0875, 1907.04402, 2512.15627, 1110.0337), the
+parametric-resonance card expanded (arXiv:1707.04533), new cards for gauge
+preheating and oscillons, approximations and open questions to match
+(arXiv:1607.01314 against 1803.08047; 1905.05724). Both subtopics now
+`covered`; 26 sources added (108). The five side findings settled
+(`phase-transition-spectra.md:41`, `:109`, `cosmic-string-spectra.md:57`,
+`:64`, arXiv:2508.04263 Eq. 4). G1: verify_sources 108, 0 problems;
+check_numbers and check_equations empty; transcription 449 equations, 338
+exact, 62 contained, 0 mismatch, 49 unreadable; places 66, 41
+found-at-place, 1 found-elsewhere, 24 unreadable; check_shape 0 problems;
+no `eq: notation` escape in references; 157 tests passed. Word share:
+Caprini 23.0 % (was 47.1 % at build, 28.6 % after the dossiers), Hindmarsh
+4.9 %, Domènech 4.3 %. The remaining Caprini share is the review
+arXiv:1801.04268 as source of the basic formalism (tensor equation,
+stochastic background, transfer of the inflationary background), now with
+primary citations beside it where they were read, and the LISA reports
+(arXiv:1910.13125, 2403.03723) as the templates the field uses; justified,
+no further rebalance before the refresh pass. Slips recorded in the hub's
+`stale-claims.md`: arXiv:0707.0875 Eq. 82, arXiv:2508.04263 Eq. 4; not
+recorded: a missing unit in arXiv:1909.12843 (not a physics slip). G2
+sheet over the changed lines: `docs/history/tests/g2/thcosmo-cosmological-gravitational-waves-deepening-2026-11-13.md`
+(seed 1136).

@@ -5,7 +5,7 @@ description: Use when deriving, checking or reviewing theory of cosmological gra
 
 # Cosmological gravitational waves — expert reference
 
-Snapshot 2026-11-05. Every equation and number names its paper and
+Snapshot 2026-11-12. Every equation and number names its paper and
 the place it was read; no equation or number is derived by an agent.
 Conventions: signature (−,+,+,+), conformal time, $ds^{2}=a^{2}(\eta)\,\left[-d\eta^{2}+(\delta_{ij}+h_{ij})\,dx^{i}dx^{j}\right]\,.$ (arXiv:1801.04268) [src: Eq. 66], Fourier kernel $e^{-i\mathbf{k}\cdot\mathbf{x}}$ with $d^3k/(2\pi)^3$, polarisation tensors normalised to 2; see `references/formalism.md` and the hub's `references/conventions.md`. <!-- num: not a value --> Re-read the cited paper before
 an equation or a number enters a manuscript.
@@ -16,10 +16,10 @@ an equation or a number enters a manuscript.
 | Question | Load |
 |---|---|
 | Conventions; tensor equation of motion; $h_c$, $S_h$, $\Omega_{\rm GW}$ and redshifting; inflationary tensor spectrum and transfer function; axion–gauge-field production; preheating; phase-transition parameters and templates; string loops and domain walls; scalar-induced kernels; friction and $d_L^{\rm GW}$ | `references/formalism.md` |
-| One card per source: slow-roll inflation, axion inflation, preheating, sound-wave and supercooled transitions, cosmic strings, biased domain walls, scalar-induced waves; their status | `references/models.md` |
-| Radiation bound; amplitude of the irreducible background; neutrino damping; PT, defect and SIGW results; propagation; history of key results | `references/results.md` |
-| Averaging and sub-horizon conditions; transfer-function approximations; homogeneous backreaction; PT template validity; Nambu–Goto versus field theory; SIGW gauge and order; normalisation traps; referee checklist | `references/approximations.md` |
-| PTA interpretation, string-loop and backreaction debates, SIGW gauge; forecasts; stale claims | `references/open-questions.md` |
+| One card per source: slow-roll inflation, axion inflation, preheating by parametric resonance, gauge preheating, oscillons, sound-wave and supercooled transitions, cosmic strings, biased domain walls, scalar-induced waves; their status | `references/models.md` |
+| Radiation bound (BBN and CMB forms, adiabatic or homogeneous initial conditions, current data); preheating peaks; amplitude of the irreducible background; neutrino damping; PT, defect and SIGW results; propagation; history of key results | `references/results.md` |
+| Averaging and sub-horizon conditions; shortwave approximation and initial conditions of the radiation bound; classical lattice simulations of preheating; transfer-function approximations; homogeneous backreaction; PT template validity; Nambu–Goto versus field theory; SIGW gauge and order; normalisation traps; referee checklist | `references/approximations.md` |
+| PTA interpretation, string-loop and backreaction debates, initial conditions of the CMB bound, oscillon GW peaks, classical against quantum preheating, SIGW gauge; forecasts; stale claims | `references/open-questions.md` |
 | How the sound-wave spectrum of a first-order transition is derived (sound-shell model against lattice and Higgsless fits), the source-lifetime suppression and when it fails, turbulence models, and what changed between the 2019 and 2024 LISA templates | `deep/phase-transition-spectra.md` |
 | How a string-network background is assembled from a loop density and a power per loop (VOS and simulation-based densities, cusps, kinks, harmonics), what field-theory simulations change, and how pulsar-timing fits depend on these choices | `deep/cosmic-string-spectra.md` |
 | How the second-order scalar-induced kernel is derived in radiation and matter domination, how other equations of state are reached, the terms from local non-Gaussianity, what the gauge debate settled, and what fixes the infrared tail | `deep/scalar-induced-kernels.md` |
@@ -31,6 +31,8 @@ an equation or a number enters a manuscript.
 - $\Omega_{\rm GW}^{(0)}(f)=\frac{4\pi^{2}}{3H_{0}^{2}}\,f^{3}\,S_{h}(f)\,.$ (arXiv:1801.04268) [src: Eq. 94] holds with $h_c$ normalised by $\langle h_{ij}(\mathbf{x},\eta)\,h_{ij}(\mathbf{x},\eta)\rangle=2\,\int_{0}^{+\infty}\frac{dk}{k}\,h_{c}^{2}(k,\eta)\,,$ [src: Eq. 85]; the review flags "the factor two difference with respect to e.g. [54]" [src: Sect. 3.2, text before Eq. 94].
 - A background produced in radiation domination today has $h^{2}\,\Omega_{\rm GW}=1.6\times 10^{-5}\,\left(\frac{100}{g_{*}(T_{p})}\right)^{1/3}\,\left(\frac{1}{\rho}\,\frac{d\rho_{\rm GW}}{d\mathrm{log}k}\right)_{p}$ (arXiv:1801.04268) [src: Eq. 104] at $f=2.6\times 10^{-8}\,\mathrm{Hz}\,\,\,x_{k}\,\left(\frac{g_{*}(T_{p})}{100}\right)^{1/6}\,\frac{T_{p}}{\mathrm{GeV}}$ [src: Eq. 105], with $x_{k}\geq 1$ by causality [src: Sect. 3.3, inline, text after Eq. 103].
 - The integrated density obeys $\left(\frac{h^{2}\rho_{\rm GW}}{\rho_{c}}\right)_{0}\leq h^{2}\Omega_{\gamma}^{0}~\frac{7}{8}\,\left(\frac{4}{11}\right)^{4/3}\Delta N_{\rm eff}=5.6\times 10^{-6}\,\Delta N_{\rm eff}\,,$ (arXiv:1801.04268) [src: Eq. 129], for sub-horizon backgrounds produced before BBN or decoupling [src: Sect. 4.1, text after Eq. 130].
+- The CMB bound on the integrated background depends on the initial conditions of the GW gas: with Planck 2018, $\Omega_{\textnormal{gw}}h^{2}<1.7\times 10^{-6}\quad\text{(Shortwave, adiabatic)}\,,$ (arXiv:2004.11396) [src: Eq. 14] against $\Omega_{\textnormal{gw}}h^{2}<2.9\times 10^{-7}\quad\text{(Shortwave, homogeneous)}\,.$ [src: Eq. 15]; inflationary waves should have "no primordial perturbation to the CGWB amplitude" "in linear theory" (arXiv:astro-ph/0603144) [src: text before Fig. 2, inline].
+- In the $\lambda\phi^{4}$ preheating simulations of arXiv:0707.0875 the peak frequency "depends directly on the resonant momentum $k_{*}$ amplified by preheating" [src: Sect. VI.2]; for $\frac{1}{2}m^{2}\phi^{2}$, $f_{p}=\epsilon_{\rm f}^{1/4}\left(\frac{q}{10^{4}}\right)^{0.67}\times 2.0\cdot 10^{8}\ {\rm Hz}\,,$ (arXiv:1707.04533) [src: Eq. 107], "always peaked at high frequencies $f_p \gtrsim 10^{7}$ Hz" [src: abstract, inline]; for gauge preheating, "with existing Planck limits, gravitational waves from preheating already place the strongest constraints on the inflaton's possible axial coupling to Abelian gauge fields" (arXiv:1909.12843) [src: abstract].
 - Slow-roll inflation gives $n_{T}(k)=-\frac{r_{k}}{8}\,.$ (arXiv:1801.04268) [src: Eq. 203] and $\Omega_{\rm GW}\simeq 5\cdot 10^{-16}\left({H_{k}\over H_{\rm max}}\right)^{2}\,,$ [src: Eq. 204]; a stiff epoch lasting "until just before BBN" can raise this by $\sim 10^{7}$ at LISA frequencies for "a super stiff phase with $w\simeq+1$" [src: Sect. 5.2, inline, text after Eq. 230].
 - Neutrino free streaming cuts the squared tensor amplitude "by 35.6 % for wavelengths that enter the horizon during the radiation-dominated phase" (arXiv:astro-ph/0306304) [src: abstract].
 - Axion–gauge-field production gives a chiral, non-Gaussian, blue background, $h^{2}\Omega_{\rm GW}^{\rm(pp)}\simeq 1.5\cdot 10^{-13}(H/m_{\rm Pl})^{4}(e^{4\pi\xi}/{\xi^{6}})$ for $\xi>1$ (arXiv:1801.04268) [src: Sect. 6.1.2, inline, text after Eq. 241]; a detectable signal needs "significant backreaction" (arXiv:2510.17207) [src: abstract], where lattice and homogeneous treatments disagree (arXiv:2411.16368; arXiv:2510.17207) [src: abstract].
@@ -49,6 +51,7 @@ an equation or a number enters a manuscript.
 - Sub-horizon production, causal $f^3$ tail, radiation bound applied to the integrated density.
 - PT: template and its validity (Chapman–Jouguet speed, shock time, turbulence, the 0.6 factor in K, expanding versus Minkowski simulations, thermal-potential method). <!-- num: not a value -->
 - Strings: loop picture, loop distribution, harmonic or burst formalism; walls: bias mechanism.
+- Radiation bound: integration range, BBN or CMB, adiabatic or homogeneous initial conditions, prior on $\Omega_{\rm gw}h^2$. Preheating: resonance parameter definition, post-production equation of state, convergence with oscillons.
 - Axion inflation: backreaction treatment and $\Delta N_{\rm eff}$. SIGW: gauge, Gaussianity, constant-w and reheating assumptions, order in a matter era. Details: `references/approximations.md`, last section.
 
 ## Errors that recur
@@ -61,6 +64,8 @@ an equation or a number enters a manuscript.
 - Quoting a $G\mu$ bound without its loop model; or quoting a PTA fit as evidence for new physics (arXiv:2306.16219) [src: abstract].
 - Applying the radiation bound to a narrow peak or to super-horizon modes (arXiv:1801.04268) [src: Sect. 4.1, text after Eq. 130].
 - Copying printed slips: the exponent after Eq. 230 of arXiv:1801.04268 is printed as a product, $\dot l$ before its Eq. 380 lacks μ, Eq. 116 of arXiv:2401.04388 has limits from ∞ to ∞, and Eq. 61 of arXiv:1807.09241 squares $(1+\cos\iota)$ (see `formalism.md`, `approximations.md`). <!-- num: not a value -->
+- Translating an $N_{\rm eff}$ posterior into a GW bound for inflationary waves: the translation holds for adiabatic initial conditions only, and "the effect of gravitational waves can not be absorbed into $N_{\rm eff}$" otherwise (arXiv:2507.06930) [src: Sect. 2].
+- Citing the growing high-frequency oscillon peak of the hill-top model of arXiv:1607.01314: it "is a numerical artifact" (arXiv:1803.08047) [src: abstract].
 - Treating the speed of tensors here: its constraints on theories are in `thcosmo-modified-gravity`.
 
 ## Related skills
@@ -87,7 +92,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 5k; formalism 12k; models 5k; open 2k; results 4k; deep/cosmic-string-spectra 9k; deep/phase-transition-spectra 10k; deep/scalar-induced-kernels 8k.
+Sizes, in thousands of tokens: L1 5k; approximations 7k; formalism 17k; models 7k; open 4k; results 7k; deep/cosmic-string-spectra 9k; deep/phase-transition-spectra 10k; deep/scalar-induced-kernels 8k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

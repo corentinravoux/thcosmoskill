@@ -2,7 +2,7 @@
 
 Scope: live debates with both sides cited, unresolved calculations, what the next data or the next calculation will decide, forecasts (labelled), and stale claims with the paper that corrects them.
 
-Snapshot: 2026-11-05
+Snapshot: 2026-11-12
 
 ## Live debates
 <!-- key: live-debates -->
@@ -29,6 +29,25 @@ Snapshot: 2026-11-05
 - A third result constrains both: in pure Abelian axion inflation, signals within reach of future interferometers come only with strong backreaction and conflict with the $\Delta N_{\rm eff}$ bound (arXiv:2508.00798) [src: abstract], which "defines a clear target for future lattice studies" [src: abstract].
 - What decides it: lattice GW spectra computed through the strong-backreaction regime for the parameter points that the homogeneous studies call detectable. `[der]`
 
+### Which initial conditions does the CMB bound need for a given source?
+<!-- key: which-initial-conditions-does-the-cmb-bound -->
+
+- The bound is stronger for homogeneous than for adiabatic initial conditions: $\Omega_{\textnormal{gw}}h^{2}<2.9\times 10^{-7}$ against $1.7\times 10^{-6}$ with Planck 2018 (Clarke, Copeland & Moss 2020, arXiv:2004.11396) [src: Eqs. 14–15], and $<0.27$ against $<1.04$ in units of $10^{-6}$ with CMB-SPA and DESI BAO in ΛCDM (Wang & Zhao 2025, arXiv:2507.06930) [src: Table 2]. <!-- num: not a value -->
+- For inflationary waves, "in linear theory, there should be no primordial perturbation to the CGWB amplitude", so the homogeneous case applies; for post-inflationary sources Smith et al. write only "perhaps some post-inflation phase-transition mechanism" (arXiv:astro-ph/0603144) [src: text before Fig. 2]. Among the sources read, no paper computes the initial density perturbation of the GW gas for a specific post-inflationary source (preheating, a phase transition, strings); a bound quoted for such a source should state which case it assumes. `[der]`
+- The homogeneous mode itself was revised: the one of arXiv:2004.11396 "differs from the one quoted in [33] and consequently the one used in [19]" (arXiv:2004.11396) [src: Sect. 4.1], where [19] is arXiv:astro-ph/0603144 and [33] a 2008 PhD thesis [src: References].
+
+### Do oscillons source a strong gravitational-wave peak?
+<!-- key: do-oscillons-source-a-strong-gravitational-wave -->
+
+- For: in potentials asymmetric around the minimum, oscillons "can generate a pronounced peak in the spectrum of gravitational waves, that largely exceeds the linear preheating spectrum" (Antusch, Cefala & Orani 2017, arXiv:1607.01314) [src: abstract].
+- Against: the "dominant, growing high frequency peak" of the fiducial hill-top model "is a numerical artifact" of resolution (Amin et al. 2018, arXiv:1803.08047) [src: abstract]; "An isolated oscillon is spherically symmetric and does not radiate gravitational waves" (Zhou et al. 2013, arXiv:1304.6094) [src: abstract].
+- A different channel: induced waves from the rapid decay of an oscillon-dominated phase, constrained by $N_{\rm eff}$ (Lozanov, Sasaki & Tränkle 2026, arXiv:2601.11360) [src: abstract]. What decides it: converged simulations at the resolution criterion of arXiv:1803.08047 for each asymmetric potential claimed. `[der]`
+
+### Classical simulation or quantum calculation at weak resonance?
+<!-- key: classical-simulation-or-quantum-calculation-at -->
+
+- The in-in calculation agrees with simulations where resonance is effective and stays applicable "At sufficiently low values of the resonance parameter", where "numerical simulations fail" (Armendariz-Picon 2019, arXiv:1905.05724) [src: abstract]; it neglects backreaction [src: abstract]. No comparison through the backreaction stage was found among the sources read. `[der]`
+
 ## Unresolved calculations
 <!-- key: unresolved-calculations -->
 
@@ -48,6 +67,7 @@ Snapshot: 2026-11-05
 - Chirality and non-Gaussianity would single out the axion–gauge-field mechanism: the review calls them "very distinctive properties" with "specific predictions unique to this scenario" (arXiv:1801.04268) [src: Sect. 6.1.2, text after Eq. 241].
 - Lattice: GW spectra through strong backreaction in axion inflation (arXiv:2508.00798) [src: abstract]; CosmoLattice 2.0 adds axion–gauge couplings and scaling defect initial conditions (Baeza-Ballesteros et al. 2026, arXiv:2607.24978) [src: abstract].
 - Preheating signals "lie in the ultra-high-frequency regime at frequencies above the kHz range" (arXiv:2607.18381) [src: abstract], outside the bands of Fig. 1 of arXiv:1801.04268 [src: Fig. 1 caption].
+- Gauge preheating and $N_{\rm eff}$ (forecast): "a measurement of $\Delta N_{\mathrm{eff}}$ consistent with zero by next-generation experiments would all but rule out the regime in which the Universe was reheated by gauge preheating alone in high-scale inflation" (arXiv:1909.12843) [src: Conclusions, inline]. CMB-S4-class sensitivity to the integrated background, forecast: "$σ= 2.5 \times 10^{-7}$ (adiabatic) and $σ= 1.0 \times 10^{-7}$ (homogeneous)" for LiteBIRD & CMB Stage-IV with CSST BAO (arXiv:2507.06930) [src: abstract].
 
 ## Stale claims and misconceptions
 <!-- key: stale-claims-and-misconceptions -->
@@ -58,6 +78,8 @@ Snapshot: 2026-11-05
 - "$N_{\rm eff}=3.046$ in the radiation bound": the review prints 3.046 (arXiv:1801.04268) [src: Sect. 4.1, inline, text after Eq. 127]; the current Standard-Model value is in `thcosmo-neutrinos-light-relics`.
 - "Homogeneous backreaction gives the oscillatory peaks of axion-inflation spectra": lattice studies find the oscillatory features "smoothed out" (arXiv:2303.17436) [src: abstract].
 - "All Minkowski-space PT simulations transfer to an expanding universe": a 2026 expanding-universe study finds the amplitude "in alignment with Minkowski-spacetime results" but spectra that "differ markedly from those scenarios" (arXiv:2610.14806) [src: abstract].
+- "The radiation bound uses the BBN value of $N_{\rm eff}$ and stops at $10^{-10}$ Hz": the CMB bound extends to "$\sim 10^{-15}$ Hz rather than the $\sim 10^{-10}$ Hz lower limit from BBN" (arXiv:astro-ph/0603144) [src: abstract, inline], and current CMB-SPA with DESI BAO gives the tighter values of arXiv:2507.06930 [src: Table 2]; translating an $N_{\rm eff}$ posterior is exact only for adiabatic initial conditions (arXiv:2507.06930) [src: Sect. 2, inline].
+- "The PTA signal, if cosmological, violates $\Delta N_{\rm eff}$": with the NANOGrav 15-year band "sensitive up to 60 nHz" the contribution is "negligible" (arXiv:2508.15134) [src: abstract].
 
 ## Not verified
 <!-- key: not-verified -->
