@@ -1695,3 +1695,26 @@ no further rebalance before the refresh pass. Slips recorded in the hub's
 recorded: a missing unit in arXiv:1909.12843 (not a physics slip). G2
 sheet over the changed lines: `docs/history/tests/g2/thcosmo-cosmological-gravitational-waves-deepening-2026-11-13.md`
 (seed 1136).
+
+## 2026-11-13 — stage 5 W2, `thcosmo-cosmological-gravitational-waves` deepening, G2: fails
+
+Sheet: `docs/history/tests/g2/thcosmo-cosmological-gravitational-waves-deepening-2026-11-13.md`
+(seed 1136), changed lines only, strict standard. Part 1: the 3 changed
+rows ok. Part 2: 46 ok, 10 wrong. Part 3: 44 ok, 15 wrong. The wrong rows
+come from eight defective lines (a defect marks every item of its line); no
+equation and no number misprinted: places (`formalism.md:37` Maggiore
+defines $S_h$ by Eq. 8, `:50`, `:98` "next sentence", `results.md:15`),
+attributions (`formalism.md:138` bare tags after an inserted clause read as
+the wrong paper; `results.md:13` the sBBN bound is quoted by Boyle &
+Buonanno from their Refs. [71–76]), premises and hedges (`formalism.md:138`
+"It can be argued", `models.md:43` "in a simple scalar field model" and
+"agree with the predictions expected from numerical simulations",
+`results.md:16` "Assuming adiabatic initial conditions" and "using the
+upper limit"). Read by the coordinator: `models.md:43` (arXiv:1905.05724
+abstract) and `results.md:16` (arXiv:2004.11396 Sect. 3.2): wrong as
+reported. Both printed slips of the hub confirmed; the locator of the
+arXiv:0707.0875 slip ("the next sentence") is off, also in
+`stale-claims.md`. The deepening's new lines carry the dropped-qualifier
+pattern of the DE and DM dossiers; as there, a qualifier sweep of the
+changed lines (with the eight items and the side findings) precedes a
+fresh draw.
