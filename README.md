@@ -119,7 +119,7 @@ In build order (plan v2): the pilot, the three domains of milestone 0.2
 | `thcosmo-dark-matter-models` | production mechanisms, candidates, signatures (built) |
 | `thcosmo-neutrinos-light-relics` | N_eff, massive neutrinos, dark radiation (built) |
 | `thcosmo-cosmological-gravitational-waves` | primordial tensors, stochastic backgrounds, propagation (built) |
-| `thcosmo-baryogenesis-phase-transitions` | baryogenesis, leptogenesis, phase transitions, magnetogenesis |
+| `thcosmo-baryogenesis-phase-transitions` | baryogenesis, leptogenesis, phase transitions, magnetogenesis (built) |
 | `thcosmo-pbh-defects` | primordial black holes, cosmic strings and other defects |
 | `thcosmo-cosmological-perturbations` | FLRW background, relativistic perturbations, gauges, ζ, δN, Einstein–Boltzmann hierarchy |
 | `thcosmo-thermal-history` | thermodynamics, freeze-out, BBN theory, recombination |

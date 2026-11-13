@@ -1898,3 +1898,20 @@ credited to arXiv:2009.07294 Sect. III.1: read by the coordinator, ok;
 equations, 152 exact, 50 contained, 0 mismatch; check_shape 0 problems; 158
 tests passed. Fresh draw: `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-2026-11-13-sweep.md`
 (seed 1140), reported as it falls; D36 applies.
+
+## 2026-11-13 — `thcosmo-baryogenesis-phase-transitions` build, G2 after the sweep: closed under D36
+
+Sheet: `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-2026-11-13-sweep.md`
+(seed 1140), reported as it fell. Parts 1–2: 35 rows on changed lines, 34
+ok, 1 wrong. Part 3: 58 ok, 1 wrong, no equation or number error. Both
+errors are places, fixed at source after reading the paper:
+`formalism.md:75` the "Strictly speaking … $P_f=1/e$" quote now carries its
+own tag (text after Eq. 5.49 of arXiv:2305.02357), so it no longer reads as
+placed at Eq. 5.50 of arXiv:1910.13125; `results.md:12` the range
+"$130<T<159$ GeV" and "it can be parametrized as [144]" are text before
+Eq. 27 of arXiv:2009.07294. Residual: 1 in 59 (1.7 %, one-sided 95 % upper
+bound 7.8 %). Side findings judged ok by the reviewer, left as they are.
+Word share unchanged (Bodeker 26.6 %, Athron 19.3 %): the two reviews carry
+the formalism; rebalance in the deepening run after the gap audit. The
+domain is set to **built (W2)** in the hub router and the README; the
+hub's state-of-the-suite paragraph now lists the nine built domains.
