@@ -1742,3 +1742,30 @@ check_numbers and check_equations empty; transcription 450 equations, 341
 exact, 62 contained, 0 mismatch; check_shape 0 problems; 157 tests passed.
 Fresh draw over the changed lines: `docs/history/tests/g2/thcosmo-cosmological-gravitational-waves-deepening-2026-11-13-redraw.md`
 (seed 1137), reported as it falls.
+
+## 2026-11-13 — `thcosmo-cosmological-gravitational-waves` deepening, G2 fresh draw after the sweep: fails
+
+Sheet: `docs/history/tests/g2/thcosmo-cosmological-gravitational-waves-deepening-2026-11-13-redraw.md`
+(seed 1137), reported as it fell. Part 1: 3 changed rows ok. Part 2: 52 ok,
+2 wrong. Part 3: 54 ok, 5 wrong, from two lines (one-sided 95 % bound on
+the line-level rate not computed; per item 8.5 %, upper bound 17 %). No
+equation or number wrong. Three lines, each read by the coordinator in the
+paper and fixed at source:
+- `formalism.md:37`: Maggiore's Eq. 8 holds "For a stochastic background,
+  assumed to be isotropic, unpolarized and stationary" (arXiv:gr-qc/9909001
+  Sect. 2.2); added.
+- `formalism.md:68`: the transfer function of arXiv:astro-ph/0512014
+  incorporates "dark energy with time-varying equation-of-state w(z)";
+  the abstract's three items quoted.
+- `open-questions.md:35`: the bounds of arXiv:2507.06930 are 95 % CL
+  "assuming a uniform prior", and "can become tighter by a factor of" ∼4
+  with a log-uniform prior, "suggesting the results to be prior-sensitive"
+  (abstract); added.
+- Side findings not yet checked: `formalism.md:63` (Eq. 203 "at the lowest
+  order in the slow-roll parameters"), `:91` (the δ tail belongs to Ĩ),
+  `:49` (Eq. 33 from its Ref. [102]), `cosmic-string-spectra.md:57`
+  ("for large tensions" for Gμ ≳ 10⁻⁷), `results.md:26` and
+  `open-questions.md:70` (forecast fiducials).
+G1 after the fixes: check_numbers and check_equations empty; transcription
+450 equations, 341 exact, 62 contained, 0 mismatch; check_shape 0
+problems; 157 tests passed. Closure put to the owner.
