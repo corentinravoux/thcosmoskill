@@ -1809,3 +1809,42 @@ criterion $v/T_c\gtrsim 1.33$; non-zero friction in local thermal
 equilibrium; the vanishing of the leading-order vev-insertion CP source.
 G2 sheet: `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-2026-11-13.md`
 (seed 1138).
+
+## 2026-11-13 — `thcosmo-baryogenesis-phase-transitions` build, G2: fails on wording
+
+Sheet: `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-2026-11-13.md`
+(seed 1138), strict standard. Part 1: 21 ok, 3 wrong. Part 2: 113 ok, 2
+wrong. Part 3: 58 ok, 1 wrong (from one line). No equation and no number
+wrong: the first build under the qualifier pass has the lowest part-3 rate
+of the suite's strict-standard draws. The three findings against textbook
+expectations confirmed (arXiv:2506.04939 abstract, $v/T_c\gtrsim 1.33$;
+arXiv:2305.02357 Eq. 5.63 friction in LTE, and its "leading-log
+approximation underestimates the friction" read from its Refs. [517, 518];
+arXiv:2508.09989 Sect. 3.4.1, the vev-insertion source vanishing "at
+leading order in the gradient expansion"). Fixed at source, each read by
+the coordinator in the paper:
+- `SKILL.md:34`: the review's own $R_{\rm sep}$ is Eq. 5.49 (exponential
+  rate, expansion neglected, "Strictly speaking" at $P_f=1/e$); Eq. 5.50 is
+  its Ref. [10]'s modification (arXiv:2305.02357 Sect. 5.4).
+- `SKILL.md:38`: "For a hierarchical spectrum of right-handed neutrinos"
+  (arXiv:hep-ph/0202239 abstract); "Assuming $\widetilde{m}_{1}=\mathcal{O}(m_{i})$"
+  for Eq. 111 (arXiv:2009.07294).
+- `SKILL.md:41`: decaying MHD with "vanishing velocity field at the initial
+  time"; the helical law "determined by simulations" (arXiv:2010.10525
+  Sect. IV.1).
+- `approximations.md:28`: "not ultra-relativistic" is text before Eq. 5.62.
+- `results.md:24`: the abstract reads "by applying previous lattice
+  results"; quoted.
+- `models.md:35` (part 3): Eq. 113 of arXiv:2009.07294 holds for
+  "$M_{1}/M_{3}\sim 10^{-5}\cdots 10^{-4}$" and "$\kappa_{f}\sim 10^{-2}\cdots 10^{-1}$";
+  the sentence called "not read" quoted whole.
+- Side findings applied: `approximations.md:19` place (text after Eq.
+  5.49); `formalism.md:14`, `:104` the variable is "$z=M/T$" (Sect.
+  IV.3.1). Not yet checked: "paragraph after Fig. 5" (four places, the
+  third paragraph per the reviewer); the tool attached the wrong paper to
+  sheet rows 10, 26, 67 (skill lines correct).
+G1 after the fixes: check_numbers and check_equations empty; transcription
+279 equations, 152 exact, 51 contained, 0 mismatch, 76 unreadable;
+check_shape 0 problems; 158 tests passed. No sweep has run on this skill,
+so D20 applies: fresh draw `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-2026-11-13-redraw.md`
+(seed 1139), part 3 and the rows on changed lines to be re-read.
