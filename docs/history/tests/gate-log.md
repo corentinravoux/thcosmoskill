@@ -1769,3 +1769,18 @@ paper and fixed at source:
 G1 after the fixes: check_numbers and check_equations empty; transcription
 450 equations, 341 exact, 62 contained, 0 mismatch; check_shape 0
 problems; 157 tests passed. Closure put to the owner.
+
+## 2026-11-13 — owner decision D36; `thcosmo-cosmological-gravitational-waves` deepening closed
+
+The owner made the DE/DM closure a standing rule (D36, recorded in
+`docs/plans/2026-10-30-decisions.md` with D35, the strict reading of
+2026-11-12): a fresh draw after one full qualifier sweep that still fails
+on wording only is closed once every error is fixed at source, with the
+residual logged; an equation or number error keeps D20. Applied to the GW
+deepening: last draw (seed 1137) 5 wrong in 59 from two lines, all
+wording, all fixed at source; residual per item 8.5 % (one-sided 95 %
+upper bound 17 %), per defective line lower (the draw has several items on
+a line). The deepening is closed; both subtopics `covered`. Six side
+findings stay listed in the previous entry for the refresh pass.
+`thcosmo-cosmological-gravitational-waves` is complete for W2: built, three
+dossiers, one deepening.

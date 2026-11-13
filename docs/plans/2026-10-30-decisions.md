@@ -71,3 +71,10 @@ window.
 | D32 | Caches | ★ separate verify caches; maintainers may read cosmoskill's paper-HTML cache read-only · fully separate · shared | the paper cache is what made cosmoskill's dossiers cheap |
 | D33 | Git flow | ★ as cosmoskill: commit to `main`, push, no tags from Claude · branches per stage | same owner, same tooling |
 | D34 | Icon | ★ last, theory image in cosmoskill's ring style · now | not needed before release |
+
+## F. Amendments by the owner
+
+| # | Decision | Date | Rule |
+|---|---|---|---|
+| D35 | Strict reading of hedges at G2 and G3 | 2026-11-12 | a dropped hedge, modal, condition, premise, range or scope, a wrong place or a wrong attribution counts as an error in the draw, as a wrong equation or number does |
+| D36 | Closing a gate that fails on wording only | 2026-11-13 | when a fresh draw taken after one full qualifier sweep of the lines under review still fails, and every error of that draw is wording (no equation and no number wrong), the coordinator fixes each error at source after reading the paper, logs the measured residual (point estimate and one-sided 95 % bound) and closes the gate; an equation or number error still requires the fix, the pattern search and a fresh draw (D20) |
