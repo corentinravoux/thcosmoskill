@@ -1848,3 +1848,29 @@ G1 after the fixes: check_numbers and check_equations empty; transcription
 check_shape 0 problems; 158 tests passed. No sweep has run on this skill,
 so D20 applies: fresh draw `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-2026-11-13-redraw.md`
 (seed 1139), part 3 and the rows on changed lines to be re-read.
+
+## 2026-11-13 — `thcosmo-baryogenesis-phase-transitions` build, G2 fresh draw: fails on wording
+
+Sheet: `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-2026-11-13-redraw.md`
+(seed 1139), reported as it fell. Parts 1–2: the 9 rows on fixed lines,
+8 ok, 1 wrong. Part 3: 54 ok, 5 wrong (four lines), no equation or number
+error. Two fixes of the first draw were incomplete: `SKILL.md:38` still
+lacked the premises of the Davidson–Ibarra bound, and the coordinator's
+place fix of `approximations.md:19` moved the error (the "caution" quotes
+are in the paragraph after Eq. 5.50). Fixed at source, read by the
+coordinator in the paper:
+- `SKILL.md:38`: $m_{\nu_3}=\sqrt{\Delta m^2_{\rm atm}}$, thermal ν_R,
+  $T_{\rm reh}>M_{\nu_R}>10^8$ GeV, and the $10^9$ GeV from "Reasonable
+  estimates … as made by Buchmuller and Plumacher" (arXiv:hep-ph/0202239
+  abstract); the bare tag of Eq. 111's premise now names arXiv:2009.07294.
+- `approximations.md:19`: both places given.
+- `approximations.md:68`: lepton chemical potentials family-independent
+  "For simplicity" (arXiv:2009.07294 Sect. II.3).
+- `models.md:121`: Eq. 35 adopted "at least for a short time" as "a simple
+  power law in conformal time" (arXiv:1303.7121 Sect. 3.1.1).
+- Passed to the sweep, not yet checked: `models.md:114` (assumptions of the
+  random-walk estimate $E_M\sim k^3$); side findings `formalism.md:35`,
+  `:122`, "paragraph after Fig. 5" in four places.
+G1 after the fixes: check_numbers and check_equations empty; transcription
+280 equations, 152 exact, 51 contained, 0 mismatch; check_shape 0 problems;
+158 tests passed. D36 path: one full qualifier sweep, then a fresh draw.
