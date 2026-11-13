@@ -1718,3 +1718,27 @@ arXiv:0707.0875 slip ("the next sentence") is off, also in
 pattern of the DE and DM dossiers; as there, a qualifier sweep of the
 changed lines (with the eight items and the side findings) precedes a
 fresh draw.
+
+## 2026-11-13 — `thcosmo-cosmological-gravitational-waves` deepening: qualifier sweep
+
+One agent read every added or changed line whole (about 176, and the
+2026-11-13 row of the hub's `stale-claims.md`; about 65 research calls).
+The eight items of the G2 sheet were all as reported and are fixed (places,
+attributions, premises, hedges; `formalism.md:138` Eqs. 381 and 383 now
+carry arXiv:1801.04268; the arXiv:0707.0875 slip locator now names the
+sentence). Side findings fixed (`formalism.md:95` the no-go theorem quoted
+whole with "at first order in the gravitational coupling"; `:90–91` the
+priority claim replaced, Eqs. 296 and 299 sourced to the review's Ref.
+[401] = arXiv:1707.04533; `:63`; `open-questions.md:36`;
+`approximations.md:85`; SKILL.md 67–68; dossier snapshots set to
+2026-11-13). Further errors found: `results.md:104` "saturates N_eff
+bounds" not in the paper, now "generically contribute significantly"
+(arXiv:1909.12843 abstract, read by the coordinator: verbatim);
+`approximations.md:76` a quote made verbatim; `:86`; `models.md:60`, `:62`
+"Under certain conditions"; `models.md:49` place; `results.md:47`
+"preliminary estimates"; `formalism.md:100` credit; three bare
+`[src: References]` tags moved. G1: verify_sources 108, 0 problems;
+check_numbers and check_equations empty; transcription 450 equations, 341
+exact, 62 contained, 0 mismatch; check_shape 0 problems; 157 tests passed.
+Fresh draw over the changed lines: `docs/history/tests/g2/thcosmo-cosmological-gravitational-waves-deepening-2026-11-13-redraw.md`
+(seed 1137), reported as it falls.

@@ -33,8 +33,8 @@ Snapshot: 2026-11-12
 <!-- key: which-initial-conditions-does-the-cmb-bound -->
 
 - The bound is stronger for homogeneous than for adiabatic initial conditions: $\Omega_{\textnormal{gw}}h^{2}<2.9\times 10^{-7}$ against $1.7\times 10^{-6}$ with Planck 2018 (Clarke, Copeland & Moss 2020, arXiv:2004.11396) [src: Eqs. 14–15], and $<0.27$ against $<1.04$ in units of $10^{-6}$ with CMB-SPA and DESI BAO in ΛCDM (Wang & Zhao 2025, arXiv:2507.06930) [src: Table 2]. <!-- num: not a value -->
-- For inflationary waves, "in linear theory, there should be no primordial perturbation to the CGWB amplitude", so the homogeneous case applies; for post-inflationary sources Smith et al. write only "perhaps some post-inflation phase-transition mechanism" (arXiv:astro-ph/0603144) [src: text before Fig. 2]. Among the sources read, no paper computes the initial density perturbation of the GW gas for a specific post-inflationary source (preheating, a phase transition, strings); a bound quoted for such a source should state which case it assumes. `[der]`
-- The homogeneous mode itself was revised: the one of arXiv:2004.11396 "differs from the one quoted in [33] and consequently the one used in [19]" (arXiv:2004.11396) [src: Sect. 4.1], where [19] is arXiv:astro-ph/0603144 and [33] a 2008 PhD thesis [src: References].
+- For inflationary waves, "in linear theory, there should be no primordial perturbation to the CGWB amplitude", so the homogeneous case applies; for post-inflationary sources Smith et al. write only "perhaps some post-inflation phase-transition mechanism" (arXiv:astro-ph/0603144) [src: text before Fig. 2]. Clarke et al. go further, without a calculation of their own: "most known sources of a cosmological gravitational wave background, including quantum fluctuations during inflation, reheating and cosmic strings produce an unperturbed background (see [3] section 4.1 or [18] section 22.7.2)", [18] being Maggiore's 2018 textbook (arXiv:2004.11396) [src: Sect. 2.2; References]. Among the sources read, no paper computes the initial density perturbation of the GW gas for a specific post-inflationary source (preheating, a phase transition, strings); a bound quoted for such a source should state which case it assumes. `[der]`
+- The homogeneous mode itself was revised: the one of arXiv:2004.11396 "differs from the one quoted in [33] and consequently the one used in [19]" (arXiv:2004.11396) [src: Sect. 4.1], where, in its reference list [src: References], [19] is arXiv:astro-ph/0603144 and [33] a 2008 PhD thesis of T. L. Smith.
 
 ### Do oscillons source a strong gravitational-wave peak?
 <!-- key: do-oscillons-source-a-strong-gravitational-wave -->
@@ -46,7 +46,7 @@ Snapshot: 2026-11-12
 ### Classical simulation or quantum calculation at weak resonance?
 <!-- key: classical-simulation-or-quantum-calculation-at -->
 
-- The in-in calculation agrees with simulations where resonance is effective and stays applicable "At sufficiently low values of the resonance parameter", where "numerical simulations fail" (Armendariz-Picon 2019, arXiv:1905.05724) [src: abstract]; it neglects backreaction [src: abstract]. No comparison through the backreaction stage was found among the sources read. `[der]`
+- The in-in calculation, a numerical estimate "in a simple scalar field model, neglecting backreaction", agrees "with the predictions expected from numerical simulations" "In the cases in which parametric resonance is effective" and stays applicable "At sufficiently low values of the resonance parameter", where "numerical simulations fail" (Armendariz-Picon 2019, arXiv:1905.05724) [src: abstract]. No comparison through the backreaction stage was found among the sources read. `[der]`
 
 ## Unresolved calculations
 <!-- key: unresolved-calculations -->

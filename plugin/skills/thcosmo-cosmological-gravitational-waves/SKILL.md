@@ -64,8 +64,8 @@ an equation or a number enters a manuscript.
 - Quoting a $G\mu$ bound without its loop model; or quoting a PTA fit as evidence for new physics (arXiv:2306.16219) [src: abstract].
 - Applying the radiation bound to a narrow peak or to super-horizon modes (arXiv:1801.04268) [src: Sect. 4.1, text after Eq. 130].
 - Copying printed slips: the exponent after Eq. 230 of arXiv:1801.04268 is printed as a product, $\dot l$ before its Eq. 380 lacks μ, Eq. 116 of arXiv:2401.04388 has limits from ∞ to ∞, and Eq. 61 of arXiv:1807.09241 squares $(1+\cos\iota)$ (see `formalism.md`, `approximations.md`). <!-- num: not a value -->
-- Translating an $N_{\rm eff}$ posterior into a GW bound for inflationary waves: the translation holds for adiabatic initial conditions only, and "the effect of gravitational waves can not be absorbed into $N_{\rm eff}$" otherwise (arXiv:2507.06930) [src: Sect. 2].
-- Citing the growing high-frequency oscillon peak of the hill-top model of arXiv:1607.01314: it "is a numerical artifact" (arXiv:1803.08047) [src: abstract].
+- Translating an $N_{\rm eff}$ posterior into a GW bound for inflationary waves, for which "in linear theory, there should be no primordial perturbation to the CGWB amplitude" (arXiv:astro-ph/0603144) [src: text before Fig. 2]: the translation holds for adiabatic initial conditions only, and "the effect of gravitational waves can not be absorbed into $N_{\rm eff}$" otherwise (arXiv:2507.06930) [src: Sect. 2].
+- Citing the "dominant, growing high frequency peak" of the oscillon signal in the fiducial "hill-top model" of arXiv:1607.01314: it "is a numerical artifact" (arXiv:1803.08047) [src: abstract].
 - Treating the speed of tensors here: its constraints on theories are in `thcosmo-modified-gravity`.
 
 ## Related skills
@@ -92,7 +92,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 5k; approximations 7k; formalism 17k; models 7k; open 4k; results 7k; deep/cosmic-string-spectra 9k; deep/phase-transition-spectra 10k; deep/scalar-induced-kernels 8k.
+Sizes, in thousands of tokens: L1 5k; approximations 7k; formalism 17k; models 8k; open 4k; results 7k; deep/cosmic-string-spectra 9k; deep/phase-transition-spectra 10k; deep/scalar-induced-kernels 8k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.

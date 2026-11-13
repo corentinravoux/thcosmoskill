@@ -1,7 +1,7 @@
 # Cosmic-string spectra — thcosmo-cosmological-gravitational-waves dossier
 
 Scope: how the background of a Nambu–Goto string network is assembled from a loop number density and a power per loop, how the one-scale (VOS) and the two simulation-based loop densities differ, how cusps, kinks and harmonics enter, what field-theory simulations change, and how pulsar-timing fits depend on these choices.
-Snapshot: 2026-11-10.
+Snapshot: 2026-11-13.
 From: Caprini & Figueroa arXiv:1801.04268, Sect. 9; Roshan & White arXiv:2401.04388, Sect. IV — `references/subtopics.tsv`, row `defect-spectra`.
 Audit questions: (2) How is the spectrum of a cosmic-string network computed: loop number density (one-scale, VOS, simulations), emission per loop (cusps, kinks, harmonics), Nambu–Goto against field-theory loops, and how do the fits to the PTA signal depend on these choices?
 

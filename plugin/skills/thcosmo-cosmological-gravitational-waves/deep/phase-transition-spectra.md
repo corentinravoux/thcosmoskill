@@ -1,7 +1,7 @@
 # Phase-transition spectra — thcosmo-cosmological-gravitational-waves dossier
 
 Scope: how the sound-wave spectrum of a first-order transition is derived in the sound-shell model and how it compares with lattice and Higgsless fits, where the source-lifetime suppression factor comes from and when it fails, how the turbulence part is modelled, and why the LISA template of 2024 differs from that of 2019.
-Snapshot: 2026-11-10.
+Snapshot: 2026-11-13.
 From: Caprini & Figueroa arXiv:1801.04268, Sect. 8; Roshan & White arXiv:2401.04388, Sect. III; Caprini et al. arXiv:1910.13125, Sects. 2–3 — `references/subtopics.tsv`, row `phase-transition-spectra`.
 Audit questions: (1) How are the gravitational-wave spectra of a first-order phase transition derived: sound-shell model against lattice fits, the suppression for short-lived sound waves, the turbulence part, and what changed between the LISA templates of arXiv:1910.13125 and arXiv:2403.03723?
 
