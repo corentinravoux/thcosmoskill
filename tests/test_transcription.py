@@ -103,6 +103,14 @@ class TranscriptionTest(unittest.TestCase):
         self.assertEqual(latex_norm.normalise(r"{\bf q}_{1}\hskip 18.49988pt\,"), latex_norm.normalise(r"\mathbf{q}_1"))
         self.assertEqual(latex_norm.normalise(r"\displaystyle\dfrac{a}{b}."), latex_norm.normalise(r"\frac{a}{b}"))
         self.assertNotEqual(latex_norm.normalise(r"\frac{5}{7}"), latex_norm.normalise(r"\frac{3}{7}"))
+        self.assertEqual(latex_norm.normalise(r"G_{\mspace{-2mu}\mathrm{N}}=c=1"), latex_norm.normalise(r"G_{\mathrm{N}}=c=1"))
+        self.assertEqual(latex_norm.normalise(r"q\rightarrow\infty"), latex_norm.normalise(r"q\to\infty"))
+        self.assertNotEqual(latex_norm.normalise(r"\rightarrowtail"), latex_norm.normalise(r"\totail"))
+
+    def test_section_prefixed_labels(self):
+        # Reviews number equations by section in Roman numerals: (II.19), (III.7), (II.25b).
+        self.assertEqual(check_transcription.labels("[src: Eq. II.19; Eqs. III.6, II.25b]"), ["II.19", "III.6", "II.25b"])
+        self.assertEqual(check_transcription.labels("[src: Eq. A.3]"), ["A.3"])
 
 
 if __name__ == "__main__":

@@ -59,7 +59,7 @@ sys.path.insert(0, str(ROOT / SKILLS / "theoretical-cosmology" / "scripts"))
 import fetch_paper  # noqa: E402
 
 REPORTS = ROOT / "docs" / "history" / "tests" / "transcription"
-LABEL = r"\(?([A-Z]?\.?\d+(?:\.\d+)*[a-z]?)\)?"
+LABEL = r"\(?((?:[A-Z]{1,4}\.)?[A-Z]?\.?\d+(?:\.\d+)*[a-z]?)\)?"
 EQ_REF = re.compile(rf"\bEq(?:s|uations?)?\.?\s*{LABEL}(?:\s*(?:[–\-]|to|and|,)\s*{LABEL})?")
 ROW_NUMBER = re.compile(r"\|\s*\(([A-Z]?\.?\d+(?:\.\d+)*[a-z]?)\)\s*$")
 ARXIV = re.compile(r"arXiv:\s?(\d{4}\.\d{4,5}|[a-z][a-z\-]+(?:\.[A-Z]{2})?/\d{7})", re.I)

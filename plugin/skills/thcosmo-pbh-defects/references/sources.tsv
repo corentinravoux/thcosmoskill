@@ -1,0 +1,60 @@
+key	id	version	first_author	year	title	role
+Escriva2022	2211.05767	v5	Escrivà	2022	Primordial Black Holes	review
+Carr2020	2002.12778	v2	Carr	2020	Constraints on Primordial Black Holes	review
+Harada2013	1309.4201	v4	Harada	2013	Threshold of primordial black hole formation	foundation
+Escriva2019	1907.13311	v3	Escrivà	2019	A universal threshold for primordial black hole formation	foundation
+Escriva2020	2007.05564	v2	Escrivà	2020	Analytical thresholds for black hole formation in general cosmological backgrounds	results
+Musco2018	1809.02127	v3	Musco	2018	Threshold for primordial black holes: Dependence on the shape of the cosmological perturbations	critique
+Evans1994	gr-qc/9402041	v1	Evans	1994	Observation of critical phenomena and self-similarity in the gravitational collapse of radiation fluid	foundation
+Niemeyer1997	astro-ph/9709072	v2	Niemeyer	1997	Near-Critical Gravitational Collapse and the Initial Mass Function of Primordial Black Holes	foundation
+Shibata1999	gr-qc/9905064	v1	Shibata	1999	Black hole formation in the Friedmann universe: Formulation and computation in numerical relativity	foundation
+Ning2026	2608.13206	v3	Ning	2026	Long-term 3+1 simulations of primordial black hole formation during radiation domination	results
+Escriva2026	2609.03051	v1	Escrivà	2026	Beyond isolated curvature peaks: collective collapse and multiple Primordial Black Hole formation	results
+Yoo2026	2609.14218	v1	Yoo	2026	Simulation of PBH formation in a matter-dominated universe	results
+Padilla2026	2608.21834	v1	Padilla	2026	Discrete self-similarity imprints on primordial-black-hole mass functions	results
+Yoo2018	1805.03946	v7	Yoo	2018	PBH abundance from random Gaussian curvature perturbations and a local density threshold	method
+Young2014	1405.7023	v4	Young	2014	Calculating the mass spectrum of primordial black holes	critique
+DeLuca2019	1904.00970	v2	De Luca	2019	The Ineludible non-Gaussianity of the Primordial Black Hole Abundance	results
+Young2019	1904.00984	v2	Young	2019	Primordial black hole formation and abundance: contribution from the non-linear relation between the density and curvature perturbation	results
+Ferrante2022	2211.01728	v2	Ferrante	2022	Primordial non-gaussianity up to all orders: theoretical aspects and implications for primordial black hole models	method
+Germani2018	1805.04087	v4	Germani	2018	The abundance of primordial black holes depends on the shape of the inflationary power spectrum	results
+Kushwaha2026	2603.23025	v2	Kushwaha	2026	Revisiting Constraints on Primordial Curvature Power Spectrum from PBH Abundances	critique
+Kushwaha2025	2509.25871	v3	Kushwaha	2025	Excursion Set Approach to Primordial Black Holes: Cloud-in-Cloud and Mass Function Revisited	critique
+Raatikainen2025	2510.09303	v2	Raatikainen	2025	Effect of stochastic kicks on primordial black hole abundance and mass via the compaction function	results
+Ye2025	2508.10070	v1	Ye	2025	Primordial Black Hole Formation and Spin in Matter Domination Revisited	results
+AliHaimoud2018	1805.05912	v3	Ali-Haïmoud	2018	Correlation function of high-threshold regions and application to the initial small-scale clustering of primordial black holes	foundation
+Desjacques2018	1806.10414	v3	Desjacques	2018	The Spatial Clustering of Primordial Black Holes	foundation
+Ishijima2026	2609.11306	v3	Ishijima	2026	Initial clustering of primordial black holes: A general formulation for arbitrary local non-Gaussianity	results
+Cole2025	2509.14326	v1	Cole	2025	pbhstat: A Python package for calculating the primordial black hole abundance	code
+Arbey2019	1905.04268	v3	Arbey	2019	BlackHawk v2.0: A public code for calculating the Hawking evaporation spectra of any black hole distribution	code
+Dvali2020	2006.00011	v3	Dvali	2020	Black Hole Metamorphosis and Stabilization by Memory Burden	foundation
+Alexandre2024	2402.14069	v1	Alexandre	2024	New Mass Window for Primordial Black Holes as Dark Matter from Memory Burden Effect	results
+Thoss2024	2402.17823	v2	Thoss	2024	Breakdown of Hawking Evaporation opens new Mass Window for Primordial Black Holes as Dark Matter Candidate	results
+Zhang2026	2606.04707	v1	Zhang	2026	BBN constraints on primordial black holes with a continuous memory-burden crossover	critique
+Liu2021	2106.05637	v3	Liu	2021	Primordial black hole production during first-order phase transitions	model
+Lewicki2023	2305.04924	v2	Lewicki	2023	Primordial black holes from strong first-order phase transitions	model
+Kierkla2025	2506.15496	v2	Kierkla	2025	Thermodynamical uncertainties for primordial black holes from cosmological phase transitions	critique
+Ning2026b	2601.21878	v2	Ning	2026	Numerical simulations of primordial black hole formation via delayed first-order phase transitions	results
+Wang2026	2601.14412	v2	Wang	2026	How large are curvature perturbations from slow first-order phase transitions? A gauge-invariant analysis	critique
+Ai2026	2605.11332	v3	Ai	2026	Reviving primordial black hole formation in slow first-order phase transitions	results
+Banerjee2025	2512.22989	v1	Banerjee	2025	Mini-review on the production of Primordial Black Holes from First-Order Phase Transitions in the Early Universe	review
+Copeland2009	0911.1345	v3	Copeland	2009	Cosmic Strings and Superstrings	review
+Hindmarsh2017	1703.06696	v3	Hindmarsh	2017	Scaling from gauge and scalar radiation in Abelian Higgs string networks	critique
+Hindmarsh2021	2103.16248	v1	Hindmarsh	2021	Loop decay in Abelian-Higgs string networks	critique
+Jackson2004	hep-th/0405229	v2	Jackson	2004	Collisions of Cosmic F- and D-strings	foundation
+Planck2013	1303.5085	v1	Planck Collaboration	2013	Planck 2013 results. XXV. Searches for cosmic strings and other topological defects	constraint
+Buchmuller2023	2307.04691	v3	Buchmuller	2023	Metastable cosmic strings	review
+Miranda2026	2603.23619	v1	Miranda	2026	A velocity-dependent two-scale model for cosmic string networks with small-scale structure	results
+Kim2024	2411.08455	v2	Kim	2024	More Scalings from Cosmic Strings	results
+Gorghetto2018	1806.04677	v1	Gorghetto	2018	Axions from Strings: the Attractive Solution	results
+Saikawa2017	1703.02576	v2	Saikawa	2017	A review of gravitational waves from cosmic domain walls	review
+Dankovsky2025	2509.25367	v2	Dankovsky	2025	Cosmic domain walls on a lattice: illusive effects of initial conditions	critique
+Dankovsky2026	2607.28214	v1	Dankovsky	2026	Domain walls through different cosmologies	results
+Barbini2026	2607.18107	v1	Barbini	2026	Biased Domain Wall Networks and their Gravitational Waves	results
+BlancoPillado2026	2605.22974	v1	Blanco-Pillado	2026	Cuspidal Singularities in Collapsing Domain Walls	results
+Hindmarsh2025	2511.14204	v1	Hindmarsh	2025	Numerical simulations of magnetic monopole evolution in an expanding universe	results
+Patel2021	2108.05357	v5	Patel	2021	Kibble mechanism for electroweak magnetic monopoles and magnetic fields	results
+Hamada2026	2606.12874	v2	Hamada	2026	A simple solution to the monopole problem: SU(5) GUT with symmetry breaking into special subgroup	model
+Kristiano2022	2211.03395	v3	Kristiano	2022	Constraining Primordial Black Hole Formation from Single-Field Inflation	critique
+Riotto2023	2301.00599	v1	Riotto	2023	The Primordial Black Hole Formation from Single-Field Inflation is Not Ruled Out	critique
+Sasaki2018	1801.05235	v1	Sasaki	2018	Primordial Black Holes - Perspectives in Gravitational Wave Astronomy -	review

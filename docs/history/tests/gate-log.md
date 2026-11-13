@@ -1915,3 +1915,40 @@ Word share unchanged (Bodeker 26.6 %, Athron 19.3 %): the two reviews carry
 the formalism; rebalance in the deepening run after the gap audit. The
 domain is set to **built (W2)** in the hub router and the README; the
 hub's state-of-the-suite paragraph now lists the nine built domains.
+
+## 2026-11-13 — stage 5 W2, `thcosmo-pbh-defects` build, G1: passed
+
+Second build under the mandatory qualifier pass (the agent reports about
+300 attributed statements checked, about 47 changed). 59 sources, 11
+subtopics; SKILL.md 125 lines, formalism 159, models 128, results 149,
+approximations 99, open-questions 78. Thin: clustering and spin; global
+strings, monopoles and textures. Not read: thermal-history and QCD-epoch
+thresholds, the compaction-function definition (Eq. II.18 missing from the
+HTML of arXiv:2211.05767), Carr 1975, Hawking's papers.
+Tool fixes found by this build:
+- `check_transcription.py` read equation labels with one capital only
+  (`A.3`); reviews that number by section in Roman numerals (`II.19`,
+  `III.7`, `II.25b`) were all `unreadable`. The label pattern now takes a
+  section prefix (test added). Effect: `thcosmo-pbh-defects` 71 → 108
+  exact; no other skill changed class except as below. The agent had
+  checked those 31 equations with its own script and called them all
+  matching; the tool found 8 mismatches.
+- Seven were normalisation gaps: `\mspace{…}` (spacing) and `\rightarrow`
+  = `\to` (one macro, two names) now normalised in `latex_norm.py` (tests
+  added; `thcosmo-inflation` gains two exact).
+- One was a real error: `results.md:15` printed a profile
+  $\zeta(\tilde r)=\mu\exp[-(r/r_{\mathrm m})^{2p}]$ that arXiv:2211.05767
+  does not print (it quotes "different profiles in $\zeta(\tilde{r})$" from
+  its Ref. [81]); an equation of the agent's own making, removed and
+  replaced by the paper's words. Also `formalism.md:14` ($p=w\rho$ is text
+  before Eq. II.1, "with constant parameter $w$").
+G1 after the fixes: verify_sources 59, 0 problems; check_numbers and
+check_equations empty; transcription 231 equations, 108 exact, 23
+contained, 0 mismatch, 100 unreadable; places 17, 11 found-at-place, 1
+found-elsewhere, 5 unreadable; check_shape 0 problems; 158 tests passed.
+Word share: Escrivà 25.6 % flagged (the review arXiv:2211.05767 carries the
+formation formalism), Copeland 9.8 %, Carr 8.3 %; rebalance at the
+deepening. Two printed slips the build reads in its own notation (`[der]`:
+arXiv:2211.05767 Eqs. III.6–III.7, arXiv:2002.12778 Eq. 4) go to G2 before
+the hub's `stale-claims.md`. G2 sheet:
+`docs/history/tests/g2/thcosmo-pbh-defects-2026-11-13.md` (seed 1141).

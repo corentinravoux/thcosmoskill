@@ -10,7 +10,8 @@ differences between how a paper's LaTeX is printed by arXiv's HTML rendering
 (LaTeXML) and how it is copied into a skill file:
 
 - spacing commands and their dimensions (`\\,`, `\\;`, `\\!`, `\\quad`,
-  `\\hskip 18.49988pt`, `\\kern`, `\\mskip`, `\\hspace{...}`);
+  `\\hskip 18.49988pt`, `\\kern`, `\\mskip`, `\\hspace{...}`, `\\mspace{...}`);
+- one macro and its alias: `\\rightarrow` = `\\to`;
 - style commands (`\\displaystyle`, `\\textstyle`), sizing (`\\left`, `\\right`,
   `\\big`, `\\Big`, `\\bigl`, ...);
 - font-command style: `{\\bf x}` = `\\mathbf{x}`, `{\\rm x}` = `\\mathrm{x}`,
@@ -28,7 +29,7 @@ import re
 # Display math first, then inline: `$$...$$`, `\[...\]`, `$...$` (not an escaped dollar).
 MATH = re.compile(r"\$\$(.+?)\$\$|\\\[(.+?)\\\]|(?<![\\$])\$(?!\$)([^$]+?)(?<!\\)\$", re.S)
 SPACING = re.compile(r"\\(?:hskip|kern|mskip|mkern|vskip)\s*-?[\d.]+\s*(?:pt|em|ex|mu|mm|cm|in)?"
-                     r"|\\h?space\*?\{[^}]*\}|\\(?:quad|qquad|,|;|:|!|\s)|(?<!\\)~")
+                     r"|\\(?:h|m)?space\*?\{[^}]*\}|\\(?:quad|qquad|,|;|:|!|\s)|(?<!\\)~")
 # Wrappers and alignment that do not change what an equation says (P0 probe, B9).
 ENVIRONMENT = re.compile(r"\\(?:begin|end)\{(?:aligned|split|gathered|align\*?|equation\*?|eqnarray\*?)\}(?:\[[a-z]\])?")
 ALIGNMENT = re.compile(r"(?<!\\)&|\\\\(?:\[[^\]]*\])?")
@@ -148,6 +149,7 @@ def normalise(latex: str) -> str:
                              "sf": r"\mathsf", "tt": r"\mathtt"}[m.group(1)] + "{" + m.group(2).strip() + "}", text)
     text = re.sub(r"\\boldsymbol(?![A-Za-z])", r"\\mathbf", text)
     text = re.sub(r"\\[dt]frac(?![A-Za-z])", r"\\frac", text)
+    text = re.sub(r"\\rightarrow(?![A-Za-z])", r"\\to", text)
     text = re.sub(r"\s+", "", text)
     # one token in braces after _ or ^: F_{2} -> F_2, k^{3} -> k^3
     text = re.sub(r"([_^])\{([A-Za-z0-9]|\\[A-Za-z]+)\}", r"\1\2", text)
