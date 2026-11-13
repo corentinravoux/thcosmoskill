@@ -1784,3 +1784,28 @@ a line). The deepening is closed; both subtopics `covered`. Six side
 findings stay listed in the previous entry for the refresh pass.
 `thcosmo-cosmological-gravitational-waves` is complete for W2: built, three
 dossiers, one deepening.
+
+## 2026-11-13 — stage 5 W2, `thcosmo-baryogenesis-phase-transitions` build, G1: passed
+
+First build under the mandatory qualifier pass (the agent reports about
+250 attributed statements checked, about 100 changed). 49 sources; files
+SKILL.md 126 lines, formalism 150, models 147, results 79, approximations
+88, open-questions 75. Thin: Affleck–Dine and other mechanisms. Pre-arXiv
+foundations (Sakharov, Coleman, Linde, Kuzmin–Rubakov–Shaposhnikov,
+Affleck–Dine, Fukugita–Yanagida) cited through reviews (rule 6). G1:
+verify_sources 49, 0 problems; check_numbers and check_equations empty;
+transcription 274 equations, 151 exact, 50 contained, 0 mismatch, 73
+unreadable; places 9, 4 found-at-place, 5 unreadable; check_shape 0
+problems; 5 `eq: notation` escapes (SKILL 2, formalism 2, models 1); 158
+tests passed. Word share: Bodeker 26.5 % and Athron 19.4 % flagged (the
+review of Bodeker & Buchmüller and the bubble-dynamics review of Athron et
+al. carry the formalism); rebalance to be done in the deepening run.
+Tool fix: `verify_sources.py` cut DOIs at the first parenthesis
+(Elsevier DOIs such as 10.1016/0550-3213(83)90072-X), so the agent had
+percent-encoded four of them; the pattern now keeps balanced parentheses
+(test added) and the four DOIs are restored. Findings the build reports
+against textbook expectations, for G2 to confirm: the 2025 lattice washout
+criterion $v/T_c\gtrsim 1.33$; non-zero friction in local thermal
+equilibrium; the vanishing of the leading-order vev-insertion CP source.
+G2 sheet: `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-2026-11-13.md`
+(seed 1138).

@@ -60,7 +60,9 @@ CACHE = Path(os.environ.get("XDG_CACHE_HOME", Path.home() / ".cache")) / "thcosm
 NEW_ID = r"\d{4}\.\d{4,5}"
 OLD_ID = r"[a-z][a-z\-]+(?:\.[A-Z]{2})?/\d{7}"
 ARXIV_CITE = re.compile(rf"arXiv:\s?({NEW_ID}|{OLD_ID})", re.IGNORECASE)
-DOI_CITE = re.compile(r"doi:\s?(10\.\d{4,9}/[^\s,;)\]>|`]+)", re.IGNORECASE)
+# Balanced parentheses belong to the DOI (Elsevier: 10.1016/0550-3213(83)90072-X);
+# an unbalanced closing one ends a citation written "(doi:...)".
+DOI_CITE = re.compile(r"doi:\s?(10\.\d{4,9}/(?:[^\s,;()\]>|`]|\([^\s()]*\))+)", re.IGNORECASE)
 ARXIV_ID = re.compile(rf"^(?:{NEW_ID}|{OLD_ID})$")
 
 

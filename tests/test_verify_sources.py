@@ -93,5 +93,18 @@ class CheckerTest(unittest.TestCase):
         self.assertIn("role 'misc'", result.stdout)
 
 
+class DoiPatternTest(unittest.TestCase):
+    def test_balanced_parentheses_belong_to_the_doi(self):
+        sys.path.insert(0, str(CHECKER.parent))
+        import verify_sources
+        cases = {
+            "(Linde 1983, doi:10.1016/0550-3213(83)90072-X)": "10.1016/0550-3213(83)90072-X",
+            "see doi:10.1016/0370-2693(85)91028-7, and": "10.1016/0370-2693(85)91028-7",
+            "(doi:10.1103/PhysRevD.1.2)": "10.1103/PhysRevD.1.2",
+        }
+        for text, doi in cases.items():
+            self.assertEqual(verify_sources.DOI_CITE.search(text).group(1), doi)
+
+
 if __name__ == "__main__":
     unittest.main()
