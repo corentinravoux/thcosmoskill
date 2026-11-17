@@ -2093,3 +2093,25 @@ the CP-parity split is Eq. 11 of arXiv:2001.00568; `bubble:41`, `:57`;
 `stale-claims.md` (arXiv:hep-ph/0401240 v1 Eq. 3; arXiv:0802.2962 v3 Sect.
 5.2). D36 path: one full qualifier sweep of the three dossiers, then a
 fresh draw.
+
+## 2026-11-17 — `thcosmo-baryogenesis-phase-transitions` dossiers: qualifier sweep
+
+One agent read every attributed statement of the three dossiers (about
+230; about 200 re-read at the place named, about 30 on the strength of the
+G3 sheet's reads of the same day; about 58 research calls) and changed 36,
+all wording: the 7 G3 items and 5 side findings as reported, with one
+refinement (`bubble:108` arXiv:2204.13120 attributes the linearisation
+cause to its Ref. [54], Dorsch, Huber & Konstandin); credits to the
+references of reviews (`bubble:24`, `:55`; `ewbg:26`, `:46`, `:55`);
+modals and hedges ("should be cut off", "it can generate", "we expect",
+"may distinguish", "This suggests"); premises and ranges ("Using a standard
+one-loop approximation", "depending on initial conditions", "within the
+intermediate parametric region"); `ewbg:31` place Eq. 11 of
+arXiv:2001.00568; `ewbg:109`, `:112`, `:125` now say exactly what of each
+paper was read (the `num: not a value` marker at `:125` read by the
+coordinator: equation labels and years only). G1: verify_sources 82, 0
+problems; check_numbers and check_equations empty; transcription 463
+equations, 273 exact, 84 contained, 0 mismatch; check_shape 0 problems;
+159 tests passed. Fresh draw:
+`docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-dossiers-2026-11-17-sweep.md`
+(seed 1144), reported as it falls; D36 applies.
