@@ -2143,3 +2143,12 @@ dossiers added to the file map of `SKILL.md` and the `files` column of
 `subtopics.tsv` (bubble-walls, electroweak-baryogenesis, leptogenesis).
 `thcosmo-baryogenesis-phase-transitions` gap-audit dossiers closed; the
 Affleck–Dine deepening (with rebalance) stays queued.
+
+## 2026-11-17 — stage 5 W2, `thcosmo-pbh-defects` gap audit
+
+`docs/history/tests/gap-audit/thcosmo-pbh-defects.md`: ten questions;
+three dossiers (collapse threshold, abundance statistics, domain-wall
+networks); one deepening run (clustering and spin; global strings,
+monopoles and textures) that also rebalances the Escrivà share. The
+GW-side and inflation-side dossiers already cover the string spectra,
+scalar-induced waves and the stochastic tail.
