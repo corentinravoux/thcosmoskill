@@ -9,7 +9,7 @@ Snapshot: 2026-11-13
 
 ### Is the collapse threshold universal?
 <!-- key: is-the-collapse-threshold-universal -->
-- For: the threshold "is, to an excellent approximation, universal, whenever given in terms of the compaction function averaged over a sphere of radius $r_m$" (arXiv:1907.13311) [src: abstract], a property that "generalizes to all $w\gtrsim 1/3$" (arXiv:2007.05564) [src: abstract].
+- For: the threshold "from an initial spherically symmetric perturbation is, to an excellent approximation, universal, whenever given in terms of the compaction function averaged over a sphere of radius $r_m$" (arXiv:1907.13311) [src: abstract]; the dependence of $\delta_c$ only "upon the curvature of the compaction function around its peak value", shown for radiation, "generalizes to all $w\gtrsim 1/3$" (arXiv:2007.05564) [src: abstract].
 - Against or qualified: "there is no universal threshold for primordial black hole formation", although a well-defined criterion exists in terms of the averaged mass excess or the peak amplitude (arXiv:1809.02127) [src: abstract, inline]; for $w<1/3$ "the knowledge of the full shape of the compaction function is necessary" (arXiv:2007.05564) [src: abstract, inline]; with neighbouring peaks "the maximum curvature amplitude alone does not determine the collapse outcome" (arXiv:2609.03051) [src: abstract, inline].
 - `[der]` The two sides use different variables (averaged against local peak), so the disagreement is partly one of definition.
 
@@ -20,8 +20,8 @@ Snapshot: 2026-11-13
 
 ### Can PBHs form in single-field inflation without spoiling CMB scales?
 <!-- key: can-pbhs-form-in-single-field-inflation-without -->
-- Against: models producing appreciable PBHs "induce nonperturbative coupling on a large scale" (arXiv:2211.03395) [src: abstract].
-- For: loop corrections "are small" and "the scenario is not ruled out" (arXiv:2301.00599) [src: abstract]. The review of Escrivà, Kühnel & Tada notes that "It is, however, still under discussion whether loop corrections remain negligible when including quartic or higher couplings in a more general model" (arXiv:2211.05767) [src: Sect. II.10.4, text after Eq. II.162]. Full treatment: `thcosmo-primordial-correlators`, `deep/loop-corrections.md`.
+- Against: "in a model with sharp transition of the second slow-roll parameter", "models producing an appreciable amount of primordial black holes induce nonperturbative coupling on a large scale" (arXiv:2211.03395) [src: abstract].
+- For: "Based on general arguments", loop corrections "are small" and "the scenario is not ruled out" (arXiv:2301.00599) [src: abstract]. The review of Escrivà, Kühnel & Tada notes that "It is, however, still under discussion whether loop corrections remain negligible when including quartic or higher couplings in a more general model" (arXiv:2211.05767) [src: Sect. II.10.4, text after Eq. II.162]. Full treatment: `thcosmo-primordial-correlators`, `deep/loop-corrections.md`.
 
 ### PBHs from slow first-order transitions
 <!-- key: pbhs-from-slow-first-order-transitions -->
@@ -39,13 +39,13 @@ Snapshot: 2026-11-13
 
 ### Global-string scaling
 <!-- key: global-string-scaling -->
-- "clear evidence of logarithmic violations of the scaling properties" and "the presence of small logarithmic corrections to the spectrum shape could completely alter" the axion number from strings (arXiv:1806.04677) [src: abstract]; Kim & Son find "a logarithmically growing spectral index" (arXiv:2411.08455) [src: abstract]. The extrapolation to physical $\log(m_r/H)$ remains the open step; the axion mass that follows is in `thcosmo-dark-matter-models`.
+- "clear evidence of logarithmic violations of the scaling properties" and "the presence of small logarithmic corrections to the spectrum shape could completely alter" the conclusion that the extrapolated spectrum gives "a negligible number density of relic axions from strings" (arXiv:1806.04677) [src: abstract]; Kim & Son find "a logarithmically growing spectral index" (arXiv:2411.08455) [src: abstract]. The extrapolation to physical $\log(m_r/H)$ remains the open step; the axion mass that follows is in `thcosmo-dark-matter-models`.
 
 ## Unresolved calculations
 <!-- key: unresolved-calculations -->
 
 - Thresholds for softer equations of state and time-dependent $w$ (QCD epoch): $\delta_{\mathrm{c,max}}=f(w)$ fails below $w=1/3$ "for which a numerical approach is required" (arXiv:2211.05767) [src: Sect. II.4, inline, text after Fig. 2]. <!-- num: not a value -->
-- Matter-dominated collapse with realistic matter: thresholds differ between dust and collisionless descriptions by large factors (arXiv:2609.14218) [src: abstract].
+- Matter-dominated collapse: with dust the computation "crashes" unless the singularity "is hidden well inside the apparent horizon", while with collisionless particles "the threshold of black hole formation is significantly smaller than the previous analytic estimation by an order of magnitude" (arXiv:2609.14218) [src: abstract].
 - Collapse of PBH clusters and clustering with non-perturbative non-Gaussianity: a general bias formula exists under its stated assumptions (arXiv:2609.11306) [src: abstract].
 - Delayed-decay PBHs: $\delta(t_\mathrm{H})$ as a criterion is "highly sensitive to wall structure and model details" (arXiv:2601.21878) [src: abstract].
 - Monopole networks with a thermal bath: "Further work is needed to quantify the effect of the thermal bath" (arXiv:2511.14204) [src: abstract].
@@ -57,7 +57,7 @@ Snapshot: 2026-11-13
 
 - `[der]` Nonspherical three-dimensional collapse with stochastic profiles decides the threshold for spiky, clustered peaks (see arXiv:2608.13206; arXiv:2609.03051; arXiv:2510.09303).
 - A gravitational-wave background at PTA or interferometer frequencies decides between stable, metastable and field-theory strings and biased walls; templates and fits are in `thcosmo-cosmological-gravitational-waves`. <!-- num: not a value -->
-- High-energy cosmic rays and neutrinos probe memory-burdened PBHs below $10^{10}$ g, a window opened under that hypothesis (arXiv:2402.17823) [src: abstract].
+- For light PBHs surviving under memory burden, "the fact that these black holes emit energetic quanta motivates the possibility of high-energy cosmic-ray searches" (arXiv:2211.05767) [src: Sect. V.2, fifth paragraph]; the window "below $10^{10}\,\rm{g}$" is opened under that hypothesis (arXiv:2402.17823) [src: abstract].
 - No forecast was read in this build.
 
 ## Stale claims and misconceptions
@@ -68,7 +68,7 @@ Snapshot: 2026-11-13
 - **"Gaussian $\zeta$ means Gaussian PBH statistics."** The overdensity statistics are "unavoidably non-Gaussian" (arXiv:1904.00970) [src: abstract].
 - **"The Press–Schechter factor 2 applies to PBHs as to haloes."** Not for the non-Markovian PBH case (arXiv:2509.25871) [src: abstract].
 - **"All PBHs lighter than $\sim 5\times 10^{14}$ g have evaporated."** This holds only if the semiclassical description holds throughout; memory burden would lead "to the survival of black holes with mass around $M_{*}$" (arXiv:2211.05767) [src: Sect. V.2, inline, third paragraph].
-- **"GUT-scale strings can explain the PTA signal."** Stable GUT-scale strings are "firmly excluded"; metastable ones can fit, as found in its Refs. [32, 37] (arXiv:2307.04691) [src: Sect. 1, text before and after Eq. 1].
+- **"GUT-scale strings can explain the PTA signal."** Stable GUT-scale strings are "firmly excluded"; metastable ones can fit, as found in its Refs. [32, 37] (arXiv:2307.04691) [src: Sect. 1, fourth paragraph; Sect. 1, text after Eq. 1].
 - **"Nambu–Goto bounds on $G\mu$ apply to Abelian-Higgs strings."** Not robustly (arXiv:2103.16248) [src: abstract].
 - **"Single-field PBH formation is ruled out by one-loop corrections."** Disputed (arXiv:2211.03395; arXiv:2301.00599) [src: abstract]; see `thcosmo-primordial-correlators`.
 

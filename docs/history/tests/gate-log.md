@@ -1985,3 +1985,27 @@ the sweep. Note on the review: the reviewer set the wrong rows one by one
 and marked the remaining rows `ok` in one replace-all; it reports having
 read every item in its first, interrupted session.
 D36 path: one full qualifier sweep, then a fresh draw.
+
+## 2026-11-17 — `thcosmo-pbh-defects`: qualifier sweep
+
+One agent read every attributed statement whole (about 320; about 45
+research calls) and changed 46: the 8 pre-listed items and 3 side findings
+as reported, and 38 more wording or place errors (the Harada–Yoo–Kohri
+limit of arXiv:1907.13311 named with its "initial spherically symmetric
+perturbation" in five places; hedges "might", "are expected to be formed",
+"at least in most scenarios", "Based on general arguments"; conditions
+"sharp transition of the second slow-roll parameter", "For the parameter
+space explored", "for exponential bubble nucleation rate", "semiclassical
+approximation", "for $w\ge0$"; scope of the factor 2 of arXiv:2609.14218,
+which applies to the dust initial amplitude, read by the coordinator in the
+abstract: ok; the Planck 95 % attached to the Nambu–Goto limit only;
+places; four credits to references; two `[der]`). No equation or number was
+wrong; two equations added, each read at its place (Eq. II.23 of
+arXiv:2211.05767, Eq. 16 of arXiv:0911.1345). arXiv:2607.28214 now in v2;
+its quoted abstract sentences checked in v2 by the coordinator; row set to
+v2. The three printed slips confirmed at G2 recorded in the hub's
+`stale-claims.md`. G1: verify_sources 59, 0 problems; check_numbers and
+check_equations empty; transcription 233 equations, 111 exact, 23
+contained, 0 mismatch; check_shape 0 problems; 159 tests passed. Fresh
+draw: `docs/history/tests/g2/thcosmo-pbh-defects-2026-11-17-sweep.md`
+(seed 1142), reported as it falls; D36 applies.
