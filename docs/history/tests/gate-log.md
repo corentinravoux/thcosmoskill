@@ -2175,3 +2175,24 @@ formulae); justified for that dossier. Printed slips reported by the agent
 2008.02425 v3) go to G3 before the hub. G3 sheet:
 `docs/history/tests/g2/thcosmo-pbh-defects-dossiers-2026-11-17.md`
 (seed 1145).
+
+## 2026-11-18 — `thcosmo-pbh-defects` dossiers, G3: fails on wording
+
+Sheet: `docs/history/tests/g2/thcosmo-pbh-defects-dossiers-2026-11-17.md`
+(seed 1145), each verdict with its own note. Part 2: 92 ok, 6 wrong. Part
+3: 55 ok, 4 wrong (two lines). No equation or number error. Audit questions
+1–3: yes, yes, yes (domain walls: $Z_N$ only as a lattice trend and the
+energy split at annihilation declared under "Not verified"). Author check:
+94 names in prose across 46 papers against the arXiv author lists, none
+wrong. Wrong items, passed to the sweep: `abundance:29` ("during radiation
+domination", arXiv:1905.01230 Sect. VI); `abundance:52` and `:100` (w = 1/3
+set "from here on" after Eq. 39 of arXiv:2008.03289 App. C);
+`collapse-threshold:91` (the second reason of arXiv:2606.29590, "and
+remains only a mild perturbation over the near-critical regime");
+`domain-wall-networks:84` ("might be estimated", arXiv:1309.5001 Sect.
+IV.1); `collapse-threshold:187` (profile families are Eqs. 79 and 93 of
+arXiv:1809.02127, Eq. 86 the steepness relation). Side findings to the
+sweep: `collapse-threshold:20`, `:66`, `:117`, `:140`; `abundance:15`
+("in the comoving slicing"). The five printed slips confirmed and recorded
+in the hub's `stale-claims.md`. D36 path: one full qualifier sweep, then a
+fresh draw.
