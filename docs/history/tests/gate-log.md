@@ -2152,3 +2152,26 @@ networks); one deepening run (clustering and spin; global strings,
 monopoles and textures) that also rebalances the Escrivà share. The
 GW-side and inflation-side dossiers already cover the string spectra,
 scalar-induced waves and the stochastic tail.
+
+## 2026-11-17 — stage 5 W2, `thcosmo-pbh-defects` dossiers, G1: passed
+
+Three dossiers from the gap audit: `deep/collapse-threshold.md` (190
+lines), `deep/abundance-statistics.md` (143), `deep/domain-wall-networks.md`
+(133); 32 sources added (91). The agent's qualifier pass: about 150
+statements re-read, about 115 changed, among them six author lists the
+agent reports it had first written from memory, now "et al." (rule 1 of
+the brief; `verify_sources` checks first authors only, so the G3 sheet
+re-reads every author named in prose). G1: verify_sources 91, 0 problems;
+check_numbers and check_equations empty; transcription 487 equations, 266
+exact, 56 contained, 0 mismatch, 165 unreadable (all to part 2 of the
+sheet); places 23, 15 found-at-place, 1 found-elsewhere, 7 unreadable;
+check_shape 0 problems; no `eq: notation` escape; 159 tests passed. Word
+share: Escrivà 17.5 % (was 25.8 %), Musco 9.6 %, Copeland 6.2 %. Within
+`collapse-threshold.md` the Musco group holds about half the citations
+(arXiv:1809.02127 and arXiv:2011.03014, the numerical set-up and threshold
+method the dossier derives, set against the HYK and averaged-compaction
+formulae); justified for that dossier. Printed slips reported by the agent
+(arXiv:1809.02127 v3, 2011.03014 v2, 2008.03289 v2, 1904.00970 v2,
+2008.02425 v3) go to G3 before the hub. G3 sheet:
+`docs/history/tests/g2/thcosmo-pbh-defects-dossiers-2026-11-17.md`
+(seed 1145).
