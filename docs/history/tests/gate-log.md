@@ -2214,3 +2214,21 @@ check_equations empty; transcription 492 equations, 270 exact, 56
 contained, 0 mismatch; check_shape 0 problems; 159 tests passed. Fresh
 draw: `docs/history/tests/g2/thcosmo-pbh-defects-dossiers-2026-11-18-sweep.md`
 (seed 1146), reported as it falls; D36 applies.
+
+## 2026-11-18 — `thcosmo-pbh-defects` dossiers, G3 after the sweep: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-pbh-defects-dossiers-2026-11-18-sweep.md`
+(seed 1146), reported as it fell, each verdict with its own note. Part 2:
+the 39 rows on changed lines re-read, 39 ok. Part 3: 59 ok, 0 wrong (D20
+passes). Side finding applied after reading the paper:
+`domain-wall-networks.md:105` the footnote 4 caveat of arXiv:2401.14331
+regains "Strictly speaking" and the footnote's own conclusion ("no
+significant differences in the inferred value of p … suggesting that the
+bias sizes explored in this work are sufficient"). Tool artefacts noted
+(sheet rows 6–7 and 33 attributed to the paper named in a parenthesis; the
+dossier citations are right). G1: check_numbers and check_equations empty;
+transcription 492 equations, 270 exact, 56 contained, 0 mismatch;
+check_shape 0 problems; 159 tests passed. The three dossiers added to the
+file map of `SKILL.md` and the `files` column of `subtopics.tsv`.
+`thcosmo-pbh-defects` gap-audit dossiers closed; the deepening (clustering
+and spin; global strings, monopoles, textures; rebalance) stays queued.

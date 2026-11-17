@@ -20,6 +20,9 @@ an equation or a number enters a manuscript.
 | Threshold values and their assumptions; non-Gaussian and statistical systematics; clustering and spin; $\beta$ limits; evaporation numbers; memory-burden bounds; PT-PBH results; string scaling, reconnection, field theory against Nambu–Goto; wall area parameter and annihilation; monopole simulations; history of key results | `references/results.md` |
 | Spherical symmetry, gradient expansion, critical scaling, PS against peaks, Gaussianity, monochromatic mass function, semiclassical evaporation, Nambu–Goto, exact wall scaling; notation clashes and printed slips; referee checklist | `references/approximations.md` |
 | Threshold universality, statistics, single-field loop debate, PBHs from slow transitions, memory burden, field-theory loops, global-string scaling; unresolved calculations; stale claims | `references/open-questions.md` |
+| How the PBH collapse threshold is computed in numerical relativity (Misner–Sharp–Hernandez equations, gradient-expansion initial data, horizon finding), how the shape parameter and the analytic formulae compare with simulations, the dependence on w and profile, and which threshold variable to quote | `deep/collapse-threshold.md` |
+| How the PBH abundance is computed from the curvature power spectrum (Press–Schechter, excursion sets, peak theory), how windows and critical values are paired, the nonlinear δ–ζ relation and local non-Gaussianity, and how far the routes differ for one spectrum | `deep/abundance-statistics.md` |
+| How a domain-wall network is evolved and annihilated (one-scale equations and their calibration, the lattice area parameter, bias and annihilation time, domination and BBN bounds) | `deep/domain-wall-networks.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind
