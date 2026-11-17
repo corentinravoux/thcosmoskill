@@ -2196,3 +2196,21 @@ sweep: `collapse-threshold:20`, `:66`, `:117`, `:140`; `abundance:15`
 ("in the comoving slicing"). The five printed slips confirmed and recorded
 in the hub's `stale-claims.md`. D36 path: one full qualifier sweep, then a
 fresh draw.
+
+## 2026-11-18 — `thcosmo-pbh-defects` dossiers: qualifier sweep
+
+One agent read every attributed statement of the three dossiers (about
+250; about 48 research calls) and changed 55 on 46 lines, all wording: the
+ten G3 items and side findings as reported; further premises (spatial
+flatness for Eq. 59 of arXiv:1809.02127; "type I perturbation"; Gaussian
+ζ; "For concreteness"; radiation domination; spherical symmetry; Gaussian
+window; scale-invariant spectrum; degenerate vacua; frictionless scaling;
+the BBN bound "derived under the assumption that the decay products
+strongly interact with SM particles", arXiv:1703.02576 Sect. 2.3, read by
+the coordinator: ok), hedges ("suggests", "also indicate", "looks
+reasonable", "also implies"), places and one `[der]`. No equation or number
+added or changed. G1: verify_sources 91, 0 problems; check_numbers and
+check_equations empty; transcription 492 equations, 270 exact, 56
+contained, 0 mismatch; check_shape 0 problems; 159 tests passed. Fresh
+draw: `docs/history/tests/g2/thcosmo-pbh-defects-dossiers-2026-11-18-sweep.md`
+(seed 1146), reported as it falls; D36 applies.
