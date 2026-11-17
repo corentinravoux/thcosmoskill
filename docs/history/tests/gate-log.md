@@ -2049,3 +2049,24 @@ ten questions; three dossiers (bubble-wall velocity, electroweak-baryogenesis
 sources and transport, leptogenesis kinetic equations); one deepening run
 (Affleck–Dine and other mechanisms) that also rebalances the Bodeker and
 Athron shares.
+
+## 2026-11-17 — stage 5 W2, `thcosmo-baryogenesis-phase-transitions` dossiers, G1: passed
+
+Three dossiers from the gap audit: `deep/bubble-wall-velocity.md` (142
+lines), `deep/ewbg-sources-and-transport.md` (128),
+`deep/leptogenesis-kinetic-equations.md` (116); 33 sources added (82). The
+agent's qualifier pass: about 150 statements re-read, 41 changed. G1:
+verify_sources 82, 0 problems; check_numbers and check_equations empty;
+transcription 459 equations, 270 exact, 83 contained, 0 mismatch, 106
+unreadable; places 23, 16 found-at-place, 7 unreadable; check_shape 0
+problems; 10 `eq: notation` escapes, each read by the coordinator: on
+conventions lines or symbols and process labels ($\delta f$, $1\to2$),
+none on a relation; 159 tests passed. Word share: Bodeker 20.3 % (was
+26.6 %), Athron 13.1 %; within single dossiers Cline 17.5 % (EWBG) and
+Buchmüller 16.1 % (leptogenesis), the authors of the methods those
+dossiers derive, set against the rival treatments; justified. Printed
+slips reported by the agent, to G3 before the hub: arXiv:hep-ph/0401240 v1
+Eq. 3 (`1.66 g_*` without the square root; HTML only), arXiv:0802.2962 v3
+Sect. 5.2 ($v^2$ for $v_u^2$). G3 sheet:
+`docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-dossiers-2026-11-17.md`
+(seed 1143); part 1 skipped (G2 of 2026-11-13).
