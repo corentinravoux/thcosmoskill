@@ -2009,3 +2009,35 @@ check_equations empty; transcription 233 equations, 111 exact, 23
 contained, 0 mismatch; check_shape 0 problems; 159 tests passed. Fresh
 draw: `docs/history/tests/g2/thcosmo-pbh-defects-2026-11-17-sweep.md`
 (seed 1142), reported as it falls; D36 applies.
+
+## 2026-11-17 — `thcosmo-pbh-defects` build, G2 after the sweep: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-pbh-defects-2026-11-17-sweep.md`
+(seed 1142), reported as it fell; every verdict written with its own note.
+Part 3: 59 ok, 0 wrong (D20 passes: zero errors in the draw bounds the
+error rate of tool-passed items below 5 % at 95 % confidence). Parts 1–2:
+38 rows on changed lines, 33 ok, 5 wrong on three lines, all wording, fixed
+at source after reading the paper:
+- `SKILL.md:30`, and the same premise at `models.md:14` and `results.md:136`
+  (reviewer's side finding; the sweep had carried it to three places, not
+  five as logged): the threshold of arXiv:1907.13311 is "from an initial
+  spherically symmetric perturbation", and the HYK requirement holds "for a
+  black hole to form" (abstract).
+- `SKILL.md:54`, `approximations.md:84`: Example B.1 of arXiv:2211.05767
+  ($\delta_{\mathrm c}\approx 0.588$, $\mu_{\mathrm c}\approx 0.628$) is the
+  analytic Eq. II.34, for "$w=1/3$" as all the review's examples ("For
+  definiteness, in the subsequent examples, we mainly focus on the case of
+  radiation", Sect. II.7).
+- `approximations.md:44`: the O(2÷3) factor of arXiv:1904.00970 reproduces
+  "the gaussian case from threshold statistics".
+- Printed slip confirmed by the coordinator: footnote 17 of arXiv:2211.05767
+  (v5) attributes the 16/81 of Eq. III.3 to $4(1+w)^{2}/(3w)^{2}$, which
+  does not give it at w = 1/3; recorded in the skill's slips list and the
+  hub's `stale-claims.md` (the skill states no computed value of its own).
+G1 after the fixes: check_numbers and check_equations empty; transcription
+236 equations, 111 exact, 23 contained, 0 mismatch; check_shape 0 problems;
+159 tests passed. Word share: Escrivà 25.8 % (the formation review),
+rebalance at the deepening. `thcosmo-pbh-defects` set to **built (W2)** in
+the hub router and README; the hub's state paragraph lists ten built
+domains. **W2 builds complete** (GW with dossiers and deepening;
+baryogenesis and PBH-defects built; their gap audits and dossiers next).

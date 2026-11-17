@@ -8,12 +8,13 @@ description: Use when reviewing, deriving, planning or fact-checking theoretical
 ## State of the suite
 <!-- key: state-of-the-suite -->
 
-Version 0.2.0 <!-- num: not a value --> and later builds: the hub and nine domain skills are built,
+Version 0.2.0 <!-- num: not a value --> and later builds: the hub and ten domain skills are built,
 `thcosmo-lss-perturbation-theory`, `thcosmo-inflation`,
 `thcosmo-primordial-correlators`, `thcosmo-modified-gravity`,
 `thcosmo-dark-energy`, `thcosmo-dark-matter-models`,
 `thcosmo-neutrinos-light-relics`, `thcosmo-cosmological-gravitational-waves`
-(all with dossiers) and `thcosmo-baryogenesis-phase-transitions`; the others
+(all with dossiers), `thcosmo-baryogenesis-phase-transitions` and
+`thcosmo-pbh-defects`; the others
 are planned, in the order of `docs/plans/2026-10-30-plan-v2.md` of the package
 repository. Until a domain is built, say that the suite holds no material on
 it, answer from general knowledge only if the asker accepts that, label such
@@ -38,7 +39,7 @@ map; its content supersedes this hub.
 | Neutrino decoupling and N_eff in the Standard Model, massive-neutrino perturbations, dark radiation, interacting neutrinos | `thcosmo-neutrinos-light-relics` | built (W1) |
 | Primordial tensors, stochastic backgrounds from inflation, phase transitions, defects and scalar-induced sources, gravitational-wave propagation in cosmology | `thcosmo-cosmological-gravitational-waves` | built (W2) |
 | Baryogenesis and leptogenesis, electroweak and QCD transitions, first-order phase transitions and bubble dynamics, primordial magnetogenesis | `thcosmo-baryogenesis-phase-transitions` | built (W2) |
-| Primordial black-hole formation and abundance, cosmic strings and other topological defects | `thcosmo-pbh-defects` | planned |
+| Primordial black-hole formation and abundance, cosmic strings and other topological defects | `thcosmo-pbh-defects` | built (W2) |
 | FLRW backgrounds, Friedmann equations, distances and horizons, curvature; relativistic linear and second-order perturbations, gauges and gauge-invariant variables, ζ and R, separate universe and δN, Einstein–Boltzmann hierarchy, adiabatic and isocurvature initial conditions | `thcosmo-cosmological-perturbations` | planned |
 | Equilibrium thermodynamics, Boltzmann equation in an expanding universe, freeze-out, BBN theory, recombination physics and codes, dark ages | `thcosmo-thermal-history` | planned |
 | Acoustic physics, Thomson scattering, polarisation, damping, reionisation imprint, ISW, SZ and CMB-lensing theory, spectral distortions | `thcosmo-cmb-physics` | planned |
