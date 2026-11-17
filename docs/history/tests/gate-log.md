@@ -1952,3 +1952,36 @@ deepening. Two printed slips the build reads in its own notation (`[der]`:
 arXiv:2211.05767 Eqs. III.6–III.7, arXiv:2002.12778 Eq. 4) go to G2 before
 the hub's `stale-claims.md`. G2 sheet:
 `docs/history/tests/g2/thcosmo-pbh-defects-2026-11-13.md` (seed 1141).
+
+## 2026-11-17 — `thcosmo-pbh-defects` build, G2: fails on wording and places; coordinator's G1 fix reverted
+
+Sheet: `docs/history/tests/g2/thcosmo-pbh-defects-2026-11-13.md` (seed
+1141), strict standard, judged per line. Part 1: 12 ok, 3 wrong. Part 2:
+103 ok, 13 wrong (seven lines). Part 3: 57 ok, 2 wrong (two lines). No
+equation or number error, and no equation of the agent's own making.
+**Correction of the G1 entry of 2026-11-13:** the profile
+$\zeta(\tilde r)=\mu\exp[-(r/r_{\mathrm m})^{2p}]$ of `results.md:15` *is*
+printed in arXiv:2211.05767 Sect. II.4 ("A family of Gaußian profiles with
+… was considered in Reference [81]"), as `^{2\mspace{1.5mu}p}`; the
+coordinator's search for `^{2p}` missed it because of the spacing command,
+and the "agent-made equation" removed at G1 was the paper's. Restored, with
+the paper's sentence quoted. Lesson: search a paper's LaTeX through
+`latex_norm.normalise`, not as a raw string.
+Wrong items (all places or wording), read by the coordinator in the paper
+for five of them (`SKILL.md:39`/`models.md:73`/`results.md:110` "firmly
+excluded" is the fourth paragraph of Sect. 1 of arXiv:2307.04691;
+`SKILL.md:40` the Ref. [46] value is text before Eq. 2.18 of
+arXiv:1703.02576; `approximations.md:44` "(where the exact value depends on
+the critical value…)" of arXiv:1904.00984; `results.md:140` the large loops
+only "suggested", arXiv:0911.1345; `results.md:136` an untagged inference
+contradicted by arXiv:1907.13311's δ_c = 0.40 "slightly below the one quoted
+in the literature"); the others (`formalism.md:14`, `:29`, `:47` places of
+Eq. II.23 and Sect. II.5) and the side findings (`formalism.md:110`
+signature from Copeland & Kibble Eq. 16; bare tags at `models.md:116`,
+`approximations.md:74`) go to the sweep. The three printed slips are
+confirmed (arXiv:2211.05767 v5 Eq. III.7 erf for erfc; last row of Eq.
+III.6; arXiv:2002.12778 v2 Eq. 4 power on $R_H$); recorded in the hub after
+the sweep. Note on the review: the reviewer set the wrong rows one by one
+and marked the remaining rows `ok` in one replace-all; it reports having
+read every item in its first, interrupted session.
+D36 path: one full qualifier sweep, then a fresh draw.
