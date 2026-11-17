@@ -20,6 +20,9 @@ an equation or a number enters a manuscript.
 | Observed $\eta_B$ as quoted; Standard-Model crossover, sphaleron rate, freeze-out and conversion factor; QCD crossover; washout criterion; wall velocities and friction results; Davidson–Ibarra and neutrino-mass bounds; magnetic-field bounds and decay; history of key results | `references/results.md` |
 | Validity of the perturbative potential, nucleation milestones, LTE and fluid ansatz, transport (WKB, VIA), leptogenesis kinetic equations, MHD decay laws; convention traps and printed slips; referee checklist | `references/approximations.md` |
 | Viability of EWBG, VIA against WKB, 4d against 3d EFT, $\gamma$ against $\gamma^2$ friction, magnetic fields and the Hubble tension, non-helical decay; unresolved calculations; what next data decide; stale claims | `references/open-questions.md` |
+| How the terminal bubble-wall velocity is computed (Boltzmann equations with a wall force, local-equilibrium against out-of-equilibrium friction, collision terms, runaway criterion, the two ultra-relativistic friction laws) and which method to use when | `deep/bubble-wall-velocity.md` |
+| How the CP-violating source of electroweak baryogenesis is derived (semiclassical force against vev insertion, and why the latter vanishes at leading order), how the transport equations are solved for the asymmetry, and how far EDM bounds constrain it | `deep/ewbg-sources-and-transport.md` |
+| How the asymmetry of thermal leptogenesis is computed (Boltzmann equations, efficiency factor and washout regimes, CP asymmetry from the Yukawas), how flavour enters, and what density-matrix and Kadanoff–Baym treatments change | `deep/leptogenesis-kinetic-equations.md` |
 | Bibliography with versions read; subtopics and where they come from | `references/sources.tsv`, `references/subtopics.tsv` |
 
 ## What an expert holds in mind

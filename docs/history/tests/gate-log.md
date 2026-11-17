@@ -2115,3 +2115,31 @@ equations, 273 exact, 84 contained, 0 mismatch; check_shape 0 problems;
 159 tests passed. Fresh draw:
 `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-dossiers-2026-11-17-sweep.md`
 (seed 1144), reported as it falls; D36 applies.
+
+## 2026-11-17 — `thcosmo-baryogenesis-phase-transitions` dossiers, G3 after the sweep: closed under D36
+
+Sheet: `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-dossiers-2026-11-17-sweep.md`
+(seed 1144), reported as it fell, each verdict with its own note. Part 2:
+34 rows on changed lines, 32 ok, 2 wrong (one line). Part 3: 57 ok, 2 wrong
+(two lines). No equation or number error. Fixed at source, each read by the
+coordinator in the paper:
+- `leptogenesis:55`: Eqs. 132–133 of arXiv:2009.07294 are "the following
+  effective kinetic equations [68]", Ref. [68] being Bodeker & Wörmann 2014,
+  "Non-relativistic leptogenesis", arXiv:1311.2593 (reference list read;
+  row added, abstract read, paper body not read).
+- `leptogenesis:34`: "A rather accurate expression for $z_B(K)$ for all
+  values of K" is the text before Eq. 62 of arXiv:hep-ph/0401240.
+- `ewbg:48`: Eq. 71 of arXiv:hep-ph/0412354 follows from the
+  local-equilibrium Eq. 70 after "Dropping terms of ${\cal O}(\mu_{i}^{3})$".
+- Side finding: `bubble:46` two `[sec: …]` tags written for `[src: …]`.
+  Not applied: `bubble:83` omits a clause that `:111` keeps (reviewer did
+  not count it).
+Residual: 2 in 59 (3.4 %, one-sided 95 % upper bound 10.4 %). The arXiv API
+returned 429 during the review; the reviewer read six abstracts from their
+HTML renderings. G1: verify_sources 83, 0 problems; check_numbers and
+check_equations empty; transcription 463 equations, 273 exact, 84
+contained, 0 mismatch; check_shape 0 problems; 159 tests passed. The three
+dossiers added to the file map of `SKILL.md` and the `files` column of
+`subtopics.tsv` (bubble-walls, electroweak-baryogenesis, leptogenesis).
+`thcosmo-baryogenesis-phase-transitions` gap-audit dossiers closed; the
+Affleck–Dine deepening (with rebalance) stays queued.
