@@ -2041,3 +2041,11 @@ rebalance at the deepening. `thcosmo-pbh-defects` set to **built (W2)** in
 the hub router and README; the hub's state paragraph lists ten built
 domains. **W2 builds complete** (GW with dossiers and deepening;
 baryogenesis and PBH-defects built; their gap audits and dossiers next).
+
+## 2026-11-17 — stage 5 W2, `thcosmo-baryogenesis-phase-transitions` gap audit
+
+`docs/history/tests/gap-audit/thcosmo-baryogenesis-phase-transitions.md`:
+ten questions; three dossiers (bubble-wall velocity, electroweak-baryogenesis
+sources and transport, leptogenesis kinetic equations); one deepening run
+(Affleck–Dine and other mechanisms) that also rebalances the Bodeker and
+Athron shares.
