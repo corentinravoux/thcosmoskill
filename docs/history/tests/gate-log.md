@@ -2070,3 +2070,26 @@ Eq. 3 (`1.66 g_*` without the square root; HTML only), arXiv:0802.2962 v3
 Sect. 5.2 ($v^2$ for $v_u^2$). G3 sheet:
 `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-dossiers-2026-11-17.md`
 (seed 1143); part 1 skipped (G2 of 2026-11-13).
+
+## 2026-11-17 — `thcosmo-baryogenesis-phase-transitions` dossiers, G3: fails on wording
+
+Sheet: `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-dossiers-2026-11-17.md`
+(seed 1143), one edit per row. Part 2: 60 ok, 4 wrong. Part 3: 56 ok, 3
+wrong (three lines). No equation or number error. Audit questions 1–3:
+yes, yes (VIA cancellation from the reasons Postma et al. state; the
+explicit cancellation not read, as the dossier says), yes (CTP and
+Kadanoff–Baym from abstracts, as the dossier says). Wrong items, passed
+to the sweep: `bubble-wall-velocity.md:32` (α_crit "using the bag equation
+of state", arXiv:2109.13710), `:83` and `:111` (non-linear shifts only
+"when the fluid Ansatz is applied to stronger phase transitions",
+arXiv:2607.18207), `:100` ("up to log γ effects…", arXiv:2007.10343 Sect.
+VI), `:108` (the singularity is arXiv:2007.10935's, its cause from
+arXiv:2204.13120); `leptogenesis-kinetic-equations.md:34` (dominated near
+$\bar z=\min\{z,z_B\}$, arXiv:hep-ph/0401240), `:24` (the interpolation is
+Eq. 25). Side findings to the sweep: `ewbg:109`, `:112`, `:125` "read at
+abstract only" contradicted by transcriptions at `:39`, `:48`; `ewbg:31`
+the CP-parity split is Eq. 11 of arXiv:2001.00568; `bubble:41`, `:57`;
+`leptogenesis:48`. Both printed slips confirmed and recorded in the hub's
+`stale-claims.md` (arXiv:hep-ph/0401240 v1 Eq. 3; arXiv:0802.2962 v3 Sect.
+5.2). D36 path: one full qualifier sweep of the three dossiers, then a
+fresh draw.
