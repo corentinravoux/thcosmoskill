@@ -37,6 +37,16 @@ Snapshot: 2026-11-13
 - Gouttenoire et al. 2021: pressure "linear both in the Lorentz boost and in the order parameter, up to a log" (arXiv:2112.07686) [src: abstract]. Athron et al. report that this study "recovered the $\gamma^{1}$ scaling", "arguing that the computation in ref. [517] satisfies the Ward identity erroneously, because the presence of the bubble wall breaks four-momentum conservation", and that another study (their Ref. [525]) "noted that the $\gamma^{2}$ friction found in ref. [517] does not vanish in the limit where the heavy particles remain massless"; Athron et al. introduce the $\gamma^{2}$ result with "Controversially" (arXiv:2305.02357) [src: Sect. 5.5.3, paragraph beginning "Next-to-leading-order corrections"]. No reply by the authors of arXiv:2007.10343 was found in this run.
 - `[der]` What decides: a calculation of the soft-emission pressure that both sides accept; the review says that "these phenomenological friction models do not match the current expected scaling", and that its Ref. [461] generalises the scaling as $\mathcal{K}\propto h(\gamma)$, with results for $h(\gamma)=\gamma$ and $\gamma^{2}$ (arXiv:2305.02357) [src: Sect. 5.5.3, text after Eq. 5.69]. <!-- eq: notation -->
 
+### How large are thermal effects in Affleck–Dine baryogenesis?
+<!-- key: how-large-are-thermal-effects-in-affleck-dine -->
+
+Dine, Randall & Thomas obtain an asymmetry that "depends in an essential way only on the reheat temperature after inflation, $T_{R}$, and the magnitude of the nonrenormalizable operator" (arXiv:hep-ph/9507453) [src: Sect. 4.4, inline, first paragraph]. Anisimov & Dine reply that "Thermal effects significantly alter the predictions for baryogenesis due to the coherent evolution of scalar fields"; for not too flat potentials and small Yukawa couplings their estimates "are less optimistic than those of [3] in these cases, since, as we have argued, CP violation is suppressed", and "thermal effects are potentially important even in cases in which the potential is relatively flat ($n=2,3,4$)", where integrating out heavy particles "can alter by several orders of magnitude the predictions for the asymmetry" (arXiv:hep-ph/0008058) [src: Sect. 5, inline]; they call for "More refined numerical studies, both of the condensate evolution described here, and of the non-linear evolution of fluctuations" [src: Sect. 5]. No later paper settling the question was read in this run.
+
+### Can the QCD axion drive axiogenesis?
+<!-- key: can-the-qcd-axion-drive-axiogenesis -->
+
+For the QCD axion with the Standard-Model $T_{\rm ws}$, the axion abundance comes out "much larger than the observed DM abundance", and Co & Harigaya list three ways out: damping of the rotation after the electroweak transition, an earlier electroweak transition, or a large weak-anomaly coefficient (arXiv:1910.02080) [src: text after Eq. 5]. Axion-like fields with a kination era are the 2026 variant tied to birefringence (arXiv:2609.25202) [src: abstract].
+
 ## Unresolved calculations
 <!-- key: unresolved-calculations -->
 
@@ -45,6 +55,8 @@ Snapshot: 2026-11-13
 - **Sound-wave lifetime and length scale.** The timescales "are only approximately estimated, they may contribute significantly to the uncertainty in GW predictions"; "In light of the enhanced vorticity realized in a recent simulation of intermediate strength phase transitions, we currently lack a reasonable estimate of the splitting between longitudinal and rotational components for use in non-lattice studies" (arXiv:2305.02357) [src: Sect. 5.4, text after Eq. 5.40]. The resulting spectra and the suppression factor are in `thcosmo-cosmological-gravitational-waves` (`deep/phase-transition-spectra.md`).
 - **Sphaleron conversion across the crossover** (computed in 2026). Equilibrium conversion factors at fixed temperature neglect the variation of the Higgs value and of the rate across the crossover (arXiv:2609.07467) [src: abstract].
 - **Leptogenesis beyond Boltzmann.** The RIS subtraction was historically wrong (arXiv:2009.07294) [src: Sect. IV.2, footnote 18]; quantum kinetic equations for ARS come from two approaches, the Hamiltonian time evolution and the closed-time-path technique, whose relations that review discusses (arXiv:1711.02862) [src: abstract].
+- **Q-ball formation in a thermal plasma.** Formation has been simulated numerically (arXiv:hep-ph/9909509) [src: abstract], while Anisimov & Dine find that evaporation can "eliminate also any would-be $Q$-balls" and that "It is certainly of interest to further explore the possible roles of $Q$-balls" for large $n$ (arXiv:hep-ph/0008058) [src: Sect. 5].
+- **Scalar contribution to the thermal logarithm.** "The contribution of the scalars requires an additional computation which we have not found in the literature" (arXiv:hep-ph/0008058) [src: Sect. 2, text after Eq. 13]; whether it was computed later was not searched.
 
 ## What the next data and calculations decide
 <!-- key: what-the-next-data-and-calculations-decide -->
@@ -55,6 +67,7 @@ Snapshot: 2026-11-13
 - **Baryon isocurvature** constrains Affleck–Dine (arXiv:2602.08781) [src: abstract].
 - **Birefringence:** "The minimal setup predicts a positive birefringence angle, consistent with the CMB hint" (arXiv:2609.25202) [src: abstract]; `[der]` a confirmed isotropic rotation of either sign would test this axiogenesis model. **Forecast.**
 - **IGMF detection:** an analysis is quoted as "recent $3.8\sigma$ evidence for a non-zero intergalactic magnetic field from anisotropic pair-halo searches using Fermi-LAT data" in arXiv:2604.20768 [src: abstract]; the primary analysis was not read in this run.
+- **$B$-mesogenesis at colliders and BBN.** The asymmetry is "directly related to the leptonic charge asymmetry in neutral $B$ decays; an experimental observable" (arXiv:1810.00880) [src: abstract]; BBN already requires "$T_{rh}$ must be $\gtrsim 10\,$MeV" "For $M_Φ\lesssim 100\,$GeV" (arXiv:2610.03455) [src: abstract].
 
 ## Stale claims and misconceptions
 <!-- key: stale-claims-and-misconceptions -->
@@ -63,10 +76,12 @@ Snapshot: 2026-11-13
 - "Magnetic fields from bubbles of a first-order QCD transition": the transition is "an analytic crossover" (arXiv:hep-lat/0611014) [src: abstract], so these scenarios "need to be re-examined" (arXiv:2010.10525) [src: Sect. III.2].
 - "Friction vanishes in local thermal equilibrium": the LTE friction $p_{\text{fr}}=\vert\Delta\{(\gamma^2-1)Ts\}\vert$ is "contrary to the long-held expectation of vanishing friction in local thermal equilibrium" (arXiv:2305.02357) [src: Sect. 5.5.3, text after Eq. 5.63]; an earlier "$\gamma^{2}$ scaling" of LTE friction is called "(misleading)" [src: Sect. 5.5.3, text after Eq. 5.63].
 - "$v_w$ can be set to the Chapman–Jouguet speed": "fixing $v_{w}=v_{\text{CJ}}$ is an arbitrary choice" (arXiv:2305.02357) [src: Sect. 5.5.2, text after Eq. 5.52].
-- "EWBG needs subsonic walls": quoted from its Ref. [111], "It was found, contrary to common lore, that baryogenesis with $v_{\rm w}$ larger than the speed of sound is possible" (arXiv:2009.07294) [src: Sect. III.2, third paragraph after Fig. 5, beginning "For a quantitative description"].
+- "EWBG needs subsonic walls": quoted from its Ref. [111], "It was found, contrary to common lore, that baryogenesis with $v_{\rm w}$ larger than the speed of sound is possible" (arXiv:2009.07294) [src: Sect. III.2, third paragraph after Fig. 5, beginning "For a quantitative description"]. Cline & Kainulainen 2020, deriving the fluid equations "without making the small-wall-velocity approximation", conclude that "Electroweak baryogenesis can thus be efficient also with strong detonations" (arXiv:2001.00568) [src: abstract].
 - "$v_c/T_c\gtrsim 1$ guarantees no washout": the criterion is gauge-dependent and rough (arXiv:2508.09989) [src: Sect. 5.4]; the lattice-based criterion in the minimal 3d EFT is $v/T_c\gtrsim 1.33$ (arXiv:2506.04939) [src: abstract].
 - "Nucleation when $S(T(t_{n}))\sim 140,$" (arXiv:2305.02357) [src: Eq. 4.61]: valid "only at the electroweak scale and during the radiation dominated era" (arXiv:2305.02357) [src: Sect. 4.7.1, inline, text after Eq. 4.61].
 - "Leading-log collision integrals are conservative for $v_w$": "the typical treatment in the leading-log approximation underestimates the friction", concluded from their Refs. [517, 518] (arXiv:2305.02357) [src: Sect. 5.5.3, text after Eq. 5.65].
+- "Affleck–Dine needs the field to be frozen at a large initial value set by hand": with Hubble-induced terms "there is no need for ad hoc assumptions about the initial value of the field when it begins to oscillate freely" (arXiv:hep-ph/9507453) [src: Sect. 4.3, second paragraph after Eq. 26], provided the induced mass squared is negative, which "With minimal Kahler terms only" it is not [src: Sect. 3, text after Eq. 13].
+- "GUT baryogenesis explains the asymmetry": a $B+L$ asymmetry from SU(5) is "washed out" by sphalerons (arXiv:2009.07294) [src: Sect. II.1]; `[der]` only a $B-L$ asymmetry survives.
 
 ## Not verified
 <!-- key: not-verified -->

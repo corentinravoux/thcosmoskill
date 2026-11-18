@@ -2232,3 +2232,33 @@ check_shape 0 problems; 159 tests passed. The three dossiers added to the
 file map of `SKILL.md` and the `files` column of `subtopics.tsv`.
 `thcosmo-pbh-defects` gap-audit dossiers closed; the deepening (clustering
 and spin; global strings, monopoles, textures; rebalance) stays queued.
+
+## 2026-11-18 — stage 5 W2, `thcosmo-baryogenesis-phase-transitions` deepening, G1: passed
+
+One run (Affleck–Dine and other mechanisms; rebalance). Added: formalism
+section on flat directions (Dine, Randall & Thomas, arXiv:hep-ph/9507453:
+lifting, soft and A terms, Hubble-induced mass, onset, CP phase, Eq. 30),
+thermal effects (Anisimov–Dine), Q-ball fragmentation, GUT decays,
+spontaneous baryogenesis, axiogenesis, gravitational baryogenesis; model
+cards rewritten with every field (Affleck–Dine, GUT, spontaneous and
+axiogenesis, low-scale with B-mesogenesis) and a new gravitational-
+baryogenesis card; a results table of asymmetry-size estimates with each
+paper's assumptions; approximations, convention traps (the "n" of a flat
+direction counted differently across papers), open questions. Subtopic
+`affleck-dine-other` now `covered`. Rebalance: primary citations added
+beside review statements (Buchmüller et al., D'Onofrio et al., Moore and
+collaborators, Cline–Kainulainen, Asaka–Shaposhnikov, Ellis–Lewicki–No,
+Arnold–Espinosa, Patel–Ramsey-Musolf, Curtin et al.); 27 sources added
+(110). The agent's qualifier pass: about 85 statements, about 38 changed.
+G1: verify_sources 110, 0 problems; check_numbers and check_equations
+empty; transcription 604 equations, 362 exact, 111 contained, 0 mismatch,
+131 unreadable; places 28, 17 found-at-place, 11 unreadable; check_shape 0
+problems; one new `eq: notation` escape, on the symbol $B$ only; 159 tests
+passed. Word share: Bodeker 17.6 % (was 26.6 % at build), Athron 10.5 %,
+van de Vis 5.9 %; the remainder is the review arXiv:2009.07294 as the one
+source spanning sphalerons to leptogenesis, now with primary citations
+beside it where read; justified, no further rebalance before the refresh.
+Slips reported (Anisimov–Dine Eq. 14 without a scale inside the logarithm;
+text typos) go to G2 before the hub. G2 sheet over the changed lines:
+`docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-deepening-2026-11-18.md`
+(seed 1147, base 5558690).

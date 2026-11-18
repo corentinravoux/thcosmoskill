@@ -5,7 +5,7 @@ description: Use when deriving, checking or reviewing theory of the baryon asymm
 
 # Baryogenesis, phase transitions and primordial magnetic fields — expert reference
 
-Snapshot 2026-11-13. Every equation and number names its paper and
+Snapshot 2026-11-13 (non-thermal mechanisms deepened 2026-11-18). Every equation and number names its paper and
 the place it was read; no equation or number is derived by an agent.
 Conventions: natural units; each source keeps its own signature and Planck-mass symbol (table in `references/formalism.md`, and the hub's `references/conventions.md`). Re-read the cited paper before
 an equation or a number enters a manuscript.
@@ -15,11 +15,11 @@ an equation or a number enters a manuscript.
 
 | Question | Load |
 |---|---|
-| Conventions of the main sources; anomaly, sphaleron rate and $B$–$(B-L)$ conversion; effective potential, thermal functions, daisy and 3d EFT; bounce, rate prefactor, $P_f$, nucleation, percolation and completion, $\beta_*$ and $R_{\rm sep}$; wall pressure, LTE and ultra-relativistic friction; EWBG force and washout; leptogenesis kinetic equations; Affleck–Dine toy model; magnetic-field statistics, generation and MHD decay | `references/formalism.md` |
-| One card per mechanism: EWBG, SMEFT $\phi^6$, thermal, flavoured, resonant and ARS leptogenesis, Affleck–Dine, GUT, spontaneous baryogenesis and axiogenesis, magnetogenesis at the electroweak, QCD and BSM transitions and during inflation; their status | `references/models.md` |
-| Observed $\eta_B$ as quoted; Standard-Model crossover, sphaleron rate, freeze-out and conversion factor; QCD crossover; washout criterion; wall velocities and friction results; Davidson–Ibarra and neutrino-mass bounds; magnetic-field bounds and decay; history of key results | `references/results.md` |
-| Validity of the perturbative potential, nucleation milestones, LTE and fluid ansatz, transport (WKB, VIA), leptogenesis kinetic equations, MHD decay laws; convention traps and printed slips; referee checklist | `references/approximations.md` |
-| Viability of EWBG, VIA against WKB, 4d against 3d EFT, $\gamma$ against $\gamma^2$ friction, magnetic fields and the Hubble tension, non-helical decay; unresolved calculations; what next data decide; stale claims | `references/open-questions.md` |
+| Conventions of the main sources; anomaly, sphaleron rate and $B$–$(B-L)$ conversion; effective potential, thermal functions, daisy and 3d EFT; bounce, rate prefactor, $P_f$, nucleation, percolation and completion, $\beta_*$ and $R_{\rm sep}$; wall pressure, LTE and ultra-relativistic friction; EWBG force and washout; leptogenesis kinetic equations; Affleck–Dine toy model, flat directions and their lifting, Hubble-induced terms, onset and phase, $n_b/s$, thermal effects and Q-balls; GUT, spontaneous, axion and gravitational baryogenesis; magnetic-field statistics, generation and MHD decay | `references/formalism.md` |
+| One card per mechanism: EWBG, SMEFT $\phi^6$, thermal, flavoured, resonant and ARS leptogenesis, Affleck–Dine, GUT, spontaneous baryogenesis and axiogenesis, gravitational baryogenesis, low-scale mechanisms and $B$-mesogenesis, magnetogenesis at the electroweak, QCD and BSM transitions and during inflation; their status | `references/models.md` |
+| Observed $\eta_B$ as quoted; Standard-Model crossover, sphaleron rate, freeze-out and conversion factor; QCD crossover; washout criterion; wall velocities and friction results; Davidson–Ibarra and neutrino-mass bounds; size of the asymmetry in non-thermal mechanisms; magnetic-field bounds and decay; history of key results | `references/results.md` |
+| Validity of the perturbative potential, nucleation milestones, LTE and fluid ansatz, transport (WKB, VIA), leptogenesis kinetic equations, condensate and non-thermal mechanisms, MHD decay laws; convention traps and printed slips; referee checklist | `references/approximations.md` |
+| Viability of EWBG, VIA against WKB, 4d against 3d EFT, $\gamma$ against $\gamma^2$ friction, magnetic fields and the Hubble tension, non-helical decay, thermal effects in Affleck–Dine, QCD-axion axiogenesis; unresolved calculations; what next data decide; stale claims | `references/open-questions.md` |
 | How the terminal bubble-wall velocity is computed (Boltzmann equations with a wall force, local-equilibrium against out-of-equilibrium friction, collision terms, runaway criterion, the two ultra-relativistic friction laws) and which method to use when | `deep/bubble-wall-velocity.md` |
 | How the CP-violating source of electroweak baryogenesis is derived (semiclassical force against vev insertion, and why the latter vanishes at leading order), how the transport equations are solved for the asymmetry, and how far EDM bounds constrain it | `deep/ewbg-sources-and-transport.md` |
 | How the asymmetry of thermal leptogenesis is computed (Boltzmann equations, efficiency factor and washout regimes, CP asymmetry from the Yukawas), how flavour enters, and what density-matrix and Kadanoff–Baym treatments change | `deep/leptogenesis-kinetic-equations.md` |
@@ -40,6 +40,8 @@ an equation or a number enters a manuscript.
 - EWBG: perturbative models are "essentially" excluded by electron-EDM bounds, "it appears" (arXiv:2009.07294) [src: Sect. III.3]; the leading-order vev-insertion source vanishes when thermal self-energies are included consistently, as shown in the work that review follows (arXiv:2508.09989) [src: Sect. 3.4.1].
 - Leptogenesis: $\eta_{B}=\frac{n_{B}}{n_{\gamma}}=\frac{3}{4}\frac{c_{s}}{f}\varepsilon\kappa_{\text{f}}\simeq\eta_{B}\simeq 0.96\times 10^{-2}\varepsilon\kappa_{\text{f}}\ .$ (arXiv:2009.07294) [src: Eq. 104] (as printed); Davidson–Ibarra, "For a hierarchical spectrum of right-handed neutrinos", with $m_{\nu_3}=\sqrt{\Delta m^2_{\rm atm}}$ and thermal $\nu_R$ production, find $T_{\rm reh}>M_{\nu_R}>10^8$ GeV; "Reasonable estimates of nu_R production and the subsequent washout of the asymmetry, as made by Buchmuller and Plumacher, imply" $M_{\nu_R} > 10^9$ GeV (arXiv:hep-ph/0202239) [src: abstract]; light-neutrino window, "Assuming" m̃₁ = O(m_i) (arXiv:2009.07294) [src: Sect. IV.3.1, text before Eq. 111], $10^{-3}\lesssim m_{i}\lesssim 0.1~\text{eV}\ .$ [src: Eq. 111], type-I seesaw only.
 - Flavour matters below $T_{\tau}\sim 10^{12}$ GeV (arXiv:2009.07294) [src: Sect. IV.3.2, text after Eq. 115]; resonant leptogenesis works "even as light as about 1 TeV" (arXiv:hep-ph/0309342) [src: abstract].
+- Affleck–Dine with Hubble-induced terms: the field oscillates freely "when $H\sim m_{3/2}$", and ${n_{b}\over{s}}\approx{n_{b}\over n_{\phi}}{T_{R}\over m_{\phi}}{\rho_{\phi}\over\rho_{I}}.$ (arXiv:hep-ph/9507453) [src: Eq. 30], which "only applies if $n_{\phi}<\rho_{I}/T_{R}$ at the time of decay" [src: Sect. 4.4, inline, text after Eq. 30]; thermal effects "can alter by several orders of magnitude the predictions" for relatively flat potentials (arXiv:hep-ph/0008058) [src: Sect. 5].
+- GUT baryogenesis gives $B\equiv\frac{n_{B}}{s}\simeq\frac{\Delta Bn_{\gamma}}{g_{*}n_{\gamma}}\simeq\frac{\Delta B}{g_{*}}.$ (arXiv:hep-ph/9807454) [src: Eq. 75] for out-of-equilibrium decays with negligible entropy release, but a $B+L$ asymmetry is washed out by sphalerons (arXiv:2009.07294) [src: Sect. II.1]; in spontaneous baryogenesis the derivative coupling acts in equilibrium as $\mu_{i}=c_{i}\frac{\dot{\phi}}{f},$ (arXiv:1605.00670) [src: Eq. 2.9], and the asymmetry freezes at the decoupling of $B$ violation [src: Sect. 2.3, text before Eq. 2.13].
 - Inflationary magnetogenesis with $f^2F^2$: strong coupling for the scale-invariant case (arXiv:1303.7121) [src: Sect. 3.1.1, text after Eq. 50] and, "Assuming that back reaction does not spoil inflation", seeds that "recalculated to the present epoch cannot exceed $10^{-32}G$ in $Mpc$ scales" (arXiv:0907.1030) [src: abstract].
 - MHD decay: the peak wavenumber, "determined by simulations" in the helical case once the field has reached maximal helicity [src: Sect. IV.1, text before Eq. 77], falls as $k_{\rm in}(\eta)\sim k_{\rm in}(\eta_{0})\left(\frac{\eta_{0}}{\eta}\right)^{2/3},\ \ {\rm helical\ case}$ (arXiv:2010.10525) [src: Eq. 77], against $k_{\rm in}(\eta)\propto\eta^{-1/2},\ \ {\rm nonhelical\ case}.$ [src: Eq. 72] for freely decaying non-helical fields with "vanishing velocity field at the initial time" [src: Sect. IV.1, text before Eq. 72]; under the proposed reconnection-controlled decay, non-helical electroweak relics "would be stronger by several orders of magnitude" (arXiv:2203.03573) [src: abstract].
 
@@ -50,7 +52,7 @@ an equation or a number enters a manuscript.
 - Which temperature ($T_n$, $T_p$, $T_f$); percolation in supercooled cases; validity of the linear $\beta$.
 - How $v_w$ was obtained; no $v_w=v_{\rm CJ}$ by default. <!-- eq: notation -->
 - EWBG: lattice washout criterion, semiclassical source, EDM constraints. Leptogenesis: flavour regime, initial abundance, $\Delta L=2$ washout, seesaw type. <!-- num: not a value --> <!-- eq: notation -->
-- Affleck–Dine: baryon isocurvature. Magnetogenesis: backreaction, strong coupling, helicity, decay law, field-strength definition. Details: `references/approximations.md`, last section.
+- Affleck–Dine: baryon isocurvature, thermal masses and the onset of oscillations, gravitino bound on $T_R$, Q-balls. Spontaneous baryogenesis and axiogenesis: relic abundance and isocurvature of the scalar. Magnetogenesis: backreaction, strong coupling, helicity, decay law, field-strength definition. Details: `references/approximations.md`, last section.
 
 ## Errors that recur
 <!-- key: errors-that-recur -->
@@ -62,6 +64,7 @@ an equation or a number enters a manuscript.
 - Applying the LTE wall velocity to ultra-relativistic walls, where LTE "is not reasonable when $\gamma\gg 1$" (arXiv:2305.02357) [src: Sect. 5.5.3].
 - Applying the neutrino-mass bound from leptogenesis outside the type-I seesaw (arXiv:2009.07294) [src: Sect. IV.3.1, text after Eq. 111]; using the old RIS subtraction (arXiv:2009.07294) [src: Sect. IV.2, footnote 18].
 - Opposite $R_\xi$ conventions for the Landau gauge (arXiv:2305.02357) [src: Sect. 2.2.2, footnote 7].
+- Mixing the order of a flat direction between papers: $W=\frac{\lambda}{nM^{n-3}}X^{k}=\frac{\lambda}{nM^{n-3}}\phi^{n}$ (arXiv:hep-ph/9507453) [src: Eq. 1] against $W={\phi^{n+3}\over M^{n}}$ (arXiv:hep-ph/0008058) [src: Eq. 16]; using a minimal Kähler potential, for which "$\phi=0$ is stable" (arXiv:hep-ph/9507453) [src: Sect. 3, inline, text after Eq. 13].
 - Copying printed slips: Eq. 104 of arXiv:2009.07294, Eq. 5.61 of arXiv:2305.02357, the text after Eq. 2.25 of arXiv:2508.09989, the text after Eq. 69 of arXiv:hep-ph/0303065 (see `approximations.md`). <!-- num: not a value -->
 
 ## Related skills
@@ -86,7 +89,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 5k; approximations 6k; formalism 15k; models 8k; open 4k; results 6k; deep/bubble-wall-velocity 12k; deep/ewbg-sources-and-transport 11k; deep/leptogenesis-kinetic-equations 9k.
+Sizes, in thousands of tokens: L1 6k; approximations 8k; formalism 21k; models 13k; open 5k; results 7k; deep/bubble-wall-velocity 12k; deep/ewbg-sources-and-transport 11k; deep/leptogenesis-kinetic-equations 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
