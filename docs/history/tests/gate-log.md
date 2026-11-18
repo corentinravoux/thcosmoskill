@@ -2262,3 +2262,20 @@ Slips reported (Anisimov–Dine Eq. 14 without a scale inside the logarithm;
 text typos) go to G2 before the hub. G2 sheet over the changed lines:
 `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-deepening-2026-11-18.md`
 (seed 1147, base 5558690).
+
+## 2026-11-19 — `thcosmo-baryogenesis-phase-transitions` deepening, G2: fails on wording
+
+Sheet: `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-deepening-2026-11-18.md`
+(seed 1147), changed lines, each verdict with its own note. Part 1: 3
+changed rows ok. Part 2: 60 ok, 4 wrong. Part 3: 56 ok, 3 wrong (two
+lines). No equation or number error. Wrong items, passed to the sweep:
+`models.md:97` ("Roughly speaking … only if" the decay-width condition,
+arXiv:hep-ph/9807454 Sect. 5.4); `models.md:111` ("Assuming the latter case
+at the weak scale", arXiv:1910.02080 before Eq. 5); `open-questions.md:43`
+(Ref. [3] of arXiv:hep-ph/0008058 is Allahverdi, Campbell & Ellis; against
+DRT, Ref. [2], the result is "more promising"); `models.md:79` ("large
+Q-balls", arXiv:hep-ph/9709492). Side finding: `SKILL.md:43` lacks its own
+tag. The slip of arXiv:hep-ph/0008058 (logarithm without a scale, Eqs. 12,
+14, 23) confirmed and recorded in the hub's `stale-claims.md`. The agent's
+own qualifier pass is not an independent sweep; D36 path: one full sweep of
+the changed lines, then a fresh draw.
