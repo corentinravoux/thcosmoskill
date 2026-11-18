@@ -2316,3 +2316,30 @@ check_numbers and check_equations empty; transcription 0 mismatch;
 check_shape 0 problems; 159 tests passed. The deepening is closed;
 `thcosmo-baryogenesis-phase-transitions` is complete for W2 (built, three
 dossiers, one deepening).
+
+## 2026-11-19 — stage 5 W2, `thcosmo-pbh-defects` deepening, G1: passed
+
+One run (clustering and spin; global strings, monopoles, textures;
+rebalance). Added: formalism section on clustering and spin at formation
+(Ali-Haïmoud; Desjacques & Riotto; Suyama & Yokoyama; De Luca et al.;
+Mirbabayi et al. and Harada et al. on spin), global-defect equations
+(homotopy and σ-model, Durrer et al.; Gorghetto et al. on global-string
+scaling; monopole annihilation, yield, one-scale and Parker bounds,
+arXiv:2511.14204); results tables (22 rows on clustering and spin, 14 on
+global strings, monopoles, textures); approximations, convention traps,
+open questions and stale claims; model cards completed ("Global and axion
+strings", "GUT monopoles") and one added ("Global monopoles and global
+textures"). Both subtopics `covered`; texture-collapse dynamics not read
+(Turok's papers predate arXiv). Rebalance: primary citations beside five
+review statements (Shibata & Sasaki, Yoo et al. 2020, Afshordi et al.,
+Harada et al. 2016 and 2020); 35 sources added (128). The agent's
+qualifier pass: about 105 statements, 23 changed. G1: verify_sources 128,
+0 problems; check_numbers and check_equations empty; transcription 590
+equations, 317 exact, 63 contained, 0 mismatch, 210 unreadable; places 26,
+17 found-at-place, 1 found-elsewhere, 8 unreadable; check_shape 0 problems;
+no new `eq: notation` escape; 159 tests passed. Word share: Escrivà 13.9 %
+(was 25.6 % at build), Musco 7.5 %, Hindmarsh 6.8 %: under the 15 % line.
+Printed typos in quotes kept as printed (not physics slips; not in the
+hub). G2 sheet over the changed lines:
+`docs/history/tests/g2/thcosmo-pbh-defects-deepening-2026-11-19.md`
+(seed 1149, base 77fb09e).
