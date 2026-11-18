@@ -2279,3 +2279,23 @@ tag. The slip of arXiv:hep-ph/0008058 (logarithm without a scale, Eqs. 12,
 14, 23) confirmed and recorded in the hub's `stale-claims.md`. The agent's
 own qualifier pass is not an independent sweep; D36 path: one full sweep of
 the changed lines, then a fresh draw.
+
+## 2026-11-19 — `thcosmo-baryogenesis-phase-transitions` deepening: qualifier sweep
+
+One agent read every added or changed line (about 150 statements; about 30
+research calls) and fixed 36, all wording: the five G2 items as reported
+(`open-questions.md:43` names Ref. [3] of arXiv:hep-ph/0008058 as
+Allahverdi, Campbell & Ellis, Nucl. Phys. B579 (2000) 355, from its
+reference list, without an arXiv row: the arXiv API returned 429), modals
+("can play the role", "usually treated as a spectator", "can generate"),
+premises ("before the electroweak phase transition", "global and broken
+before the end of inflation", "In various beyond the standard model
+scenarios", "equal-size and randomly-distributed spheres", "Schematically"),
+scope and attribution, places by the paragraph's opening words, two
+`[der]`. A control character (BEL) inside `s\approx` at `results.md:69`
+repaired; no other file of the suite carries one. G1: verify_sources 110, 0
+problems; check_numbers and check_equations empty; transcription 608
+equations, 362 exact, 109 contained, 0 mismatch; check_shape 0 problems;
+159 tests passed. Fresh draw over the changed lines:
+`docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-deepening-2026-11-19-sweep.md`
+(seed 1148), reported as it falls; D36 applies.
