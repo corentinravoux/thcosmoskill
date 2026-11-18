@@ -2299,3 +2299,20 @@ equations, 362 exact, 109 contained, 0 mismatch; check_shape 0 problems;
 159 tests passed. Fresh draw over the changed lines:
 `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-deepening-2026-11-19-sweep.md`
 (seed 1148), reported as it falls; D36 applies.
+
+## 2026-11-19 — `thcosmo-baryogenesis-phase-transitions` deepening, G2 after the sweep: closed under D36
+
+Sheet: `docs/history/tests/g2/thcosmo-baryogenesis-phase-transitions-deepening-2026-11-19-sweep.md`
+(seed 1148), reported as it fell, each verdict with its own note. Part 1: 2
+changed rows ok. Part 2: 67 ok, 4 wrong (one line). Part 3: 58 ok, 1 wrong
+(the same line). No equation or number error. Fixed at source after
+reading the paper: `formalism.md:136` the random initial phase of
+arXiv:hep-ph/9507453 (Sect. 4.3) requires $a$ to vanish "during and after
+inflation", which is "possible in principle"; both restored. Residual: 1 in
+59 (1.7 %, one-sided 95 % upper bound 7.8 %). Side findings left for the
+refresh (`models.md:97` the τ_e step, `formalism.md:109` the flavour-
+summation premise, `models.md:129` the left-panel masses). G1:
+check_numbers and check_equations empty; transcription 0 mismatch;
+check_shape 0 problems; 159 tests passed. The deepening is closed;
+`thcosmo-baryogenesis-phase-transitions` is complete for W2 (built, three
+dossiers, one deepening).
