@@ -2426,3 +2426,19 @@ equation numbers in its text) noted as printed in the skill; not physics
 slips, not in the hub. G2 sheet over the changed lines:
 `docs/history/tests/g2/thcosmo-neutrinos-light-relics-deepening-2026-11-19.md`
 (seed 1151, base 2390ebc).
+
+## 2026-11-19 — `thcosmo-neutrinos-light-relics` deepening, G2: fails on wording
+
+Sheet: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-deepening-2026-11-19.md`
+(seed 1151), changed lines, each verdict with its own note. Part 1: 1
+changed row ok. Part 2: 26 ok, 3 wrong. Part 3: 53 items, 52 ok, 1 wrong.
+Four defective lines, no equation or number error. Passed to the sweep:
+`models.md:78`, `open-questions.md:12`, `results.md:76` (arXiv:1302.1200:
+"large and preferentially net asymmetries $\vert L_\nu\vert > O(10^{-2})$"
+to "significantly suppress" production, not to start suppressing it);
+`formalism.md:153` (arXiv:1409.1680 Sect. II.1: the active–sterile angles
+fixed to the anomalies' best fits in the text after Eq. 5, $\Delta
+m^2_{\rm st}$ and the hierarchy after Eq. 9). Side finding:
+`models.md:70` "strongly excluded" "by the data in the cosmologies we
+study" (arXiv:2509.25478). Author lists match arXiv. D36 path: one sweep
+of the changed lines, then a fresh draw.
