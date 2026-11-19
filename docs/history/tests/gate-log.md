@@ -2362,3 +2362,23 @@ to the formation time)", "formed from rare peaks"); `formalism.md:187`,
 "Our results indicate", arXiv:2410.18064); `models.md:118` ("in
 cosmogonies with non-zero cosmological constant", arXiv:astro-ph/9901377).
 D36 path: one sweep of the changed lines, then a fresh re-read.
+
+## 2026-11-19 — `thcosmo-pbh-defects` deepening: qualifier sweep
+
+One agent read every added or changed line (about 115 statements; about 40
+research calls) and changed 31, all wording or places: the eight G2 items
+as reported; hedges ("could never be induced … while it can be enhanced
+by", "suggest", "We conclude", "can be well described"); premises (the
+"random encounters" premise of the monopole annihilation equation of
+arXiv:2511.14204; "using the fat-monopole prescription"; the texture
+winding-number caveat); places; the Chisholm extrapolation credited to its
+citing paper's Ref. [24]; ξ of arXiv:0911.1345 called its "characteristic
+scale". A row label "16384³" restated as the paper's "up to 16384 points
+per side" (same grid). verify_sources warns that arXiv:2606.30087 and
+arXiv:2611.05504, cited outside these lines, have new versions: their
+places are to be checked at the refresh. G1: verify_sources 128, 0
+problems; check_numbers and check_equations empty; transcription 590
+equations, 318 exact, 63 contained, 0 mismatch; check_shape 0 problems;
+159 tests passed. Fresh re-read over the changed lines:
+`docs/history/tests/g2/thcosmo-pbh-defects-deepening-2026-11-19-sweep.md`
+(seed 1150), reported as it falls; D36 applies.
