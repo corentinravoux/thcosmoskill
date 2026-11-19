@@ -2343,3 +2343,22 @@ Printed typos in quotes kept as printed (not physics slips; not in the
 hub). G2 sheet over the changed lines:
 `docs/history/tests/g2/thcosmo-pbh-defects-deepening-2026-11-19.md`
 (seed 1149, base 77fb09e).
+
+## 2026-11-19 — `thcosmo-pbh-defects` deepening, G2: fails on wording
+
+Sheet: `docs/history/tests/g2/thcosmo-pbh-defects-deepening-2026-11-19.md`
+(seed 1149), changed lines, each verdict with its own note. Part 1: 4
+changed rows, 2 ok, 2 wrong. Part 2: 43 ok, 11 wrong. Part 3: 46 items (all
+the tool-passed changed items, fewer than 59), 45 ok, 1 wrong. Eight
+defective lines, no equation or number error. Passed to the sweep:
+`SKILL.md:40` ("most of the formed PBHs", arXiv:1707.03595; "suggesting"
+a second-order spin, arXiv:1901.05963); `SKILL.md:45`, `models.md:107` and
+`results.md:162` (ζ* of arXiv:2102.07723 "calculated from the string length
+in the cosmic rest frame", radiation era); `formalism.md:29` (bare tags
+after the inserted Shibata & Sasaki citation read as arXiv:gr-qc/9905064,
+the content is arXiv:2211.05767's); `formalism.md:79` ("(and extrapolating
+to the formation time)", "formed from rare peaks"); `formalism.md:187`,
+`results.md:163`, `models.md:108` ("in the standard scaling framework",
+"Our results indicate", arXiv:2410.18064); `models.md:118` ("in
+cosmogonies with non-zero cosmological constant", arXiv:astro-ph/9901377).
+D36 path: one sweep of the changed lines, then a fresh re-read.
