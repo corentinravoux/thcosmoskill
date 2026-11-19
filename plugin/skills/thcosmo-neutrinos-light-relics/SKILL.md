@@ -64,7 +64,7 @@ an equation or a number enters a manuscript.
 - Extrapolating dark-radiation BBN fits to $\Delta N_{\rm eff}<0$ (arXiv:2507.23354) [src: abstract].
 - Using pre-2020 invisible-decay limits (arXiv:1907.05425) built on the $(m/E)^3$ rate (arXiv:2011.01502) [src: abstract].
 - Assuming a lower neutrino abundance relaxes the mass bound: $T_\nu$ and $\sum m_\nu$ are positively correlated (arXiv:2609.15970) [src: abstract].
-- Citing "secret interactions" as a working escape for eV sterile neutrinos: the review of Dasgupta & Kopp judges the "vanilla version" ruled out for the short-baseline mass and mixing, "for both heavy and light mediators" (arXiv:2106.05913) [src: Chap. 4, Sect. 3.2, paragraph after Fig. 8 caption].
+- Citing "secret interactions" as a working escape for eV sterile neutrinos: the review of Dasgupta & Kopp judges the "vanilla version" ruled out for the short-baseline mass and mixing, "for both heavy and light mediators", on the studies of its Refs. [338, 359, 360] (arXiv:2106.05913) [src: Chap. 4, Sect. 3.2, paragraph after Fig. 8 caption].
 - Assuming that oscillations equalise the flavour asymmetries before BBN: "flavor 'equilibration' is not true in general" (arXiv:2405.06509) [src: abstract].
 
 ## Related skills

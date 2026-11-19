@@ -2442,3 +2442,22 @@ m^2_{\rm st}$ and the hierarchy after Eq. 9). Side finding:
 `models.md:70` "strongly excluded" "by the data in the cosmologies we
 study" (arXiv:2509.25478). Author lists match arXiv. D36 path: one sweep
 of the changed lines, then a fresh draw.
+
+## 2026-11-19 — `thcosmo-neutrinos-light-relics` deepening: qualifier sweep
+
+One agent read every added or changed line (about 75 statements against 24
+papers; 27 research calls) and changed 21, all wording or places: the four
+G2 items and the side finding as reported (`results.md:76` now separates
+arXiv:1206.1046's threshold "to start suppressing" from arXiv:1302.1200's
+"large and preferentially net" asymmetries "to significantly suppress";
+`formalism.md:153` tags split; `models.md:70` scope restored); mediator
+and mixing scopes (arXiv:1409.1680 "a massive gauge boson X (with
+$M_X \ll M_W$)"; arXiv:1605.06506 "only via neutrino mixing"); the Planck
+$m_{\rm eff}$ premise ("combined with standard active neutrinos having a
+minimal-mass hierarchy"); a claim not in arXiv:1705.01837 replaced by its
+words; the review's ruling credited to its Refs. [338, 359, 360]; places.
+G1: verify_sources 78, 0 problems; check_numbers and check_equations
+empty; transcription 311 equations, 220 exact, 46 contained, 0 mismatch;
+check_shape 0 problems; 159 tests passed. Fresh draw over the changed
+lines: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-deepening-2026-11-19-sweep.md`
+(seed 1152), reported as it falls; D36 applies.
