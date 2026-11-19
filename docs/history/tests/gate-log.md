@@ -2461,3 +2461,30 @@ empty; transcription 311 equations, 220 exact, 46 contained, 0 mismatch;
 check_shape 0 problems; 159 tests passed. Fresh draw over the changed
 lines: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-deepening-2026-11-19-sweep.md`
 (seed 1152), reported as it falls; D36 applies.
+
+## 2026-11-19 — `thcosmo-neutrinos-light-relics` deepening, G2 after the sweep: closed under D36
+
+Sheet: `docs/history/tests/g2/thcosmo-neutrinos-light-relics-deepening-2026-11-19-sweep.md`
+(seed 1152), reported as it fell, each verdict with its own note. Part 2:
+33 ok, 1 wrong. Part 3: 50 items, 49 ok, 1 wrong. No equation or number
+error. Fixed at source after reading the paper: `open-questions.md:12`
+asymmetries "permit a resonant sterile neutrino production"
+(arXiv:1206.1046 abstract), not "drive" it; `formalism.md:131` the review
+arXiv:2106.05913 gives "Some of the early works on this topic" as its
+Refs. [308–312]. Residual: 1 in 50 (2.0 %, one-sided 95 % upper bound
+9.1 %). Side finding left for the refresh: `models.md:87` the JCAP
+reference printed beside arXiv:1310.6337 in the abstract of
+arXiv:1806.10629 looks like that of arXiv:1505.02795. G1: check_numbers
+and check_equations empty; transcription 0 mismatch; check_shape 0
+problems; 159 tests passed. The light-sterile deepening is closed; no
+`thin` subtopic remains in `thcosmo-neutrinos-light-relics`.
+
+## 2026-11-19 — **W2 closed**
+
+`thcosmo-cosmological-gravitational-waves`, `thcosmo-baryogenesis-phase-transitions`
+and `thcosmo-pbh-defects` built, each with three dossiers and one
+deepening; the W1 light-sterile deepening closed. Ten domains built, all
+gated under D35 (strict reading) and closed under D20 or D36. Open for the
+refresh pass: the side findings listed in the entries of 2026-11-13 to
+2026-11-19, and the new arXiv versions of arXiv:2606.30087 and
+arXiv:2611.05504 (`thcosmo-pbh-defects`).
