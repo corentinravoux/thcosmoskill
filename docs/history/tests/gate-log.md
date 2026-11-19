@@ -2399,3 +2399,30 @@ matches arXiv. G1: check_numbers and check_equations empty; transcription
 0 mismatch; check_shape 0 problems; 159 tests passed. The deepening is
 closed; `thcosmo-pbh-defects` is complete for W2 (built, three dossiers,
 one deepening).
+
+## 2026-11-19 — stage 5 W1, `thcosmo-neutrinos-light-relics` deepening (light steriles), G1: passed
+
+The deepening queued by the 2026-11-04 gap audit (question 8; question 10
+within budget). Added: formalism sections on sterile production (the
+matrix quantum kinetic equations of arXiv:2106.05913 Eqs. 22–30 and their
+1+1 form; the notation of arXiv:1204.5861 Eqs. 4–15; matter angles,
+resonances, suppression by a lepton asymmetry and by secret interactions;
+Planck's $m_{\rm eff}$, arXiv:1807.06209) and on asymmetries (ΔN_eff(ξ),
+n/p, Y_p and D/H fits, arXiv:2405.06509 Eqs. 14, 15, 42); the standard
+sterile card completed, two cards added (with a lepton asymmetry; with
+secret interactions); asymmetry bounds 2022–2026 in results, replacing the
+2006-only state of question 10; approximations, referee items, open
+questions and stale claims. Subtopic `light-sterile-neutrinos` now
+`covered`. 20 sources added (78). The agent's qualifier pass: about 60
+statements, about 40 changed. G1: verify_sources 78, 0 problems;
+check_numbers and check_equations empty; transcription 309 equations, 223
+exact, 46 contained, 0 mismatch, 40 unreadable; check_shape 0 problems; no
+new `eq: notation` escape; 159 tests passed. Word share of the skill:
+Bennett 12.1 %, Lesgourgues 11.4 %, Barenboim 6.0 %. Among the new
+citations Dasgupta (23 %) and Hannestad (16 %) lead: the authors of the
+secret-interaction and asymmetry-suppression mechanisms the subtopic
+holds; justified. Printed reference slips of arXiv:2106.05913 v1 (wrong
+equation numbers in its text) noted as printed in the skill; not physics
+slips, not in the hub. G2 sheet over the changed lines:
+`docs/history/tests/g2/thcosmo-neutrinos-light-relics-deepening-2026-11-19.md`
+(seed 1151, base 2390ebc).

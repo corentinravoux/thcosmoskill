@@ -2,7 +2,7 @@
 
 Scope: the approximations the domain relies on, their validated range and quoted error, how they fail, convention traps and numerical issues; the referee checklist at the end.
 
-Snapshot: 2026-11-03
+Snapshot: 2026-11-19
 
 ## Instantaneous decoupling
 <!-- key: instantaneous-decoupling -->
@@ -34,6 +34,16 @@ Snapshot: 2026-11-03
 - **Constant $f_\nu$.** The analytic growth law $\delta_{\rm cdm}\propto a^{p_{+}}\simeq a^{1-\frac{3}{5}f_{\nu}}~,$ (arXiv:astro-ph/0603494) [src: Eq. 134] assumes a time-independent $f_\nu$ after the transition, which is "not strictly valid" for non-degenerate masses [src: Sect. 4.5.6, text after Eq. 136]; the linear $-8f_\nu$ rule holds "for $0<f_{\nu}<0.07$" at fixed $(\omega_{\rm m},\Omega_\Lambda)$ [src: Sect. 4.5.7].
 - **Non-linear scales.** Massive neutrinos in perturbation theory beyond linear order and in the EFTofLSS are in `thcosmo-lss-perturbation-theory` (two-home rule of the suite).
 
+## Sterile-neutrino production: reduced kinetic equations
+<!-- key: sterile-neutrino-production-reduced-kinetic -->
+
+- **The 1+1 approximation.** One active and one sterile flavour, with "minimal assumptions on the collision terms" (Hannestad, Tamborra & Tram 2012, arXiv:1204.5861) [src: Sect. 2.1, text after Eq. 14]. The authors justify it "for small lepton asymmetries since the resonances in the active sector are decoupled from the conversions occurring in the active-sterile sector due to the larger mass difference"; for large asymmetries active–sterile conversion "is delayed and can occur simultaneously with active-active conversion", which "does not qualitatively change the overall picture" [src: Sect. 1], and quantitative exclusion limits "would require solving the full QKEs including all three active species" [src: Sect. 4]. The 3+1 calculation with the full mixing matrix of Gariazzo et al. uses "full diagonal collision terms" (arXiv:1905.11290) [src: abstract]. In 2017 Abazajian wrote that the full quantum kinetic treatment for 3 active and N sterile neutrinos "remain to be explored" (arXiv:1705.01837) [src: Sect. 4].
+- **Average-momentum and single-mixing approximations.** For parameters inspired by the short-baseline anomalies, going beyond them to a multi-momentum, multi-flavour treatment gives an enhancement "with respect to the average momentum approximation" that "is significant, up to $\sim 20$ % of a degree of freedom", and raises the asymmetries needed for suppression (Saviano et al. 2013, arXiv:1302.1200) [src: abstract, inline]. The sign "chaos" of the generated asymmetry, proven in the single-momentum approximation (the quantum rate equations), disappears for 1 active and 1 sterile neutrino when the resolution of the momentum grid is increased (arXiv:1302.7279) [src: abstract].
+- **The sterile spectrum.** In the 3+1 calculation, "the so-called Dodelson-Widrow approximation" for the final sterile spectrum "is in very good agreement with our full calculations, while the thermal distribution approximation is inaccurate" (arXiv:1905.11290) [src: Sect. 4]. This sets which relation between effective and physical mass applies (`formalism.md`, arXiv:1807.06209) [der].
+- **$N_{\rm eff}$ of a state that becomes non-relativistic.** The $N_{\rm eff}$ values of Gariazzo et al. can be compared with cosmological fits "except for the larger values of $\Delta m_{41}^{2}$, for which neutrinos become non-relativistic at the relevant epochs" (arXiv:1905.11290) [src: Sect. 4]; their Fig. 3 reports $N_{\rm eff}^{\rm in}$ and $N_{\rm eff}^{\rm now}$ separately because the number "is not well defined in the intermediate range" [src: Fig. 3 caption].
+- **Entropy conservation in secret-interaction models.** BBN constraints obtained "by assuming that the entropy of the decoupled active and sterile neutrino population is conserved" may not be a good approximation "when there are no number changing interactions that establish chemical equilibrium" (arXiv:2106.05913) [src: Fig. 9 caption]; when sterile neutrinos are produced "purely due to collisional decoherence", number and energy are conserved but entropy increases [src: Chap. 4, Sect. 3.2, paragraph before Eq. 49].
+- **Equal asymmetries.** Previous studies "have often assumed" flavour asymmetries equal throughout the temperatures of interest, so that a chemical potential can be put directly into a BBN code; this "neglects the small out-of-equilibrium effects that can only be tracked with a dynamical calculation" (Froustey & Pitrou 2024, arXiv:2405.06509) [src: Sect. IV.1], and flavour "equilibration" "is not true in general" [src: abstract]. The asymmetry formula for $\Delta N_{\rm eff}$ (`formalism.md`) is stated by them to apply "virtually" only to equal initial asymmetries [src: Sect. II.3, text after Eq. 15].
+
 ## Convention traps
 <!-- key: convention-traps -->
 
@@ -56,3 +66,7 @@ Snapshot: 2026-11-03
 7. For decays: the anisotropy-loss rate with the $(m/E)^5$ scaling and the daughter mass (arXiv:2011.01502; arXiv:2203.09075).
 8. For negative $\Delta N_{\rm eff}$ in BBN: neutrino-driven rates adjusted consistently (arXiv:2507.23354).
 9. For sterile neutrinos: fully or partially thermalised, and effective versus physical mass (arXiv:2606.21518).
+10. For light sterile neutrinos: the kinetic treatment (1+1 or 3+1, average or multi-momentum, collision terms), the initial lepton asymmetry assumed, and the spectrum (thermal or Dodelson–Widrow) used to map $m^{
+m eff}$ to the physical mass (arXiv:1204.5861, Sect. 2.1; arXiv:1302.1200; arXiv:1905.11290, Sect. 4; arXiv:1807.06209, Sect. 7.5.3).
+11. For secret interactions: mediator mass and coupling given separately when BBN is used, the collisional production after decoupling included, and the free-streaming of the sterile and active states (arXiv:2106.05913, Chap. 4, Sect. 3.2; arXiv:1410.1385).
+12. For lepton asymmetries: whether flavour asymmetries are evolved or assumed equal, and the helium abundance used (arXiv:2405.06509, Sect. IV.1).

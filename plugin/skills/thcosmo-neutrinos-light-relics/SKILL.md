@@ -1,11 +1,11 @@
 ---
 name: thcosmo-neutrinos-light-relics
-description: Use when deriving, checking or reviewing the theory of cosmic neutrinos and light relics — neutrino decoupling, Standard-Model N_eff and its QED corrections, Delta N_eff of thermal relics, massive-neutrino Boltzmann hierarchy, free streaming, -8 f_nu suppression, phase shift, dark radiation (free-streaming or fluid), LiMRs, light sterile neutrinos, self-interacting neutrinos (G_eff), majorons, invisible neutrino decay, negative neutrino mass parameters.
+description: Use when deriving, checking or reviewing the theory of cosmic neutrinos and light relics — neutrino decoupling, Standard-Model N_eff and its QED corrections, Delta N_eff of thermal relics, massive-neutrino Boltzmann hierarchy, free streaming, -8 f_nu suppression, phase shift, dark radiation (free-streaming or fluid), LiMRs, light sterile neutrinos and lepton asymmetries, self-interacting neutrinos (G_eff), majorons, invisible neutrino decay, negative neutrino mass parameters.
 ---
 
 # Neutrinos and light relics — expert reference
 
-Snapshot 2026-11-03. Every equation and number names its paper and
+Snapshot 2026-11-19. Every equation and number names its paper and
 the place it was read; no equation or number is derived by an agent.
 Conventions: natural units; Lesgourgues & Pastor (arXiv:astro-ph/0603494) use signature (+,−,−,−) with φ in $g_{00}$, Ma & Bertschinger (arXiv:astro-ph/9506072) use (−,+,+,+) with ψ in $g_{00}$; $N_{\rm eff}$ defined through ρ_ν/ρ_γ (arXiv:2012.02726, Eq. 1, limit T/m_e → 0); see `references/formalism.md` and the hub's `references/conventions.md`. <!-- num: not a value --> Re-read the cited paper before
 an equation or a number enters a manuscript.
@@ -16,10 +16,10 @@ an equation or a number enters a manuscript.
 | Question | Load |
 |---|---|
 | Conventions; decoupling and the definition of $N_{\rm eff}$; $\Delta N_{\rm eff}$ of a thermal relic; massive-neutrino background, orderings; Vlasov equation and Legendre hierarchy; free-streaming scales; phase-shift formalism; interaction and decay formalism; LiMR scales; sterile thermalisation | `references/formalism.md` |
-| One card per model: free-streaming and fluid-like dark radiation, self-interacting neutrinos, invisible decay, LiMRs, light sterile neutrinos, majorons; their status | `references/models.md` |
-| Standard-Model $N_{\rm eff}$ and its error budget; minimal thermal $\Delta N_{\rm eff}$; power suppression; phase-shift detections; LiMR bounds; history of key results | `references/results.md` |
+| One card per model: free-streaming and fluid-like dark radiation, self-interacting neutrinos, invisible decay, LiMRs, light sterile neutrinos (standard, with a lepton asymmetry, with secret interactions), majorons; their status | `references/models.md` |
+| Standard-Model $N_{\rm eff}$ and its error budget; minimal thermal $\Delta N_{\rm eff}$; power suppression; phase-shift detections; LiMR bounds; lepton-asymmetry bounds at BBN; history of key results | `references/results.md` |
 | Instantaneous decoupling; BBN with negative $\Delta N_{\rm eff}$; contact limit and collision kernels; fluid approximations in Boltzmann codes; convention traps; referee checklist | `references/approximations.md` |
-| The debate on NLO QED corrections to $N_{\rm eff}^{\rm SM}$; the neutrino-mass tension seen from theory; forecasts; stale claims | `references/open-questions.md` |
+| The debate on NLO QED corrections to $N_{\rm eff}^{\rm SM}$; hiding eV sterile neutrinos from cosmology; the neutrino-mass tension seen from theory; forecasts; stale claims | `references/open-questions.md` |
 | How the Standard-Model N_eff is computed: QED equation of state, continuity equation, quantum kinetic equations, finite-temperature QED and weak-rate corrections, and why the two recent benchmark values differ | `deep/neff-standard-model-calculation.md` |
 | How Boltzmann codes sample and close the massive-neutrino hierarchy and switch to a fluid; how effective, negative or split neutrino-mass parameters are defined below the oscillation floor, at fixed what | `deep/neutrino-mass-below-the-floor.md` |
 | How neutrino self-interactions and invisible decays enter the Boltzmann hierarchy (collision term, relaxation coefficients, contact limit and beyond), and why the pre-2020 decay damping rate was wrong | `deep/interacting-neutrino-perturbations.md` |
@@ -42,6 +42,8 @@ an equation or a number enters a manuscript.
 - The strongly interacting neutrino mode is disfavoured with odds of 5:100000 by DESI DR1 FS + BAO + CMB-SPA (arXiv:2610.26654) [src: abstract].
 - Neutrino-decay limits from the $(m/E)^3$ damping rate are superseded: the rate scales as $(m/E)^5$ (arXiv:2011.01502) [src: abstract], with a daughter-mass factor that makes limits "remarkably independent of the parent mass" (arXiv:2203.09075) [src: abstract].
 - Cosmology presses on fully thermalised light sterile neutrinos, not on partially populated ones (arXiv:2606.21518) [src: abstract].
+- Mixing-only sterile neutrinos with short-baseline parameters thermalise: N_eff ≃ 4 in the 3+1 kinetic calculation with the full mixing matrix (arXiv:1905.11290) [src: abstract]; the proposals that reconcile them with cosmology "are based on a reduction of the effective sterile neutrino abundance": a lepton asymmetry, a low reheating temperature, late reheating of photons, secret interactions (arXiv:2106.05913) [src: Chap. 4, Sect. 3.2] (`references/formalism.md`, `references/models.md`).
+- An asymmetry adds $\Delta N_{\mathrm{eff}}=\sum_{\alpha=e,\mu,\tau}{\left[\frac{30}{7}\left(\frac{\xi_{\alpha}^{\mathrm{BBN}}}{\pi}\right)^{2}+\frac{15}{7}\left(\frac{\xi_{\alpha}^{\mathrm{BBN}}}{\pi}\right)^{4}\right]}\,.$ (arXiv:2405.06509) [src: Eq. 15], stated there to apply "virtually" only to equal initial asymmetries; without that assumption the allowed primordial asymmetries are "generically unbound" by current data [src: abstract].
 
 ## Checks a referee makes
 <!-- key: checks-a-referee-makes -->
@@ -50,7 +52,7 @@ an equation or a number enters a manuscript.
 - Spin, $T_F$, $g_\star$ table and reheating assumption for a thermal relic.
 - Gauge and potential names; ordering or degenerate masses; fixed parameters in any "effect of the mass"; fluid-approximation accuracy at the scales used.
 - Contact limit, flavour structure and posterior multimodality for interactions; the $(m/E)^5$ rate and daughter mass for decays.
-- Thermalisation degree and effective versus physical mass for sterile neutrinos. Details: `references/approximations.md`, last section.
+- Thermalisation degree, kinetic treatment (1+1 or 3+1, average or multi-momentum), initial asymmetry and the spectrum used for effective versus physical mass for sterile neutrinos; mediator mass and coupling for secret interactions. Details: `references/approximations.md`, last section.
 
 ## Errors that recur
 <!-- key: errors-that-recur -->
@@ -62,6 +64,8 @@ an equation or a number enters a manuscript.
 - Extrapolating dark-radiation BBN fits to $\Delta N_{\rm eff}<0$ (arXiv:2507.23354) [src: abstract].
 - Using pre-2020 invisible-decay limits (arXiv:1907.05425) built on the $(m/E)^3$ rate (arXiv:2011.01502) [src: abstract].
 - Assuming a lower neutrino abundance relaxes the mass bound: $T_\nu$ and $\sum m_\nu$ are positively correlated (arXiv:2609.15970) [src: abstract].
+- Citing "secret interactions" as a working escape for eV sterile neutrinos: the review of Dasgupta & Kopp judges the "vanilla version" ruled out for the short-baseline mass and mixing, "for both heavy and light mediators" (arXiv:2106.05913) [src: Chap. 4, Sect. 3.2, paragraph after Fig. 8 caption].
+- Assuming that oscillations equalise the flavour asymmetries before BBN: "flavor 'equilibration' is not true in general" (arXiv:2405.06509) [src: abstract].
 
 ## Related skills
 <!-- key: related-skills -->
@@ -86,7 +90,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 3k; formalism 7k; models 5k; open 2k; results 4k; deep/interacting-neutrino-perturbations 11k; deep/neff-standard-model-calculation 10k; deep/neutrino-mass-below-the-floor 9k.
+Sizes, in thousands of tokens: L1 5k; approximations 5k; formalism 14k; models 8k; open 3k; results 5k; deep/interacting-neutrino-perturbations 11k; deep/neff-standard-model-calculation 10k; deep/neutrino-mass-below-the-floor 9k.
 
 - L2: when the file map names several files, search them for the term
   before reading, and read only the passage.
