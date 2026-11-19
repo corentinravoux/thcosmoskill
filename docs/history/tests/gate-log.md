@@ -2382,3 +2382,20 @@ equations, 318 exact, 63 contained, 0 mismatch; check_shape 0 problems;
 159 tests passed. Fresh re-read over the changed lines:
 `docs/history/tests/g2/thcosmo-pbh-defects-deepening-2026-11-19-sweep.md`
 (seed 1150), reported as it falls; D36 applies.
+
+## 2026-11-19 — `thcosmo-pbh-defects` deepening, G2 after the sweep: **passed**
+
+Sheet: `docs/history/tests/g2/thcosmo-pbh-defects-deepening-2026-11-19-sweep.md`
+(seed 1150), reported as it fell, each verdict with its own note. Part 1: 2
+changed rows ok. Part 2: 51 ok, 2 wrong (one line). Part 3: 47 items (all
+tool-passed changed items), 47 ok, 0 wrong (D20 passes). Fixed at source
+after reading the paper: `results.md:70` the first-order spin estimate of
+arXiv:2011.00710 is for PBHs "formed in the radiation-dominated phase of
+the universe", "to the first order of perturbation for the narrow power
+spectrum" (title and abstract). Side finding left for the refresh:
+`formalism.md:186` (the 80 %/20 % string-length split of arXiv:1806.04677
+is for fat-string simulations). Every author list in the re-read lines
+matches arXiv. G1: check_numbers and check_equations empty; transcription
+0 mismatch; check_shape 0 problems; 159 tests passed. The deepening is
+closed; `thcosmo-pbh-defects` is complete for W2 (built, three dossiers,
+one deepening).
