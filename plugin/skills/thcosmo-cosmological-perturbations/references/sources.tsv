@@ -1,0 +1,42 @@
+key	id	version	first_author	year	title	role
+Laine2026	2607.06983	v1	Laine	2026	From inflation to hot big bang -- a tutorial on cosmological perturbations	lectures
+Malik2008	0809.4944	v2	Malik	2008	Cosmological perturbations	review
+Hogg1999	astro-ph/9905116	v4	Hogg	1999	Distance measures in cosmology	review
+Baumann2009	0907.5424	v2	Baumann	2009	TASI Lectures on Inflation	lectures
+Bechaz2025	2510.25690	v2	Béchaz	2025	A Light-Cone Approach to Higher-Order Cosmological Observables	method
+Compere2026	2610.26623	v1	Compère	2026	Cosmological perturbations from localized sources: a gauge-invariant multipolar theory	method
+Scholtens2026	2604.19706	v1	Scholtens	2026	Fundamental Cosmic Anisotropy and its Ramifications II: Perturbations in Bianchi spacetimes, and fixed in the Newtonian gauge	method
+Wands2000	astro-ph/0003278	v2	Wands	2000	A new approach to the evolution of cosmological perturbations on large scales	foundation
+Lyth2004	astro-ph/0411220	v3	Lyth	2004	A general proof of the conservation of the curvature perturbation	foundation
+Langlois2005	astro-ph/0503416	v2	Langlois	2005	Evolution of non-linear cosmological perturbations	foundation
+Sasaki1995	astro-ph/9507001	v2	Sasaki	1995	A General Analytic Formula for the Spectral Index of the Density Perturbations produced during Inflation	foundation
+Inomata2026	2606.28247	v2	Inomata	2026	Cancellation of one-loop time dependence in superhorizon curvature perturbations from all scales	results
+Holland2026	2609.34788	v1	Holland	2026	The separate universe approach with non minimal coupling to gravity	results
+Raveendran2025	2506.23571	v3	Raveendran	2025	The validity of separate-universe approach in transient ultra-slow-roll inflation	critique
+Ahmadi2026	2602.00902	v3	Ahmadi	2026	$δN$ formalism with gradient interactions	method
+Saito2026	2607.11814	v2	Saito	2026	Anisotropic separate universe : Long-wavelength perturbations and conserved quantities	method
+Bucher2000	astro-ph/9904231	v2	Bucher	1999	The General Primordial Cosmic Perturbation	foundation
+Planck2018X	1807.06211	v2	Planck Collaboration	2018	Planck 2018 results. X. Constraints on inflation	constraint
+Gerlach2025	2510.21917	v2	Gerlach	2025	Superhorizon Isocurvature as a Window into Dark Matter Production	results
+Pan2025	2506.17411	v2	Pan	2025	Consistent Initial Conditions for Early Modified Gravity in Effective Field Theory	method
+Liu2026	2608.07803	v1	Liu	2026	Inflationary Axion Isocurvature in the CMB across All Ultralight Masses	constraint
+Hou2026	2606.17994	v1	Hou	2026	Constraints on the Sum of Neutrino Masses from ACT DR6 and DESI DR2 Considering Isocurvature Initial Conditions	constraint
+Ma1995	astro-ph/9506072	v1	Ma	1995	Cosmological Perturbation Theory in the Synchronous and Conformal Newtonian Gauges	foundation
+Seljak1996	astro-ph/9603033	v1	Seljak	1996	A Line of Sight Approach to Cosmic Microwave Background Anisotropies	foundation
+Lesgourgues2011	1104.2932	v2	Lesgourgues	2011	The Cosmic Linear Anisotropy Solving System (CLASS) I: Overview	code
+Blas2011	1104.2933	v3	Blas	2011	The Cosmic Linear Anisotropy Solving System (CLASS) II: Approximation schemes	code
+Figueruelo2026	2611.17384	v1	Figueruelo	2026	Simple multi-interacting fluids in SymBoltz	code
+Zhou2026	2602.15104	v2	Zhou	2026	ABCMB: A Python+JAX Package for the Cosmic Microwave Background Power Spectrum	code
+Moss2026	2602.23466	v1	Moss	2026	nanoCMB: A minimal CMB power spectrum calculator in Python	code
+Nasiri2026	2610.40275	v1	Nasiri	2026	Going off the (momentum) grid: A simple implementation of noncold relics in linear Boltzmann solvers	method
+Bruni1997	gr-qc/9609040	v2	Bruni	1996	Perturbations of spacetime: gauge transformations and gauge invariance at second order and beyond	foundation
+Matarrese1998	astro-ph/9707278	v2	Matarrese	1997	Relativistic second-order perturbations of the Einstein-de Sitter Universe	foundation
+Xue2025	2509.26159	v1	Xue	2025	The transverse-traceless gauge and the gauge problem of second order gravitational waves	results
+Pettinari2013	1302.0832	v2	Pettinari	2013	The intrinsic bispectrum of the Cosmic Microwave Background	results
+Ireland2026	2608.09897	v1	Ireland	2026	The Fate of Large Scale White Noise in Second-Order Cosmological Perturbation Theory	critique
+Barenboim2025a	2511.13866	v3	Barenboim	2025	Large Scale White Noise and Cosmology	model
+Barenboim2025b	2511.15803	v2	Barenboim	2025	The Noisy Universe	constraint
+Pereira2007	0707.0736	v1	Pereira	2007	Theory of cosmological perturbations in an anisotropic universe	foundation
+Weinberg2003	astro-ph/0302326	v1	Weinberg	2003	Adiabatic Modes in Cosmology	foundation
+Fidler2015	1505.04756	v2	Fidler	2015	General relativistic corrections to $N$-body simulations and the Zel'dovich approximation	method
+Chisari2011	1101.3555	v3	Chisari	2011	Connection between Newtonian simulations and general relativity	method
