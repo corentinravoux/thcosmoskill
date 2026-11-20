@@ -10,10 +10,12 @@ each model, the range of validity of each approximation, and the statements
 still in circulation that are out of date. When it matters, Claude reads the
 paper again rather than trusting the skill.
 
-**Status: release 0.2.0.** The hub and four domain skills are built:
-LSS perturbation theory (with six dossiers), inflation, primordial
-correlators and modified gravity; 301 sources checked against arXiv. The
-other domains are planned: see [`docs/plans/2026-10-30-plan-v2.md`](docs/plans/2026-10-30-plan-v2.md)
+**Status: release 0.3.0.** The hub and ten domain skills are built, each
+with dossiers: LSS perturbation theory, inflation, primordial correlators,
+modified gravity, dark energy, dark-matter models, neutrinos and light
+relics, cosmological gravitational waves, baryogenesis and phase
+transitions, primordial black holes and defects; 1019 sources checked
+against arXiv. The other domains are planned: see [`docs/plans/2026-10-30-plan-v2.md`](docs/plans/2026-10-30-plan-v2.md)
 (decisions: [`docs/plans/2026-10-30-decisions.md`](docs/plans/2026-10-30-decisions.md)).
 Until a domain exists, the hub says that the suite holds no material on it.
 
@@ -112,9 +114,9 @@ In build order (plan v2): the pilot, the three domains of milestone 0.2
 |---|---|
 | `theoretical-cosmology` | hub: routes to the others; conventions atlas; methods index; stale-claims register (built; methods index and stale claims in first versions) |
 | `thcosmo-lss-perturbation-theory` | SPT, LPT, EFTofLSS, bias, redshift space, velocity statistics, intrinsic alignments, large deviations (pilot: built, six dossiers) |
-| `thcosmo-inflation` | inflationary dynamics and models, reheating, stochastic and eternal inflation (0.2: built) |
-| `thcosmo-primordial-correlators` | in-in, EFT of inflation, non-Gaussianity, collider, bootstrap, decoherence, QFT in de Sitter (0.2: built) |
-| `thcosmo-modified-gravity` | Horndeski and beyond, f(R), massive gravity, screening, EFT of dark energy (0.2: built) |
+| `thcosmo-inflation` | inflationary dynamics and models, reheating, stochastic and eternal inflation (built) |
+| `thcosmo-primordial-correlators` | in-in, EFT of inflation, non-Gaussianity, collider, bootstrap, decoherence, QFT in de Sitter (built) |
+| `thcosmo-modified-gravity` | Horndeski and beyond, f(R), massive gravity, screening, EFT of dark energy (built) |
 | `thcosmo-dark-energy` | Λ problem, quintessence, phantom crossing, interacting and early dark energy (built) |
 | `thcosmo-dark-matter-models` | production mechanisms, candidates, signatures (built) |
 | `thcosmo-neutrinos-light-relics` | N_eff, massive neutrinos, dark radiation (built) |

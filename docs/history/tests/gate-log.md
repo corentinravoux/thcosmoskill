@@ -2488,3 +2488,14 @@ gated under D35 (strict reading) and closed under D20 or D36. Open for the
 refresh pass: the side findings listed in the entries of 2026-11-13 to
 2026-11-19, and the new arXiv versions of arXiv:2606.30087 and
 arXiv:2611.05504 (`thcosmo-pbh-defects`).
+
+## 2026-11-20 — release 0.3.0
+
+Owner decision of 2026-11-20: cut 0.3.0 now, then port cosmoskill 1.1.0
+(adapters, extension runs, sweep records, layer additions) as 0.4.0, and
+move the maintainer files out of the repository as cosmoskill did on
+2026-11-17. Release: `plugin.json` 0.3.0; CHANGELOG entry; manifest
+`releases/0.3.0.tsv` against `d69c4d3` (841 added, 23 changed); README and
+hub state paragraph list ten built domains; 1019 sources; 159 tests
+passed; `claude plugin validate` passed for the plugin and the
+marketplace. The tag is left to the owner (D33).

@@ -4,6 +4,41 @@ Each release names the commit it was cut from. The plans that set each step
 are in `docs/plans/`; the record of every gate is
 `docs/history/tests/gate-log.md`.
 
+## 0.3.0 — 2026-11-20
+
+Waves W1 and W2: six domain skills added, dossiers for every built domain,
+and a strict reading of hedges at every gate. Plan:
+`docs/plans/2026-10-30-plan-v2.md`, stage 5; every gate in
+`docs/history/tests/gate-log.md`; manifest `releases/0.3.0.tsv` (841
+sections added, 23 changed, none moved or retired, against `d69c4d3`).
+
+- **New domains**: `thcosmo-dark-energy`, `thcosmo-dark-matter-models`,
+  `thcosmo-neutrinos-light-relics` (W1);
+  `thcosmo-cosmological-gravitational-waves`,
+  `thcosmo-baryogenesis-phase-transitions`, `thcosmo-pbh-defects` (W2).
+  Each passed G1 (tools) and G2 (re-read in the papers).
+- **Dossiers**: 37 in all, three to six per domain, each answering the
+  gap-audit questions that caused it and gated at G3. **Deepening runs**
+  for the thin subtopics of modified gravity, the three W2 domains and the
+  light sterile neutrinos.
+- **Strict reading (owner decisions D35, D36, in
+  `docs/plans/2026-10-30-decisions.md`)**: a dropped hedge, condition,
+  premise, range or scope, a wrong place or a wrong attribution counts as
+  an error in a draw. A draw that still fails on wording after one full
+  qualifier sweep is closed once every error is fixed at source, with the
+  residual logged; equation and number errors keep the zero-in-59 rule. The
+  dark-energy and dark-matter dossiers were re-gated under this reading.
+  The agent briefs carry a mandatory qualifier pass.
+- **Hub**: router marks ten domains built; `stale-claims.md` holds 90
+  rows, among them the printed slips confirmed at source in W1–W2.
+- **Tools**: `check_transcription.py` reads section-prefixed equation
+  labels (`II.19`) and attributes an equation to the paper cited before
+  it when its flag closes that citation; `latex_norm.py` normalises
+  `\mspace` and `\rightarrow`; `verify_sources.py` keeps balanced
+  parentheses in DOIs; `sample_statements.py --changed-since` draws a
+  deepening's new lines only.
+- 1019 sources checked against arXiv; 159 tests pass.
+
 ## 0.2.0 — 2026-11-03
 
 First milestone: the hub and four domain skills. Plan:
