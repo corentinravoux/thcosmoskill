@@ -1,6 +1,6 @@
 ---
 name: theoretical-cosmology
-description: Use when reviewing, deriving, planning or fact-checking theoretical-cosmology content that spans several areas or whose area is not yet clear — inflation, primordial correlators, dark energy, modified gravity, dark-matter models, perturbation theory, early-universe physics — and for sign, unit and normalisation conventions, to find which thcosmo-* skill covers a topic, or to update the thcosmo-* skills from the recent literature.
+description: Use when reviewing, deriving, planning or fact-checking theoretical-cosmology content that spans several areas or whose area is not yet clear — inflation, primordial correlators, dark energy, modified gravity, dark-matter models, perturbation theory, early-universe physics — and for sign, unit and normalisation conventions, to find which thcosmo-* skill covers a topic, or to update the thcosmo-* skills from the recent literature, and when asked which tools or adapters thcosmoskill can use (its status).
 ---
 
 # Theoretical cosmology working knowledge
@@ -80,6 +80,9 @@ repository.
 - `references/review-checklists.md`: checklists per family of domains.
 - `references/suite-conventions.md`: file contract, provenance rules,
   checking and refreshing a domain.
+- `references/adapters.md`: tools beyond the skills, when they are among
+  your tools: what to use when a question asks for newer papers, for the
+  papers that cite a paper or for papers not on arXiv, and the status check.
 
 In the lines below, `${CLAUDE_SKILL_DIR}` is the folder of this file; if it
 reaches you unexpanded, write that folder's path in its place.
@@ -117,6 +120,9 @@ can answer, and go deeper only when it cannot.
 - **L4 is mandatory** before endorsing an equation or a number for a
   manuscript, a proposal or a referee report. Read the paper with
   `python3 "${CLAUDE_SKILL_DIR}"/scripts/fetch_paper.py <arXiv id>`. If the script
+  reports that the paper has no HTML rendering, and a tool named
+  `get_paper_latex` or `read_paper` is among your tools (loaded or
+  deferred), read the paper with that tool. Otherwise, if the script
   cannot run, or reports that arXiv cannot be reached, do not run it again:
   read `https://arxiv.org/abs/<id>` or `https://arxiv.org/html/<id>` with a
   web tool if you have one. If the paper cannot be read, say that L4 was
@@ -162,7 +168,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 5k; conventions 12k; methods-index 2k; review-checklists 1k; review-rubric 1k; stale-claims 9k; suite-conventions 4k.
+Sizes, in thousands of tokens: L1 5k; adapters 3k; conventions 12k; methods-index 2k; review-checklists 1k; review-rubric 1k; stale-claims 9k; suite-conventions 4k.
 
 Not swept for newer papers since the snapshot of the suite.
 
