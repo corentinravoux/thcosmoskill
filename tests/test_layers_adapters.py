@@ -1,0 +1,308 @@
+"""Layer additions of 1.1 (docs/layers-v1.md, section 7): provenance, progress files and sweep records."""
+
+import datetime
+import json
+import tempfile
+import unittest
+from pathlib import Path
+
+from layer_fixtures import base, layer, run, snapshot
+
+TODAY = datetime.date.today().isoformat()
+FOUND_HEADER = "id\tvia\tfound"
+SOURCE_HEADER = "key\tid\tfirst_author\tyear\ttitle\trole"
+
+
+def arxiv_cache(tmp):
+    """A cache that serves arXiv:9999.00002 without the network; return the XDG_CACHE_HOME to use."""
+    cache = Path(tmp) / "cache"
+    (cache / "thcosmo-skill-verify").mkdir(parents=True)
+    (cache / "thcosmo-skill-verify" / "arxiv.json").write_text(json.dumps(
+        {"9999.00002": {"title": "A second fixture paper", "authors": ["Ada De Fixture"]}}), encoding="utf-8")
+    return cache
+
+
+class ProvenanceTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.skills = base(self.tmp.name, "before")
+        self.home = layer(self.tmp.name)
+        self.fresh = Path(self.tmp.name) / "fresh"
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def layers(self, *arguments, home=None, skills=None, **options):
+        return run("layers.py", *arguments, home=home or self.home, skills=skills or self.skills, **options)
+
+    def test_note_with_via_is_written_parsed_and_shown(self):
+        written = self.layers("note", "thcosmo-fixture", "results#shear-calibration", "FIXTURE-VIA-1", "--via", "valency")
+        self.assertEqual(written.returncode, 0, written.stderr)
+        notes = (self.home / "thcosmo-fixture" / "notes.md").read_text(encoding="utf-8")
+        entry = notes[notes.index("FIXTURE-VIA-1") - 60:notes.index("FIXTURE-VIA-1")]
+        self.assertIn("via: valency\n", entry)
+        shown = self.layers("thcosmo-fixture")
+        self.assertEqual(shown.returncode, 0, shown.stderr)
+        self.assertIn("(found via valency)", shown.stdout)
+        self.assertIn("FIXTURE-VIA-1", shown.stdout)
+        heading = next(line for line in shown.stdout.splitlines() if "(found via valency)" in line)
+        self.assertTrue(heading.startswith("--- personal note on thcosmo-fixture/results#shear-calibration"), heading)
+        report = json.loads(self.layers("thcosmo-fixture", "--json").stdout)
+        notes = report[0]["notes"]
+        self.assertEqual(next(note for note in notes if "FIXTURE-VIA-1" in note["text"])["via"], "valency")
+        self.assertTrue(all(note["via"] == "" for note in notes if "FIXTURE-VIA-1" not in note["text"]))
+        self.assertNotIn("via:", next(note for note in notes if "FIXTURE-VIA-1" in note["text"])["text"])
+
+    def test_unknown_via_is_refused_and_writes_nothing(self):
+        before = snapshot(self.home)
+        for command in (["note", "thcosmo-fixture", "general", "text"], ["source", "thcosmo-fixture", "9999.00002"]):
+            refused = self.layers(*command, "--via", "inspire", "--role", "method")
+            self.assertNotEqual(refused.returncode, 0)
+            self.assertIn("valency, arxiv-mcp, web", refused.stderr)
+        self.assertEqual(snapshot(self.home), before)
+
+    def test_via_survives_restamp(self):
+        written = self.layers("override", "thcosmo-fixture", "results#optical-depth-tau", "FIXTURE-VIA-2",
+                              "--via", "arxiv-mcp", home=self.fresh)
+        self.assertEqual(written.returncode, 0, written.stderr)
+        path = self.fresh / "thcosmo-fixture" / "notes.md"
+        old = next(line for line in path.read_text(encoding="utf-8").splitlines() if line.startswith("base: "))
+        after = base(self.tmp.name, "after")
+        synced = run("sync_layers.py", "--stamp-all", home=self.fresh, skills=after)
+        self.assertEqual(synced.returncode, 0, synced.stdout + synced.stderr)
+        lines = path.read_text(encoding="utf-8").splitlines()
+        self.assertIn("via: arxiv-mcp", lines)
+        self.assertIn("mode: override", lines)
+        stamps = [line for line in lines if line.startswith("base: ")]
+        self.assertEqual(len(stamps), 1)
+        self.assertNotEqual(stamps[0], old)
+        shown = run("layers.py", "thcosmo-fixture", "--json", home=self.fresh, skills=after)
+        self.assertEqual(json.loads(shown.stdout)[0]["notes"][0]["via"], "arxiv-mcp")
+
+    def test_source_with_via_writes_found_via_without_version(self):
+        cache = arxiv_cache(self.tmp.name)
+        added = self.layers("source", "thcosmo-fixture", "arXiv:9999.00002v3", "--role", "method", "--via", "valency",
+                            cache=cache)
+        self.assertEqual(added.returncode, 0, added.stderr)
+        rows = (self.home / "thcosmo-fixture" / "sources.tsv").read_text(encoding="utf-8").splitlines()
+        self.assertEqual(rows[-1].split("\t")[1], "9999.00002")
+        found = (self.home / "thcosmo-fixture" / "found-via.tsv").read_text(encoding="utf-8").splitlines()
+        self.assertEqual(found, [FOUND_HEADER, f"9999.00002\tvalency\t{TODAY}"])
+        again = self.layers("source", "thcosmo-fixture", "9999.00002", "--role", "method", "--via", "web", cache=cache)
+        self.assertEqual(again.returncode, 0, again.stderr)
+        self.assertEqual((self.home / "thcosmo-fixture" / "found-via.tsv").read_text(encoding="utf-8").splitlines(),
+                         found)
+
+    def test_source_refused_writes_no_found_via(self):
+        cache = arxiv_cache(self.tmp.name)
+        import os
+        previous = {name: os.environ.get(name) for name in ("HTTPS_PROXY", "https_proxy")}
+        os.environ["HTTPS_PROXY"] = os.environ["https_proxy"] = "http://127.0.0.1:9"
+        try:
+            refused = self.layers("source", "thcosmo-fixture", "9999.00007", "--role", "method", "--via", "valency",
+                                  home=self.fresh, cache=cache)
+        finally:
+            for name, value in previous.items():
+                if value is None:
+                    os.environ.pop(name, None)
+                else:
+                    os.environ[name] = value
+        self.assertNotEqual(refused.returncode, 0)
+        self.assertFalse((self.fresh / "thcosmo-fixture" / "found-via.tsv").exists())
+        self.assertFalse((self.fresh / "thcosmo-fixture" / "sources.tsv").exists())
+
+    def write(self, name, text):
+        path = self.fresh / "thcosmo-fixture" / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8")
+
+    def check(self):
+        return self.layers("check", home=self.fresh)
+
+    def test_check_validates_found_via(self):
+        doi_row = "Doi2099\tdoi:10.1093/mnras/fixture\tFixture\t2099\tA journal-only fixture paper\tmethod\n"
+        self.write("sources.tsv", SOURCE_HEADER + "\n" + doi_row)
+        self.write("found-via.tsv", "id\thow\tfound\ndoi:10.1093/mnras/fixture\tvalency\t2026-11-10\n")
+        bad_header = self.check()
+        self.assertEqual(bad_header.returncode, 1)
+        self.assertIn("found-via.tsv", bad_header.stdout)
+        self.write("found-via.tsv", FOUND_HEADER + "\ndoi:10.1093/mnras/fixture\tvalency\t2026-11-10\n"
+                   "9999.00010\tarxiv-mcp\t2026-11-10\n")
+        clean = self.check()
+        self.assertEqual(clean.returncode, 0, clean.stdout + clean.stderr)
+        self.write("found-via.tsv", FOUND_HEADER + "\n9999.00099\tvalency\t2026-11-10\n")
+        unknown = self.check()
+        self.assertEqual(unknown.returncode, 1)
+        self.assertIn("9999.00099", unknown.stdout)
+        self.write("found-via.tsv", FOUND_HEADER + "\ndoi:10.1093/mnras/fixture\tinspire\t2026-11-10\n")
+        self.assertEqual(self.check().returncode, 1)
+        self.write("found-via.tsv", FOUND_HEADER + "\ndoi:10.1093/mnras/fixture\tvalency\tyesterday\n")
+        self.assertEqual(self.check().returncode, 1)
+
+    def test_found_records_a_doi_row_once(self):
+        doi_row = "Doi2099\tdoi:10.1093/mnras/fixture\tFixture\t2099\tA journal-only fixture paper\tmethod\n"
+        self.write("sources.tsv", SOURCE_HEADER + "\n" + doi_row)
+        first = self.layers("found", "thcosmo-fixture", "doi:10.1093/mnras/fixture", "--via", "valency", home=self.fresh)
+        self.assertEqual(first.returncode, 0, first.stderr)
+        path = self.fresh / "thcosmo-fixture" / "found-via.tsv"
+        recorded = path.read_text(encoding="utf-8")
+        self.assertEqual(recorded.splitlines(), [FOUND_HEADER, f"doi:10.1093/mnras/fixture\tvalency\t{TODAY}"])
+        again = self.layers("found", "thcosmo-fixture", "doi:10.1093/mnras/fixture", "--via", "web", home=self.fresh)
+        self.assertEqual(again.returncode, 1)
+        self.assertEqual(path.read_text(encoding="utf-8"), recorded)
+        absent = self.layers("found", "thcosmo-fixture", "doi:10.1093/mnras/absent", "--via", "valency", home=self.fresh)
+        self.assertEqual(absent.returncode, 1)
+        self.assertEqual(path.read_text(encoding="utf-8"), recorded)
+        self.assertEqual(self.check().returncode, 0)
+
+
+class ProgressTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.skills = base(self.tmp.name, "before")
+        self.home = Path(self.tmp.name) / "fresh"
+        self.path = self.home / "thcosmo-fixture" / "_progress.md"
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def layers(self, *arguments):
+        return run("layers.py", *arguments, home=self.home, skills=self.skills)
+
+    def test_progress_creates_from_template_then_reports_paused(self):
+        first = self.layers("progress", "thcosmo-fixture")
+        self.assertEqual(first.returncode, 0, first.stderr)
+        self.assertIn(f"created {self.path}", first.stdout)
+        text = self.path.read_text(encoding="utf-8")
+        for heading in ("# Extension run: thcosmo-fixture", "Started: ", "Start date: ", "Adapters:", "Stopped:",
+                        "## Candidates", "| Paper | Title | Found via | Status | Note |", "## Alerts read",
+                        "## Left to do"):
+            self.assertIn(heading, text)
+        self.assertLess(text.index("## Candidates"), text.index("## Alerts read"))
+        self.assertLess(text.index("## Alerts read"), text.index("## Left to do"))
+        self.assertIn("`found`, `read`, `proposed`, `accepted`, `rejected`, `skipped`", text)
+        self.assertIn(text.strip(), first.stdout)
+        self.path.write_text(text + "| arXiv:9999.00009 | A candidate | valency | found | |\n", encoding="utf-8")
+        second = self.layers("progress", "thcosmo-fixture")
+        self.assertEqual(second.returncode, 0, second.stderr)
+        self.assertIn(f"paused run: {self.path}", second.stdout)
+        self.assertIn("arXiv:9999.00009", second.stdout)
+
+    def test_progress_prints_the_announcement_to_give(self):
+        # scenario E: the run did not announce itself; the script now hands over the line to give
+        for result in (self.layers("progress", "thcosmo-fixture"), self.layers("progress", "thcosmo-fixture")):
+            self.assertIn("Tell the researcher, before any search: Extension run on thcosmo-fixture. "
+                          "<status line of adapters.md>. Start date: unknown.", result.stdout)
+
+    def test_progress_clear_removes_the_file(self):
+        self.layers("progress", "thcosmo-fixture")
+        cleared = self.layers("progress", "thcosmo-fixture", "--clear")
+        self.assertEqual(cleared.returncode, 0, cleared.stderr)
+        self.assertIn(f"cleared {self.path}", cleared.stdout)
+        self.assertFalse(self.path.exists())
+        self.assertEqual(self.layers("progress", "thcosmo-fixture", "--clear").returncode, 0)
+
+    def test_check_ignores_ids_in_progress(self):
+        self.layers("note", "thcosmo-fixture", "general", "FIXTURE-PROGRESS-NOTE")
+        self.layers("progress", "thcosmo-fixture")
+        with self.path.open("a", encoding="utf-8") as handle:
+            handle.write("| arXiv:9999.00009 | A candidate | valency | found | |\n")
+        checked = self.layers("check")
+        self.assertEqual(checked.returncode, 0, checked.stdout + checked.stderr)
+
+    def test_show_does_not_mention_progress(self):
+        self.layers("note", "thcosmo-fixture", "general", "FIXTURE-PROGRESS-NOTE")
+        self.layers("progress", "thcosmo-fixture")
+        shown = self.layers("thcosmo-fixture")
+        self.assertEqual(shown.returncode, 0, shown.stderr)
+        self.assertIn("FIXTURE-PROGRESS-NOTE", shown.stdout)
+        self.assertNotIn("_progress", shown.stdout)
+        self.assertNotIn("paused", shown.stdout)
+
+
+SWEEP_HEADER = "skill\tswept_to\tadapters\trecorded"
+
+
+class SweepTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.skills = base(self.tmp.name, "before")
+        self.skill_file = self.skills / "thcosmo-fixture" / "SKILL.md"
+        self.untouched = self.skill_file.read_text(encoding="utf-8")
+        self.skill_file.write_text(self.untouched + "\nSnapshot 2026-10-14.\n", encoding="utf-8")
+        self.home = Path(self.tmp.name) / "fresh"
+        self.paper = Path(self.tmp.name) / "paper"
+        (self.paper / ".thcosmoskill").mkdir(parents=True)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def layers(self, *arguments, cwd=None):
+        return run("layers.py", *arguments, home=self.home, skills=self.skills, cwd=cwd)
+
+    def lines(self, result):
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        return result.stdout.splitlines()
+
+    def test_start_falls_back_to_snapshot_without_hub(self):
+        lines = self.lines(self.layers("sweep", "thcosmo-fixture"))
+        self.assertIn("snapshot: 2026-10-14", lines)
+        self.assertIn("base: none", lines)
+        self.assertIn("start: 2026-10-14", lines)
+
+    def test_no_snapshot_reports_unknown(self):
+        self.skill_file.write_text(self.untouched, encoding="utf-8")
+        lines = self.lines(self.layers("sweep", "thcosmo-fixture"))
+        self.assertIn("snapshot: unknown", lines)
+        self.assertIn("start: unknown", lines)
+
+    def test_record_then_start_moves(self):
+        recorded = self.layers("sweep", "thcosmo-fixture", "--record", "--to", "2026-11-01", "--adapters",
+                               "valency,arxiv-mcp")
+        self.assertEqual(recorded.returncode, 0, recorded.stderr)
+        rows = (self.home / "thcosmo-fixture" / "sweeps.tsv").read_text(encoding="utf-8").splitlines()
+        self.assertEqual(rows, [SWEEP_HEADER, f"thcosmo-fixture\t2026-11-01\tvalency,arxiv-mcp\t{TODAY}"])
+        lines = self.lines(self.layers("sweep", "thcosmo-fixture"))
+        self.assertIn("personal: 2026-11-01 (valency, arxiv-mcp)", lines)
+        self.assertIn("start: 2026-11-01", lines)
+        report = json.loads(self.layers("sweep", "thcosmo-fixture", "--json").stdout)
+        self.assertEqual(report["start"], "2026-11-01")
+        self.assertEqual(report["layers"][0]["adapters"], ["valency", "arxiv-mcp"])
+        checked = self.layers("check")
+        self.assertEqual(checked.returncode, 0, checked.stdout + checked.stderr)
+
+    def test_project_and_personal_take_the_latest(self):
+        self.lines(self.layers("sweep", "thcosmo-fixture", "--record", "--to", "2026-11-01", "--adapters", "valency"))
+        self.lines(self.layers("sweep", "thcosmo-fixture", "--record", "--to", "2026-11-05", "--adapters", "arxiv-mcp",
+                               "--project", cwd=self.paper))
+        self.assertTrue((self.paper / ".thcosmoskill" / "thcosmo-fixture" / "sweeps.tsv").is_file())
+        lines = self.lines(self.layers("sweep", "thcosmo-fixture", cwd=self.paper))
+        self.assertIn("project: 2026-11-05 (arxiv-mcp)", lines)
+        self.assertIn("personal: 2026-11-01 (valency)", lines)
+        self.assertIn("start: 2026-11-05", lines)
+
+    def test_base_record_is_read(self):
+        table = self.skills / "theoretical-cosmology" / "references" / "sweeps.tsv"
+        table.parent.mkdir(parents=True)
+        table.write_text(SWEEP_HEADER + "\nthcosmo-fixture\t2026-11-03\tvalency,arxiv-mcp\t2026-11-04\n",
+                         encoding="utf-8")
+        lines = self.lines(self.layers("sweep", "thcosmo-fixture"))
+        self.assertIn("base: 2026-11-03 (valency, arxiv-mcp)", lines)
+        self.assertIn("start: 2026-11-03", lines)
+
+    def test_progress_start_date_comes_from_sweep(self):
+        self.lines(self.layers("sweep", "thcosmo-fixture", "--record", "--to", "2026-11-01", "--adapters", "valency"))
+        self.assertIn("Start date: 2026-11-01", self.lines(self.layers("progress", "thcosmo-fixture")))
+
+    def test_record_refuses_future_past_and_bad_adapter(self):
+        self.lines(self.layers("sweep", "thcosmo-fixture", "--record", "--to", "2026-11-01", "--adapters", "valency"))
+        before = snapshot(self.home)
+        future = (datetime.date.today() + datetime.timedelta(days=2)).isoformat()
+        for to, adapters in ((future, "valency"), ("2026-10-20", "valency"), ("2026-11-02", "valency,inspire")):
+            refused = self.layers("sweep", "thcosmo-fixture", "--record", "--to", to, "--adapters", adapters)
+            self.assertEqual(refused.returncode, 1, (to, adapters, refused.stdout, refused.stderr))
+            self.assertEqual(snapshot(self.home), before)
+
+
+if __name__ == "__main__":
+    unittest.main()

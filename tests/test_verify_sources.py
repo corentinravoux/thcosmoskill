@@ -106,5 +106,18 @@ class DoiPatternTest(unittest.TestCase):
             self.assertEqual(verify_sources.DOI_CITE.search(text).group(1), doi)
 
 
+class CitedIdsTest(unittest.TestCase):
+    def test_cited_ids_skips_underscore_files(self):
+        sys.path.insert(0, str(CHECKER.parent))
+        import verify_sources
+        with tempfile.TemporaryDirectory() as tmp:
+            skill = Path(tmp) / "thcosmo-x"
+            (skill / "references").mkdir(parents=True)
+            (skill / "references" / "_progress.md").write_text("Candidate arXiv:2501.00001.\n", encoding="utf-8")
+            (skill / "SKILL.md").write_text("Cites arXiv:2501.00002.\n", encoding="utf-8")
+            arxiv, _ = verify_sources.cited_ids(skill)
+        self.assertEqual(set(arxiv), {"2501.00002"})
+
+
 if __name__ == "__main__":
     unittest.main()
