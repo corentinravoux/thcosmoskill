@@ -36,13 +36,14 @@ by a person at gate G2 (plan v2, section 3).
     python3 tools/check_transcription.py --skill thcosmo-lss-perturbation-theory --offline --write
 
 `--offline` reads only papers already in the cache. `--write` saves the
-report to `docs/history/tests/transcription/<skill>.tsv`. Exit status 1 when
+report to the maintainers' archive, `history/tests/transcription/<skill>.tsv`. Exit status 1 when
 there is a mismatch. Standard library; network only for papers not cached.
 """
 
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import sys
 from html.parser import HTMLParser
@@ -58,7 +59,11 @@ import latex_norm  # noqa: E402
 sys.path.insert(0, str(ROOT / SKILLS / "theoretical-cosmology" / "scripts"))
 import fetch_paper  # noqa: E402
 
-REPORTS = ROOT / "docs" / "history" / "tests" / "transcription"
+# Reports are maintainer files: they go to the maintainers' archive
+# (claude_config/projects/thcosmoskill/history/tests/), or THCOSMOSKILL_ARCHIVE.
+ARCHIVE = Path(os.environ.get("THCOSMOSKILL_ARCHIVE",
+                              Path.home() / "Software" / "claude_config" / "projects" / "thcosmoskill"))
+REPORTS = ARCHIVE / "history" / "tests" / "transcription"
 LABEL = r"\(?((?:[A-Z]{1,4}\.)?[A-Z]?\.?\d+(?:\.\d+)*[a-z]?)\)?"
 EQ_REF = re.compile(rf"\bEq(?:s|uations?)?\.?\s*{LABEL}(?:\s*(?:[–\-]|to|and|,)\s*{LABEL})?")
 ROW_NUMBER = re.compile(r"\|\s*\(([A-Z]?\.?\d+(?:\.\d+)*[a-z]?)\)\s*$")
@@ -316,7 +321,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--skill", required=True, help="one skill, e.g. thcosmo-lss-perturbation-theory")
     parser.add_argument("--offline", action="store_true", help="read only papers already cached")
-    parser.add_argument("--write", action="store_true", help=f"save the report under {REPORTS.relative_to(ROOT)}")
+    parser.add_argument("--write", action="store_true", help=f"save the report under {REPORTS}")
     args = parser.parse_args()
     records = check(ROOT / SKILLS / args.skill, args.offline)
     counts = {name: sum(r["class"] == name for r in records)
@@ -333,7 +338,7 @@ def main() -> int:
         columns = ["file", "line", "id", "eq", "class", "transcribed", "source"]
         out.write_text("\t".join(columns) + "\n" + "".join(
             "\t".join(str(r[c]).replace("\t", " ") for c in columns) + "\n" for r in records), encoding="utf-8")
-        print(f"wrote {out.relative_to(ROOT)}")
+        print(f"wrote {out}")
     return 1 if counts["mismatch"] or counts["wrong-section"] else 0
 
 

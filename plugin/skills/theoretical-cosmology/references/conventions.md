@@ -3,7 +3,7 @@
 Scope: the conventions a theoretical-cosmology text must state, the choices
 in use for each, which reference works adopt which choice (with the source
 and the place read), and the relations between conventions that a paper
-states. The atlas is built (step P4 of `docs/plans/2026-10-30-plan-v2.md`).
+states. The atlas is built (step P4 of plan v2, in the maintainers' archive).
 
 Snapshot: 2026-10-31
 

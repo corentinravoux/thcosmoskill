@@ -1,8 +1,20 @@
 # Changelog
 
 Each release names the commit it was cut from. The plans that set each step
-are in `docs/plans/`; the record of every gate is
-`docs/history/tests/gate-log.md`.
+and the record of every gate (the gate log) are kept by the maintainers
+outside the repository since 2026-11-20; paths under `docs/` in the entries
+below refer to the repository before that move.
+
+## Unreleased
+
+- Maintainer files moved out of the repository: plans and decisions,
+  specs, domain scopes and anchor papers, agent briefs, gate log, G2/G3
+  sheets, gap audits, transcription and place reports, run prompts (all of
+  `docs/` except `layers.md` and `layers-v1.md`). Skill text that pointed to
+  them now says "the maintainers' archive". `tools/check_transcription.py`
+  and `tools/check_places.py --write` save their reports there
+  (`THCOSMOSKILL_ARCHIVE`). `.gitignore` excludes `CLAUDE.md`, `.claude/`
+  and `.superpowers/`.
 
 ## 0.3.0 — 2026-11-20
 

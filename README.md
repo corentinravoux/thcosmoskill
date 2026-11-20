@@ -15,8 +15,8 @@ with dossiers: LSS perturbation theory, inflation, primordial correlators,
 modified gravity, dark energy, dark-matter models, neutrinos and light
 relics, cosmological gravitational waves, baryogenesis and phase
 transitions, primordial black holes and defects; 1019 sources checked
-against arXiv. The other domains are planned: see [`docs/plans/2026-10-30-plan-v2.md`](docs/plans/2026-10-30-plan-v2.md)
-(decisions: [`docs/plans/2026-10-30-decisions.md`](docs/plans/2026-10-30-decisions.md)).
+against arXiv. The other domains are planned, in the order of the build
+plan kept with the maintainers.
 Until a domain exists, the hub says that the suite holds no material on it.
 
 The package is the theory companion of
@@ -151,8 +151,7 @@ my layer"); the `thcosmoskill-refine` skill runs the commands. Format:
 ## Maintaining
 
 Build and refresh domains never from memory: the procedure is in
-`plugin/skills/theoretical-cosmology/references/suite-conventions.md` and the
-research brief in `docs/agent-brief.md`. After editing:
+`plugin/skills/theoretical-cosmology/references/suite-conventions.md`. After editing:
 
 ```bash
 python3 tools/assign_keys.py && python3 tools/sync_blocks.py

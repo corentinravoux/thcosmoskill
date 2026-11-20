@@ -1,4 +1,4 @@
-"""Fixes from the hep-th probe P0 (docs/history/tests/p0-probe.md, 2026-10-31)."""
+"""Fixes from the hep-th probe P0 (the maintainers' archive, history/tests/p0-probe.md, 2026-10-31)."""
 
 import sys
 import tempfile

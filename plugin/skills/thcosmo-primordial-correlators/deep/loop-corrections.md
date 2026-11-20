@@ -2,7 +2,7 @@
 
 Scope: how a one-loop correction to the ζ power spectrum is computed and regularised, why the logarithm runs with H, how the one-loop correction from an ultra-slow-roll (USR) phase was derived by Kristiano & Yokoyama, and on which technical points (boundary terms, quartic vertices, consistency relations, sharpness of the transition, background renormalisation) the replies differ, each side in its own words and with the version read.
 Snapshot: 2026-11-04.
-From: scope of `docs/scopes-domains.md`; Flauger et al. arXiv:2203.07629, Sect. 3.5 — `references/subtopics.tsv`, row `loops`.
+From: scope of `the domain scopes (maintainers' archive)`; Flauger et al. arXiv:2203.07629, Sect. 3.5 — `references/subtopics.tsv`, row `loops`.
 Audit questions: (5) How are loop corrections to primordial correlators computed and renormalised, and what does the PBH loop debate (Kristiano–Yokoyama and the replies) turn on?
 
 The abstract-level results (Weinberg's logarithm bound, the running in H/μ, time independence at one loop, renormalisation with features, the Ward identities and the tensor analogue) are in `formalism.md#loop-corrections` and `results.md#loop-corrections`; the two sides of the debate, at abstract level, in `open-questions.md#do-enhanced-small-scale-fluctuations-change`; the separation-of-scales approximation in `approximations.md#separation-of-scales-for-loop-back-reaction`. They are not repeated here. The in-in machinery is in `formalism.md#the-in-in-expectation-value` and `deep/in-in-bispectrum.md`; the consistency relation used in Step 6 in `deep/soft-limits-and-consistency.md`.

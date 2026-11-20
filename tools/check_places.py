@@ -21,7 +21,7 @@ is re-read by a person (plan v2, section 3).
 
     python3 tools/check_places.py --skill thcosmo-lss-perturbation-theory [--offline] [--write]
 
-`--write` saves the report to `docs/history/tests/places/<skill>.tsv`.
+`--write` saves the report to the maintainers' archive, `history/tests/places/<skill>.tsv`.
 Standard library; network only for papers and abstracts not cached.
 """
 
@@ -29,6 +29,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -41,7 +42,11 @@ import latex_norm  # noqa: E402
 import locate_numbers  # noqa: E402
 
 fetch_paper = locate_numbers.fetch_paper
-REPORTS = ROOT / "docs" / "history" / "tests" / "places"
+# Reports are maintainer files: they go to the maintainers' archive
+# (claude_config/projects/thcosmoskill/history/tests/), or THCOSMOSKILL_ARCHIVE.
+ARCHIVE = Path(os.environ.get("THCOSMOSKILL_ARCHIVE",
+                              Path.home() / "Software" / "claude_config" / "projects" / "thcosmoskill"))
+REPORTS = ARCHIVE / "history" / "tests" / "places"
 FLAG = re.compile(r"\[(?:src|sec):\s*([^\]]+)\]")
 ARXIV = re.compile(r"arXiv:\s?(\d{4}\.\d{4,5}|[a-z][a-z\-]+(?:\.[A-Z]{2})?/\d{7})", re.I)
 SECTION = re.compile(r"\b(?:Sects?\.?|Sections?)\s*([A-Z]?\d+(?:\.\d+)*)|\b(?:App\.?|Appendix)\s*([A-Z](?:\.\d+)*)", re.I)
@@ -163,7 +168,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--skill", required=True)
     parser.add_argument("--offline", action="store_true", help="read only papers and abstracts already cached")
-    parser.add_argument("--write", action="store_true", help=f"save the report under {REPORTS.relative_to(ROOT)}")
+    parser.add_argument("--write", action="store_true", help=f"save the report under {REPORTS}")
     args = parser.parse_args()
     store_path = locate_numbers.ABSTRACTS
     store = json.loads(store_path.read_text(encoding="utf-8")) if store_path.is_file() else {}
@@ -184,7 +189,7 @@ def main() -> int:
         columns = ["file", "line", "id", "place", "numbers", "class", "text"]
         path.write_text("\t".join(columns) + "\n" + "".join(
             "\t".join(str(i[c]).replace("\t", " ")[:300] for c in columns) + "\n" for i in items), encoding="utf-8")
-        print(f"wrote {path.relative_to(ROOT)}")
+        print(f"wrote {path}")
     return 0
 
 

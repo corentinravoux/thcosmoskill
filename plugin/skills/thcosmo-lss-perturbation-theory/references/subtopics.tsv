@@ -7,7 +7,7 @@ bias-expansion	Bias expansion, operator bases and their renormalisation	Cabass e
 redshift-space	Redshift-space distortions from Kaiser to the EFT	Cabass et al. arXiv:2203.08232, Sect. 3.7; Ivanov arXiv:2212.08488, Sect. 7	formalism.md; models.md; approximations.md; deep/redshift-space-eft.md	covered
 consistency-relations	Consistency relations of LSS and their violation	Cabass et al. arXiv:2203.08232, Sect. 4.5; Ivanov arXiv:2212.08488, Sect. 5.2	formalism.md; open-questions.md	covered
 png-scale-dependent-bias	Primordial non-Gaussianity in LSS and scale-dependent bias	Cabass et al. arXiv:2203.08232, Sects. 2.8, 3.10; Desjacques et al. arXiv:1611.09787 (abstract)	formalism.md; open-questions.md; deep/png-scale-dependent-bias.md	covered
-velocity-momentum	Velocity statistics, momentum field and vorticity	scope of docs/scopes-domains.md; Ivanov arXiv:2212.08488, Sect. 3.5	formalism.md; deep/velocity-momentum-statistics.md	covered
-intrinsic-alignments	Intrinsic alignments and shape bias	scope of docs/scopes-domains.md; Bakx et al. arXiv:2303.15565, Sect. 2	formalism.md; models.md; results.md	covered
-large-deviations	Large-deviation and one-point statistics	scope of docs/scopes-domains.md; Bernardeau et al. arXiv:astro-ph/0112551, Sect. 5	formalism.md; results.md	covered
+velocity-momentum	Velocity statistics, momentum field and vorticity	scope of the domain scopes (maintainers' archive); Ivanov arXiv:2212.08488, Sect. 3.5	formalism.md; deep/velocity-momentum-statistics.md	covered
+intrinsic-alignments	Intrinsic alignments and shape bias	scope of the domain scopes (maintainers' archive); Bakx et al. arXiv:2303.15565, Sect. 2	formalism.md; models.md; results.md	covered
+large-deviations	Large-deviation and one-point statistics	scope of the domain scopes (maintainers' archive); Bernardeau et al. arXiv:astro-ph/0112551, Sect. 5	formalism.md; results.md	covered
 field-level-forward-models	Perturbative forward models at the field level and the LSS bootstrap	Cabass et al. arXiv:2203.08232, Sect. 3.9	formalism.md; open-questions.md	thin

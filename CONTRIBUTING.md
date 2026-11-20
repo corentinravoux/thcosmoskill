@@ -50,9 +50,7 @@ check most of them.
 9. **Plain technical English**, complete sentences.
 
 The file layout and flags are in
-`plugin/skills/theoretical-cosmology/references/suite-conventions.md`; the
-brief that the package's own research runs follow is `docs/agent-brief.md`,
-with `docs/agent-brief-numbers.md` for numbers and equations.
+`plugin/skills/theoretical-cosmology/references/suite-conventions.md`.
 
 ## Checks to run
 

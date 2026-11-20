@@ -215,8 +215,7 @@ notes attached to a section the update retired.
 ## Adding a domain
 <!-- key: adding-a-domain -->
 
-Copy the shape of an existing `thcosmo-*` skill, follow `docs/agent-brief.md`
-of the package repository, set the skill's row in the router table of the
+Copy the shape of an existing `thcosmo-*` skill, follow the research brief of the maintainers' archive, set the skill's row in the router table of the
 hub `SKILL.md` to built, and run the upkeep tools of the update cycle.
 
 ## What the suite does not hold

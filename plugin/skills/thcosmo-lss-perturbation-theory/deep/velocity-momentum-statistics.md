@@ -2,7 +2,7 @@
 
 Scope: how velocity, momentum and pairwise-velocity power spectra are built in perturbation theory and its effective-field-theory extensions (mass weighting, vector modes, counterterms, velocity bias, infrared resummation), and where the perturbative description of velocities fails.
 Snapshot: 2026-11-02.
-From: scope of docs/scopes-domains.md; Ivanov arXiv:2212.08488, Sect. 3.5 — `references/subtopics.tsv`, row `velocity-momentum`.
+From: scope of the domain scopes (maintainers' archive); Ivanov arXiv:2212.08488, Sect. 3.5 — `references/subtopics.tsv`, row `velocity-momentum`.
 Audit questions: (6) How are the velocity and momentum power spectra computed in perturbation theory (mass weighting, velocity bias, vorticity), and where does PT fail for them?
 
 What the reference files hold: `formalism.md#velocity-statistics-and-the-momentum-field` (IR sensitivity of the momentum spectrum, the 2025 EFT of pairwise velocities, the one-loop matter–momentum bispectrum for kSZ, vorticity in the two-loop counterterms); the velocity-divergence sign convention in `formalism.md#conventions` and `approximations.md#convention-traps`. Velocity data, field-level velocity likelihoods and fσ8 from peculiar velocities belong to cosmoskill `cosmo-peculiar-velocities`; the redshift-space density spectrum itself to `deep/redshift-space-eft.md` when present.

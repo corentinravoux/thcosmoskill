@@ -3,7 +3,7 @@
 Scope: what to look for when reviewing a theory chapter, paper or proposal
 section, and how to report it. Skeleton of the base release; the recurrent
 slips, each with the paper that corrects it, are added in stage 6 of
-`docs/plans/2026-10-30-plan-v2.md` from the domain skills.
+plan v2 (in the maintainers' archive) from the domain skills.
 
 Snapshot: 2026-10-30
 

@@ -15,8 +15,7 @@ Version 0.3.0 <!-- num: not a value -->: the hub and ten domain skills are built
 `thcosmo-neutrinos-light-relics`, `thcosmo-cosmological-gravitational-waves`
 (all with dossiers), `thcosmo-baryogenesis-phase-transitions` and
 `thcosmo-pbh-defects`; the others
-are planned, in the order of `docs/plans/2026-10-30-plan-v2.md` of the package
-repository. Until a domain is built, say that the suite holds no material on
+are planned, in the order of the build plan (in the maintainers' archive). Until a domain is built, say that the suite holds no material on
 it, answer from general knowledge only if the asker accepts that, label such
 an answer as unsourced, and never present it as coming from the suite.
 
@@ -52,7 +51,7 @@ map; its content supersedes this hub.
 
 Topics shared by several skills have one home; the others point to it. The
 boundaries, and five rules for topics that fit two skills, are in
-`docs/scopes-domains.md` of the package repository: a non-linear extension
+the domain scopes (in the maintainers' archive): a non-linear extension
 lives with the non-linear method; a mechanism lives with its physics and
 its signature with the observable; an interaction between two dark
 components lives with the component whose equation of state changes; a
