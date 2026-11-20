@@ -28,17 +28,17 @@ an equation or a number enters a manuscript.
 - Friedmann equation with curvature in conformal time: $\mathcal{H}^{2}+\kappa\overset{{\mbox{\tiny\rm{(\ref{eq_ee-b-00})}}}}{=}\;\frac{8\pi G}{3}\bar{e}a^{2}\,,$ (arXiv:2607.06983) [src: Sect. 1.3, Eq. 1.39]; Laine & Procacci define $\Omega_K$ with $\lvert\kappa\rvert$, Hogg by a sum rule (arXiv:astro-ph/9905116) [src: Sect. 2, Eq. 7].
 - First-order gauge transformation of the curvature potential: $\widetilde{\psi}_{1}=\psi_{1}-{\cal H}\alpha_{1}\,,$ (arXiv:0809.4944) [src: Sect. 6.4.1, Eq. 6.38]; the first-order tensor is gauge invariant [src: Eq. 6.43].
 - Bardeen potentials: $\Psi\equiv\psi_{1}-{\cal H}\left(B_{1}-E_{1}^{\prime}\right)\,.$ (arXiv:0809.4944) [src: Sect. 7.1.1, Eq. 7.2], with $\Psi-\Phi=8\pi Ga^{2}\Pi\,,$ [src: Sect. 8.2.1, Eq. 8.29], so Ψ = Φ only without anisotropic stress.
-- Synchronous gauge leaves residual gauge freedom; "it is not possible to define gauge-invariant quantities in general using this gauge condition" (arXiv:0809.4944) [src: Sect. 7.3].
-- ζ evolves as $\zeta^{\prime}=-{\cal H}\frac{\delta P_{\rm nad}}{\rho+P}-{\Sigma_{V}}\,,$ (arXiv:0809.4944) [src: Sect. 8.2.2, Eq. 8.35]: conserved on super-Hubble scales for adiabatic perturbations "so long as Ψ remains finite" [src: text after Eq. 8.36].
-- Non-linear conservation holds if P is a unique function of ρ, with $-\zeta(x^{i})\equiv\psi(t,x^{i})+\frac{1}{3}\int_{\rho(t)}^{\rho(t,x^{i})}\frac{d\rho}{\rho+P}\,.$ (arXiv:astro-ph/0411220) [src: Sect. IV, Eq. 37].
+- Synchronous gauge leaves residual gauge freedom; "it is not possible to define gauge-invariant quantities in general using this gauge condition" (arXiv:0809.4944) [src: Sect. 7.3; the authors cite their Ref. 114].
+- ζ evolves as $\zeta^{\prime}=-{\cal H}\frac{\delta P_{\rm nad}}{\rho+P}-{\Sigma_{V}}\,,$ (arXiv:0809.4944) [src: Sect. 8.2.2, Eq. 8.35]: constant "for adiabatic perturbations (δP_nad = 0) on super-Hubble scales (k/𝓗 ≪ 1), so long as Ψ remains finite" [src: Sect. 8.2.2, text after Eq. 8.37].
+- In a gradient expansion, "assuming that the universe is smooth over a sufficiently large comoving scale" (arXiv:astro-ph/0411220) [src: abstract], to first order in ε with the anisotropic stress negligible at that order [src: Sect. III.1], non-linear conservation holds if P is a unique function of ρ, with $-\zeta(x^{i})\equiv\psi(t,x^{i})+\frac{1}{3}\int_{\rho(t)}^{\rho(t,x^{i})}\frac{d\rho}{\rho+P}\,.$ (arXiv:astro-ph/0411220) [src: Sect. IV, Eq. 37].
 - The sign of ψ in the spatial metric differs between Lyth, Malik & Sasaki and Malik & Wands, who both call ψ on uniform-density slices −ζ: compare signs of ζ, ℛ or $f_{\rm NL}$ only after reading each paper's metric (`references/approximations.md`, "Convention traps"). No paper read states the relation between the two ζ.
-- δN in Malik & Wands' sign: $\zeta=\delta N\,,$ (arXiv:0809.4944) [src: Sect. 11, Eq. 11.1], stated in slow roll, and "more generally we expect this to hold whenever we can neglect the decaying mode" of the field perturbations [src: text before Eq. 11.3].
-- The separate universe is "well known" to fail at the transition into ultra-slow roll, and Raveendran finds a breakdown for Π at the transition back (arXiv:2506.23571) [src: abstract]; with non-minimal coupling it holds above lower bounds on the wavelength (arXiv:2609.34788) [src: abstract].
+- δN in Malik & Wands' sign: $\zeta=\delta N\,,$ (arXiv:0809.4944) [src: Sect. 11, Eq. 11.1; the authors cite their Refs. 156, 157, 146, 98]; from the initial field values on a flat slice, $\zeta=\sum_{I}N_{I}\delta\varphi_{I{\rm{flat}}}\,,$ [src: Sect. 11, Eq. 11.3], which rests on the expansion being a function of the initial local field values, stated "in the slow-roll approximation" and, "more generally we expect this to hold whenever we can neglect the decaying mode for the field perturbations on super-Hubble scales" [src: Sect. 11, text before Eq. 11.3].
+- It is "well known" that gradient terms make the separate universe fail, "particularly at the transition from slow-roll to ultra-slow-roll phase", and Raveendran finds a breakdown for Π at the transition back (arXiv:2506.23571) [src: abstract]; with non-minimal coupling it holds above lower bounds on the wavelength (arXiv:2609.34788) [src: abstract].
 - Weinberg: in Newtonian gauge there is always an adiabatic mode with ℛ non-zero and constant at large wavelength in all eras, "under only a mild technical assumption" (arXiv:astro-ph/0302326) [src: abstract].
-- In linearized theory with photons, baryons, neutrinos and CDM, the regular primordial modes are one adiabatic and four isocurvature (CDM, baryon, neutrino density, neutrino velocity), fixed by a 5 × 5 matrix (arXiv:astro-ph/9904231) [src: abstract]. <!-- num: not a value -->
+- In linearized theory with photons, baryons, neutrinos and CDM, the most general regular primordial perturbation has a growing adiabatic and four isocurvature modes (CDM, baryon, neutrino density, neutrino velocity), and all its quadratic correlators of observables are determined by a 5 × 5 matrix (arXiv:astro-ph/9904231) [src: abstract]. <!-- num: not a value -->
 - Planck 2018: $\beta_{\mathrm{iso}}<0.00095$ for fully correlated CDI at 95 % CL, TT,TE,EE+lowE+lensing (arXiv:1807.06211) [src: Sect. 9.4.2, Eq. 92].
 - Boltzmann hierarchy truncation by setting $F_{l}=0$ is "simple but inaccurate"; Ma & Bertschinger's Eq. 51 extrapolates instead (arXiv:astro-ph/9506072) [src: Sect. 5.3].
-- Line of sight: $\Delta^{(S)}_{(T,P)l}(k,\tau=\tau_{0})=\int_{0}^{\tau_{0}}S^{(S)}_{T,P}(k,\tau)j_{l}[k(\tau_{0}-\tau)]d\tau,$ (arXiv:astro-ph/9603033) [src: Sect. 2.2, Eq. 13]; CLASS's cl_3permille.pre gives 0.3 % on the $C_l$ up to l = 3000 (arXiv:1104.2933) [src: Fig. 10 caption].
+- Line of sight: $\Delta^{(S)}_{(T,P)l}(k,\tau=\tau_{0})=\int_{0}^{\tau_{0}}S^{(S)}_{T,P}(k,\tau)j_{l}[k(\tau_{0}-\tau)]d\tau,$ (arXiv:astro-ph/9603033) [src: Sect. 2.2, Eq. 13], in longitudinal gauge and conformal time [src: Sect. 2.1]; CLASS's cl_3permille.pre gives 0.3 % on the $C_l$ up to l = 3000 (arXiv:1104.2933) [src: Fig. 10 caption].
 - At second order the perturbation types mix: in the Einstein–de Sitter model, primordial density perturbations source gravitational waves and primordial gravitational waves give second-order density fluctuations (arXiv:astro-ph/9707278) [src: abstract].
 
 ## Checks a referee makes
@@ -55,7 +55,7 @@ an equation or a number enters a manuscript.
 <!-- key: errors-that-recur -->
 
 - Comparing ζ or $f_{\rm NL}$ between Malik & Wands (arXiv:0809.4944, Eqs. 2.12, 7.61) and Lyth, Malik & Sasaki (arXiv:astro-ph/0411220, Eqs. 5, 37) without the sign of ψ in each metric.
-- Using Φ = (3/5)ζ from one paper with Φ = −(3/5)ζ from another (arXiv:0809.4944, Sect. 11, footnote 5; hub atlas).
+- Using Φ = (3/5)ζ from one paper with Φ = −(3/5)ζ from another (arXiv:0809.4944, Sect. 11, footnote 5, "on large scales in the matter era"; hub atlas).
 - Setting Ψ = Φ while an anisotropic stress is present (arXiv:0809.4944, Eq. 8.29), for example the neutrino shear $\sigma_\nu$, non-zero already in the adiabatic initial conditions of Ma & Bertschinger (arXiv:astro-ph/9506072, Eq. 96).
 - Reading super-horizon growth of δ in synchronous gauge as physical (arXiv:astro-ph/9506072) [src: Sect. 8], or the growth of the flat-gauge shear as instability (arXiv:0809.4944, Sect. 7.2.1).
 - Reading τ as conformal time in Malik & Wands' synchronous-gauge paragraph, where it is cosmic time (arXiv:0809.4944, Sect. 7.3).
@@ -88,7 +88,7 @@ Answer at the lowest level that answers the question, then stop.
 | L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 4k; approximations 4k; formalism 17k; models 3k; open 2k; results 3k.
+Sizes, in thousands of tokens: L1 5k; approximations 4k; formalism 17k; models 4k; open 2k; results 3k.
 
 Not swept for newer papers since the snapshot at the top of this file.
 

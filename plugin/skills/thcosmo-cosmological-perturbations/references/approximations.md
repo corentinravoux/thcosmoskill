@@ -8,8 +8,8 @@ Snapshot: 2026-11-20
 <!-- key: super-hubble-limit-and-gradient-expansion -->
 
 - **Assumes:** $k/{\cal H}\ll 1$ in linear theory (arXiv:0809.4944, Sect. 8.2.2), or a universe "smooth over a sufficiently large comoving scale", with conditions stated to first order in a small parameter ε, in the non-linear treatment of Lyth, Malik & Sasaki (arXiv:astro-ph/0411220) [src: abstract; Sect. III.1]. <!-- num: not a value -->
-- **Validated:** conservation of ζ needs, in addition, a negligible non-adiabatic pressure (arXiv:0809.4944) [src: Sect. 8.2.2, text after Eq. 8.36] or P a unique function of ρ (arXiv:astro-ph/0411220) [src: abstract]; if, to first order in ε, P is a unique function of ρ, Lyth, Malik & Sasaki find on uniform-density slices $-\dot{\psi}=\dot{\zeta}=O(\epsilon^{2})\,.$ (arXiv:astro-ph/0411220) [src: Sect. III.1, Eq. 24].
-- **Fails:** when $\delta P_{\rm nad}\neq 0$ on super-Hubble scales, which "will lead to a change in the curvature perturbation ζ", the mechanism of the curvaton scenario (arXiv:0809.4944) [src: Sect. 8.2.2]; at transitions into and out of ultra-slow roll, where gradient terms break the separate-universe approximation (arXiv:2506.23571) [src: abstract].
+- **Validated:** conservation of ζ needs, in addition, a vanishing non-adiabatic pressure, "so long as Ψ remains finite" (arXiv:0809.4944) [src: Sect. 8.2.2, text after Eq. 8.37], or P a unique function of ρ (arXiv:astro-ph/0411220) [src: abstract]; with the anisotropic stress taken "negligible at that order" [src: Sect. III.1], if, to first order in ε, P is a unique function of ρ, Lyth, Malik & Sasaki find on uniform-density slices $-\dot{\psi}=\dot{\zeta}=O(\epsilon^{2})\,.$ (arXiv:astro-ph/0411220) [src: Sect. III.1, Eq. 24].
+- **Fails:** when $\delta P_{\rm nad}\neq 0$ on super-Hubble scales, which "will lead to a change in the curvature perturbation ζ", the mechanism of the curvaton scenario (arXiv:0809.4944) [src: Sect. 8.2.2]; at the transition into ultra-slow roll, where gradient terms break the separate-universe approximation, and for the momentum Π at the transition back (arXiv:2506.23571) [src: abstract].
 - **Cite:** Wands et al. (arXiv:astro-ph/0003278), Lyth, Malik & Sasaki (arXiv:astro-ph/0411220), Weinberg (arXiv:astro-ph/0302326).
 
 ## Separate universe and δN
@@ -24,7 +24,7 @@ Snapshot: 2026-11-20
 <!-- key: truncation-of-the-boltzmann-hierarchy -->
 
 - **Assumes:** multipoles above $l_{\rm max}$ set to zero or extrapolated.
-- **Validated:** Ma & Bertschinger's extrapolation, Eq. 51, from the spherical-Bessel behaviour that is exact for l > 0 if $\partial_{\tau}(\phi+\psi)=0$ in conformal Newtonian gauge (arXiv:astro-ph/9506072) [src: Sect. 5.3, inline, text after Eq. 50]. <!-- num: not a value -->
+- **Validated:** Ma & Bertschinger's extrapolation, Eq. 51, from the spherical-Bessel behaviour that is exact for l > 0 if $\partial_{\tau}(\phi+\psi)=0$ in conformal Newtonian gauge, assuming "that this relation holds approximately for time-varying potentials" (arXiv:astro-ph/9506072) [src: Sect. 5.3, inline, text after Eq. 50]; they find that it "greatly improves on the simple truncation", but that time variations of the potentials in the radiation era "make even equation (51) a poor approximation if $l_{\max}$ is chosen too small" [src: Sect. 5.3, text after Eq. 51]. <!-- num: not a value -->
 - **Fails:** plain truncation is "simple but inaccurate": errors propagate to l = 0 in a time $\tau\approx l_{\rm max}/k$ and reflect back, amplifying errors in the "square well" $0\leq l\leq l_{\rm max}$ (arXiv:astro-ph/9506072) [src: Sect. 5.3, inline, text after Eq. 50]; truncating massless-neutrino moments beyond l ≥ 2 in the pure CDM model gives "a 10% error in the anisotropy power spectrum", as quoted from Hu et al. (1995) [src: Sect. 1]. <!-- num: not a value -->
 - **Cite:** Ma & Bertschinger (arXiv:astro-ph/9506072).
 
@@ -32,7 +32,7 @@ Snapshot: 2026-11-20
 <!-- key: tight-coupling-ultra-relativistic-fluid-and -->
 
 - **Assumes:** the three approximations of CLASS for basic ΛCDM: baryon–photon tight coupling (first order, second order or a compromise), an ultra-relativistic fluid approximation for massless neutrinos (a "Sub-Hubble fluid approximation", Sect. 3.2 title), and radiation streaming after decoupling, "taking reionisation into account" (arXiv:1104.2933) [src: abstract].
-- **Validated:** with cl_3permille.pre, 0.3 % precision on the $C_l$ up to l = 3000, exact equations being used only around Hubble crossing and in the super-Hubble, non-tightly-coupled region (arXiv:1104.2933) [src: Sect. 5; Fig. 10 caption]; the fluid approximation is both faster and more accurate than plain truncation at $l_{\rm max}=18$, and the no-fluid results "are very unstable and depend a lot on the choice" of the two switching parameters; "with the present choice" they have "a twice larger error in the CMB spectra than in any UFA scheme" [src: Sect. 3.6; Table 3 caption]. <!-- num: not a value -->
+- **Validated:** with cl_3permille.pre, 0.3 % precision on the $C_l$ up to l = 3000, exact equations being used only around Hubble crossing and in the super-Hubble, non-tightly-coupled region (arXiv:1104.2933) [src: Sect. 5; Fig. 10 caption]; with the precision file cl_permille.pre and $l_{\rm max}=(k\tau)_{\rm ufa}=18$, the fluid approximation is both faster and more accurate than plain truncation, and the no-fluid results "are very unstable and depend a lot on the choice" of the two switching parameters; "with the present choice" they have "a twice larger error in the CMB spectra than in any UFA scheme" [src: Sect. 3.6; Table 3 caption, inline]. <!-- num: not a value -->
 - **Not covered:** more general cosmological models, in which "other approximation schemes can be introduced", more exotic cases being discussed "case-by-case"; massive neutrinos and non-cold relics are treated in a companion paper (arXiv:1104.2933) [src: Sect. 5].
 - **Cite:** Blas, Lesgourgues & Tram (arXiv:1104.2933).
 
@@ -40,14 +40,14 @@ Snapshot: 2026-11-20
 <!-- key: fluid-approximations-for-non-cold-relics -->
 
 - **Assumes:** solvers evolve non-cold relics on a momentum grid and often switch "to a fluid approximation on small scales for efficiency" (Nasiri et al. 2026, arXiv:2610.40275) [src: abstract].
-- **Validated:** the dispersive fluid approximation "significantly outperforms the default CLASS fluid approximation in the cross and neutrino power spectra" and reduces CDM power-spectrum errors "by up to an order of magnitude", adding 1–4 % to the runtime; combined with the generalized Boltzmann hierarchy for massive neutrinos it reproduces the matter power spectrum "to better than permille accuracy" (arXiv:2610.40275) [src: abstract].
-- **Limits:** the default fluid approximation of CLASS is outperformed by the dispersive one in the spectra named above (arXiv:2610.40275) [src: abstract]. The massive-neutrino hierarchy itself is in `thcosmo-neutrinos-light-relics`.
+- **Validated:** within the standard ncdm module of CLASS, the dispersive fluid approximation "significantly outperforms the default CLASS fluid approximation in the cross and neutrino power spectra" and reduces CDM power-spectrum errors "by up to an order of magnitude", adding 1–4 % to the runtime; combined with the generalized Boltzmann hierarchy for massive neutrinos and tested on massive neutrinos, it reproduces the matter power spectrum "to better than permille accuracy" (arXiv:2610.40275) [src: abstract].
+- **Limits:** within the standard ncdm module, the default fluid approximation of CLASS is outperformed by the dispersive one in the spectra named above (arXiv:2610.40275) [src: abstract]. The massive-neutrino hierarchy itself is in `thcosmo-neutrinos-light-relics`.
 
 ## Newtonian limit and the gauge of simulations
 <!-- key: newtonian-limit-and-the-gauge-of-simulations -->
 
 - **Assumes:** Newtonian N-body dynamics with initial displacements from an Einstein–Boltzmann spectrum and the Zel'dovich approximation.
-- **Validated:** "in most gauges the initial displacements generated in this way receive a first-order relativistic correction"; in the N-body gauge it vanishes, and a Newtonian simulation then "includes all first-order relativistic contributions (in the absence of radiation)" (Fidler et al., arXiv:1505.04756) [src: abstract]. The longitudinal gauge "gives evolution equations closest to the Newtonian ones" (arXiv:0809.4944) [src: Sect. 7.1.1].
+- **Validated:** "in most gauges the initial displacements generated in this way receive a first-order relativistic correction"; in the N-body gauge it vanishes, and a Newtonian simulation then "includes all first-order relativistic contributions (in the absence of radiation)" (Fidler et al., arXiv:1505.04756) [src: abstract]. The longitudinal gauge "has also proven useful for calculations on small scales, since it gives evolution equations closest to the Newtonian ones" (arXiv:0809.4944) [src: Sect. 7.1.1, text after Eq. 7.8; the authors cite their Ref. 54].
 - **Not covered:** radiation, excluded by the condition of Fidler et al. quoted above; the longitudinal gauge can be "difficult to define … in the super-horizon limit", with numerical instabilities on large scales (arXiv:0809.4944) [src: Sect. 7.1.1].
 - **Cite:** Chisari & Zaldarriaga (arXiv:1101.3555), Fidler et al. (arXiv:1505.04756); the Newtonian-motion-gauge method is in `thcosmo-lss-perturbation-theory`.
 
@@ -56,7 +56,7 @@ Snapshot: 2026-11-20
 
 - **Sign of ζ.** Malik & Wands write $-\zeta_1$ for the uniform-density curvature with ψ entering $C_{ij}$ with a minus sign (arXiv:0809.4944, Eqs. 2.12, 7.61); Lyth, Malik & Sasaki write −ζ for ψ that enters the metric as $e^{2\psi}$ (arXiv:astro-ph/0411220, Eqs. 3, 5, 37).
 - No paper read states the relation between the two ζ: quote each with its own metric.
-- **Sign of Φ against ζ.** Malik & Wands give $\Phi=-(3/5)\zeta$ in the matter era (arXiv:0809.4944) [src: Sect. 11, footnote 5, inline]; the atlas lists Planck 2018 IX and Komatsu with a plus sign. An $f_{\rm NL}$ is quoted with its variable and sign.
+- **Sign of Φ against ζ.** Malik & Wands give $\Phi=-(3/5)\zeta$ for the Newtonian potential "on large scales in the matter era" (arXiv:0809.4944) [src: Sect. 11, footnote 5, inline]; the atlas lists Planck 2018 IX and Komatsu with a plus sign. An $f_{\rm NL}$ is quoted with its variable and sign.
 - **Bardeen's notation.** Malik & Wands' Ψ is minus Bardeen's $\Phi_H$ (arXiv:0809.4944, Sect. 7.1.1, footnote 2).
 - **τ.** Conformal time in Laine & Procacci (arXiv:2607.06983, Eq. 1.3) and Ma & Bertschinger (arXiv:astro-ph/9506072), cosmic (proper) time in Malik & Wands' synchronous-gauge paragraph (arXiv:0809.4944, Sect. 7.3); Malik & Wands use η for conformal time (Eq. 2.7).
 - **Names of the potentials.** ψ in $g_{00}$ for Ma & Bertschinger, ϕ for Malik & Wands, and the swaps listed in the atlas; Laine & Procacci call φ and ψ the Bardeen potentials (arXiv:2607.06983) [src: Sect. 8.3, second paragraph]. <!-- num: not a value -->
@@ -75,7 +75,7 @@ Snapshot: 2026-11-20
 - `[der]` Growth of a gauge-dependent variable is not physical growth.
 - Weinberg's discussion of synchronous and Newtonian gauges suggesting "inequivalent assumptions" at large wavelength (arXiv:astro-ph/0302326) [src: abstract].
 - Second-order induced tensors are gauge dependent through mode mixing (arXiv:2509.26159) [src: abstract]; see `thcosmo-cosmological-gravitational-waves`.
-- Initial conditions taken from general relativity in a modified-gravity code give "significant deviations" in CMB spectra against theory-consistent ones, for the early modified-gravity models of Pan et al. (arXiv:2506.17411) [src: abstract].
+- Initial conditions taken from general relativity in a modified-gravity code give "significant deviations" in CMB spectra against theory-consistent ones, for the early modified-gravity models of Pan et al., Horndeski theory in the EFT approach "assuming constant EFT functions at early times" (arXiv:2506.17411) [src: abstract].
 
 ## What a referee checks in a theory paper of the domain
 <!-- key: what-a-referee-checks-in-a-theory-paper-of-the -->
