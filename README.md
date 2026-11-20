@@ -10,7 +10,7 @@ each model, the range of validity of each approximation, and the statements
 still in circulation that are out of date. When it matters, Claude reads the
 paper again rather than trusting the skill.
 
-**Status: release 0.3.0.** The hub and ten domain skills are built, each
+**Status: release 0.4.0.** The hub and ten domain skills are built, each
 with dossiers: LSS perturbation theory, inflation, primordial correlators,
 modified gravity, dark energy, dark-matter models, neutrinos and light
 relics, cosmological gravitational waves, baryogenesis and phase

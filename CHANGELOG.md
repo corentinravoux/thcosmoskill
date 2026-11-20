@@ -5,8 +5,47 @@ and the record of every gate (the gate log) are kept by the maintainers
 outside the repository since 2026-11-20; paths under `docs/` in the entries
 below refer to the repository before that move.
 
-## Unreleased
+## 0.4.0 — 2026-11-20
 
+The adapters and extension runs of cosmoskill 1.1.0, ported, and the
+maintainer files moved out of the repository. Manifest `releases/0.4.0.tsv`
+(9 sections added, 17 changed, none moved or retired, against `435ce96`).
+No research content changed.
+
+- **Adapters.** arXiv MCP (`arxiv-mcp-server`, suggested) and Valency
+  (optional) are used when their tools are among Claude's tools, in a fixed
+  order per task, and switch off silently when absent: no answer mentions a
+  missing adapter, and with neither installed the suite behaves as 0.3.0.
+  The hub's new `references/adapters.md` holds the routes, the day-to-day
+  budget, the refusal rules, the silence rule, the status check
+  ("thcosmoskill status") and what each adapter sends; for theory it adds
+  that an equation read in arXiv MCP's LaTeX source is quoted with the
+  equation number the paper prints. It is read only for an outward task.
+- **Level block.** At L4, a paper without an HTML rendering is read with
+  arXiv MCP when it is among the tools, before the web-tool fallback. Each
+  block gains its sweep line ("Not swept for newer papers since the
+  snapshot ...") and one sentence routing outward tasks to `adapters.md`.
+- **Extension run** in `thcosmoskill-refine`, on request only, and **sweep
+  records** (the hub's `references/sweeps.tsv`, empty in this release,
+  written by `promote.py <skill> sweep` and rendered by
+  `tools/sync_blocks.py`); the owner's route for strengthening the base is
+  in `suite-conventions.md`.
+- **Layer additions** (`docs/layers-v1.md`, section 7): `--via
+  valency|arxiv-mcp|web` and a `via:` meta line; `<skill>/found-via.tsv` and
+  `layers.py found`; `<skill>/_progress.md` and `layers.py progress`;
+  `<skill>/sweeps.tsv` and `layers.py sweep`. `verify_sources.cited_ids`
+  skips `_`-prefixed files.
+- **READMEs**: suggested companions, a host-table row, what each adapter
+  sends.
+- **Scenario checks** (self-tests, not evidence of quality): with no
+  adapter, an N_eff question answered from L3 without web search and
+  without naming an adapter; the status check prints the status line and
+  the install lines of `adapters.md`. Runs with adapters were done for
+  cosmoskill 1.1.0 on the same machinery and not repeated.
+- For layer users: every block's `levels-and-layers` section changed (sweep
+  line, L4 step, outward-task sentence), so `sync_layers.py` reports the
+  entries attached to it as `changed`; the hub's `hub-files` and
+  `refreshing-a-domain` changed too.
 - Maintainer files moved out of the repository: plans and decisions,
   specs, domain scopes and anchor papers, agent briefs, gate log, G2/G3
   sheets, gap audits, transcription and place reports, run prompts (all of

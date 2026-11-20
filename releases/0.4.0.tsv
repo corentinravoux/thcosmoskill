@@ -1,0 +1,27 @@
+skill	file	key	change	replaced_by	fingerprint
+thcosmo-baryogenesis-phase-transitions	skill	levels-and-layers	changed		dee3cce03b62
+thcosmo-cosmological-gravitational-waves	skill	levels-and-layers	changed		61d7902363b5
+thcosmo-dark-energy	skill	levels-and-layers	changed		56ceb8e357b9
+thcosmo-dark-matter-models	skill	levels-and-layers	changed		24c35cafe69f
+thcosmo-inflation	skill	levels-and-layers	changed		0cc8ffb71cb7
+thcosmo-lss-perturbation-theory	skill	levels-and-layers	changed		40a9b059d63e
+thcosmo-modified-gravity	skill	levels-and-layers	changed		0691516b7485
+thcosmo-neutrinos-light-relics	skill	levels-and-layers	changed		6ef9dc17f7de
+thcosmo-pbh-defects	skill	levels-and-layers	changed		cc7c5d9167ad
+thcosmo-primordial-correlators	skill	levels-and-layers	changed		a1ec5da239bf
+thcosmoskill-refine	skill	extension-run	added		6f4195bcef3c
+theoretical-cosmology	adapters	day-to-day-budget	added		7943aaa5e066
+theoretical-cosmology	adapters	detecting-the-adapters	added		078608be0539
+theoretical-cosmology	adapters	refusals	added		54562fc57a8b
+theoretical-cosmology	adapters	routes-by-task	added		cd13ab1f7712
+theoretical-cosmology	adapters	silence-and-the-status-check	added		59b2ef55843c
+theoretical-cosmology	adapters	what-each-adapter-sends	added		7279b7c5fdc9
+theoretical-cosmology	adapters	when-both-are-present	added		7234a777a917
+theoretical-cosmology	skill	choosing-the-level	changed		340630255b90
+theoretical-cosmology	skill	hub-files	changed		b831a085cf8c
+theoretical-cosmology	skill	levels-and-layers	changed		601047e4a497
+theoretical-cosmology	skill	state-of-the-suite	changed		351466b4a9e8
+theoretical-cosmology	skill	which-skill-holds-what	changed		520721656b8d
+theoretical-cosmology	suite-conventions	adding-a-domain	changed		7115fb9a782a
+theoretical-cosmology	suite-conventions	refreshing-a-domain	changed		68a12ea0e08e
+theoretical-cosmology	suite-conventions	strengthening-the-base-with-an-extension-run	added		2ca7e61d69f7

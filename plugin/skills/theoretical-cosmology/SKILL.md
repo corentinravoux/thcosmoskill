@@ -8,7 +8,7 @@ description: Use when reviewing, deriving, planning or fact-checking theoretical
 ## State of the suite
 <!-- key: state-of-the-suite -->
 
-Version 0.3.0 <!-- num: not a value -->: the hub and ten domain skills are built,
+Version 0.4.0 <!-- num: not a value -->: the hub and ten domain skills are built,
 `thcosmo-lss-perturbation-theory`, `thcosmo-inflation`,
 `thcosmo-primordial-correlators`, `thcosmo-modified-gravity`,
 `thcosmo-dark-energy`, `thcosmo-dark-matter-models`,
