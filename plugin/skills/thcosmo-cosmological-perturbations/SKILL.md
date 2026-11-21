@@ -85,10 +85,10 @@ Answer at the lowest level that answers the question, then stop.
 |---|---|---|
 | L1 | this file only | the headline equations and values, the state of the domain, the checks a referee makes, the errors that recur |
 | L2 | one file of `references/` | what this file does not hold: the formalism and its conventions, the model landscape, other results and their history, the validity of each approximation, open questions |
-| L3 | one dossier of `deep/` | none in this skill yet: say so and answer at L2 |
+| L3 | one dossier of `deep/` | how a result is obtained and how to choose a method |
 | L4 | the cited paper itself | what L1 to L3 quote; required before an equation or a number goes into a manuscript, a proposal or a referee report, and when two statements of the skills disagree |
 
-Sizes, in thousands of tokens: L1 5k; approximations 4k; formalism 17k; models 4k; open 2k; results 3k.
+Sizes, in thousands of tokens: L1 5k; approximations 4k; formalism 17k; models 4k; open 2k; results 3k; deep/einstein-boltzmann-system 10k; deep/gauge-transformations-and-invariants 10k; deep/zeta-conservation 9k.
 
 Not swept for newer papers since the snapshot at the top of this file.
 
