@@ -8,13 +8,13 @@ description: Use when reviewing, deriving, planning or fact-checking theoretical
 ## State of the suite
 <!-- key: state-of-the-suite -->
 
-Version 0.4.0 <!-- num: not a value -->: the hub and ten domain skills are built,
+Version 0.4.0 <!-- num: not a value -->: the hub and eleven domain skills are built,
 `thcosmo-lss-perturbation-theory`, `thcosmo-inflation`,
 `thcosmo-primordial-correlators`, `thcosmo-modified-gravity`,
 `thcosmo-dark-energy`, `thcosmo-dark-matter-models`,
 `thcosmo-neutrinos-light-relics`, `thcosmo-cosmological-gravitational-waves`
-(all with dossiers), `thcosmo-baryogenesis-phase-transitions` and
-`thcosmo-pbh-defects`; the others
+(all with dossiers), `thcosmo-baryogenesis-phase-transitions`,
+`thcosmo-pbh-defects` and `thcosmo-cosmological-perturbations`; the others
 are planned, in the order of the build plan (in the maintainers' archive). Until a domain is built, say that the suite holds no material on
 it, answer from general knowledge only if the asker accepts that, label such
 an answer as unsourced, and never present it as coming from the suite.
@@ -39,7 +39,7 @@ map; its content supersedes this hub.
 | Primordial tensors, stochastic backgrounds from inflation, phase transitions, defects and scalar-induced sources, gravitational-wave propagation in cosmology | `thcosmo-cosmological-gravitational-waves` | built (W2) |
 | Baryogenesis and leptogenesis, electroweak and QCD transitions, first-order phase transitions and bubble dynamics, primordial magnetogenesis | `thcosmo-baryogenesis-phase-transitions` | built (W2) |
 | Primordial black-hole formation and abundance, cosmic strings and other topological defects | `thcosmo-pbh-defects` | built (W2) |
-| FLRW backgrounds, Friedmann equations, distances and horizons, curvature; relativistic linear and second-order perturbations, gauges and gauge-invariant variables, ζ and R, separate universe and δN, Einstein–Boltzmann hierarchy, adiabatic and isocurvature initial conditions | `thcosmo-cosmological-perturbations` | planned |
+| FLRW backgrounds, Friedmann equations, distances and horizons, curvature; relativistic linear and second-order perturbations, gauges and gauge-invariant variables, ζ and R, separate universe and δN, Einstein–Boltzmann hierarchy, adiabatic and isocurvature initial conditions | `thcosmo-cosmological-perturbations` | built (W3) |
 | Equilibrium thermodynamics, Boltzmann equation in an expanding universe, freeze-out, BBN theory, recombination physics and codes, dark ages | `thcosmo-thermal-history` | planned |
 | Acoustic physics, Thomson scattering, polarisation, damping, reionisation imprint, ISW, SZ and CMB-lensing theory, spectral distortions | `thcosmo-cmb-physics` | planned |
 | Spherical and ellipsoidal collapse, excursion sets, mass-function theory, halo model, Vlasov–Poisson and N-body theory, wave dark-matter dynamics, baryonic effects on the matter power spectrum | `thcosmo-nonlinear-structure` | planned |

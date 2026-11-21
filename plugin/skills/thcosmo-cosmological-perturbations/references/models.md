@@ -61,7 +61,7 @@ The mode basis is that of Bucher, Moodley & Turok (arXiv:astro-ph/9904231, abstr
 
 ### CDM density isocurvature, fully correlated or anticorrelated ("curvaton I/II")
 <!-- key: cdm-density-isocurvature-fully-correlated-or -->
-- **Defining equations:** $n_{\cal I\cal I}=n_{\cal R\cal R}$ and $\cos\Delta=\pm 1$ (arXiv:1807.06211) [src: Sect. 9.4.2, inline]; the curvaton is the physically motivated example quoted there, which leads to fully (anti)correlated CDI and adiabatic perturbations "under a number of (very) restrictive assumptions" [src: Sect. 9.4.2].
+- **Defining equations:** $n_{\cal I\cal I}=n_{\cal R\cal R}$ and $\cos\Delta=\pm 1$ (arXiv:1807.06211) [src: Sect. 9.4.2, inline]; "Under a number of (very) restrictive assumptions discussed in" their Ref. 229, "the curvaton model can lead to fully (anti)correlated CDI (or BDI) and adiabatic perturbations" [src: Sect. 9.4.2].
 - **Parameters:** $\beta_{\rm iso}$, independent of k in this case; the parameter $r_D$ of the curvaton models quoted there [src: Sect. 9.4.2].
 - **Predictions:** after curvaton decay, as printed, $\beta_{\mathrm{iso}}\simeq 9(1-\tilde{r})^{2}/[r_{D}^{2}+9(1-\tilde{r})^{2}]$ (arXiv:1807.06211) [src: Sect. 9.4.2, inline, text after Eq. 93], for the cases of Gordon & Lewis quoted there, with $\tilde{r}$ defined there separately for the fully correlated and the fully anticorrelated case; the local non-Gaussianity quoted from Sasaki et al. 2006 is $f_{\mathrm{NL}}^{\mathrm{local}}=\left(1+\Delta_{s}^{2}\right)\frac{5}{4r_{D}}-\frac{5}{3}-\frac{5r_{D}}{6},$ [src: Sect. 9.4.2, Eq. 94].
 - **Consistency:** "Many models giving anticorrelation produce too large an isocurvature fraction to be consistent with the above limit, but case 9 of Gordon & Lewis (2003) survives" (arXiv:1807.06211) [src: Sect. 9.4.2].
@@ -74,6 +74,6 @@ The mode basis is that of Bucher, Moodley & Turok (arXiv:astro-ph/9904231, abstr
 - **Parameters:** the amplitudes in the 5×5 correlation matrix of Bucher et al. [src: abstract]. <!-- num: not a value -->
 - **Predictions:** identified as modes "which do not seem to have been discussed before" in 1999 (arXiv:astro-ph/9904231) [src: abstract].
 - **Consistency:** none found.
-- **Observational status:** with the CMB-SPA combination (Planck 2018, ACT DR6, SPT-3G), DESI DR2 BAO and DES Y5 supernovae, the neutrino density isocurvature amplitude is "consistent with zero" in ΛCDM, and the 95 % upper limit on $\sum m_\nu$ moves from < 0.052 eV (adiabatic) to < 0.057 eV with it (Hou et al. 2026, arXiv:2606.17994) [src: abstract].
+- **Observational status:** with the CMB-SPA combination (Planck 2018, ACT DR6, SPT-3G), DESI DR2 BAO and DES Y5 supernovae, the neutrino density isocurvature amplitude is "consistent with zero" in ΛCDM, and the 95 % upper limit on $\sum m_\nu$ moves from < 0.052 eV (adiabatic) to < 0.057 eV with it; these limits are "highly sensitive to both the assumed dark energy equation of state and the prior lower bound on" $\sum m_\nu$, the adiabatic 0.052 eV bound being "an artifact of the statistical prior extending to zero" (Hou et al. 2026, arXiv:2606.17994) [src: abstract].
 - **Status date:** 2026-11-20
 

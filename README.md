@@ -165,7 +165,7 @@ In build order (plan v2): the pilot, the three domains of milestone 0.2
 | `thcosmo-cosmological-gravitational-waves` | primordial tensors, stochastic backgrounds, propagation (built) |
 | `thcosmo-baryogenesis-phase-transitions` | baryogenesis, leptogenesis, phase transitions, magnetogenesis (built) |
 | `thcosmo-pbh-defects` | primordial black holes, cosmic strings and other defects (built) |
-| `thcosmo-cosmological-perturbations` | FLRW background, relativistic perturbations, gauges, ζ, δN, Einstein–Boltzmann hierarchy |
+| `thcosmo-cosmological-perturbations` | FLRW background, relativistic perturbations, gauges, ζ, δN, Einstein–Boltzmann hierarchy (built) |
 | `thcosmo-thermal-history` | thermodynamics, freeze-out, BBN theory, recombination |
 | `thcosmo-cmb-physics` | acoustic physics, polarisation, secondary anisotropies, spectral distortions |
 | `thcosmo-nonlinear-structure` | collapse, mass function, halo model, Vlasov–Poisson, baryonic effects |
