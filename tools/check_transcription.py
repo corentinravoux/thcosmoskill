@@ -60,9 +60,9 @@ sys.path.insert(0, str(ROOT / SKILLS / "theoretical-cosmology" / "scripts"))
 import fetch_paper  # noqa: E402
 
 # Reports are maintainer files: they go to the maintainers' archive
-# (claude_config/projects/thcosmoskill/history/tests/), or THCOSMOSKILL_ARCHIVE.
+# (claude_work/projects/thcosmoskill/history/tests/), or THCOSMOSKILL_ARCHIVE.
 ARCHIVE = Path(os.environ.get("THCOSMOSKILL_ARCHIVE",
-                              Path.home() / "Software" / "claude_config" / "projects" / "thcosmoskill"))
+                              Path.home() / "Software" / "claude_work" / "projects" / "thcosmoskill"))
 REPORTS = ARCHIVE / "history" / "tests" / "transcription"
 LABEL = r"\(?((?:[A-Z]{1,4}\.)?[A-Z]?\.?\d+(?:\.\d+)*[a-z]?)\)?"
 EQ_REF = re.compile(rf"\bEq(?:s|uations?)?\.?\s*{LABEL}(?:\s*(?:[–\-]|to|and|,)\s*{LABEL})?")

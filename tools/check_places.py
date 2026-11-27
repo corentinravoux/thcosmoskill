@@ -43,9 +43,9 @@ import locate_numbers  # noqa: E402
 
 fetch_paper = locate_numbers.fetch_paper
 # Reports are maintainer files: they go to the maintainers' archive
-# (claude_config/projects/thcosmoskill/history/tests/), or THCOSMOSKILL_ARCHIVE.
+# (claude_work/projects/thcosmoskill/history/tests/), or THCOSMOSKILL_ARCHIVE.
 ARCHIVE = Path(os.environ.get("THCOSMOSKILL_ARCHIVE",
-                              Path.home() / "Software" / "claude_config" / "projects" / "thcosmoskill"))
+                              Path.home() / "Software" / "claude_work" / "projects" / "thcosmoskill"))
 REPORTS = ARCHIVE / "history" / "tests" / "places"
 FLAG = re.compile(r"\[(?:src|sec):\s*([^\]]+)\]")
 ARXIV = re.compile(r"arXiv:\s?(\d{4}\.\d{4,5}|[a-z][a-z\-]+(?:\.[A-Z]{2})?/\d{7})", re.I)
